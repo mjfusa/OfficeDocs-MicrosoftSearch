@@ -12,8 +12,8 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the Azure File Share Graph Connector for Microsoft Search and Copilot"
-ms.date: 12/02/2024
+description: "Set up the v Graph Connector for Microsoft Search and Copilot"
+ms.date: 02/14/2025
 ---
 
 # GitLab Microsoft Graph Connectors
