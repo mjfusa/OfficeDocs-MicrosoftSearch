@@ -83,6 +83,6 @@ You can verify property mappings in the sample data for metadata such as **title
 
 ## Next Steps
 After setup, review the connection status in the **Microsoft 365 Admin Center**.  
-For troubleshooting, refer to the [GitLab Graph Connector Troubleshooting Guide](troubleshooting-gitlab-graph-connector.md).
+For troubleshooting, refer to the [GitLab Graph Connector Troubleshooting Guide](troubleshoot-gitlab-connector.md).
 
 If you experience issues or need support, visit [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
