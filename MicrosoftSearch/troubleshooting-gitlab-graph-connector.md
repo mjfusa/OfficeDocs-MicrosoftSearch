@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Troubleshooting the GitLab connectors for Microsoft Search and Microsoft 365 Copilot "
-ms.date: 14/02/2025
+ms.date: 02/14/2025
 ---
 
 # Troubleshooting the GitLab Microsoft Graph Connector
