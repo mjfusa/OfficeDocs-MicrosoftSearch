@@ -151,6 +151,12 @@ items:
           items:
           - name: Setup
             href: GitHub-connector.md 
+        - name: GitLab (preview)
+          items:
+          - name: Setup
+            href: gitlab-connector.md 
+          - name: Troubleshooting
+            href: troubleshoot-gitlab-connector.md
         - name: Google Drive
           items:
           - name: Setup
