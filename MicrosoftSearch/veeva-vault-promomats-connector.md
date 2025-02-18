@@ -51,57 +51,69 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 ### Step 1: Configure Display Name
 Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
 
-### Step 2: Add Veeva Vault URL
-Enter the verified URL of your Veeva Vault instance, e.g.,  
+### Step 2: Add the Veeva Vault URL
+Enter the verified URL of your Veeva Vault instance, for example
 `https://<your-vault-domain>.veevavault.com`
 
 ### Step 3: Authentication details
 
-#### Microsoft Entra ID authentication
+To configure the Veeva Vault - PromoMats connector, you must provide authentication credentials. 
+The connector supports the following authentication methods: 
 
-To use Microsoft Entra ID authentication, ensure the following configurations are in place:
-- **Vault Session ID URL**:  
-  Example: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`
-- **Client ID**: The application ID of your Microsoft Entra ID app registered for Veeva Vault.
-- **Client Secret**: The corresponding client secret. Securely store and restrict access to this value.
+#### Basic authentication 
 
-**Important:** Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
+- The username associated with your Veeva Vault account. 
 
-### Step 4: Deploy to Limited Audience
-Test the connector by rolling it out to a small user group to validate indexing and access control.
+- The password for the account. Ensure this credential is kept secure, as it's be used for authentication. 
 
-### Step 5: Customize Sync Schedules
-- Full Crawls: Default is daily.
+#### Azure AD authentication 
+This method leverages Azure Active Directory (AAD) for secure and centralized identity management. 
+These are the required fields.
 
----
+- Vault session ID URL: The URL endpoint for retrieving session tokens. Typically formatted as: https://<your-vault-domain>.veevavault.com/api/v<version>/session. 
 
-## Default Settings
+- Client ID: The application ID for your Azure AD app registered for Veeva Vault. 
 
-| Section  | Setting               | Default Value |
+- Client secret: The client secret associated with the Azure AD app. Ensure this is securely stored and accessible only to authorized personnel. 
+ 
+> [!Important]
+> Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
+
+### Step 4: Rollout to limited audience
+Deploy this connection to a limited group of users to validate indexing and access control functionality before a full rollout. 
+
+### Step 5: Customize sync schedules
+Set up periodic incremental crawls (default: 15 minutes) and full crawls (default: daily). 
+
+
+## Default settings
+
+| Section  | Setting               | Default value |
 |----------|-----------------------|---------------|
-| **Users**   | Access Permissions   | Respects Veeva Vault permissions; only viewable documents are accessible. |
-| **Content** | Index Metadata       | Indexes key metadata, such as document name, owner, and lifecycle stage. |
-| **Content** | Manage Properties    | Enables metadata like title, created by, and last modified by. |
-| **Sync**    | Full Crawls          | Every day. |
+| **Users**   | Access permissions   | Respects Veeva Vault permissions; only viewable documents are accessible. |
+| **Content** | Index metadata       | Indexes key metadata, such as document name, owner, and lifecycle stage. |
+| **Content** | Manage properties    | Enables metadata like title, created by, and last modified by. |
+| **Sync**    | Full crawls          | Every day.|
+| **Sync**  | Full crawl frequency|Every day.|
 
-To modify these defaults, select the **Custom Setup** option during configuration.
-
----
+To modify these default values, click **Custom setup** during the configuration.
 
 ## Custom setup
 
 ### Users
 
-**Access Permissions**  
-The connector adheres to the ACLs defined in Veeva Vault. Only users with appropriate permissions in Veeva Vault can view indexed content in Microsoft 365. It is possible to override this and allow all users access to indexed content, though this is not recommended.
+**Access permissions**
+The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, though this is not recommended.
 
 ### Sync
 
-**Adjust Sync Schedules**  
-You can modify the frequency of full crawls to fit your organization's requirements:
-- Full Crawls: Default is daily.
+**Adjust sync schedules**  
+You can modify the frequency of full crawls to fit your organization's requirements.
+- Incremental Crawl: Default is 15 minutes. 
+- Full Crawl: Default is daily.
 
----
+## Examples
+
 
 ## Troubleshooting
 
@@ -114,3 +126,4 @@ For common issues and their resolutions, refer to the [Troubleshooting Guide](tr
 Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
 If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
+m 
