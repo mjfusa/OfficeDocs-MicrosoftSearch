@@ -124,4 +124,3 @@ For more information, see [Troubleshooting Guide](troubleshoot-veeva-vault-promo
 Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
 If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
-m 
