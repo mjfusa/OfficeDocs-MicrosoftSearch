@@ -70,7 +70,7 @@ The connector supports the following authentication methods:
 This method leverages Azure Active Directory (AAD) for secure and centralized identity management. 
 These are the required fields.
 
-- Vault session ID URL: The URL endpoint for retrieving session tokens. Typically formatted as: https://<your-vault-domain>.veevavault.com/api/v<version>/session. 
+- Vault session ID URL: The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
 
 - Client ID: The application ID for your Azure AD app registered for Veeva Vault. 
 
