@@ -39,7 +39,6 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Prerequisites
 
-- Administrator credentials
 - Ensure you have a Veeva Vault account with administrative privileges.
 - Enable the API access in your Veeva Vault instance.
 - Activate REST API access in your Veeva Vault instance. For more information, see [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
@@ -56,9 +55,10 @@ Provide a meaningful display name in the Microsoft 365 Admin Center to identify 
 Enter the verified URL of your Veeva Vault instance, e.g.,  
 `https://<your-vault-domain>.veevavault.com`
 
-### Step 3: Authentication Details
+### Step 3: Authentication details
 
-#### Microsoft Entra ID Authentication
+#### Microsoft Entra ID authentication
+
 To use Microsoft Entra ID authentication, ensure the following configurations are in place:
 - **Vault Session ID URL**:  
   Example: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`
@@ -88,7 +88,7 @@ To modify these defaults, select the **Custom Setup** option during configuratio
 
 ---
 
-## Custom Setup
+## Custom setup
 
 ### Users
 
@@ -109,8 +109,8 @@ For common issues and their resolutions, refer to the [Troubleshooting Guide](tr
 
 ---
 
-## Next Steps
+## Next steps
 
-Once the connector is configured and published, monitor its status under the **Data Sources** tab in the [Admin Center](https://admin.microsoft.com). To make updates or remove the connector, refer to the [Manage Your Connector](manage-connector.md) guide.
+Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
-For additional support, contact [Microsoft Graph Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
