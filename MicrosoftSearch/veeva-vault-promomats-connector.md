@@ -1,6 +1,6 @@
 --- 
 
-title: "Veeva Vault - PromoMats Graph connector for Microsoft Search and Copilot" 
+title: "Veeva VaultPromoMats Microsoft Graph connector" 
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -13,40 +13,29 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Veeva Vault - PromoMats Graph connector for Microsoft Search and Copilot" 
+description: "Set up the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 12/02/2024
 ---
-# Veeva Vault - PromoMats Graph Connector (Preview)
+# Veeva Vault PromoMats Microsoft Graph connector (preview)
 
-The Veeva Vault - PromoMats Graph Connector allows organizations to index documents managed in Veeva Vault - PromoMats, making them accessible through Microsoft Search and Copilot. The connector respects Veeva Vault permission rules to ensure that only authorized users can interact with indexed documents in the Microsoft 365 ecosystem.
+The  Veeva Vault PromoMats Microsoft Graph connector allows organizations to index documents managed in Veeva Vault - PromoMats, making them accessible through Microsoft Search and Microsoft 365 Copilot. The connector respects Veeva Vault permission rules to ensure only authorized users can interact with indexed documents in the Microsoft 365 ecosystem.
 
-This guide is for Microsoft 365 administrators or anyone responsible for configuring, managing, and monitoring the Veeva Vault - PromoMats Graph Connector.
+This guide is for Microsoft 365 administrators or anyone responsible for configuring, managing, and monitoring the Veeva Vault PromoMats Microsoft Graph connector.
 
----
+## Capabilities
 
-## Key Capabilities
-
-### Access
-- Provides seamless access to Veeva Vault documents and metadata via Microsoft Search and Copilot.
-- Integrates Veeva Vault's ACLs with Microsoft Entra ID for secure permission mapping.
-
-### Data Syncing
-- Supports periodic full crawls, configurable based on organizational needs.
-- Captures document metadata, lifecycle stages, and ACLs during crawls.
-
----
+- Generates summaries to understand and make decisions based on promotional materials and key documents.
+- Improves the searchability of promotional documents by leveraging advanced Microsoft 365 search capabilities.
+- Gains insights and recommendations from indexed data to enhance workflow efficiency, including checking the usage of specific phrases in PromoMats documents.
+- Indexes PromoMats content to create a unified search experience across Microsoft 365 environments.
+- Maintains data privacy and compliance by supporting ACL permissions and document-level permissions, simplifying the permission model and reducing the risk of misconfiguration.
+- Uses query string conditions to precisely control the synchronization of articles, ensuring efficient indexing.
 
 ## Limitations
 
-### Indexing
-- Only the latest versions of documents are indexed.
-- Supported file types include:
-  - Microsoft Office documents
-  - PDFs
-  - Text-based files
-- Files up to 100 MB in size are indexed, with a maximum of 4 MB of text content extracted per file.
-
----
+- Indexes only the latest versions of documents.
+- Supports file types including Microsoft Office documents, PDFs, and text-based files.
+- Indexes files up to 100 MB in size, extracting a maximum of 4 MB of text content per file.
 
 ## Prerequisites
 
@@ -63,7 +52,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ---
 
-## Set Up Guide
+## Setup
 
 ### Step 1: Configure Display Name
 Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
