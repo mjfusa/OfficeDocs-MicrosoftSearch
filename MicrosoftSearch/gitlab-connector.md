@@ -26,7 +26,7 @@ This article is intended for Microsoft 365 administrators or anyone configuring,
 
 - Index GitLab repositories, merge requests, issues, wikis, and documentation.
 - Enable Microsoft Search and Microsoft 365 Copilot to retrieve GitLab data efficiently.
-- Maintain GitLab access control lists (ACLs) and user permissions.
+- Maintain GitLab ACLs and user permissions.
 - Allow administrators to customize crawl frequency and indexing preferences.
 
 ## Limitations
