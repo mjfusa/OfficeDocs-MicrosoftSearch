@@ -39,20 +39,15 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Prerequisites
 
-### Administrator Credentials
+- Administrator credentials
 - Ensure you have a Veeva Vault account with administrative privileges.
-- Enable API access in your Veeva Vault instance.
-
-### API Configuration
-- Activate REST API access in your Veeva Vault instance. For details, refer to the [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
-
-### Veeva Vault URL
+- Enable the API access in your Veeva Vault instance.
+- Activate REST API access in your Veeva Vault instance. For more information, see [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
 - Verify the URL for your Veeva Vault instance. The format typically looks like:  
   `https://<your-vault-domain>.veevavault.com`
 
----
 
-## Setup
+## Get started
 
 ### Step 1: Configure Display Name
 Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
