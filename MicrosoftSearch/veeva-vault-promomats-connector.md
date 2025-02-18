@@ -117,9 +117,7 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 ## Troubleshooting
 
-For common issues and their resolutions, refer to the [Troubleshooting Guide](troubleshoot-veeva-vault-promomats-connector.md).
-
----
+For more information, see [Troubleshooting Guide](troubleshoot-veeva-vault-promomats-connector.md).
 
 ## Next steps
 
