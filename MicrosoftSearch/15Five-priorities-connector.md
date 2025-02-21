@@ -18,12 +18,12 @@ ms.date: 02/19/2025
 
 # 15Five Priorities Microsoft Graph connector (preview)
 
-With the Microsoft Graph connector, your organization in Microsoft 365 can index 15Five priority data, using Microsoft 365 Copilot and Microsoft Search. 
+With the  15Five Priorities Microsoft Graph connector, your organization in Microsoft 365 can index 15Five priority data, using Microsoft 365 Copilot and Microsoft Search. 
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors Microsoft Graph 15Five Priorities connector. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors 15Five Priorities Microsoft Graph connector. 
 
 >[!NOTE]
->The Microsoft Graph 15Five Priorities connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
+>The 15Five Priorities Microsoft Graph connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 - Access 15Five priorities using the power of semantic search
@@ -40,7 +40,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph 15Five Priorities connector, you must:
+Before you create a 15Five Priorities Microsoft Graph connector, you must:
 
 ### 1. Setup a HR administrator in 15Five
 Created a 15Five account with HR administrator permission.
