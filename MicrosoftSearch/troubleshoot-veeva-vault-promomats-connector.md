@@ -23,7 +23,8 @@ description: "Troubleshooting the Veeva Vault PromoMats Microsoft Graph connecto
 
 To view more error types, select the connection and click **error details** > **error code**. For more information, see [Monitor your connections](./manage-connector.md).
 
-## Feedback
+## Share your feedback
+
 We value your feedback on the performance of the Veeva Vault - PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). If you're comfortable sharing this data with Microsoft, your feedback plays a key role in improving the service. 
 
 1. When the feedback form opens, please share your comments in the text field about what worked well or what didn’t. **Important**: Include the hashtag #VeevaGC in your feedback.
