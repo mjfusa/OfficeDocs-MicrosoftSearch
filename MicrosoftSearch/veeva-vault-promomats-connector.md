@@ -22,9 +22,15 @@ The  Veeva Vault PromoMats Microsoft Graph connector allows organizations to ind
 
 The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is particularly beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
-Key benefits include enhanced content management and retrieval, as the connector suggests tags to make it easier to organize and access relevant documents. It also supports AI-assisted content reuse and localization, which facilitates content adaptation for various markets, saving time while ensuring content remains relevant and well-suited for different audiences. The connector offers comprehensive document review and summarization, with AI tools assisting in grammar, spelling, semantics, and regulatory compliance, ensuring promotional materials are accurate and up-to-date.
+Key benefits include:
 
-Additionally, the connector boosts productivity by minimizing the time spent searching for information across multiple sources. By integrating Microsoft 365 Copilot and Microsoft Search with PromoMats data, it streamlines content preparation and field use. It also improves efficiency by referencing existing compliant documents and content, helping to generate new messaging and prepare materials effectively.
+- Enhanced content management and retrieval: The connector suggests tags to organize and access relevant documents more easily.
+- AI-assisted content reuse and localization: Facilitates content adaptation for various markets, saving time while ensuring relevance for different audiences.
+- Comprehensive document review and summarization: AI tools assist in grammar, spelling, semantics, and regulatory compliance, ensuring accuracy and up-to-date promotional materials.
+
+Additionally, the connector boosts productivity by minimizing time spent searching for information across multiple sources. By integrating Microsoft 365 Copilot and Microsoft Search with PromoMats data, it streamlines content preparation and field use. It also improves efficiency by referencing existing compliant documents and content to help generate new messaging and prepare materials effectively.
+
+
 
 This guide is for Microsoft 365 administrators or anyone responsible for configuring, managing, and monitoring the Veeva Vault PromoMats Microsoft Graph connector.
 
@@ -122,10 +128,20 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 ## Examples
 
+The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated with the Veeva PromoMats Microsoft Graph connector, can significantly enhance productivity and streamline processes by leveraging PromoMats data.
+
+### Example 1 Content generation
+Generate personalized content for customer interactions based on the latest research documents stored in PromoMats.
+
+### Example 2 Content tagging
+Suggest tags that can be used with the selected promotional contents to make it easier to manage and retrieve going forward.
+
+### Example 3 HTML email generation
+Create HTML emails generated automatically from pre-provided HTML templates and documents stored in PromoMats.
 
 ## Troubleshooting
 
-For more information, see [Troubleshooting Guide](troubleshoot-veeva-vault-promomats-connector.md).
+For more information, see [Troubleshooting guide](troubleshoot-veeva-vault-promomats-connector.md).
 
 ## Next steps
 
