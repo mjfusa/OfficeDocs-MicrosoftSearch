@@ -54,7 +54,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Get started
 
-To access the connector during the public preview phase, customer who are Microsoft 365 Admins need to enable 'Targeted release' for their tenant. For more information, see [Targeted release](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#targeted-release).
+To access the connector during the public preview phase, customer who are Microsoft 365 Admins need to enable 'Targeted release' for their tenant. For more information, see [Targeted release](https://learn.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#targeted-release).
 
 
 ### Step 1: Configure Display Name
@@ -132,4 +132,4 @@ For more information, see [Troubleshooting Guide](troubleshoot-veeva-vault-promo
 
 Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
-If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/graph/support).
