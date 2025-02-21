@@ -29,12 +29,12 @@ To view more error types, select the connection and click **error details** > **
 
 We value your feedback on the performance of the Veeva Vault - PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). If you're comfortable sharing this data with Microsoft, your feedback plays a key role in improving the service. 
 
-![Click the thumbs-up/thumbs-down icons at the bottom of each response.](media/veeva-vault-promats-connector/veeva-vault-promats-troubleshoot-1.png)
+![Click the thumbs-up/thumbs-down icons at the bottom of each response.]MicrosoftSearch/media/veeva-vault-promats-connector/veeva-vault-promats-troubleshoot-1.png)
 
 1. When the feedback form opens, please share your comments in the text field about what worked well or what didn’t. **Important**: Include the hashtag #VeevaGC in your feedback.
 2. If applicable, add a screenshot.
 3. Select `YES` to share your data with Microsoft and `Submit`.
 
-![Submit feedback to Microsoft window.](media/veeva-vault-promats-connector/veeva-vault-promats-troubleshoot-2.png) 
+![Submit feedback to Microsoft window.](MicrosoftSearch/media/veeva-vault-promats-connector/veeva-vault-promats-troubleshoot-2.png)
 
 If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
