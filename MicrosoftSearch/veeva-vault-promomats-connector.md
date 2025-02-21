@@ -148,6 +148,18 @@ Assist identifying appropriate tags, translation, and localization to improve th
 ### Example 6 Consistency
 Assist in creating new promotional materials, ensuring consistency with existing content.
 
+### Example 7 Pre-MLR AI-assisted reviews
+Review grammar, spelling, and semantics and cross-validate the following promotional documents.
+
+### Example 8 Document summarization
+Summarize key points from regulatory documents to ensure all team members are informed of the latest compliance requirements.
+
+### Example 9 Meeting preparation
+Prepare a script for an upcoming meeting based on recent customer email threads and PromoMats documents.
+
+### Example 10 Support claim process
+Find claims that can be reused made about the efficacy of drugs to ensure they are medically and legally validated and approved.
+
 ## Troubleshooting
 
 For more information, see [Troubleshooting guide](troubleshoot-veeva-vault-promomats-connector.md).
