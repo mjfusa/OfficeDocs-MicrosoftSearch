@@ -12,15 +12,7 @@ ms.localizationpriority: medium
 description: "Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
-# Feedback
-We value your feedback on the performance of the Veeva Vault - PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). If you're comfortable sharing this data with Microsoft, your feedback plays a key role in improving the service. 
-
-1. When the feedback form opens, please share your comments in the text field about what worked well or what didn’t. **Important**: Include the hashtag #VeevaGC in your feedback.
-2. If applicable, add a screenshot.
-3. Select `YES` to share your data with Microsoft and `Submit`.
-
-
-## Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector  
+# Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector  
 
 | Error                   | Description                               | Resolution                                                                 |
 |-------------------------|-------------------------------------------|---------------------------------------------------------------------------|
@@ -30,3 +22,10 @@ We value your feedback on the performance of the Veeva Vault - PromoMats Microso
 | **Missing Properties or Documents** | Required metadata properties are not enabled. | Ensure metadata properties are enabled in Veeva Vault and test retrieval.|
 
 To view more error types, select the connection and click **error details** > **error code**. For more information, see [Monitor your connections](./manage-connector.md).
+
+## Feedback
+We value your feedback on the performance of the Veeva Vault - PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). If you're comfortable sharing this data with Microsoft, your feedback plays a key role in improving the service. 
+
+1. When the feedback form opens, please share your comments in the text field about what worked well or what didn’t. **Important**: Include the hashtag #VeevaGC in your feedback.
+2. If applicable, add a screenshot.
+3. Select `YES` to share your data with Microsoft and `Submit`.
