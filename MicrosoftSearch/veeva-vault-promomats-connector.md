@@ -54,8 +54,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Get started
 
-To access the connector during the public preview phase, customer who are Microsoft 365 Admins need to enable 'Targeted release' for their tenant. For more information, see [Targeted release](https://learn.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#targeted-release).
-
+To access the connector during the public preview phase, customer who are Microsoft 365 Admins need to enable 'Targeted release' for their tenant. For more information, see [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#targeted-release).
 
 ### Step 1: Configure Display Name
 Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
