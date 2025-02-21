@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
 # Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector  
