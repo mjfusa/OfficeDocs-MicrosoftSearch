@@ -18,9 +18,9 @@ ms.date: 02/19/2025
 
 # 15Five Priorities Microsoft Graph connector (preview)
 
-With the  15Five Priorities Microsoft Graph connector, your organization in Microsoft 365 can index 15Five priority data, using Microsoft 365 Copilot and Microsoft Search. 
+The 15Five Priorities Microsoft Graph connector allows your organization to index 15Five priority data, using Microsoft 365 Copilot and Microsoft Search. 
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors 15Five Priorities Microsoft Graph connector. 
+This documentation is for Microsoft 365 administrators or anyone who configures, runs, and monitors 15Five Priorities Microsoft Graph connector. 
 
 >[!NOTE]
 >The 15Five Priorities Microsoft Graph connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
@@ -30,27 +30,16 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Customize your crawl frequency
 - Create workflows using this connection and plugins from Microsoft Copilot Studio
 
-
-
 ## Limitations
 
 - Only the employee and their direct manager have access to the priority data using Microsoft 365 Copilot and Microsoft Search.
 
-
-
 ## Prerequisites
 
-Before you create a 15Five Priorities Microsoft Graph connector, you must:
+- Setup a 15Five account with HR administrator permissions.
+- Navigate to the integrations admin setting page with your HR administrator account and create a company API key and get the access token.
 
-### 1. Setup a HR administrator in 15Five
-Created a 15Five account with HR administrator permission.
-
-### 2. **Create a company API key and get the access token**
-Navigate to the Integrations admin setting page with the HR administrator account. Create a company API key and get the access token.
-
-
-
-## Setup
+## Get started
 
 ### 1. Display name   
 Choose a display name that helps users easily recognize associated file or item in a Copilot response.
@@ -63,8 +52,6 @@ Select the available authentication type and enter the access token you obtained
 
 ### 4. Rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other search surfaces before expanding the rollout to a broader audience.
-
-
 
 ## Custom setup 
 
@@ -91,25 +78,20 @@ Here, you can add or remove available properties from your 15Five data source. A
 |CreateTime | `createdDateTime` | The time at which the file was created. |
 |UpdateTime	| `lastModifiedDateTime` | The last time the file was modified. |
 
-
 ### Sync 
 
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
 
-
-
 ## Troubleshooting
 
-### **Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.**
+### **Your security credentials have expired for this session. Please go back and sign in again with your App key and app secret.**
 Credential info has expired. Please create a new key in 15Five integrations setting and copy the latest access token from the setting tab to authenticate.
 
-### **Invalid Credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
+### **Invalid credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
 Common credential error. Please go back to the 15Five integrations setting and check if the access token is correct.
-
-
 
 ## What's next
 
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have any other issues or want to provide feedback, reach out to us at [Microsoft Graph|Support](https://developer.microsoft.com/en-us/graph/support).
