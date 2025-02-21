@@ -1,6 +1,6 @@
 --- 
 ms.date: 08/28/2024 
-title: "Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector" 
+title: "Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector" 
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 description: "Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 --- 
 
-# Troubleshooting the Veeva Vault - PromoMats Microsoft Graph connector  
+# Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector  
 
 | Error                   | Description                               | Resolution                                                                 |
 |-------------------------|-------------------------------------------|---------------------------------------------------------------------------|
