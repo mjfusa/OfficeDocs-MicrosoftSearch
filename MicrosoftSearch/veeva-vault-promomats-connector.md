@@ -139,6 +139,15 @@ Suggest tags that can be used with the selected promotional contents to make it 
 ### Example 3 HTML email generation
 Create HTML emails generated automatically from pre-provided HTML templates and documents stored in PromoMats.
 
+### Example 4 Pre-call planning
+Summarize relevant information and prepare materials for sales representatives before customer meetings.
+
+### Example 5 AI-sssisted content re-use
+Assist identifying appropriate tags, translation, and localization to improve the reuse of content. 
+
+### Example 6 Consistency
+Assist in creating new promotional materials, ensuring consistency with existing content.
+
 ## Troubleshooting
 
 For more information, see [Troubleshooting guide](troubleshoot-veeva-vault-promomats-connector.md).
@@ -147,4 +156,4 @@ For more information, see [Troubleshooting guide](troubleshoot-veeva-vault-promo
 
 Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
-If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/graph/support). 
