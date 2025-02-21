@@ -20,13 +20,13 @@ ms.date: 12/02/2024
 
 The  Veeva Vault PromoMats Microsoft Graph connector allows organizations to index index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
-The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is particularly beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
+The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
 Key benefits include:
 
 - Enhanced content management and retrieval: The connector suggests tags to organize and access relevant documents more easily.
 - AI-assisted content reuse and localization: Facilitates content adaptation for various markets, saving time while ensuring relevance for different audiences.
-- Comprehensive document review and summarization: AI tools assist in grammar, spelling, semantics, and regulatory compliance, ensuring accuracy and up-to-date promotional materials.
+- Comprehensive document review and summarization: AI tools help grammar, spelling, semantics, and regulatory compliance, ensuring accuracy and up-to-date promotional materials.
 
 Additionally, the connector boosts productivity by minimizing time spent searching for information across multiple sources. By integrating Microsoft 365 Copilot and Microsoft Search with PromoMats data, it streamlines content preparation and field use. It also improves efficiency by referencing existing compliant documents and content to help generate new messaging and prepare materials effectively.
 
@@ -37,7 +37,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 ## Capabilities
 
 - Generates summaries to understand and make decisions based on promotional materials and key documents.
-- Improves the searchability of promotional documents by leveraging advanced Microsoft 365 search capabilities.
+- Improves the searchability of promotional documents by using advanced Microsoft 365 search capabilities.
 - Gains insights and recommendations from indexed data to enhance workflow efficiency, including checking the usage of specific phrases in PromoMats documents.
 - Indexes PromoMats content to create a unified search experience across Microsoft 365 environments.
 - Maintains data privacy and compliance by supporting ACL permissions and document-level permissions, simplifying the permission model and reducing the risk of misconfiguration.
@@ -81,14 +81,14 @@ The connector supports the following authentication methods:
 - The password for the account. Ensure this credential is kept secure, as it's be used for authentication. 
 
 #### Azure AD authentication 
-This method leverages Azure Active Directory (AAD) for secure and centralized identity management. 
+This method applies Azure Active Directory (AAD) for secure and centralized identity management. 
 These are the required fields.
 
 - Vault session ID URL: The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
 
 - Client ID: The application ID for your Azure AD app registered for Veeva Vault. 
 
-- Client secret: The client secret associated with the Azure AD app. Ensure this is securely stored and accessible only to authorized personnel. 
+- Client secret: The client secret associated with the Azure AD app. Ensure it is securely stored and accessible only to authorized personnel. 
  
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
@@ -117,7 +117,7 @@ To modify these default values, click **Custom setup** during the configuration.
 ### Users
 
 **Access permissions**
-The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, though this is not recommended.
+The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, though it isn't recommended.
 
 ### Sync
 
@@ -128,7 +128,7 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 ## Examples
 
-The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated with the Veeva PromoMats Microsoft Graph connector, can significantly enhance productivity and streamline processes by leveraging PromoMats data.
+The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated with the Veeva PromoMats Microsoft Graph connector, can significantly enhance productivity and streamline processes by using PromoMats data.
 
 ### Example 1 Content generation
 Generate personalized content for customer interactions based on the latest research documents stored in PromoMats.
@@ -143,10 +143,10 @@ Create HTML emails generated automatically from pre-provided HTML templates and 
 Summarize relevant information and prepare materials for sales representatives before customer meetings.
 
 ### Example 5 AI-sssisted content re-use
-Assist identifying appropriate tags, translation, and localization to improve the reuse of content. 
+Identify appropriate tags, translation, and localization to improve the reuse of content. 
 
 ### Example 6 Consistency
-Assist in creating new promotional materials, ensuring consistency with existing content.
+Create new promotional materials, ensuring consistency with existing content.
 
 ### Example 7 Pre-MLR AI-assisted reviews
 Review grammar, spelling, and semantics and cross-validate the following promotional documents.
