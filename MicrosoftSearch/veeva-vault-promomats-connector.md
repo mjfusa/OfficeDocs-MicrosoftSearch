@@ -53,7 +53,7 @@ The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated w
 |Content tagging|Suggest tags that can be used with the selected promotional contents to make it easier to manage and retrieve going forward.|
 | HTML email generation|Create HTML emails generated automatically from pre-provided HTML templates and documents stored in PromoMats.|
 |Pre-call planning|Summarize relevant information and prepare materials for sales representatives before customer meetings.|
-|AI-sssisted content re-use|Identify appropriate tags, translation, and localization to improve the reuse of content.|
+|AI-assisted content re-use|Identify appropriate tags, translation, and localization to improve the reuse of content. |
 |Content consistency|Create new promotional materials, ensuring consistency with existing content.|
 |Pre-MLR AI-assisted reviews|Review grammar, spelling, and semantics and cross-validate the following promotional documents.|
 |Document summarization|Summarize key points from regulatory documents to ensure all team members are informed of the latest compliance requirements.|
