@@ -52,27 +52,13 @@ The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated w
 |Content generation|Generate personalized content for customer interactions based on the latest research documents stored in PromoMats.|
 |Content tagging|Suggest tags that can be used with the selected promotional contents to make it easier to manage and retrieve going forward.|
 | HTML email generation|Create HTML emails generated automatically from pre-provided HTML templates and documents stored in PromoMats.|
-
-### Example 4: Pre-call planning
-Summarize relevant information and prepare materials for sales representatives before customer meetings.
-
-### Example 5: AI-sssisted content re-use
-Identify appropriate tags, translation, and localization to improve the reuse of content. 
-
-### Example 6: Content consistency
-Create new promotional materials, ensuring consistency with existing content.
-
-### Example 7: Pre-MLR AI-assisted reviews
-Review grammar, spelling, and semantics and cross-validate the following promotional documents.
-
-### Example 8: Document summarization
-Summarize key points from regulatory documents to ensure all team members are informed of the latest compliance requirements.
-
-### Example 9: Meeting preparation
-Prepare a script for an upcoming meeting based on recent customer email threads and PromoMats documents.
-
-### Example 10: Support claim process
-Find claims that can be reused made about the efficacy of drugs to ensure they are medically and legally validated and approved.
+|Pre-call planning|Summarize relevant information and prepare materials for sales representatives before customer meetings.|
+|AI-sssisted content re-use|Identify appropriate tags, translation, and localization to improve the reuse of content.|
+|Content consistency|Create new promotional materials, ensuring consistency with existing content.|
+|Pre-MLR AI-assisted reviews|Review grammar, spelling, and semantics and cross-validate the following promotional documents.|
+|Document summarization|Summarize key points from regulatory documents to ensure all team members are informed of the latest compliance requirements.|
+|Meeting preparation|Prepare a script for an upcoming meeting based on recent customer email threads and PromoMats documents.|
+|Support claim process|Find claims that can be reused made about the efficacy of drugs to ensure they are medically and legally validated and approved.|
 
 ## Limitations
 
