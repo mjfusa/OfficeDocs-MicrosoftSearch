@@ -1,7 +1,7 @@
 ---
 title: "Search Usage Reports- Analytics"
-ms.author: nkagole
-author: nataliekagole
+ms.author: misvenso
+author: wobba
 manager: scotv
 ms.topic: article
 ms.service: mssearch

@@ -2,6 +2,7 @@
 title: "Topics – Item Delete Notification"
 ms.author: rmalhotra
 author: rmalhotra
+ms.date: 24/02/2025
 manager: james.lau
 audience: Admin
 ms.audience: Admin
