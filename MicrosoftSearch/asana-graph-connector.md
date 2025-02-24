@@ -2,7 +2,7 @@
 title: "Asana Microsoft Graph connector" 
 ms.author:  kailiang
 author: Kai-Cloud
-manager:  
+manager: zezhangzhao
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
