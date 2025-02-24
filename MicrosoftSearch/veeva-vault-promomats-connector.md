@@ -22,7 +22,7 @@ The  Veeva Vault PromoMats Microsoft Graph connector allows organizations to ind
 
 The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
-Key benefits include:
+The following are the key benefits of the Veeva Vault PromoMats Microsoft Graph connector:
 
 - Enhanced content management and retrieval: The connector suggests tags to organize and access relevant documents more easily.
 - AI-assisted content reuse and localization: Facilitates content adaptation for various markets, saving time while ensuring relevance for different audiences.
@@ -60,7 +60,6 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Get started
 
-To access the connector during the public preview phase, customer who are Microsoft 365 Admins need to enable 'Targeted release' for their tenant. For more information, see [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
 ### Step 1: Configure Display Name
 Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
