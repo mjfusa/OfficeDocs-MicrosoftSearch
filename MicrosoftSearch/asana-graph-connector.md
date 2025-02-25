@@ -29,6 +29,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Limitations
 - The connector doesn't index comments.
+- The connector doesn't index customized fields.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
