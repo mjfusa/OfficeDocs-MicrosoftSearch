@@ -14,23 +14,21 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.date: 12/02/2024
+ms.date: 02/26/2025
 ---
-# Veeva Vault PromoMats Microsoft Graph connector (preview)
+# Veeva Vault PromoMats Microsoft Graph connector
 
-The  Veeva Vault PromoMats Microsoft Graph connector allows organizations to index index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
+The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
 The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
 The following are the key benefits of the Veeva Vault PromoMats Microsoft Graph connector:
 
-- Enhanced content management and retrieval: The connector suggests tags to organize and access relevant documents more easily.
-- AI-assisted content reuse and localization: Facilitates content adaptation for various markets, saving time while ensuring relevance for different audiences.
-- Comprehensive document review and summarization: AI tools help grammar, spelling, semantics, and regulatory compliance, ensuring accuracy and up-to-date promotional materials.
+- **Enhanced content management and retrieval:** The connector suggests tags to organize and access relevant documents more easily.
+- **AI-assisted content reuse and localization:** Facilitates content adaptation for various markets, saving time while ensuring relevance for different audiences.
+- **Comprehensive document review and summarization:** AI tools help grammar, spelling, semantics, and regulatory compliance, ensuring accuracy and up-to-date promotional materials.
 
 Additionally, the connector boosts productivity by minimizing time spent searching for information across multiple sources. By integrating Microsoft 365 Copilot and Microsoft Search with PromoMats data, it streamlines content preparation and field use. It also improves efficiency by referencing existing compliant documents and content to help generate new messaging and prepare materials effectively.
-
-
 
 This guide is for Microsoft 365 administrators or anyone responsible for configuring, managing, and monitoring the Veeva Vault PromoMats Microsoft Graph connector.
 
@@ -45,7 +43,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ### Examples
 
-The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated with the Veeva PromoMats Microsoft Graph connector, can significantly enhance productivity and streamline processes by using PromoMats data.
+The following table lists example prompts that show how Microsoft 365 Copilot, integrated with the Veeva PromoMats Microsoft Graph connector, can significantly enhance productivity and streamline processes by using PromoMats data.
 
 |Scenario|Example prompt|
 |:---|:---|
@@ -63,27 +61,24 @@ The following Copilot prompts illustrate how Microsoft 365 Copilot, integrated w
 ## Limitations
 
 - Indexes only the latest versions of documents.
-- Supports file types including Microsoft Office documents, PDFs, and text-based files.
-- Indexes files up to 100 MB in size, extracting a maximum of 4 MB of text content per file.
+- Supports file types including Microsoft Office documents, PDFs, and text-based files only; does not support PNG, JPG, or video files.
+- Partially indexes files larger than 4 MB.
 
 ## Prerequisites
 
-- Ensure you have a Veeva Vault account with administrative privileges.
+- Make sure that you have a Veeva Vault account with administrative privileges.
 - Enable the API access in your Veeva Vault instance.
 - Activate REST API access in your Veeva Vault instance. For more information, see [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
-- Verify the URL for your Veeva Vault instance. The format typically looks like:  
-  `https://<your-vault-domain>.veevavault.com`
+- Verify the URL for your Veeva Vault instance. The following is the typical URL format: `https://<your-vault-domain>.veevavault.com`
 
 
 ## Get started
 
-
-### Step 1: Configure Display Name
-Provide a meaningful display name in the Microsoft 365 Admin Center to identify the connector.
+### Step 1: Configure display name
+Provide a meaningful display name for your connector in the Microsoft 365 Admin Center. This name helps identify the connection in your workspace.
 
 ### Step 2: Add the Veeva Vault URL
-Enter the verified URL of your Veeva Vault instance, for example
-`https://<your-vault-domain>.veevavault.com`
+Enter the verified URL of your Veeva Vault instance. For example: `https://<your-vault-domain>.veevavault.com`.
 
 ### Step 3: Authentication details
 
@@ -94,17 +89,16 @@ The connector supports the following authentication methods:
 
 - The username associated with your Veeva Vault account. 
 
-- The password for the account. Ensure this credential is kept secure, as it's be used for authentication. 
+- The password for the account. Keep this credential secure. 
 
-#### Azure AD authentication 
-This method applies Azure Active Directory (AAD) for secure and centralized identity management. 
-These are the required fields.
+#### Entra ID authentication 
+This method applies Entra ID for secure and centralized identity management. The following are the required fields.
 
-- Vault session ID URL: The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
+- **Vault session ID URL:** The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
 
-- Client ID: The application ID for your Azure AD app registered for Veeva Vault. 
+- **Client ID:** The application ID for your Azure AD app registered for Veeva Vault. 
 
-- Client secret: The client secret associated with the Azure AD app. Ensure it is securely stored and accessible only to authorized personnel. 
+- **Client secret:** The client secret associated with the Entra ID  app. Make sure that it is securely stored and accessible only to authorized personnel. 
  
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
@@ -114,7 +108,6 @@ Deploy this connection to a limited group of users to validate indexing and acce
 
 ### Step 5: Customize sync schedules
 Set up periodic incremental crawls (default: 15 minutes) and full crawls (default: daily). 
-
 
 ## Default settings
 
@@ -133,7 +126,7 @@ To modify these default values, click **Custom setup** during the configuration.
 ### Users
 
 **Access permissions**
-The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, though it isn't recommended.
+The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, although this isn't recommended.
 
 ### Sync
 
@@ -145,10 +138,10 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 ## Troubleshooting
 
-For more information, see [Troubleshooting guide](troubleshoot-veeva-vault-promomats-connector.md).
+For information about troubleshooting, see [Troubleshooting guide](troubleshoot-veeva-vault-promomats-connector.md).
 
 ## Next steps
 
-Once the connector is configured and published, monitor its status  **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
+After the connector is configured and published, monitor its status on the **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
-If you have issues or want to provide feedback, contact [Microsoft Graph|Support](https://developer.microsoft.com/graph/support). 
+For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
