@@ -32,6 +32,8 @@ We value your feedback on the performance of the Veeva Vault PromoMats Microsoft
 1. When the feedback form opens, add your comments about what worked well or what didn't in the text field. 
     > **Important:** Include the hashtag **#VeevaGC** in your feedback.
 3. If applicable, add a screenshot.
-4. Select **YES** to share your data with Microsoft and **Submit**.
+4. Select **YES** to share your data with Microsoft, and choose **Submit**.
+
+## Help and support
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
