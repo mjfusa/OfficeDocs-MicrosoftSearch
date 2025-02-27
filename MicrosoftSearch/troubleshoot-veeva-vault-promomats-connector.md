@@ -30,7 +30,8 @@ To view more error types, select the connection and choose **error details** > *
 We value your feedback on the performance of the Veeva Vault PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). Your feedback plays a key role in improving the service.
 
 1. When the feedback form opens, add your comments about what worked well or what didn't in the text field. 
-    > **Important:** Include the hashtag **#VeevaGC** in your feedback.
+    > [!Important]
+    > Include the hashtag **#VeevaGC** in your feedback.
 3. If applicable, add a screenshot.
 4. Select **YES** to share your data with Microsoft, and choose **Submit**.
 
