@@ -179,6 +179,10 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Miro
+          items:
+          - name: Setup
+            href: miro-connector.md    
         - name: Oracle SQL
           items:
           - name: Setup
