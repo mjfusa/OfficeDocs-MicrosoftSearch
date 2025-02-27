@@ -14,12 +14,12 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Zendesk Ticket Graph connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.date: 09/19/2024
+ms.date: 02/27/2025
 ---
 
 # Zendesk Ticket Microsoft Graph connector (Preview)
 
-The Zendesk Ticket Graph connector allows your organization to index tickets from Zendesk Ticket. After you configure the connector, end users can search for these tickets from Zendesk in Microsoft Copilot and from any Microsoft Search client.
+The Zendesk Ticket Graph connector allows your organization to index tickets from Zendesk. After you configure the connector, end users can search for these tickets from Zendesk in Microsoft Copilot and from any Microsoft Search client.
 
 This ticket is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Zendesk Ticket Graph connector.
 
@@ -35,13 +35,13 @@ This ticket is for Microsoft 365 administrators or anyone who configures, runs, 
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Zendesk Instance URL**: To connect to your Zendesk Ticket data, you need your organization's Zendesk Ticket instance URL. Your organization's Zendesk Ticket instance URL typically looks like `https://<your-organization-domain>.zendesk.com`. If you don't have an instance already, refer the [ticket](https://support.zendesk.com/hc/tickets/4408823799962-How-do-I-create-a-Support-trial-account) to learn about creating a test instance.
+- **Zendesk Instance URL**: To connect to your Zendesk Ticket data, you need your organization's Zendesk instance URL. Your organization's Zendesk instance URL typically looks like `https://<your-organization-domain>.zendesk.com`. If you don't have an instance already, refer the [article](https://support.zendesk.com/hc/en-us/articles/4408823799962-How-do-I-create-a-Support-trial-account) to learn about creating a test instance.
 - **Service Account**: To connect to Zendesk Ticket and allow Microsoft Graph Connector to update knowledge tickets regularly, you need a service account with read permissions granted to the service account. The service account must have either 'Admin', 'Agent' or 'Light agent' role. The 'Contributor' role does not allow to read permissions in Zendesk. 
 
 ## Get Started
 
 ### 1. Display name 
-A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters.md#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Zendesk URL
 To connect to your Zendesk data, you need your organization's Zendesk instance URL. Your organization's Zendesk instance URL typically looks like `https://<your-organization-domain>.zendesk.com`.
@@ -52,7 +52,7 @@ To connect to your Zendesk data, you need your organization's Zendesk instance U
 
 To use the Zendesk OAuth for authentication, follow these steps.
 
-A Zendesk admin needs to create an OAuth client in the [Zendesk Admin Center](https://support.zendesk.com/hc/tickets/4581766374554-Using-Zendesk-Admin-Center). To learn more, see [Managing access to the Zendesk API](https://support.zendesk.com/hc/tickets/4408889192858-Managing-access-to-the-Zendesk-API#topic_mmh_gm1_2yb) in the Zendesk documentation.
+A Zendesk admin needs to create an OAuth client in the [Zendesk Admin Center](https://support.zendesk.com/hc/en-us/articles/4581766374554-Using-Zendesk-Admin-Center#topic_hfg_dyz_1hb). To learn more, see [Managing access to the Zendesk API](https://support.zendesk.com/hc/articles/4408889192858-Managing-access-to-the-Zendesk-API#topic_mmh_gm1_2yb) in the Zendesk documentation.
 
 The following table provides guidance on how to fill out the OAuth client creation form:
 
@@ -82,7 +82,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Content | Description |
 |---|---|
-| Manage Properties | _To check default properties and their schema, see [content](#content)_ |
+| Manage Properties | _To check default properties and their schema. |
 
 | Sync | Description |
 |---|---|
@@ -117,6 +117,35 @@ To identify which option is suitable for your organization:
 Here, you can add or remove available properties from your Zendesk Ticket, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
 
 |Source property|Label|Description|Schema|
+|---|---|---|---|
+|	AssigneeEmail	|		|		|	Query, Retrieve, Search	|
+|	Brand	|		|		|	Query, Retrieve, Search	|
+|	Collaborators	|		|		|	Query, Retrieve, Search	|
+|	CreateDate	|	Created date time	|Date and time that the item was created in the data source	|	Query, Refine, Retrieve	|
+|	Description	|		|		|	Search	|
+|	DueDate	|		|		|	Query, Refine, Retrieve	|
+|	EmailCcs	|		|		|	Query, Retrieve, Search	|
+|	ExternalId	|		|		|	Query, Retrieve	|
+|	Followers	|		|		|	Query, Retrieve, Search	|
+|	Group	|		|		|	Query, Retrieve, Search	|
+|	Id	|		|		|	Query, Retrieve	|
+|	Organization	|		|		|	Query, Retrieve, Search	|
+|	Priority	|		|		|	Query, Retrieve, Search	|
+|	ProblemId	|		|		|	Query, Retrieve	|
+|	Recipient	|		|		|	Query, Retrieve, Search	|
+|	Requester	|		|		|	Retrieve, Search	|
+|	Status	|		|		|	Query, Retrieve, Search	|
+|	Subject	|	Title	|	 The title of the item that you want shown in Copilot and other search experiences	|	Query, Retrieve, Search	|
+|	Submitter	|		|		|	Query, Retrieve, Search	|
+|	Tags	|		|		|	Query, Retrieve, Search	|
+|	Type	|		|		|	Query, Retrieve, Search	|
+|	UpdateDate	|	Last modified date time	|	Last modified date time | Date and time the item was last modified in the data source.	|	Query, Refine, Retrieve	|
+|	Url	|	url	|	The target URL of the item in the data source	|	Query, Retrieve, Search	|
+|	ViaChannel	|		|		|	Query, Retrieve, Search	|
+|	ViaSourceFromAddress	|		|		|	Query, Retrieve, Search	|
+|	ViaSourceFromName	|		|		|	Query, Retrieve, Search	|
+|	ViaSourceToAddress	|		|		|	Query, Retrieve, Search	|
+|	ViaSourceToName	|		|		|	Query, Retrieve, Search	|
 
 
 **Preview data**
