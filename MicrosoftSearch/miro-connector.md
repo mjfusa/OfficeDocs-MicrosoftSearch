@@ -28,7 +28,6 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Capabilities
 - Access files in Copilot using the power of Semantic search
-- Retain ACLs defined by your organization
 - Customize your crawl frequency
 - Create workflows using this connection and plugins from Microsoft Copilot Studio
 
@@ -56,9 +55,9 @@ Click “Install app and get OAuth token”and record the `Client ID` and `Clien
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Team ID
-A Miro Team ID is an identifier for a specific team within the Miro platform. To find your Team ID, log into Miro in a browser, go to the settings of the team from your dashboard, and you will be able to copy the ID
+A Miro Team ID is an identifier for a specific team within the Miro platform. To find your Team ID, log into Miro in a browser, go to the settings of the team from your dashboard, and you are able to copy the ID.
 >[!NOTE]
-> You can only associate one team ID in the connection. If you have multiple team id in your Miro workspace, please create seperated connection.
+> You can only associate one team ID in the connection. If you have multiple team id in your Miro workspace create seperated connection.
 
 ### 3. Authentication Type
 
@@ -137,19 +136,19 @@ The refresh interval determines how often your data is synced between the data s
 You can change the default values of the refresh interval from here if you want to.
 
 ## Troubleshooting
-### 1. Required permission scopes are missing. Please ensure the necessary scopes are selected in the Miro App.
-Lack of the required permission scopes, please make sure you have selected `boards:read
+### 1. Required permission scopes are missing. Ensure the necessary scopes are selected in the Miro App.
+Lack of the required permission scopes, make sure you have selected `boards:read
 Read boards you have access to` in the permssion field of your Apps configuration tab.
 
-### 2. OAuth 2.0 flow failed. Please verify the credential information and ensure the Miro App is configured with the correct settings.
-Common authentication error. Please go back to the Miro app  and check if the OAuth2 in the setting tab is correctly configured.
+### 2. OAuth 2.0 flow failed. Verify the credential information and ensure the Miro App is configured with the correct settings.
+Common authentication error. Go back to the Miro app  and check if the OAuth2 in the setting tab is correctly configured.
 
-### 3. OAuth 2.0 flow failed. Please confirm that the Miro user associated with this team access token holds the team admin role and is an active user.
-Common authentication error. Please go back to the Miro app console and check if the creator has an admin role and the account status is active.
+### 3. OAuth 2.0 flow failed. Confirm that the Miro user associated with this team access token holds the team admin role and is an active user.
+Common authentication error. Go back to the Miro app console and check if the creator has an admin role and the account status is active.
 
-### 4. Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.
-Credential info has expired. Please refresh the Miro app  and copy the latest Client ID and Client secret from the setting tab to authenticate.
+### 4. Your security credentials have expired for this session. Go back and sign in again with your App key and App secret.
+Credential info has expired. Refresh the Miro app  and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
-### 5. Invalid Credentials detected. Please check the credential info and check the permission scopes of the Miro App.
-Common credential error. Please go back to the Miro App and check if the scopes in the permission tab are correctly configured.
+### 5. Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.
+Common credential error.  Go back to the Miro App and check if the scopes in the permission tab are correctly configured.
 
