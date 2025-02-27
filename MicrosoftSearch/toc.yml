@@ -241,6 +241,10 @@ items:
           items:
           - name: Setup
             href: zendesk-help-center-connector.md
+        - name: Zendesk Ticket
+          items:
+          - name: Setup
+            href: zendesk-ticket-connector.md      
     - name: Manage connections
       items:
       - name: Monitor connections
