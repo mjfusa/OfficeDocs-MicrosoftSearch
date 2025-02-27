@@ -227,6 +227,10 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Trello
+          items:
+          - name: Setup
+            href: trello-connector.md
         - name: Veeva Vault - PromoMats
           items:
           - name: Setup
