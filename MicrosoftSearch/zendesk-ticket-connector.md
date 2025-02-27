@@ -6,7 +6,7 @@ author: ms-anggao
 manager: jecui
 audience: Admin
 ms.audience: Admin 
-ms.topic: ticket 
+ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: Medium 
 search.appverid: 
@@ -41,7 +41,7 @@ This ticket is for Microsoft 365 administrators or anyone who configures, runs, 
 ## Get Started
 
 ### 1. Display name 
-A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters.md#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Zendesk URL
 To connect to your Zendesk data, you need your organization's Zendesk instance URL. Your organization's Zendesk instance URL typically looks like `https://<your-organization-domain>.zendesk.com`.
