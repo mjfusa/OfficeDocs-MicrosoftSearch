@@ -79,6 +79,10 @@ items:
       - name: Microsoft Graph built connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: 15Five Priorities
+          items:
+          - name: Setup
+            href: 15five-priorities-connector
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
