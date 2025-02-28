@@ -70,7 +70,7 @@ All 15Five high five data indexed via the 15Five High Fives Microsoft Graph conn
 
 **Manage properties**
 
-You can add or remove available properties from your 15Five data source. Assign a schema, change the semantic label, and add an alias to the property. The following properties are indexed by default:
+You can add or remove available properties from your 15Five data source. Assign a schema, change the semantic label, and add an alias to the property. The following properties are indexed by default.
 
 |Source property|Label|Description|
 |--- | ---- | --- |
@@ -102,4 +102,4 @@ This is a common credential error. Go to the 15Five integrations setting and ver
 
 After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback,see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
