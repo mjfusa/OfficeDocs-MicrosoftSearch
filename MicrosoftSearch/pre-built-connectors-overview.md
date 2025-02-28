@@ -26,7 +26,6 @@ Prebuilt Microsoft Graph connectors provide the following benefits:
 
 - Configuration - Some connectors, such as the Enterprise Websites Microsoft Graph connector, can be configured to crawl dynamic content. Depending on the authentication requirements of the external service, you might need to include specific headers or user agents during the configuration process.
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Visit the Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery)
+- [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery)
