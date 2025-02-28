@@ -76,7 +76,7 @@ items:
         href: map-non-aad.md
       - name: Map Microsoft Entra identities
         href: map-aad.md
-      - name: Microsoft Graph built connectors
+      - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
         - name: Adobe Experience Manager Sites
