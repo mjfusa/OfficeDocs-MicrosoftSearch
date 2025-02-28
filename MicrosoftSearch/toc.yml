@@ -79,6 +79,10 @@ items:
       - name: Microsoft Graph built connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: 15Five High Fives
+          items:
+          - name: Setup
+            href: 15Five-high-fives-connector
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
