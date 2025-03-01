@@ -1,5 +1,5 @@
 ---
-title: "GitLab Microsoft Graph Connector for Microsoft Search and Copilot"
+title: "GitLab Microsoft Graph connectors"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,19 +12,19 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the v Graph Connector for Microsoft Search and Copilot"
+description: "Set up the GitLab Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
 ms.date: 02/14/2025
 ---
 
-# GitLab Microsoft Graph Connectors
+# GitLab Microsoft Graph connectors
 
-The GitLab Microsoft Graph Connectors (GitLab Issue, GitLab Merge Request, and GitLab Knowledge) allows your organization to index merge requests, issues, wikis, and documentation stored in GitLab. After configuring the connector and indexing GitLab content, end users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The GitLab Microsoft Graph connectors (GitLab Issue, GitLab Merge Request, and GitLab Knowledge) allow your organization to index merge requests, issues, wikis, and documentation stored in GitLab. After you configure the connector and index GitLab content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
-This article is intended for Microsoft 365 administrators or anyone configuring, running, and monitoring GitLab Microsoft Graph Connectors.
+This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitLab Microsoft Graph connectors.
 
 ## Capabilities
 
-- Index GitLab repositories, merge requests, issues, wikis, and documentation.
+- Index GitLab repositories, merge requests, and access issues, wikis, and documentation.
 - Enable Microsoft Search and Microsoft 365 Copilot to retrieve GitLab data efficiently.
 - Maintain GitLab ACLs and user permissions.
 - Allow administrators to customize crawl frequency and indexing preferences.
@@ -32,57 +32,57 @@ This article is intended for Microsoft 365 administrators or anyone configuring,
 ## Limitations
 
 - The connector does not support indexing GitLab CI/CD pipelines beyond status indexing.
-- Only repositories, issues, merge requests, .md, .txt files and wikis are indexed.
-- On-premises/self-hosted GitLab instances are supported in a later release.
+- Only repositories, issues, merge requests, .md, .txt files, and wikis are indexed.
+- On-premises/self-hosted GitLab instances aren't currently supported.
 
 ## Prerequisites
 
-Before setting up the connector, ensure that:
+Before you set up the connector, make sure that:
 
 1. Your GitLab instance is accessible via API.
-2. You have generated a **Client ID** and **Client Secret** from GitLab for authentication.
+2. You generate a **Client ID** and **Client secret** from GitLab for authentication.
 3. The user account used for authentication has access to the repositories, issues, merge requests, knowledge files, and wiki pages to be indexed.
-4. The **Client ID** and **Client Secret** have the `read_api` permission scope.
-5. Users accessing indexed GitLab data have corresponding **Microsoft Entra ID (Azure AD)** identities for permission mapping.
+4. The **Client ID** and **Client secret** have the `read_api` permission scope.
+5. Users who access indexed GitLab data have corresponding **Microsoft Entra ID** identities for permission mapping.
 
-## 1-Click Setup Process
+## Get started
 
-### 1. Display Name
-Choose a display name that helps users easily recognize associated merge requests, issues, or documentation in a Copilot response.
+### 1. Choose display name
+Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
 
-### 2. Authentication
-- Enter your **Client ID** and **Client Secret** from GitLab.
-- Click **Authorize** to log in and grant access.
-- Ensure that the required API scopes are granted.
+### 2. Authenticate
 
-### 3. Rollout to Limited Audience
-Before a full deployment, you can test the connection with a **limited user base** in Copilot and Microsoft Search.
+- Enter your **Client ID** and **Client secret** from GitLab.
+- Choose **Authorize** to sign in and grant access.
+- Grant the required API scopes.
 
-## Custom Setup
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the "Custom Setup" option, you see three more tabs - Users, Content, and Sync.
+### 3. Roll out to limited audience
+Before you deploy the connector, test the connection with a limited user base in Copilot and Microsoft Search.
+
+## Custom setup
+Custom setup is for admins who want to edit the default values for any settings. When you choose **Custom setup**, you see three other tabs: **Users**, **Content**, and **Sync**. 
 
 ### Users
-#### Identity Mapping
-To ensure correct permission enforcement:
-- Map GitLab user identities to Microsoft Entra ID (Azure AD).
-- Options include:
-  - **Email (Recommended, Default):** Matches GitLab user emails with Microsoft Entra ID emails.
-  - **Username:** Matches GitLab usernames to Microsoft Entra ID userPrincipalName (UPN).
+#### Identity mapping
+To ensure correct permission enforcement, map GitLab user identities to Microsoft Entra ID. The following are the options:
+  - **Email:** Matches GitLab user emails with Microsoft Entra ID emails. (Default and recommended mapping)
+  - **Username:** Matches GitLab user names to Microsoft Entra ID user principal name (UPN).
   - **Name:** Maps GitLab user names with Microsoft Entra ID display names.
-- If direct mapping fails, use **regular expressions (regex)** for transformation.
+
+If direct mapping fails, use **regular expressions (regex)** for transformation.
 
 ### Content
-You can verify property mappings in the sample data for metadata such as **titles, descriptions, statuses, and timestamps** in the Content tab.
+You can verify property mappings in the sample data for metadata such as **titles**, **descriptions**, **statuses**, and **timestamps** on the **Content** tab.
 
 ### Sync
-- You can configure **incremental** and **full** crawls, by default:
+You can configure **incremental** and **full** crawls. The following are the default values:
+
   - Incremental crawl runs **every 15 minutes** by default.
   - Full crawl runs **daily** to ensure up-to-date indexing.
 
+## Next steps
+Review the connection status in the Microsoft 365 Admin Center. 
 
+For troubleshooting information, see the [GitLab troubleshooting guide](troubleshoot-gitlab-connector.md).
 
-## Next Steps
-After setup, review the connection status in the **Microsoft 365 Admin Center**.  
-For troubleshooting, refer to the [GitLab Graph Connector Troubleshooting Guide](troubleshoot-gitlab-connector.md).
-
-If you experience issues or need support, visit [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
