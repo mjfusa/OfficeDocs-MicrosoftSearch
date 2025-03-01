@@ -81,7 +81,7 @@ You can configure **incremental** and **full** crawls. The following are the def
   - Full crawl runs **daily** to ensure up-to-date indexing.
 
 ## Next steps
-Review the connection status in the Microsoft 365 Admin Center. 
+Review the connection status in the Microsoft 365 admin center. 
 
 For troubleshooting information, see the [GitLab troubleshooting guide](troubleshoot-gitlab-connector.md).
 
