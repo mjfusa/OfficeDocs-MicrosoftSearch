@@ -82,7 +82,7 @@ items:
         - name: 15Five High Fives
           items:
           - name: Setup
-            href: 15Five-high-fives-connector
+            href: 15Five-high-fives-connector.md
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
