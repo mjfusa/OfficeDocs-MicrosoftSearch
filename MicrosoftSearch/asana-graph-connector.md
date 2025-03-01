@@ -22,9 +22,9 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Capabilities
 
 - Index tasks.
-- Enable your end users to ask questions related to project tracking and task infomration in Copilot.
-   - Identify tasks that haven't been assigned yet across all my projects.
-   - Check whether there are any overdue tasks in **Client Presentation** project.
+- Enable your users to ask questions related to project tracking and task information in Copilot. For example:
+   - Identify tasks that haven't been assigned across all my projects.
+   - Identify any overdue tasks in a project.
    - Summarize my tasks for the next two weeks.
 - Use [semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
@@ -34,16 +34,18 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the search admin for your organization's Microsoft 365 tenant.
-- To connect to your Asana workspace, you need the Asana URL. Typically, the URL is `https://app.asana.com`.
+- To connect to your Asana workspace, you need the Asana URL. The URL is typically the following: `https://app.asana.com`.
 - To connect to Asana and allow the Microsoft Graph connector to update Asana tasks regularly, you need a service account with read permissions. The service account must have the Admin role.
 
 ## Get started
 
 ### 1. Choose a display name 
-The display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. Display name also signifies trusted content. The display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+The display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). 
+
+A default value is provided; you can customize it to a name that users in your organization recognize.
 
 ### 2. Add the Asana URL
-To connect to your Asana workspace, you need the Asana URL. Typically, the URL is `https://app.asana.com`.
+To connect to your Asana workspace, you need the Asana URL. The URL is typically the following: `https://app.asana.com`.
 
 ### 3. Choose the authentication type
 To use **Asana OAuth** for authentication, an Asana admin needs to create an app in the [Asana developer console](https://app.asana.com/0/my-apps).
@@ -53,7 +55,7 @@ Use the information in the following table to complete the OAuth client creation
 Field | Description | Recommended value
 --- | --- | ---
 App name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
-Which best describes what your app will do? | Describe the purpose of the app. | Choose **Get data out of Asana to create reports**.
+Which best describes what your app will do? | Describe the purpose of the app. | Get data out of Asana to create reports.
 Redirect URL | A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: `https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback`</br></br>For **Microsoft 365 Government**: `https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback`
 Manage distribution | Choose workspaces to be distributed. | Add specific workspaces that the connector can access or select **Any workspace**.
    
@@ -71,19 +73,19 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Users | Description |
 |----|---|
-| Access permissions | _Only people with access to content in Data source._ |
-| Map identities | _Data source identities mapped using Microsoft Entra IDs._ |
+| Access permissions | Only people with access to content in Data source. |
+| Map identities | Data source identities mapped using Microsoft Entra IDs. |
 
 | Content | Description |
 |---|---|
-| Manage properties | _To check default properties and their schema, see [content](#content)_ |
+| Manage properties | To check default properties and their schema, see [content](#content). |
 
 | Sync | Description |
 |---|---|
-| Incremental crawl | _Frequency: Every 15 mins_ |
-| Full crawl | _Frequency: Every Day_ |
+| Incremental crawl | Frequency: Every 15 min_ |
+| Full crawl | Frequency: Every day |
 
-If you want to edit any of these values, choose the **Custom Setup** option.
+If you want to edit any of these values, choose the **Custom setup** option.
 
 ## Custom setup
 
@@ -99,12 +101,12 @@ The Asana Microsoft Graph connector supports search permissions visible to **E
 
 #### Mapping identities
 
-The default method to map your data source identities with Microsoft Entra ID is to verify that the email ID of Asana users is the same as the user principal name (UPN) of the users in Microsoft Entra. If the default mapping doesn't work for your organization, you can provide a custom mapping formula. For more information, see [Map your non-Azure AD Identities](map-non-aad.md).
+The default method to map your data source identities with Microsoft Entra ID is to verify that the email ID of Asana users is the same as the user principal name (UPN) of the users in Microsoft Entra ID. If the default mapping doesn't work for your organization, you can provide a custom mapping formula. For more information, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is best for your organization:
 
-1. Choose the **Microsoft Entra ID** option if the email ID of Asana users is the **same** as the UPN in Microsoft Entra ID.
-2. Choose the **Non-Microsoft Entra ID** option if the email ID of Asana users is **different** than the users' UPN and email in Microsoft Entra ID.
+1. Choose the **Microsoft Entra ID** option if the email ID of Asana users is the *same* as the UPN in Microsoft Entra ID.
+2. Choose the **Non-Microsoft Entra ID** option if the email ID of Asana users is *different* than the users' UPN and email in Microsoft Entra ID.
 
 ### Content
 
@@ -112,7 +114,7 @@ To identify which option is best for your organization:
 
 #### Manage properties
 
-You can add or remove available properties from your Asana, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+You can add or remove available properties from your Asana, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. The following table lists the default properties.
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
@@ -142,7 +144,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 The refresh interval determines how often your data is synced between the data source and the Asana Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more information, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
-You can change the default values of the refresh interval from here if you want to.
+You can change the default values of the refresh interval.
 
 ## Troubleshooting
 After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
