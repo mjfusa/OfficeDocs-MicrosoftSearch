@@ -3,6 +3,7 @@
 title: "15Five Priorities Microsoft Graph connector" 
 ms.author: wangchen
 author: wangchen
+manager: zezhangzhao
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 

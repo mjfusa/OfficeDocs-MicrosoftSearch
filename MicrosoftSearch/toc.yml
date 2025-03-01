@@ -82,7 +82,7 @@ items:
         - name: 15Five Priorities
           items:
           - name: Setup
-            href: 15five-priorities-connector
+            href: 15five-priorities-connector.md
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
