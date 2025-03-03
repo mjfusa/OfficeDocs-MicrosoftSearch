@@ -120,19 +120,19 @@ You can add or remove available properties from your Asana, assign a schema to t
 |---|---|---|---|
 | Assignee | | The person who should complete this task | Query, Retrieve, Search |
 | Completed | Content | The main body of the article|  Query, Retrieve |
-| CompletedAt | | | Query, Retrieve |
+| CompletedAt | | Date and time that the task was completed | Query, Retrieve |
 | CreatedAt | Created date time | Date and time that the task was created | Query, Retrieve |
-| CreateBy | Created by | | Query, Retrieve, Search |
+| CreateBy | Created by | The person who created this task | Query, Retrieve, Search |
 | DueOn | | When this task should be completed | Query, Retrieve |
-| Gid | | | Query, Retrieve |
-| ModifiedAt | Last modified date time | | Query, Retrieve |
-| Name | Title | | Query, Retrieve, Search |
+| Gid | | Global ID of this task | Query, Retrieve |
+| ModifiedAt | Last modified date time | Date and time that the task was modified | Query, Retrieve |
+| Name | Title | Task name | Query, Retrieve, Search |
 | Notes |  | Description of the task | Search |
-| ProjectIds | | | |
-| ProjectNames | | | Query, Retrieve |
-| Tags | | | Query, Retrieve |
-| TaskUrl | url | | Query, Retrieve, Search |
-| WorkspaceName | | | Query, Retrieve, Search |
+| ProjectIds | | Project IDs | |
+| ProjectNames | | Project names | Query, Retrieve |
+| Tags | | Tags that assigned to this tasks | Query, Retrieve |
+| TaskUrl | url | The link of the task | Query, Retrieve, Search |
+| WorkspaceName | | Workspace name | Query, Retrieve, Search |
 
 #### Preview data
 
