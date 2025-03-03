@@ -38,7 +38,7 @@ This documentation is for Microsoft 365 administrators or anyone who configures,
 ## Prerequisites
 
 - Set up a 15Five account with HR administrator permissions.
-- Go to the integrations admin setting page with your HR administrator account. Create a company API key and get the access token.
+- Go to the integrations admin setting page in 15Five with your HR administrator account. Create a company API key and get the access token.
 
 ## Get started
 
