@@ -77,7 +77,7 @@ Enter the verified URL of your Veeva Vault instance, e.g.,
 #### Microsoft Entra ID Authentication
 To use Microsoft Entra ID authentication, ensure the following configurations are in place:
 - **Vault Session ID URL**:  
-  Example: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`
+  Format: `https://login.veevavault.com/auth/oauth/session/{oath_oidc_profile_id}`
 - **Client ID**: The application ID of your Microsoft Entra ID app registered for Veeva Vault.
 - **Client Secret**: The corresponding client secret. Securely store and restrict access to this value.
 
