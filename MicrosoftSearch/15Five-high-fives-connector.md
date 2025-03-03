@@ -41,7 +41,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 Before you create a Microsoft Graph 15Five Priorities connector, you must:
 
 1. Set up an HR administrator in 15Five. Create a 15Five account with HR administrator permission.
-2. Create a company API key and get an access token. As an HR administrator, go to the Integrations admin setting page. Create a company API key and get the access token.
+2. Create a company API key and get an access token. As an HR administrator, go to the Integrations admin setting page in 15Five. Create a company API key and get the access token.
 
 ## Get started
 
