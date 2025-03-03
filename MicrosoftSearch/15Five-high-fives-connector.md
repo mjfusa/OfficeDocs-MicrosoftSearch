@@ -75,10 +75,10 @@ You can add or remove available properties from your 15Five data source. Assign 
 
 |Source property|Label|Description|
 |--- | ---- | --- |
-|Text |  | Description of the high five content. |
-|CreatorEmail |  | Email of the user who gives a high five. |
+|Text |Not applicable  | Description of the high five content. |
+|CreatorEmail |Not applicable  | Email of the user who gives a high five. |
 |CreatorName | `createdBy` | Name of the user who gives a high five. |
-|Receivers |  | Name of the users who receive a high five. |
+|Receivers |Not applicable  | Name of the users who receive a high five. |
 |CreateTime | `createdDateTime` | The time at which the high five was created. |
 |UpdateTime	| `lastModifiedDateTime` | The last time the high five was modified. |
 
