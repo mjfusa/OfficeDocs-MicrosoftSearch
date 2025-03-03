@@ -34,7 +34,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - The connector does not support indexing GitLab CI/CD pipelines beyond status indexing.
 - Only repositories, issues, merge requests, .md, .txt files, and wikis are indexed.
 - On-premises/self-hosted GitLab instances aren't currently supported.
-- Banning users and restricting group access by IP address are not supported as permission rules due to the lack of API support. These features remain protected by feature flags, preventing access to ban status and IP-based access controls. As a workaround, administrators can remove users from groups or create private groups to manage access.
+- Banning users and restricting group access by IP address are not supported as permission. As a workaround, administrators can remove users from groups or create private groups to manage access.
 
 ## Prerequisites
 
