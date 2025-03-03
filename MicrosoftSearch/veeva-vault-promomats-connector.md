@@ -48,18 +48,44 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ---
 
-## Prerequisites
+## Prerequisites: Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
 
-### Administrator Credentials
-- Ensure you have a Veeva Vault account with administrative privileges.
-- Enable API access in your Veeva Vault instance.
+### Step 1: Register an Application in Azure AD
 
-### API Configuration
-- Activate REST API access in your Veeva Vault instance. For details, refer to the [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
+1. **Go to** Azure AD > App Registrations and **create a new application**.
 
-### Veeva Vault URL
-- Verify the URL for your Veeva Vault instance. The format typically looks like:  
-  `https://<your-vault-domain>.veevavault.com`
+2. **Set up API permissions:**
+   - Add **Microsoft Graph** → **Delegated permissions**
+   - Include scope: `offline_access {clientId}/.default`
+   - Grant **Admin Consent**.
+
+3. **Generate a Client Secret** under **Certificates & Secrets** and store it securely.
+
+4. **Add the following links** into the field **'Redirect URLs'** in the section **OAuth 2** of the setting tab in the Veeva Vault app console:
+   - For **M365 Enterprise**, copy and paste:
+     ```
+     https://gcs.office.com/v1.0/admin/oauth/callback
+     ```
+   - For **M365 Government**, copy and paste:
+     ```
+     https://gcsgcc.office.com/v1.0/admin/oauth/callback
+     ```
+
+### Step 2: Configure OAuth in Veeva Vault
+
+1. **Go to** Admin > Settings > **OAuth 2.0 / OpenID Connect Profiles**.
+
+2. **Create a new profile:**
+   - **Authorization Server Provider:** Azure
+   - **Upload AAD Metadata:** Use the URL:
+     ```
+     https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration
+     ```
+   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of AAD and Veeva Vault.
+
+3. **Add Client Application:** Use the **Client ID** from Azure AD.
+
+4. **Activate the profile** and link it to a security policy under **Users & Groups > Security Policies**.
 
 ---
 
