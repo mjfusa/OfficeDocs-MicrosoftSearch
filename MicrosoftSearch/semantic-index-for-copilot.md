@@ -1,5 +1,5 @@
 ---
-title: "Semantic indexing for Copilot"
+title: "Semantic indexing for Microsoft 365 Copilot"
 ms.author: camillepack   
 author: camillepack
 manager: scotv
