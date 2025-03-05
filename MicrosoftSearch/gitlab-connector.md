@@ -35,7 +35,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - Only repositories, issues, merge requests, .md, .txt files, and wikis are indexed.
 - On-premises/self-hosted GitLab instances aren't currently supported.
 - Banning users is not supported as a permission rule. As a workaround, administrators can remove users from groups instead.
-- Restricting group access by IP address is not supported. It is suggested that administrators create a private group to manage access.
+- Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
 
 ## Prerequisites
 
