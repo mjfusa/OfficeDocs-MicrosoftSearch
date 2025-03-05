@@ -64,9 +64,10 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Supports file types including Microsoft Office documents, PDFs, and text-based files only; does not support PNG, JPG, or video files.
 - Partially indexes files larger than 4 MB.
 
-## Prerequisites: Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
+## Prerequisites: 
+### Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
 
-### Step 1: Register an Application in Azure AD
+#### Step 1: Register an Application in Microsoft Entra ID
 
 1. **Go to** Azure AD > App Registrations and **create a new application**.
 
@@ -87,7 +88,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
      https://gcsgcc.office.com/v1.0/admin/oauth/callback
      ```
 
-### Step 2: Configure OAuth in Veeva Vault
+#### Step 2: Configure OAuth in Veeva Vault
 
 1. **Go to** Admin > Settings > **OAuth 2.0 / OpenID Connect Profiles**.
 
@@ -119,14 +120,12 @@ The connector supports basic authentication and Entra ID authentication.
 
 #### Basic authentication 
 
-
 #### Microsoft Entra ID Authentication
 To use Microsoft Entra ID authentication, ensure the following configurations are in place:
 - **Vault Session ID URL**:  
   Format: `https://login.veevavault.com/auth/oauth/session/{oath_oidc_profile_id}`
 - **Client ID**: The application ID of your Microsoft Entra ID app registered for Veeva Vault.
 - **Client Secret**: The corresponding client secret. Securely store and restrict access to this value.
-
 
 #### Entra ID authentication 
 
