@@ -1,6 +1,6 @@
 ---
 
-title: "15Five High Fives Microsoft Graph connector" 
+title: "15Five High Fives Microsoft Graph connector (preview)" 
 ms.author: wangchen
 author: wangchen
 manager: zezhangzhao
@@ -24,7 +24,7 @@ The 15Five High Fives Microsoft Graph connector enables your organization to ind
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the 15Five High Fives Microsoft Graph connector. 
 
 > [!NOTE]
-> The Microsoft Graph 15Five High Fives connector is in preview. To request early access, submit the [request form](https://forms.office.com/r/JniPmK5bzm).
+> The Microsoft Graph 15Five High Fives connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 
@@ -38,24 +38,24 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph 15Five Priorities connector, you must:
+Before you create a Microsoft Graph 15Five Priorities connector, complete the following steps:
 
-1. Set up an HR administrator in 15Five. Create a 15Five account with HR administrator permission.
-2. Create a company API key and get an access token. As an HR administrator, go to the Integrations admin setting page in 15Five. Create a company API key and get the access token.
+1. Create a 15Five account with HR administrator permission.
+2. As an HR administrator, go to the Integrations admin setting page in 15Five. Create a company API key and get the access token.
 
 ## Get started
 
 ### 1. Choose display name   
-Choose a display name that helps users easily recognize associated file or item in a Copilot response.
+Choose a display name that helps users easily recognize associated files or items in a Copilot response.
 
 ### 2. Add the instance URL
-The default 15Five instance URL is https://my.15five.com.
+The default 15Five instance URL is `https://my.15five.com`.
 
 ### 3. Choose authentication type
 Select the available authentication type and enter the access token you obtained from your 15Five company API keys setting.
 
 ### 4. Roll out to a limited audience
-Deploy this connection to a limited user base to validate it in Copilot and other search surfaces before rolling out to a broader audience.
+Deploy this connection to a limited user base to validate it in Copilot and other search surfaces before you roll it out to a broader audience.
 
 ## Custom setup 
 
@@ -93,10 +93,10 @@ You can configure full and incremental crawls based on the scheduling options de
 
 The following are common errors that can occur and how to resolve them.
 
-### **Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.**
+**Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.**
 Credential information has expired. Create a new key in 15Five integrations setting and copy the latest access token from the setting tab in 15Five to authenticate.
 
-### **Invalid Credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
+**Invalid Credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
 This is a common credential error. Go to the 15Five integrations setting and verify that the access token is correct.
 
 ## Next steps
