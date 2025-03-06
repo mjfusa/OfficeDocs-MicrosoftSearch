@@ -43,7 +43,7 @@ These are the instructions for setting the default search engine, default homepa
 - [Set Bing.com as your enterprise homepage](set-default-homepage.md)
  
 > [!IMPORTANT]
-> Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+> Beginning March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 ## How are my search results protected?
 
