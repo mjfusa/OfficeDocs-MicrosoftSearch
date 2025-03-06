@@ -79,10 +79,18 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: 15Five Priorities
+          items:
+          - name: Setup
+            href: 15five-priorities-connector.md
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Asana
+          items:
+          - name: Setup
+            href: asana-graph-connector.md
         - name: Azure Data Lake Storage Gen2
           items:
           - name: Setup
