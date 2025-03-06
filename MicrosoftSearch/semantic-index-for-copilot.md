@@ -95,8 +95,7 @@ Microsoft Graph grounded responses can utilize semantic understanding of user ma
 | Graph Connector data      | Not applicable | Supported        |
 
 >[!NOTE]
-
-> Files up to 512MB are now supported for PDF, PPTX, and DOCX extensions. This enhancement allows Copilot users to effectively analyze, summarize, and generate insights from these large files.
+>Files up to 512 MB are now supported for PDF, PPTX, and DOCX extensions. This enhancement allows Copilot users to effectively analyze, summarize, and generate insights from these large files.
 
 ## Index updates
 
@@ -137,7 +136,7 @@ Using Copilot Connectors, organizations can bring organizational data or content
 
 ## Privacy, compliance, and security
 
-The permissions model within your Microsoft 365 tenant can help ensure that data won't unintentionally leak between users, groups, and tenants. Microsoft 365 Copilot presents only data that each individual can access using the same underlying controls for data access used in other Microsoft 365 services. When data is indexed, we continue to honor the user identity-based access boundary so that the grounding process only accesses content that the current user is authorized to access. For more information, see [Microsoft’s privacy policy and service documentation](https://privacy.microsoft.com/).
+The permissions model within your Microsoft 365 tenant can help ensure that data won't unintentionally leak between users, groups, and tenants. Microsoft 365 Copilot presents only data that each individual can access using the same underlying controls for data access used in other Microsoft 365 services. When data is indexed, we continue to honor the user identity-based access boundary so that the grounding process only accesses content that the current user is authorized to access. For more information, see [Microsoft's privacy policy and service documentation](https://privacy.microsoft.com/).
 
 Microsoft 365 Copilot is compliant with our existing privacy, security, and compliance commitments to Microsoft 365 commercial customers, including the General Data Protection Regulation (GDPR) and European Union (EU) Data Boundary. Prompts, responses, and data accessed through semantic indexing aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot. For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
 
