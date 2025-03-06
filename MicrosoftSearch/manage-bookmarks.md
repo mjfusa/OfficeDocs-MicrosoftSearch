@@ -17,6 +17,9 @@ description: "Create and update bookmarks and ways to bulk edit bookmark results
 ---
 # Manage bookmarks
 
+> [!IMPORTANT]
+> Microsoft Search in Bing is being retired on March 31, 2025. Recommended bookmarks are also being retired—you can keep them by manually publishing or exporting them by April 30, 2025. Learn more[/microsoftsearch/retirement-microsoft-search-bing] 
+
 Bookmarks help people quickly find important sites and tools with just a search. Each bookmark includes a title, URL, a set of user-friendly keywords to trigger the bookmark, and a category.
 
 ## What makes a great bookmark
