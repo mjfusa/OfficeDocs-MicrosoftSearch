@@ -62,6 +62,6 @@ Here are some important points regarding the template file:
 - For partners who manage multiple organizations, you can export your locations from one org and import them into another. But you must remove the data in the *Id* column before you import.
 
 > [!NOTE]
-> You cannot import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
+> You can't import Locations if there are any errors in the template file. To prevent errors, make sure your import file is properly formatted and include all the required information.
 
 For more information on how to prevent error, see [Prevent import errors](manage-bookmarks.md#prevent-import-errors).
