@@ -94,9 +94,11 @@ You can configure full and incremental crawls based on the scheduling options de
 The following are common errors that can occur and how to resolve them.
 
 **Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.**
+
 Credential information has expired. Create a new key in 15Five integrations setting and copy the latest access token from the setting tab in 15Five to authenticate.
 
 **Invalid Credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
+
 This is a common credential error. Go to the 15Five integrations setting and verify that the access token is correct.
 
 ## Next steps
