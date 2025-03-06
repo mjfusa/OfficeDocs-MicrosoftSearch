@@ -19,7 +19,7 @@ ms.date: 01/08/2019
 # Manage locations
 
 > [!IMPORTANT]
-> Microsoft Search in Bing is being retired on March 31, 2025. Some Microsoft Search answers will no longer be available after that date, including location answers. Learn more[/microsoftsearch/retirement-microsoft-search-bing] 
+> Microsoft Search in Bing is being retired on March 31, 2025. Some Microsoft Search answers will no longer be available after that date, including location answers. [Learn more](/microsoftsearch/retirement-microsoft-search-bing)
 
 ## Location
 
