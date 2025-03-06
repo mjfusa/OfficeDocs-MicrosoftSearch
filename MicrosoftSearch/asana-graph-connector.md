@@ -15,7 +15,7 @@ ms.date: 02/28/2025
 
 # Asana Microsoft Graph connector
 
-The Asana Microsoft Graph connector allows your organization to index Asana tasks. After you configure the connector and index content from the Asana workspaces, end users can search for those items in Microsoft Search and Microsoft 365 Copilot.
+The Asana Microsoft Graph connector allows your organization to index Asana tasks. After you configure the connector and index content from the Asana workspaces, users can search for those items in Microsoft Search and Microsoft 365 Copilot.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Asana Microsoft Graph connector.
 
@@ -82,8 +82,8 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Sync | Description |
 |---|---|
-| Incremental crawl | Frequency: Every 15 min_ |
-| Full crawl | Frequency: Every day |
+| Incremental crawl | Runs every 15 minutes. |
+| Full crawl | Runs every day. |
 
 If you want to edit any of these values, choose the **Custom setup** option.
 
@@ -118,21 +118,21 @@ You can add or remove available properties from your Asana, assign a schema to t
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
-| Assignee | | The person who should complete this task | Query, Retrieve, Search |
+| Assignee |Not applicable| The person who should complete this task | Query, Retrieve, Search |
 | Completed | Content | The main body of the article|  Query, Retrieve |
-| CompletedAt | | Date and time that the task was completed | Query, Retrieve |
+| CompletedAt |Not applicable | Date and time that the task was completed | Query, Retrieve |
 | CreatedAt | Created date time | Date and time that the task was created | Query, Retrieve |
 | CreateBy | Created by | The person who created this task | Query, Retrieve, Search |
-| DueOn | | When this task should be completed | Query, Retrieve |
-| Gid | | Global ID of this task | Query, Retrieve |
+| DueOn |Not applicable | When this task should be completed | Query, Retrieve |
+| Gid | Not applicable| Global ID of this task | Query, Retrieve |
 | ModifiedAt | Last modified date time | Date and time that the task was modified | Query, Retrieve |
 | Name | Title | Task name | Query, Retrieve, Search |
-| Notes |  | Description of the task | Search |
-| ProjectIds | | Project IDs | |
-| ProjectNames | | Project names | Query, Retrieve |
-| Tags | | Tags that assigned to this tasks | Query, Retrieve |
+| Notes |Not applicable  | Description of the task | Search |
+| ProjectIds |Not applicable | Project IDs |Not applicable|
+| ProjectNames | Not applicable| Project names | Query, Retrieve |
+| Tags |Not applicable | Tags that assigned to this tasks | Query, Retrieve |
 | TaskUrl | url | The link of the task | Query, Retrieve, Search |
-| WorkspaceName | | Workspace name | Query, Retrieve, Search |
+| WorkspaceName | Not applicable| Workspace name | Query, Retrieve, Search |
 
 #### Preview data
 
@@ -146,7 +146,7 @@ The refresh interval determines how often your data is synced between the data s
 
 You can change the default values of the refresh interval.
 
-## Troubleshooting
+## Next steps
 After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
