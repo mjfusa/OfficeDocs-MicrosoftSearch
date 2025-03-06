@@ -76,9 +76,13 @@ items:
         href: map-non-aad.md
       - name: Map Microsoft Entra identities
         href: map-aad.md
-      - name: Microsoft Graph built connectors
+      - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: 15Five Priorities
+          items:
+          - name: Setup
+            href: 15five-priorities-connector.md
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
@@ -173,6 +177,12 @@ items:
           items:
           - name: Setup
             href: GitHub-connector.md 
+        - name: GitLab (preview)
+          items:
+          - name: Setup
+            href: gitlab-connector.md 
+          - name: Troubleshooting
+            href: troubleshoot-gitlab-connector.md
         - name: Google Drive
           items:
           - name: Setup
