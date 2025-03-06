@@ -275,7 +275,7 @@ items:
       href: manage-dynamics365.md
   - name: Semantic index
     items:
-    - name: Semantic index for Microsoft 365 Copilot
+    - name: Semantic indexing for Microsoft 365 Copilot
       href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
