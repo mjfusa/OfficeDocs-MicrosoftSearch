@@ -89,7 +89,7 @@ The following are common errors that can occur and how to resolve them.
 
 **Your security credentials have expired for this session. Please go back and sign in again with your App key and app secret.**
 
-redential information has expired. Create a new key in 15Five integrations setting and copy the latest access token from the setting tab in 15Five to authenticate.
+Credential information has expired. Create a new key in 15Five integrations setting and copy the latest access token from the setting tab in 15Five to authenticate.
 
 **Invalid credentials detected. Please check the credential info and check the permission scopes of the 15Five App.**
 
