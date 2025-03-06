@@ -78,7 +78,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Content | Description |
 |---|---|
-| Manage properties | To check default properties and their schema, see [content](#content). |
+| Manage properties | For information about the default properties and their schema, see [content](#content). |
 
 | Sync | Description |
 |---|---|
