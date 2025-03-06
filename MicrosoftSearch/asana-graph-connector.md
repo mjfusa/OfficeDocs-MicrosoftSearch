@@ -130,7 +130,7 @@ You can add or remove available properties from your Asana, assign a schema to t
 | Notes |Not applicable  | Description of the task | Search |
 | ProjectIds |Not applicable | Project IDs |Not applicable|
 | ProjectNames | Not applicable| Project names | Query, Retrieve |
-| Tags |Not applicable | Tags that assigned to this tasks | Query, Retrieve |
+| Tags |Not applicable | Tags assigned to this task | Query, Retrieve |
 | TaskUrl | url | The link of the task | Query, Retrieve, Search |
 | WorkspaceName | Not applicable| Workspace name | Query, Retrieve, Search |
 
