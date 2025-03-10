@@ -46,6 +46,8 @@ Before you set up the connector, make sure that:
 4. Ensure that the Client ID and Client Secret have the **repository:read**, **account:read,** and **pullrequest permission**
 5. Users who access indexed Bitbucket data have corresponding **Microsoft Entra ID** identities for permission mapping.
 
+*It is recommended to use a different user for OAuth authentication for each connection, as Bitbucket's rate limit is calculated per user.
+
 ## Get started
 
 ### 1. Choose display name
