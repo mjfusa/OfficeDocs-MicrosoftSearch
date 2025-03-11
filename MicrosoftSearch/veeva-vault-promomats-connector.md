@@ -61,7 +61,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 ## Limitations
 
 - Indexes only the latest versions of documents.
-- Supports file types including Microsoft Office documents, PDFs, and text-based files only; does not support PNG, JPG, or video files.
+- Supports file types including Microsoft Office documents, PDFs, and text-based files only; doesn't support PNG, JPG, or video files.
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites: 
@@ -71,7 +71,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 1. Go to **Azure AD** > **App Registrations** and **create a new application**.
 
-2. **Set up API permissions:**
+2. Set up API permissions:
    - Add **Microsoft Graph** > **Delegated permissions**.
    - Include scope: `offline_access {clientId}/.default`
    - Grant **Admin Consent**.
@@ -80,27 +80,21 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 4. Add the following links into the field **'Redirect URLs'** in the section **OAuth 2** of the **Setting** tab in the Veeva Vault app console:
    - For **M365 Enterprise**, copy and paste:
-     ```
-     https://gcs.office.com/v1.0/admin/oauth/callback
-     ```
+     `https://gcs.office.com/v1.0/admin/oauth/callback`
    - For **M365 Government**, copy and paste:
-     ```
-     https://gcsgcc.office.com/v1.0/admin/oauth/callback
-     ```
+     `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
 #### Step 2: Configure OAuth in Veeva Vault
 
 1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
 
-2. **Create a new profile:**
+2. Create a new profile:
    - **Authorization Server Provider:** Azure
    - **Upload AAD Metadata:** Use the URL:
-     ```
-     https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration
-     ```
+     `https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration`
    - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of AAD and Veeva Vault.
 
-3. **Add Client Application:** Use the **Client ID** from Azure AD.
+3. Add Client Application: Use the **Client ID** from Azure AD.
 
 4. Activate the profile and link it to a security policy under **Users & Groups > Security Policies**.
 
