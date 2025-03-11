@@ -92,6 +92,9 @@ To ensure correct permission enforcement, map Monday.com user identities to Micr
 ### Content
 You can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps** on the **Content** tab.
 
+#### Filter  
+You can configure filtering by **workspace** to refine the indexed content.  
+
 ### Sync
 You can configure **incremental** and **full** crawls. The following are the default values:
 
