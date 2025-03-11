@@ -19,7 +19,7 @@ description: "Learn how to deploy partner-built Microsoft Graph connectors with 
 # Deploy Microsoft Graph connectors in Teams admin center
 
 >[!Caution]
-> The connector management in the Teams Admin Center is deprecated and will stop returning data on April 1, 2025. Use the Search & Intelligence experience in Microsoft 365 Admin center.
+> The Microsoft Graph connector management in the Teams Admin Center is deprecated and will stop returning data on April 14, 2025. Use the Search & Intelligence feature in the Microsoft 365 admin center to manage Microsoft Graph connectors or contact the owner or developer of the app.
 
 This article describes how to deploy partner-built Microsoft Graph connectors with a single click in Teams admin center. The Microsoft Graph connectors index content from these partners into Microsoft Graph, so that content can participate in experiences such as Copilot for Microsoft 365, Microsoft Search, and more.
 
