@@ -185,6 +185,10 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Monday.com
+          items:
+          - name: Setup
+            href: monday-connector.md
         - name: Oracle SQL
           items:
           - name: Setup
