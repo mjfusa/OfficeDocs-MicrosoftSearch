@@ -139,7 +139,7 @@ Here, you can add or remove available properties from your Zendesk Ticket, assig
 |	Submitter	|		|		|	Query, Retrieve, Search	|
 |	Tags	|		|		|	Query, Retrieve, Search	|
 |	Type	|		|		|	Query, Retrieve, Search	|
-|	UpdateDate	|	Last modified date time	|	Last modified date time | Date and time the item was last modified in the data source.	|	Query, Refine, Retrieve	|
+|	UpdateDate	|	Last modified date time	| Date and time the item was last modified in the data source.	|	Query, Refine, Retrieve	|
 |	Url	|	url	|	The target URL of the item in the data source	|	Query, Retrieve, Search	|
 |	ViaChannel	|		|		|	Query, Retrieve, Search	|
 |	ViaSourceFromAddress	|		|		|	Query, Retrieve, Search	|
