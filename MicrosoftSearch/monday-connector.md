@@ -46,8 +46,6 @@ The Monday.com connector enables:
 
 ## Prerequisites  
 
-### Configuring OAuth 2.0 for Monday.com Graph Connector
-
 ### Configure OAuth in Monday.com  
 
 1. Navigate to the **Monday.com Developer Center** and create a **new app**.  
