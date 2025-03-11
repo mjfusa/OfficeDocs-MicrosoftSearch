@@ -69,8 +69,8 @@ The Monday.com connector enables:
 ### 1. Choose display name
 Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
 
-### 2. Monday.com Callback URL  
-Enter the Callback URL of your Monday.com app that you configured in the previous step.  
+### 2. Monday.com Instance URL
+Enter the Instance URL of your Monday.com instance. (e.g. `https://test-instance.monday.com`) 
 
 ### 3. Authenticate
 
