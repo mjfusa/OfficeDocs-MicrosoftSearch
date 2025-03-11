@@ -125,6 +125,10 @@ items:
             href: MSSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-mssql-connector.md
+        - name: Bitbucket
+          items:
+          - name: Setup
+            href: bitbucket-connector.md
         - name: Confluence Cloud
           items:
           - name: Setup
