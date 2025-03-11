@@ -201,6 +201,10 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Miro
+          items:
+          - name: Setup
+            href: miro-connector.md    
         - name: Oracle SQL
           items:
           - name: Setup
@@ -249,6 +253,10 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Trello
+          items:
+          - name: Setup
+            href: trello-connector.md
         - name: Veeva Vault - PromoMats
           items:
           - name: Setup
@@ -263,6 +271,10 @@ items:
           items:
           - name: Setup
             href: zendesk-help-center-connector.md
+        - name: Zendesk Ticket
+          items:
+          - name: Setup
+            href: zendesk-ticket-connector.md      
     - name: Manage connections
       items:
       - name: Monitor connections
