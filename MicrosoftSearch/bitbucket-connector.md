@@ -54,7 +54,7 @@ Before you set up the connector, make sure that:
 Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
 
 ### 2. Bitbucket instance URL
-Enter the URL of your Bitbucket instance (e.g. https://bitbucket.org/testinstance).
+Enter the URL of your Bitbucket instance (e.g. `https://bitbucket.org/testinstance`).
 
 ### 3. Authenticate
 
