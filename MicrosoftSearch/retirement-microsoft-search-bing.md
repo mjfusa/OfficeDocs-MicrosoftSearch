@@ -39,6 +39,9 @@ M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint O
 
 ## Edge address bar
 
+> [!NOTE]
+> Microsoft Edge version 134.0.3124.51+ is required for the work search functionality described below.
+
 After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.
 
 ## Changes to the Edge address bar policy
