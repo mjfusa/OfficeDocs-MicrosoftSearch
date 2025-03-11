@@ -69,16 +69,16 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 #### Step 1: Register an Application in Microsoft Entra ID
 
-1. **Go to** Azure AD > App Registrations and **create a new application**.
+1. Go to **Azure AD** > **App Registrations** and **create a new application**.
 
 2. **Set up API permissions:**
-   - Add **Microsoft Graph** → **Delegated permissions**
+   - Add **Microsoft Graph** > **Delegated permissions**.
    - Include scope: `offline_access {clientId}/.default`
    - Grant **Admin Consent**.
 
-3. **Generate a Client Secret** under **Certificates & Secrets** and store it securely.
+3. Generate a Client Secret under **Certificates & Secrets** and store it securely.
 
-4. **Add the following links** into the field **'Redirect URLs'** in the section **OAuth 2** of the setting tab in the Veeva Vault app console:
+4. Add the following links into the field **'Redirect URLs'** in the section **OAuth 2** of the **Setting** tab in the Veeva Vault app console:
    - For **M365 Enterprise**, copy and paste:
      ```
      https://gcs.office.com/v1.0/admin/oauth/callback
@@ -90,7 +90,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 #### Step 2: Configure OAuth in Veeva Vault
 
-1. **Go to** Admin > Settings > **OAuth 2.0 / OpenID Connect Profiles**.
+1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
 
 2. **Create a new profile:**
    - **Authorization Server Provider:** Azure
@@ -102,7 +102,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 3. **Add Client Application:** Use the **Client ID** from Azure AD.
 
-4. **Activate the profile** and link it to a security policy under **Users & Groups > Security Policies**.
+4. Activate the profile and link it to a security policy under **Users & Groups > Security Policies**.
 
 ## Get started
 
