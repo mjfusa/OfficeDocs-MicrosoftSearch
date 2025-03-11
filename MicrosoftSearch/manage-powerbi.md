@@ -34,7 +34,7 @@ Power BI results can be queried from All tab on the Search page
 
 Power BI results can also be queried from the dedicated Power BI Custom vertical
 
-![PowerBI-Vertical](./media/powerbi-vertical.png)
+![PowerBI Vertical Tab](./media/powerbi-vertical.png)
 
 When users search for Power BI content, they see a list of results that includes the following information:
 
