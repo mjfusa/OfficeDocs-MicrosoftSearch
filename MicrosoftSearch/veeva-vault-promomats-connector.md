@@ -94,7 +94,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
      `https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration`
    - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of AAD and Veeva Vault.
 
-3. Add Client Application: Use the **Client ID** from Azure AD.
+3. Add client application: Use the **Client ID** from Azure AD.
 
 4. Activate the profile and link it to a security policy under **Users & Groups > Security Policies**.
 
