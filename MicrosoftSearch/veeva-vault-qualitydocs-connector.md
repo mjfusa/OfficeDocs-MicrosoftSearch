@@ -16,7 +16,7 @@ description: "Set up the Veeva Vault QualityDocs Microsoft Graph connector for M
 ms.date: 02/26/2025
 ---
 
-# Veeva Vault QualityDocs Microsoft Graph connector
+# Veeva Vault QualityDocs Microsoft Graph connector (Preview)
 
 The Veeva Vault QualityDocs Microsoft Graph connector allows organizations to index quality and compliance documents from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
