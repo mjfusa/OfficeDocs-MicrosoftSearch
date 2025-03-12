@@ -19,7 +19,7 @@ ms.date: 12/10/2019
 # Security and Privacy for Microsoft Search in Bing
 
 > [!IMPORTANT]
-> Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing)
+> Beginning March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing)
 
 With enhanced privacy and security measures, Microsoft Search in Bing helps protect your users and workplace data.
 
@@ -31,13 +31,13 @@ Microsoft Search in Bing requests are made over HTTPS. The connection is encrypt
 
 ## Authentication and authorization with Microsoft Entra ID
 
-Authentication for Microsoft Search in Bing is tied to Microsoft Entra ID. When Microsoft Search users go to Bing, the Bing header shows sign-in options for a Microsoft account and a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page, where they are automatically redirected to your organization's sign-in page.
+Authentication for Microsoft Search in Bing is tied to Microsoft Entra ID. When Microsoft Search users go to Bing, the Bing header shows sign-in options for a Microsoft account and a work or school account. If Bing can't determine whether a user is an eligible participant, users can go to the [Explore Microsoft Search](https://www.bing.com/business/explore) page. There, they're automatically redirected to your organization's sign-in page.
 
 Users can access Microsoft Search only through a work or school account. They need to sign in with the same credentials they use to access Office 365 services such as SharePoint or Outlook. A personal Microsoft account can't be used to sign in to Microsoft Search.
 
 ## Single sign-on
 
-If a user is already authenticated with their work or school account in another service, such as Outlook or SharePoint, they are automatically signed into the same work or school account when they go to Bing in the same browser. Also, when the user signs out of their work or school account, they are automatically signed out from other Microsoft Office services in the same browser.
+If a user is already authenticated with their work or school account in another service, such as Outlook or SharePoint, they're automatically signed into the same work or school account when they go to Bing in the same browser. Also, when the user signs out of their work or school account, they are automatically signed out from other Microsoft Office services in the same browser.
   
 ## Communicates with the Microsoft cloud from the browser
 
@@ -45,7 +45,7 @@ When a user signs in with their work or school account, Bing downloads the neces
   
 ## Permissions
 
-Work results retrieved from Office 365 workloads such as SharePoint and OneDrive for Business are security trimmed at the source. Users can't see resources such as Word documents or PowerPoint presentations they can't see and access through Office 365. They can only see their own files and files that have been shared with them by the author explicitly or implicitly (through a group membership, for example) in SharePoint.
+Work results retrieved from Office 365 workloads such as SharePoint and OneDrive for Business are security trimmed at the source. Users can't see resources such as Word documents or PowerPoint presentations they can't see and access through Office 365. They can only see their own files and files that are shared with them by the author explicitly or implicitly (through a group membership, for example) in SharePoint.
 
 ## Microsoft Search in Bing protects workplace searches
 

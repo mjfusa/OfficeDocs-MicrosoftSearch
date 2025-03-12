@@ -21,6 +21,9 @@ Here's a list of the most common questions.
 > [!TIP]
 > Don't see your question answered here? Ask your question in this article's feedback.
 
+> [!IMPORTANT]
+> Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+
 ## Is advanced query understanding supported?
 
 Yes, Microsoft Search parses query intent from larger phrases. This feature uses AI to learn common superfluous phrases users add to their queries that don't affect their search intent. For example, when a user searches for *tell me more about how to change my password*, we extract the less important words from the query and trigger based on the relevant ones like *change password*.
@@ -38,6 +41,9 @@ These are the instructions for setting the default search engine, default homepa
 - [Set Microsoft Edge as your default browser](/deployedge/edge-default-browser)
 - [Make Bing your default search engine](set-default-search-engine.md)
 - [Set Bing.com as your enterprise homepage](set-default-homepage.md)
+ 
+> [!IMPORTANT]
+> Beginning March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 ## How are my search results protected?
 
