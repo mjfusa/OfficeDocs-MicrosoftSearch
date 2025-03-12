@@ -115,7 +115,7 @@ The connector supports basic authentication and Entra ID authentication.
 #### Basic authentication 
 
 #### Microsoft Entra ID Authentication
-To use Microsoft Entra ID authentication, ensure the following configurations are in place:
+To use Microsoft Entra ID authentication, you need the following:
 - **Vault Session ID URL**:  
   Format: `https://login.veevavault.com/auth/oauth/session/{oath_oidc_profile_id}`
 - **Client ID**: The application ID of your Microsoft Entra ID app registered for Veeva Vault.
