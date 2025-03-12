@@ -27,15 +27,20 @@ These changes also apply to users in organizations with education service plans 
 
 Users can find work search results on M365.cloud.microsoft rather than on Bing.com. Likewise, the Microsoft Edge for Business address bar and the Microsoft search box send users to work results on M365.cloud.microsoft rather than Bing.com. Bing's dedicated pages for work results (the "Work" tab) and school results (the "School" tab) are being retired, so M365.cloud.microsoft and SharePoint Online are the new homes for Microsoft Search. Search boxes that IT admins configured to point to Microsoft Search in Bing will no longer provide work results. People who go directly to or have bookmarks for www.bing.com/work are sent to M365.cloud.microsoft through June 30, 2025.
 
+Some Microsoft Search answers will no longer be available after March 31, 2025, including Q&As and location answers. Recommended bookmarks will also be retired—you can keep them by manually publishing or exporting them by April 30, 2025.
+
 ## When and where are these changes taking place? 
 
 Microsoft Search in Bing is being retired in all regions worldwide on March 31, 2025. It's being retired on all devices, including mobile.
 
 ## Where can users search for work and school answers? 
 
-M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. The address bar in Edge for Business and the Windows search box also continue to deliver work and school search results, with some adjustments detailed here: 
+M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Users of Bing.com in Edge may see a banner redirecting them to M365.cloud.microsoft if their search terms indicate a high likelihood of being work-related. The address bar in Edge for Business and the Windows search box also continue to deliver work and school search results, with some adjustments detailed here: 
 
 ## Edge address bar
+
+> [!NOTE]
+> Microsoft Edge version 134.0.3124.51+ is required for the work search functionality described below.
 
 After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.
 
@@ -102,6 +107,10 @@ Today, Microsoft Search also recommends bookmarks based on your organization's S
 Some organizations set their recommended bookmarks to automatically publish. Automatically published bookmarks, which currently only appear in Microsoft Search in Bing, are no longer visible after March 31. If your organization automatically publishes recommended bookmarks, and you'd like those bookmarks to be visible on other Microsoft Search entry points, you must manually publish them before April 30, 2025. This date is intended to give you a little extra time after the March 31 retirement of Microsoft Search in Bing. You can also export your recommended bookmarks by April 30 if you want to keep them, but don't want to publish them.
 
 Learn more about [managing bookmarks](/microsoftsearch/manage-bookmarks). 
+
+## What's happening to search query history? 
+
+Work or school search history on Bing.com is available through March 31, 2025. Individuals who wish to keep their recent search history must download it by March 31. To do so, they should sign in with their Entra ID, go to Options on Bing.com, and select "Search history." There is no control available for IT admins to download search terms on behalf of users.
 
 ## Does this impact all tenants? 
 

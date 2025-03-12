@@ -79,10 +79,22 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: 15Five High Fives
+          items:
+          - name: Setup
+            href: 15Five-high-fives-connector.md
+        - name: 15Five Priorities
+          items:
+          - name: Setup
+            href: 15five-priorities-connector.md
         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Asana
+          items:
+          - name: Setup
+            href: asana-graph-connector.md
         - name: Azure Data Lake Storage Gen2
           items:
           - name: Setup
@@ -113,6 +125,10 @@ items:
             href: MSSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-mssql-connector.md
+        - name: Bitbucket
+          items:
+          - name: Setup
+            href: bitbucket-connector.md
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -185,6 +201,10 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Miro
+          items:
+          - name: Setup
+            href: miro-connector.md    
         - name: Oracle SQL
           items:
           - name: Setup
@@ -233,6 +253,10 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Trello
+          items:
+          - name: Setup
+            href: trello-connector.md
         - name: Veeva Vault - PromoMats
           items:
           - name: Setup
@@ -247,6 +271,10 @@ items:
           items:
           - name: Setup
             href: zendesk-help-center-connector.md
+        - name: Zendesk Ticket
+          items:
+          - name: Setup
+            href: zendesk-ticket-connector.md      
     - name: Manage connections
       items:
       - name: Monitor connections
@@ -267,7 +295,7 @@ items:
       href: manage-dynamics365.md
   - name: Semantic index
     items:
-    - name: Semantic index for Microsoft 365 Copilot
+    - name: Semantic indexing for Microsoft 365 Copilot
       href: semantic-index-for-copilot.md
 - name: Customize and configure
   items:
