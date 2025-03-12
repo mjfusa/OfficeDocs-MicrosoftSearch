@@ -64,7 +64,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Supports file types including Microsoft Office documents, PDFs, and text-based files only; doesn't support PNG, JPG, or video files.
 - Partially indexes files larger than 4 MB.
 
-## Prerequisites: 
+## Prerequisites
 ### Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
 
 #### Step 1: Register an Application in Microsoft Entra ID
