@@ -185,6 +185,10 @@ items:
           items:
           - name: Setup
             href: GitHub-connector.md 
+          - name: Setup Guide for GitHub Cloud Issue Microsoft Graph connector
+            href: GitHub-cloud-issue-connector.md 
+          - name: Setup Guide for GitHub Cloud Pull Request Microsoft Graph connector
+            href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
           - name: Setup
