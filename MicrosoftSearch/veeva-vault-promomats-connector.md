@@ -67,7 +67,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 ## Prerequisites
 ### Configure AAD OAuth 2.0/OpenID Connect for Veeva Vault Microsoft Graph connector
 
-#### Step 1: Register an Application in Microsoft Entra ID
+#### Step 1: Register an application in Microsoft Entra ID
 
 1. Go to **Azure AD** > **App Registrations** and **create a new application**.
 
