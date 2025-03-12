@@ -16,7 +16,7 @@ description: "Set up the Bitbucket Microsoft Graph connectors for Microsoft Sear
 ms.date: 02/14/2025
 ---
 
-# Bitbucket Microsoft Graph connectors
+# Bitbucket Microsoft Graph connectors (Preview)
 
 The Bitbucket Microsoft Graph connectors (Bitbucket Cloud Pull Request and Bitbucket Cloud Knowledge) allow your organization to index pull requests and documentation (txt and md files) stored in GitLab. After you configure the connector and index Bitbucket content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
@@ -70,6 +70,9 @@ Custom setup is for admins who want to edit the default values for any settings.
 
 ### Users
 #### Identity mapping
+By default, due to the limitation of Bitbucket API, the connector maps emails in Microsoft Entra ID using display names from Bitbucket.
+If this mapping does not align with your configuration, please configure to customize the identity mapping.
+
 To ensure correct permission enforcement, map Bitbucket user identities to Microsoft Entra ID. The following are the options:
   - **Username:** Matches Bitbucket usernames to Microsoft Entra ID user properties.
   - **Name:** Maps Bitbucket user names with Microsoft Entra ID user properties.
