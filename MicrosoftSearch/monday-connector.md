@@ -15,7 +15,7 @@ search.appverid:
 description: "Set up the Monday.com Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 02/26/2025
 ---
-# Monday.com Microsoft Graph Connector
+# Monday.com Microsoft Graph Connector (Preview)
 
 The Monday.com Microsoft Graph Connector enables organizations to index board content from Monday.com into Microsoft Graph, making it accessible across Microsoft 365 experiences, including Microsoft 365 Copilot and Microsoft Search.
 
