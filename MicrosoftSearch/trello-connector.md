@@ -1,6 +1,6 @@
 --- 
 
-title: "Trello Graph connector" 
+title: "Trello Microsoft Graph connector (preview)" 
 ms.author: anggao
 author: ms-anggao
 manager: jecui
@@ -13,107 +13,112 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Trello Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Trello Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot." 
 ms.date: 02/27/2025
 ---
 
-# Trello Microsoft Graph connector (Preview)
+# Trello Microsoft Graph connector (preview)
 
-The Trello Graph connector allows your organization to index cards from Trello. After you configure the connector, end users can search for these tickets from Trello in Microsoft Copilot and from any Microsoft Search client.
+The Trello Microsoft Graph connector allows your organization to index cards from Trello. After you configure the connector, users can search for these tickets from Trello in Microsoft 365 Copilot and from any Microsoft Search client.
 
-This ticket is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Trello Graph connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Trello Graph connector.
 
 >[!NOTE]
->The Trello connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Trello connector is in public preview. To get access to the connector, enable the [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- Index public cards from your Trello Workspace
+
+- Index public cards from your Trello Workspace.
 - Customize your crawl frequency.  
-- Create workflows using this connection and plugins from Microsoft Copilot Studio.  
+- Create workflows by using this connection and actions from Microsoft Copilot Studio.  
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
-- Doesn't index comments. 
-- Doesn't crawl user identities and access permissions. All public cards indexed using the Trello connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+
+- Doesn't index comments.
+- Doesn't crawl user identities and access permissions. All public cards indexed via the Trello connector are visible to all Microsoft 365 users in your tenant from Microsoft Search or Copilot.
 
 ## Prerequisites
-### 1.	Trello Developer Account and App Registration 
-Create or use an existing Trello account to access the developer portal. Register your application on https://trello.com/power-ups/admin to obtain your API credentials. [Learn more](https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/)  
 
-### 2.	Get your API Key and Secret
-Once your app is registered, visit API key Tab to get the unique App key and secret. These credentials are required to sign OAuth requests as part of the OAuth 1.0a flow.
+### 1. Trello developer account and app registration
 
+Create or use an existing Trello account to access the developer portal. Register your application on `https://trello.com/power-ups/admin` to get your API credentials. For more information, see [Authorizing With Trello's REST API](https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/).  
+
+### 2. Get your API key and secret
+
+After you register your app, go to the **API key** tab to get the unique app key and secret. These credentials are required to sign OAuth requests as part of the OAuth 1.0a flow.
 
 ## Get Started
 
-### 1. Display name 
-A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+### 1. Display name
 
+The display name identifies each citation in Copilot to help users recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is provided for this field; you can customize it to a name that users in your organization recognize.
 
 ### 2. Authentication Type
 
 **Trello OAuth**
-Enter the Consumer key and Private secret you obtained from your Trello app console. [Learn more](https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/)  
+Enter the Consumer key and Private secret you got from your Trello app console. For more information, see [Authorizing With Trello's REST API](https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/).
 
 ### 3. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Trello. You can click on the "Create" button to publish your connection and index tickets from your Trello account.
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before you expand the rollout to a broader audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
-For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Trello data.
+Now you're ready to create the connection for Trello. Choose **Create** to publish your connection and index tickets from your Trello account.
 
+For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, default values are set based on what works best with Trello data.
 
 | Users | Description |
 |----|---|
-| Access permissions | _Default access permission is set to be visible to everyone._ |
+| Access permissions | Default access permission is set to be visible to everyone. |
 
 | Content | Description |
 |---|---|
-| Manage Properties | _To check default properties and their schema. |
+| Manage properties | To check default properties and their schema. |
 
 | Sync | Description |
 |---|---|
-| Incremental Crawl | _Frequency: Every 15 mins_ |
-| Full Crawl | _Frequency: Every Day_ |
+| Incremental crawl | Frequency: Every 15 mins |
+| Full crawl | Frequency: Every day |
 
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
+If you want to edit any of these values, choose **Custom Setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Content**, and **Sync**.
+Custom setup is for admins who want to edit the default values for settings listed. When you choose **Custom Setup**, you see three more tabs - **Users**, **Content**, and **Sync**.
 
 ### Users
 
-**Access permissions**
-The Trello Graph connector allows your organization to index cards from Trello. After you configure the connector, end users can search for these tickets from Trello in Microsoft Copilot and from any Microsoft Search client.
+#### Access permissions
+
+The Trello Microsoft Graph connector allows your organization to index cards from Trello. After you configure the connector, users can search for these tickets from Trello in Microsoft 365 Copilot and from any Microsoft Search client.
 
 ### Content
 
-**Manage properties**
+#### Manage properties
 
-Here, you can add or remove available properties from your Trello, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+You can add or remove available properties from your Trello, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. The following table lists the properties that are selected by default.
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
-|	BoardName	|		|		|		|
-|	BoardUrl	|		|		|		|
-|	Closed	|		|		|		|
-|	DateLastActivity	|	Last modified date time	|	Date and time the item was last modified in the data source.	|	Query, Retrieve	|
-|	Description	|		|		|	Search	|
-|	Due	|		|		|	Query, Retrieve	|
-|	DueComplete	|		|		|		|
-|	Id	|		|		|	Query, Retrieve	|
-|	LabelName	|		|		|	Query, Retrieve, Search	|
-|	Name	|	Title	|	The title of the item that you want shown in Copilot and other search experiences	|	Query, Retrieve, Search	|
-|	Start	|	Created date time	|	Date and time that the item was created in the data source	|	Query, Retrieve	|
-|	Url	|	url	|	The target URL of the item in the data source	|	Query, Retrieve, Search	|
+| BoardName |  |  |  |
+| BoardUrl |  |  |  |
+| Closed |  |  |  |
+| DateLastActivity | Last modified date time | Date and time the item was last modified in the data source. | Query, Retrieve |
+| Description |  |  | Search |
+| Due |  |  | Query, Retrieve |
+| DueComplete |  |  |  |
+| Id |  |  | Query, Retrieve |
+| LabelName |  |  | Query, Retrieve, Search |
+| Name | Title | The title of the item that you want shown in Copilot and other search experiences | Query, Retrieve, Search |
+| Start | Created date time | Date and time that the item was created in the data source | Query, Retrieve |
+| Url | url | The target URL of the item in the data source | Query, Retrieve, Search |
 
-**Preview data**
+#### Preview data
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
 ### Sync
 
-The refresh interval determines how often your data is synced between the data source and the Trello Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more details, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
+The refresh interval determines how often your data is synced between the data source and the Trello Microsoft Graph connector index. There are two types of refresh intervals: full crawl and incremental crawl. For more information, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
-You can change the default values of the refresh interval from here if you want to.
+You can change the default values of the refresh interval.

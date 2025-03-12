@@ -59,7 +59,7 @@ Click **Install app and get OAuth token** and record the `Client ID` and `Client
 
 ### 1. Display name
 
-A display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is provided for this field, but you can customize it to a name that users in your organization recognize.
+A display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is provided for this field; you can customize it to a name that users in your organization recognize.
 
 ### 2. Team ID
 
@@ -77,7 +77,7 @@ Enter the Client ID and Client secret you obtained from your Miro app. For more 
 
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before you expand the rollout to a broader audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Miro. You can choose **Create** to publish your connection and index boards from your Miro account.
+Now you're ready to create the connection for Miro. Choose **Create** to publish your connection and index boards from your Miro account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, default values are set based on what works best with Miro data.
 
@@ -134,7 +134,6 @@ You can add or remove available properties from your Miro, assign a schema to th
 |	Team	|	NA	|	NA	|	Query, Retrieve	|
 |	ViewLink	|	url	|	The target URL of the item in the data source	|	Query, Retrieve	|
 
-
 #### Preview data
 
 Use the preview results button to verify the sample values of the selected properties and query filter.
@@ -143,7 +142,7 @@ Use the preview results button to verify the sample values of the selected prope
 
 The refresh interval determines how often your data is synced between the data source and the Miro Microsoft Graph connector index. Only full crawl refresh intervals are supported. For more information, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
-You can change the default values of the refresh interval from here if you want to.
+You can change the default values of the refresh interval.
 
 ## Troubleshooting
 
