@@ -181,7 +181,7 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub (preview)
+        - name: GitHub Cloud Knowledge (preview)
           items:
           - name: Setup
             href: GitHub-connector.md 
