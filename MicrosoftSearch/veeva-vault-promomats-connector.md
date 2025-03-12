@@ -92,7 +92,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
    - **Authorization Server Provider:** Azure
    - **Upload Microsoft Entra ID Metadata:** Use the URL:
      `https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration`
-   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of AAD and Veeva Vault.
+   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of Microsoft Entra ID and Veeva Vault.
 
 3. Add client application: Use the **Client ID** from Azure AD.
 
