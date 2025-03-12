@@ -65,7 +65,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites
-### Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
+### Configure AAD OAuth 2.0/OpenID Connect for Veeva Vault Microsoft Graph connector
 
 #### Step 1: Register an Application in Microsoft Entra ID
 
