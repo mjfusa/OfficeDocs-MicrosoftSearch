@@ -1,5 +1,5 @@
 ---
-title: "GitHub Issue Microsoft Graph connectors"
+title: "GitHub Cloud Issue Microsoft Graph connectors"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,15 +12,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the GitHub Issue Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
+description: "Set up the GitHub Cloud Issue Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
 ms.date: 02/14/2025
 ---
 
-# GitHub Issue Microsoft Graph connectors
+# GitHub Cloud Issue Microsoft Graph connectors
 
-The GitHub Issue Microsoft Graph connectors allow your organization to index issues stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The GitHub Cloud Issue Microsoft Graph connectors allow your organization to index issues stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
-This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitHub Issue Microsoft Graph connectors.
+This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitHub Cloud Issue Microsoft Graph connectors.
 
 ## Capabilities
 
@@ -51,7 +51,7 @@ Before you set up the connector, make sure that:
 ## Get started
 
 ### 1. Choose display name
-Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
+Choose a display name that helps users recognize the connection in a Copilot response.
 
 ### 2. Authenticate
 
