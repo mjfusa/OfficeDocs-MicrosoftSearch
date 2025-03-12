@@ -122,3 +122,9 @@ Use the preview results button to verify the sample values of the selected prope
 The refresh interval determines how often your data is synced between the data source and the Trello Microsoft Graph connector index. There are two types of refresh intervals: full crawl and incremental crawl. For more information, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
 You can change the default values of the refresh interval.
+
+## Next steps
+
+After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+
+For help and support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).

@@ -132,7 +132,7 @@ The connector adheres to the ACLs defined in Veeva Vault. Only users with view p
 ### Sync
 
 #### Adjust sync schedules
-  
+
 You can modify the frequency of full crawls to fit your organization's requirements. The following are the default crawls:
 
 - Incremental crawl - 15 minutes.
@@ -145,6 +145,6 @@ For information about troubleshooting, see [Troubleshooting the Veeva Vault Prom
 
 ## Next steps
 
-After the connector is configured and published, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+After you configure and publish the connector, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 

@@ -55,7 +55,7 @@ Add the `boards:read Read boards you have access to` plan in the app you created
 
 Click **Install app and get OAuth token** and record the `Client ID` and `Client secret` from the app credentials.
 
-## Get Started
+## Get started
 
 ### 1. Display name
 
@@ -168,3 +168,9 @@ Your credential information expired. Refresh the Miro app and copy the latest Cl
 **Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.**
 
 This is a common credential error. Go back to the Miro App and verify that the scopes in the permission tab are correctly configured.
+
+## Next steps
+
+After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+
+For help and support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
