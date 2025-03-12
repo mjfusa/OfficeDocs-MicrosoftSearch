@@ -76,7 +76,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
    - Include scope: `offline_access {clientId}/.default`
    - Grant **Admin Consent**.
 
-3. Generate a Client Secret under **Certificates & Secrets** and store it securely.
+3. Generate a client secret under **Certificates & Secrets** and store it securely.
 
 4. Add the following links into the field **'Redirect URLs'** in the section **OAuth 2** of the **Setting** tab in the Veeva Vault app console:
    - For **M365 Enterprise**, copy and paste:
