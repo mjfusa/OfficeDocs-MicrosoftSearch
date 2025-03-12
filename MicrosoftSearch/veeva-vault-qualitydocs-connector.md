@@ -61,11 +61,11 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites: 
-### Configuring AAD OAuth 2.0/OpenID Connect for Veeva Vault Graph Connector
+### Configuring Microsoft Entra ID OAuth 2.0/OpenID Connect for Veeva Vault Microsoft Graph Connector
 
-#### Step 1: Register an Application in Microsoft Entra ID
+#### Step 1: Register an application in Microsoft Entra ID
 
-1. **Go to** Azure AD > App Registrations and **create a new application**.
+1. Go to **Microsoft Entra admin center** > **Applications** and **register a new application**.
 2. **Set up API permissions:**
    - Add **Microsoft Graph** → **Delegated permissions**
    - Include scope: `offline_access {clientId}/.default`
@@ -86,12 +86,12 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 1. **Go to** Admin > Settings > **OAuth 2.0 / OpenID Connect Profiles**.
 2. **Create a new profile:**
    - **Authorization Server Provider:** Azure
-   - **Upload AAD Metadata:** Use the URL:
+   - **Upload Microsoft Entra ID Metadata:** Use the URL:
      ```
      https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration
      ```
-   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of AAD and Veeva Vault.
-3. **Add Client Application:** Use the **Client ID** from Azure AD.
+   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of Microsoft Entra ID and Veeva Vault.
+3. **Add client application:** Use the **Client ID** from Azure AD.
 4. **Activate the profile** and link it to a security policy under **Users & Groups > Security Policies**.
 
 ## Get started
