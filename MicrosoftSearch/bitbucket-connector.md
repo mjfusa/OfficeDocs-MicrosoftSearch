@@ -18,7 +18,7 @@ ms.date: 02/14/2025
 
 # Bitbucket Microsoft Graph connectors (Preview)
 
-The Bitbucket Microsoft Graph connectors (Bitbucket Cloud Pull Request and Bitbucket Cloud Knowledge) allow your organization to index pull requests and documentation (txt and md files) stored in GitLab. After you configure the connector and index Bitbucket content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The Bitbucket Microsoft Graph connectors (Bitbucket Cloud Pull Request and Bitbucket Cloud Knowledge) allow your organization to index pull requests and documentation (txt and md files) stored in BitBucket. After you configure the connector and index Bitbucket content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
 This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors Bitbucket Microsoft Graph connectors.
 
