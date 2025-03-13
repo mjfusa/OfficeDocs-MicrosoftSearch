@@ -61,7 +61,7 @@ The following table provides the mandatory values for OAuth client creation:
 Field | Description | Recommended Value
 --- | --- | ---
 Authentication Method | The OAuth 2 Authentication Method to authenticate and authorize users securely | OAuth2 - Authorization Code Flow (User Authentication)
-Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | https://gcs.office.com/v1.0/admin/oauth/callback  
+Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  
 Scopes | The scopes to create a new version and a new client id and secret. | Below scopes are mandatory: seismic.user.view, seismic.configuration.view, seismic.reporting, seismic.library.view 
    
 Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use a Seismic administrator account credential to authenticate permission to crawl.
