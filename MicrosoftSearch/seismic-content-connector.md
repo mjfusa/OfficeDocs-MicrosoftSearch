@@ -2,7 +2,7 @@
 
 title: "Seismic Content Graph connector" 
 ms.author: depang
-author: depanggh
+author: dennypanggh
 manager: jecui
 audience: Admin
 ms.audience: Admin 
