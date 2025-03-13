@@ -27,11 +27,11 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 >The Smartsheet Sheet connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- Index Smartsheet Sheet content from Smartsheet Enterprise edition or Advanced Work Management edition.
+- Index Smartsheet Sheet content from Smartsheet Pro and Business edition.
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
-- Only content from the Smartsheet Sheet Enterprise and Advanced Work Management edition will be indexed.
+- Only content from the Smartsheet Sheet Pro and Business edition will be indexed.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
