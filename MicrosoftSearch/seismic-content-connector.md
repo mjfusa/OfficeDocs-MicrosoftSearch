@@ -20,7 +20,7 @@ ms.date: 03/13/2025
 # Seismic Content Microsoft Graph connector (Preview)
 
 The Seismic Content Graph connector allows your organization to index content from Seismic. After you configure the connector, end users can search for these content from Seismic in Microsoft Copilot and from any Microsoft Search client.
-
+ 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Seismic Content Graph connector.
 
 >[!NOTE]
