@@ -35,7 +35,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Smartsheet Sheet instance region**: To connect to your Smartsheet Sheet data, you will need to choose the region for your organization's Smartsheet instance. Use one of the following Smartsheet instance region: “Default” (`https://api.smartsheet.com`) or “Europe”(`https://api.smartsheet.eu`).
+- **Smartsheet Sheet instance region**: To connect to your Smartsheet Sheet data, you will need to choose the region for your organization's Smartsheet instance. Use one of the following Smartsheet instance regions: “Default” (`https://api.smartsheet.com`) or “Europe”(`https://api.smartsheet.eu`).
 - **Smartsheet Sheet account**: To connect to Smartsheet Sheet and allow Microsoft Graph Connector to update Smartsheet sheet content and metadata regularly, you need Smartsheet Sheet Access Tokens of System Admin Users to access published content and metadata.
 
 ## Get Started
@@ -54,7 +54,7 @@ We support the Smartsheet API access token authentication for Smartsheet Sheet, 
 
 API Access token owner email address: the API access token owner's email address.
 
-API Token: The API Token value generated from Smartsheet Personal Settings -> API Access page.To learn more, see [Generate an API key](https://aka.ms/gc_smartsheet_APItoken) in the Smartsheet documentation.
+API Token: The API Token value generated from Smartsheet Personal Settings -> API Access page. To learn more, see [Generate an API key](https://aka.ms/gc_smartsheet_APItoken) in the Smartsheet documentation.
    
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
