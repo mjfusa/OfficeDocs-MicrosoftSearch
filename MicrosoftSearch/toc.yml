@@ -253,6 +253,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Smartsheet Sheet
+          items:
+          - name: Setup
+            href: smartsheet-sheet-connector.md
         - name: Stack Overflow
           items:
           - name: Setup
