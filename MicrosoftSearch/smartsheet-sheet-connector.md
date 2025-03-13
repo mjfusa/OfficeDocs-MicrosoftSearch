@@ -112,12 +112,12 @@ Here, you can view available properties from your Smartsheet Sheet, assign a sch
 |Source property|Label|Description|Schema|
 |---|---|---|---|
 | Content  |  |  | Search   |
-| CreatedAt  | Created date time | Data and time that the item was created in the data source.  | Query, Retrieve   |
+| CreatedAt  | Created date time | Data and time that the item was created in the data source. | Query, Retrieve   |
 | CreatedBy  | Created by | Name of the person who created the item in the data source. | Query, Retrieve, Search |
-| HasAttachment  |  |  | Query, Retrieve   |
-| Id   |  |  | Query, Retrieve   |
-| ModifiedAt   | Last modified date time | Date and time the item was last modified in the data source. | Last modified date time| Query, Retrieve   |
-| Name   |  | File name  | Query, Retrieve, Search |
+| HasAttachment  |  |  | Query, Retrieve |
+| Id   |  |  | Query, Retrieve  |
+| ModifiedAt   | Last modified date time | Date and time the item was last modified in the data source. | Query, Retrieve   |
+| Name   | File name |   | Query, Retrieve, Search |
 | SheetPermaLink   | URL | The target URL of the item in the data source. | Query, Retrieve, Search |
 | Title  | Title | The title of the item that you want to be shown in Copilot and other search experiences. | Query, Retrieve, Search |
 | WorkspaceName  |  |  | Query, Retrieve, Search |
