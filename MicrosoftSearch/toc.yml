@@ -225,6 +225,10 @@ items:
           items:
           - name: Setup
             href: salesforce-knowledge-connector.md
+        - name: Seismic Content
+          items:
+          - name: Setup
+            href: seismic-content-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
