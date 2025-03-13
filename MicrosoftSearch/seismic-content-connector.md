@@ -31,12 +31,13 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
-- Only indexes content from the Seismic Content Enterprise edition.
+- Only content from the Seismic Content Enterprise edition will be indexed.
+- Only content that has been published will be indexed. Any content that has not been published in WorkSpace will not be indexed.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Seismic Content instance URL**: To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
-- **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update published webpages and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access published content and metadata.
+- **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update published content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access published content and metadata.
 
 ## Get Started
 
@@ -116,7 +117,7 @@ Select time range: Select a time range for the content to be indexed. Only conte
 
 **Manage properties**
 
-Here, you can add or remove available properties from your Seismic Content, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+Here, you can view available properties from your Seismic Content, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
