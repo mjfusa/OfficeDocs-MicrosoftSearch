@@ -1,7 +1,7 @@
 ---
 title: "Managing the search box in SharePoint sites"
-ms.author: keremy
-author: bstuck
+ms.author: misvenso
+author: wobba
 manager: bstucker
 ms.audience: Admin
 ms.topic: article
@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "How to customize the search box experience on SharePoint sites"
-ms.date: 11/01/2023
+ms.date: 03/14/2025
 ---
 
 # Search box settings on SharePoint sites
@@ -55,6 +55,9 @@ After running this command, the site that was previously showing results from th
 To go back to the default setting, run the command again with the value “DefaultScope". To search across the Hub, use “Hub” as the SearchScope value.
 
 This setting applies at the individual site level. There's no equivalent setting for site collections.
+
+> [!NOTE]
+> Setting the default search scope to "Tenant" combined with a custom search results page will break the people centric search experience. Also see the note on [Create a custom search results page in SharePoint Online](create-search-results-pages.md) for unsupported redirect scenarios.
 
 ## Show or hide the search box
 
