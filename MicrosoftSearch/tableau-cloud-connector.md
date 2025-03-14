@@ -21,7 +21,7 @@ ms.date: 3/14/2025
 
 With the Tableau Cloud Microsoft Graph connector, your organization can index Tableau sheets of your Tableau Cloud. After you configure the connector and index content from Tableau Cloud, end users can search for those  sheets in Microsoft Copilot and from any Microsoft Search client. h.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Tableau Cloud Microsoft Graph connector. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Tableau Cloud Microsoft Graph connector. 
 
 ## Capabilities
 - Index sheets of your Tableau Cloud and supports ingestion filters based on top-level projects.
