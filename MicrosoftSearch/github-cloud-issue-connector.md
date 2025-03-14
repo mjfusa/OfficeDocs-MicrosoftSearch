@@ -40,13 +40,13 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 Before you set up the connector:
 
 1. Make sure that your GitHub instance is accessible via API.
-2. Set up a GitHub App for authentication purpose. For more information, see [Authenticating as a GitHub App](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app).
+2. Set up a GitHub App for authentication. For more information, see [Authenticating as a GitHub App](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app).
 3. Generate a **Client ID** and **Client secret** from the GitHub App for authentication.
 4. Verify that the user account used for authentication has access to the repositories and issues to be indexed.
 5. Verify that the Client ID and client secret have the permissions to read the issues.
-6. Make sure that users who access indexed GitHub data have corresponding **Microsoft Entra ID** identities for permission mapping./*
+6. Make sure that users who access indexed GitHub data have corresponding **Microsoft Entra ID** identities for permission mapping.\*
 
-/* We recommend that you use a different GitHub App for OAuth authentication for each connection because the GitHub rate limit is calculated per GitHub App.
+\* We recommend that you use a different GitHub App for OAuth authentication for each connection because the GitHub rate limit is calculated per GitHub App.
 
 ## Get started
 
@@ -85,5 +85,5 @@ You can configure incremental and full crawls. The following are the default val
 
 ## Next steps
 
-- Review the connection status in the Microsoft 365 admin center. 
+- Review the connection status in the Microsoft 365 Admin Center. 
 - If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
