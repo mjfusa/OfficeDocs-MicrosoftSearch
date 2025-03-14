@@ -56,7 +56,7 @@ Field | Description | Recommended value
 --- | --- | ---
 App name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search
 Which best describes what your app will do? | Describe the purpose of the app. | Get data out of Asana to create reports.
-Redirect URL | A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: `https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback`</br></br>For **Microsoft 365 Government**: `https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback`
+Redirect URL | A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`</br></br>For **Microsoft 365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 Manage distribution | Choose workspaces to be distributed. | Add specific workspaces that the connector can access or select **Any workspace**.
    
 Copy the client ID and client secret from the OAuth tab in the Asana app that you created and paste it in the connector setup. Choose **Authorize**, and use the same Asana admin account credential to authenticate permission to crawl.
@@ -119,7 +119,7 @@ You can add or remove available properties from your Asana, assign a schema to t
 |Source property|Label|Description|Schema|
 |---|---|---|---|
 | Assignee |Not applicable| The person who should complete this task | Query, Retrieve, Search |
-| Completed | Content | The main body of the article|  Query, Retrieve |
+| Completed | Not applicable | The main body of the article|  Query, Retrieve |
 | CompletedAt |Not applicable | Date and time that the task was completed | Query, Retrieve |
 | CreatedAt | Created date time | Date and time that the task was created | Query, Retrieve |
 | CreateBy | Created by | The person who created this task | Query, Retrieve, Search |
@@ -130,7 +130,7 @@ You can add or remove available properties from your Asana, assign a schema to t
 | Notes |Not applicable  | Description of the task | Search |
 | ProjectIds |Not applicable | Project IDs |Not applicable|
 | ProjectNames | Not applicable| Project names | Query, Retrieve |
-| Tags |Not applicable | Tags assigned to this task | Query, Retrieve |
+| Tags | tags | Tags assigned to this task | Query, Retrieve |
 | TaskUrl | url | The link of the task | Query, Retrieve, Search |
 | WorkspaceName | Not applicable| Workspace name | Query, Retrieve, Search |
 

@@ -181,7 +181,7 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub (preview)
+        - name: GitHub Cloud Knowledge (preview)
           items:
           - name: Setup
             href: GitHub-connector.md 
@@ -225,6 +225,10 @@ items:
           items:
           - name: Setup
             href: salesforce-knowledge-connector.md
+        - name: Seismic Content
+          items:
+          - name: Setup
+            href: seismic-content-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
@@ -249,6 +253,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Smartsheet Sheet
+          items:
+          - name: Setup
+            href: smartsheet-sheet-connector.md
         - name: Stack Overflow
           items:
           - name: Setup
