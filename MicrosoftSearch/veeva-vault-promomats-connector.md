@@ -18,7 +18,7 @@ ms.date: 02/26/2025
 ---
 # Veeva Vault PromoMats Microsoft Graph connector
 
-The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
+The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
 The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
@@ -34,7 +34,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Capabilities
 
-The The Veeva Vault PromoMats connector enables the following capabilities:
+The Veeva Vault PromoMats connector enables the following capabilities:
 
 - Generates summaries to understand and make decisions based on promotional materials and key documents.
 - Improves the searchability of promotional documents by using advanced Microsoft 365 search capabilities.
