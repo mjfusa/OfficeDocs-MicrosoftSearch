@@ -43,7 +43,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. The display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Tableau Cloud Site URL
-A Tableau Cloud site URL typically looks like https://<your-domain>.online.tableau.com/#/site/<site-name> 
+A Tableau Cloud site URL typically looks like https://<>.online.tableau.com/#/site/<site-name> 
 
 ### 3. Authentication Type
 We support the Connected Apps with OAuth2.0 Client Secret for Tableau Cloud. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
