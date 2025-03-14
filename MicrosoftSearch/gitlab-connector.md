@@ -35,6 +35,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - Only repositories, issues, merge requests, .md, .txt files, and wikis are indexed.
 - Banning users is not supported as a permission rule. As a workaround, administrators can remove users from groups instead.
 - Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
+- Due to stability concerns identified during Microsoft internal testing, support for the Planner role has been conservatively deprecated. Access is now restricted to Reporter roles and above. Users may encounter issues when assigning team members the Planner role. To mitigate potential problems, please assign Reporter roles or higher. We will closely monitor this feature and may revisit Planner role support in the future.
 
 ## Prerequisites
 
@@ -87,7 +88,7 @@ When setting up GitLab Server Connectors, please note the following differences:
 
 ### VPN Gateway Prerequisite
 
-A VPN gateway is required before establishing a connection. Refer to the setup guide for detailed instructions on configuring the gateway.
+A VPN gateway is required before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for detailed instructions on configuring the gateway.
 
 ### Admin Authentication
 
@@ -95,11 +96,11 @@ The user account used for authentication must have administrative privileges to 
 
 ### Public Project Visibility
 
-For public projects with visibility restricted to project members, GitLab documentation claims that guest roles and above can view Merge Requests (MR). However, testing shows that at least a Planner role is required to view MRs. Since Planner roles are not currently supported, access in this scenario is limited to Reporter roles and above.
+Due to misalignments between GitLab documentation and observed behaviors, access to Merge Requests for public projects with visibility restricted to project members is conservatively set to Reporter roles and above.
 
 ### Internal Project Visibility
 
-For internal projects restricted to project members, although GitLab documentation suggests that Guest roles can view Merge Requests, testing demonstrates that a Reporter role or higher is necessary for MR access.
+Due to misalignments between GitLab documentation and observed behaviors, access to Merge Requests for internal projects restricted to project members is conservatively set to Reporter roles and above.
 
 ## Next steps
 
