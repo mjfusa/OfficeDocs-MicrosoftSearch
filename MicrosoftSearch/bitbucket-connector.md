@@ -70,12 +70,12 @@ Custom setup is for admins who want to edit the default values for any settings.
 
 ### Users
 #### Identity mapping
-By default, due to the limitation of Bitbucket API, the connector maps emails in Microsoft Entra ID using display names from Bitbucket.
+By default, due to the limitation of Bitbucket API, the connector maps emails in Microsoft Entra ID using public names from Bitbucket.
 If this mapping does not align with your configuration, please configure to customize the identity mapping.
 
 To ensure correct permission enforcement, map Bitbucket user identities to Microsoft Entra ID. The following are the options:
-  - **Username:** Matches Bitbucket usernames to Microsoft Entra ID user properties.
-  - **Name:** Maps Bitbucket user names with Microsoft Entra ID user properties.
+  - **Full Name:** Matches Bitbucket full names to Microsoft Entra ID user properties.
+  - **Public Name:** Maps Bitbucket public names with Microsoft Entra ID user properties.
 
 If direct mapping fails, use **regular expressions (regex)** for transformation.
 
