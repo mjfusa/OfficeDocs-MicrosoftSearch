@@ -99,7 +99,7 @@ Here, you can check available properties from your Adobe Experience Manager Asse
 |----------------------|--------------------------|---------------------------------------------------------------------------------|-----------------------------|
 | AltText          |             | the "Alt Text" field in AEM Assets metadata                     | Query, Retrieve, Search     |
 | AssetType         |             | The file type of the asset (e.g., Image, Multimedia, Document, Archive etc.).                    |Retrieve  |
-| Content         | Content                 | The content of doucments, not available for images             | Search                      |
+| Content         | Content                 | The content of documents, not available for images             | Search                      |
 | CreatedBy           | Created by              | Date and time that the item was created in the data source                      | Query, Retrieve, Search     |
 | CreatedTime         | Created date time       | Date and time that the item was created in the data source                      | Query, Retrieve             |
 | Description         | Description             | A brief summary of the asset's content                                           | Query, Retrieve             |
