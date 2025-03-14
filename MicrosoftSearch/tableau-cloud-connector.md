@@ -99,25 +99,21 @@ Use the preview results button to verify the sample values of the selected prope
 
 **Manage properties**
 
-Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. 
+Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. | Properties       | Semantic Label           | Schema                         |
 
-| **Source property** | **Semantic label**       | **Description**                                                                 | **Schema**                  |
-|----------------------|--------------------------|---------------------------------------------------------------------------------|-----------------------------|
-| CreatedBy           | Created by              | Date and time that the item was created in the data source                      | Query, Retrieve, Search     |
-| CreatedTime         | Created date time       | Date and time that the item was created in the data source                      | Query, Retrieve             |
-| Description         | Description             | A brief summary of the page's content                                           | Query, Retrieve             |
-| HtmlContent         | Content                 | The content of static webpages, not available for dynamic webpages              | Search                      |
-| Title            |                          |  The title of the items                                                                               | Query, Retrieve             |
-| LastModifiedBy      | Last modified by        | Name of the person who most recently edited the item in the data source         | Search, Query, Retrieve     |
-| Link                | URL                     | The target URL of the item in the data source                                   | Query, Retrieve             |
-| ModifiedTime        | Last modified date time | Date and time the item was last modified in the data source                     | Query, Retrieve             |
-| Navigation Title    | Navigation title        | Navigation title is the title displayed in site navigation menus                | Query, Retrieve             |
-| By         |  by            | Name of the person who  the item in the data source                    | Query, Retrieve             |
-| Time       |  date time     | Date and time the item was  in the data source                         | Query, Retrieve             |
-| Subtitle            | Subtitle                | The subtitle of the items                                                      | Query, Retrieve             |
-| PageTitle               | Title               | The pagetitle of the webpages                                                          | Query, Retrieve             |
-| Tags                | Tags                    | Tags defined in Tableau Cloud metadata. In AEM, tags are organized hierarchically   | Query, Retrieve, Search     |
-
+| **CreatedAt**       | **Created date time**       | **Query, Retrieve**              |
+|-----------------|-------------------------|--------------------------------|
+| IconUrl         | IconUrl                  | Retrieve                       |
+| LastModifiedBy  | Last modified by        | Query, Retrieve, Search        |
+| Name           | Title                    | Query, Retrieve, Search        |
+| ProjectName     |                          | Query, Search                  |
+| SheetType       |                          | Query, Refine, Retrieve        |
+| SheetUrl        | url                      | Retrieve                       |
+| Tags           |                          | Query, Refine, Retrieve        |
+| TopProjectName  |                          | Query, Search                  |
+| UpdatedAt       | Last modified date time | Query, Retrieve               |
+| WorkbookName    |                          | Query, Search                  |
+| WorkbookUrl     |                          |                                |
 
 ### Sync 
 
