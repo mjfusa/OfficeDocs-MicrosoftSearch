@@ -1,5 +1,5 @@
 --- 
-title: "Monday.com Microsoft Graph connector" 
+title: "Monday.com Microsoft Graph connector (preview)" 
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,21 +12,21 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Monday.com Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Monday.com Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot." 
 ms.date: 02/26/2025
 ---
-# Monday.com Microsoft Graph Connector (Preview)
+# Monday.com Microsoft Graph Connector (preview)
 
 The Monday.com Microsoft Graph Connector enables organizations to index board content from Monday.com into Microsoft Graph, making it accessible across Microsoft 365 experiences, including Microsoft 365 Copilot and Microsoft Search.
 
-The connector integrates Monday.com’s permission model, ensuring that users only access authorized content. It enhances productivity by enabling better task discovery, automated workflows, and AI-assisted project tracking. By indexing Monday.com data, the connector helps teams streamline collaboration and improve decision-making across projects.
+The connector integrates the Monday.com permission model to ensure that users only access authorized content. It enhances productivity by enabling better task discovery, automated workflows, and AI-assisted project tracking. By indexing Monday.com data, the connector helps teams streamline collaboration and improve decision-making across projects.
 
 ## Key Benefits
 
 - **Enhanced searchability of work items:** Enables Microsoft Search to retrieve Monday.com boards, groups, and items efficiently.
 - **AI-assisted project management:** Uses Copilot to summarize, track, and generate updates for tasks.
 - **Seamless content indexing:** Captures metadata, task descriptions, and key attributes from Monday.com.
-- **Maintains permissions and compliance:** Respects Monday.com’s built-in ACLs to ensure access control.
+- **Maintains permissions and compliance:** Respects the Monday.com built-in ACLs to ensure access control.
 
 ## Capabilities
 
@@ -35,34 +35,28 @@ The Monday.com connector enables:
 - **Project & task indexing:** Makes Monday.com boards, groups, and items searchable across Microsoft 365.
 - **AI-powered insights:** Enhances workflows with intelligent recommendations based on indexed task data.
 - **Summarization & tracking:** Generates summaries of pending tasks, overdue work, and key updates.
-- **User-permission enforcement:** Maintains Monday.com's permission settings to restrict access to authorized users.
+- **User-permission enforcement:** Maintains the Monday.com permission settings to restrict access to authorized users.
 - **Metadata indexing:** Captures task priority, status, due dates, assignees, and related attributes.
 - **Custom filtering:** Allows indexing by workspace.
 
 ## Limitations
 
-- **Indexes only active boards, groups, and tasks.**
-- **Does not index attachments or comments.**
+- Indexes only active boards, groups, and tasks.
+- Does not index attachments or comments.
 
 ## Prerequisites  
 
 ### Configure OAuth in Monday.com  
 
-1. Navigate to the **Monday.com Developer Center** and create a **new app**.  
-2. In the **Basic Information** section, locate and note down your **Client ID** and **Client Secret**.  
+1. Go to the **Monday.com Developer Center** and create a **new app**.  
+2. In the **Basic Information** section, locate and note down your **Client ID** and **Client secret**.  
 3. Open the **OAuth** tab and **enable all read permissions**.  
 4. Go to the **Redirect URLs** tab and enter the following URLs:  
 
-   - **For M365 Enterprise**, copy and paste:  
-     ```
-     https://gcs.office.com/v1.0/admin/oauth/callback
-     ```  
-   - **For M365 Government**, copy and paste:  
-     ```
-     https://gcsgcc.office.com/v1.0/admin/oauth/callback
-     ```  
+   - **For Microsoft 365 Enterprise**, copy and paste: `https://gcs.office.com/v1.0/admin/oauth/callback`.  
+   - **For Microsoft 365 Government**, copy and paste:  `https://gcsgcc.office.com/v1.0/admin/oauth/callback`.
 
-5. Click the **"Promote to Live"** button to activate the app.  
+5. Choose **Promote to Live** to activate the app.  
 
 ## Get started
 
@@ -70,7 +64,7 @@ The Monday.com connector enables:
 Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
 
 ### 2. Monday.com Instance URL
-Enter the Instance URL of your Monday.com instance. (e.g. `https://test-instance.monday.com`) 
+Enter the instance URL of your Monday.com instance (for example, `https://test-instance.monday.com`). 
 
 ### 3. Authenticate
 
@@ -90,7 +84,7 @@ To ensure correct permission enforcement, map Monday.com user identities to Micr
   - **Email:** Matches Monday.com email to Microsoft Entra ID user properties.
 
 ### Content
-You can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps** on the **Content** tab.
+On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
 #### Filter  
 You can configure filtering by **workspace** to refine the indexed content.  
