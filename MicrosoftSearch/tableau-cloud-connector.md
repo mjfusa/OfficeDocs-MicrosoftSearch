@@ -99,10 +99,11 @@ Use the preview results button to verify the sample values of the selected prope
 
 **Manage properties**
 
-Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. | Properties       | Semantic Label           | Schema                         |
+Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below.
 
-| **CreatedAt**       | **Created date time**       | **Query, Retrieve**              |
+| Properties       | Semantic Label           | Schema                         |
 |-----------------|-------------------------|--------------------------------|
+|CreatedAt     | Created date time      | Query, Retrieve            |
 | IconUrl         | IconUrl                  | Retrieve                       |
 | LastModifiedBy  | Last modified by        | Query, Retrieve, Search        |
 | Name           | Title                    | Query, Retrieve, Search        |
