@@ -1,5 +1,5 @@
 ---
-title: "Veeva Vault QualityDocs Microsoft Graph connector" 
+title: "Veeva Vault QualityDocs Microsoft Graph connector (preview)" 
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,15 +12,15 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Veeva Vault QualityDocs Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Veeva Vault QualityDocs Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot." 
 ms.date: 02/26/2025
 ---
 
-# Veeva Vault QualityDocs Microsoft Graph connector (Preview)
+# Veeva Vault QualityDocs Microsoft Graph connector (preview)
 
 The Veeva Vault QualityDocs Microsoft Graph connector allows organizations to index quality and compliance documents from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
-The connector integrates Vault QualityDocs' built-in permission model, ensuring that users only access authorized content, and supports faster content retrieval and review through content analysis and preparation. By enhancing efficiency throughout the document lifecycle, it helps maintain compliance and quality control. This functionality is beneficial for quality management, regulatory, and manufacturing teams, enabling informed decision-making and reducing time-to-approval for critical documents.
+The connector integrates the Vault QualityDocs built-in permission model, ensuring that users only access authorized content, and supports faster content retrieval and review through content analysis and preparation. By enhancing efficiency throughout the document lifecycle, it helps maintain compliance and quality control. This functionality enables informed decision-making and reduces time-to-approval for critical documents to benefit quality management, regulatory, and manufacturing teams.
 
 The following are the key benefits of the Veeva Vault QualityDocs Microsoft Graph connector:
 
@@ -65,33 +65,24 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 #### Step 1: Register an application in Microsoft Entra ID
 
-1. Go to **Microsoft Entra admin center** > **Applications** and **register a new application**.
+1. Go to **Microsoft Entra admin center** > **Applications** > **Register a new application**.
 2. **Set up API permissions:**
-   - Add **Microsoft Graph** → **Delegated permissions**
+   - Add **Microsoft Graph** > **Delegated permissions**
    - Include scope: `offline_access {clientId}/.default`
    - Grant **Admin Consent**.
-3. **Generate a Client Secret** under **Certificates & Secrets** and store it securely.
-4. **Add the following links** into the field **'Redirect URLs'** in the section **OAuth 2** of the setting tab in the Veeva Vault app console:
-   - For **M365 Enterprise**, copy and paste:
-     ```
-     https://gcs.office.com/v1.0/admin/oauth/callback
-     ```
-   - For **M365 Government**, copy and paste:
-     ```
-     https://gcsgcc.office.com/v1.0/admin/oauth/callback
-     ```
+3. Under **Certificates & Secrets**, generate a client secret and store it securely.
+4. In the **OAuth 2** section of the **Setting** tab in the Veeva Vault app console, add the following links to the **Redirect URLs** field:
+   - For **Microsoft 365 Enterprise**, copy and paste: `https://gcs.office.com/v1.0/admin/oauth/callback`.
+   - For **Microsoft 365 Government**, copy and paste: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`.
 
 #### Step 2: Configure OAuth in Veeva Vault
 
-1. **Go to** Admin > Settings > **OAuth 2.0 / OpenID Connect Profiles**.
-2. **Create a new profile:**
+1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
+2. Create a new profile:
    - **Authorization Server Provider:** Azure
-   - **Upload Microsoft Entra ID Metadata:** Use the URL:
-     ```
-     https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration
-     ```
-   - **Identity Claim:** Use appropriate **Identity Claim** to associate the identities of Microsoft Entra ID and Veeva Vault.
-3. **Add client application:** Use the **Client ID** from Azure AD.
+   - **Upload Microsoft Entra ID Metadata:** Use the following URL: `https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration`.
+   - **Identity Claim:** Use the appropriate **Identity Claim** to associate the identities of Microsoft Entra ID and Veeva Vault.
+3. **Add client application:** Use the **Client ID** from Entra ID.
 4. **Activate the profile** and link it to a security policy under **Users & Groups > Security Policies**.
 
 ## Get started
@@ -106,22 +97,22 @@ Enter the verified URL of your Veeva Vault instance. For example: `https://<your
 
 The connector supports basic authentication and Entra ID authentication.
 
-### 4. Rollout to limited audience
+### 4. Roll out to limited audience
 Deploy this connection to a limited group of users to validate indexing and access control functionality before a full rollout. 
 
 ### 5. Customize sync schedules
-Set up periodic incremental crawls (default: 15 minutes) and full crawls (default: daily). 
+Set up periodic incremental crawls (default is 15 minutes) and full crawls (default is daily). 
 
 ## Default settings
 
-The default settings for the Veeva Vault QualityDocs Microsoft Graph connector are the same as those for PromoMats.
+The default settings for the Veeva Vault QualityDocs connector are the same as those for the [Veeva Vault PromoMats connector](veeva-vault-promomats-connector.md#default-settings).
 
 ## Troubleshooting
 
-For troubleshooting, see [Troubleshooting the Veeva Vault Microsoft Graph connectors](troubleshoot-veeva-vault-connectors.md).
+For troubleshooting information, see [Troubleshooting the Veeva Vault Microsoft Graph connectors](troubleshoot-veeva-vault-connectors.md).
 
 ## Next steps
 
-After configuration, monitor the status in the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
+After you configure and publish the connector, monitor the status in the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support).

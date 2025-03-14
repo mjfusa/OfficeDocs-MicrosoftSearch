@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshooting the Veeva Vault Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot" 
+description: "Find troubleshooting information for the Veeva Vault Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot." 
 --- 
 
 # Troubleshooting the Veeva Vault Microsoft Graph connectors
