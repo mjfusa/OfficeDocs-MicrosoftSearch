@@ -181,7 +181,7 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub (preview)
+        - name: GitHub Cloud Knowledge (preview)
           items:
           - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
@@ -205,6 +205,10 @@ items:
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Monday.com
+          items:
+          - name: Setup
+            href: monday-connector.md
         - name: Miro
           items:
           - name: Setup
@@ -229,6 +233,10 @@ items:
           items:
           - name: Setup
             href: salesforce-knowledge-connector.md
+        - name: Seismic Content
+          items:
+          - name: Setup
+            href: seismic-content-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
@@ -253,6 +261,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Smartsheet Sheet
+          items:
+          - name: Setup
+            href: smartsheet-sheet-connector.md
         - name: Stack Overflow
           items:
           - name: Setup
@@ -261,12 +273,14 @@ items:
           items:
           - name: Setup
             href: trello-connector.md
-        - name: Veeva Vault - PromoMats
+        - name: Veeva Vault
           items:
-          - name: Setup
-            href: Veeva-Vault-PromoMats-connector.md
+          - name: Setup - Veeva Vault PromoMats
+            href: veeva-vault-promoMats-connector.md
+          - name: Setup - Veeva Vault QualityDocs
+            href: veeva-vault-qualitydocs-connector.md
           - name: Troubleshooting
-            href: troubleshoot-veeva-vault-promomats-connector.md
+            href: troubleshoot-veeva-vault-connectors.md
         - name: WordPress.org (on-prem)
           items:
           - name: Setup
