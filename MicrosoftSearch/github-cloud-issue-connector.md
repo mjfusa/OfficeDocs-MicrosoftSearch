@@ -1,5 +1,5 @@
 ---
-title: "GitHub Cloud Issue Microsoft Graph connectors"
+title: "GitHub Cloud Issue Microsoft Graph connector (preview)"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -16,9 +16,9 @@ description: "Set up the GitHub Cloud Issue Microsoft Graph connectors for Micro
 ms.date: 02/14/2025
 ---
 
-# GitHub Cloud Issue Microsoft Graph connectors (Preview)
+# GitHub Cloud Issue Microsoft Graph connectors (preview)
 
-The GitHub Cloud Issue Microsoft Graph connectors allow your organization to index issues stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The GitHub Cloud Issue Microsoft Graph connector allows your organization to index issues stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
 This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitHub Cloud Issue Microsoft Graph connectors.
 
