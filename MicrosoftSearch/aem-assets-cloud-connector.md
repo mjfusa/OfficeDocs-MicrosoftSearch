@@ -13,21 +13,21 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Adobe Experience Manager Sites Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Adobe Experience Manager Assets Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 01/16/2025
 ---
 
-# Adobe Experience Manager Sites Microsoft Graph connector (preview)
+# Adobe Experience Manager Assets Microsoft Graph connector (preview)
 
-With the Adobe Experience Manager Sites Microsoft Graph connector, your organization can index published webpages of your AEM Sites. After you configure the connector and index content from AEM Sites, end users can search for those published webpages in Microsoft Copilot and from any Microsoft Search client. 
+With the Adobe Experience Manager Assets Microsoft Graph connector, your organization can index published assets of your AEM Assets. After you configure the connector and index content from AEM Assets, end users can search for those published assets in Microsoft Copilot and from any Microsoft Search client. 
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Adobe Experience Manager Sites Microsoft Graph connector. 
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Adobe Experience Manager Assets Microsoft Graph connector. 
 
 >[!NOTE]
->The Adobe Experience Manager Sites connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Adobe Experience Manager Assets connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- Index published webpages of your AEM Sites.
+- Index published assets of your AEM Assets.
 - Supports ingestion filters based on page paths, allowing for exact matching and phrase matching using regular expressions.
 - Customize your crawl frequency.
 - Create workflows using this connection and plugins from Microsoft Copilot Studio.  
@@ -35,14 +35,14 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Limitations
 - Does not index comments.
-- Does not crawl user identities and access permissions. All published webpages indexed using the Adobe Experience Manager Sites Microsoft Graph connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
+- Does not crawl user identities and access permissions. All published assets indexed using the Adobe Experience Manager Assets Microsoft Graph connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Adobe Experience Cloud Instance URL**: To connect to your Adobe Experience Manager Sites data, you need your organization's Adobe Experience Cloud instance author environment URL and publish environment URL.
+- **Adobe Experience Cloud Instance URL**: To connect to your Adobe Experience Manager Assets data, you need your organization's Adobe Experience Cloud instance author environment URL and publish environment URL.
   Your organization's Adobe Experience Cloud instance author environment URL typically looks like: `https://author-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.<REGION>.adobeaemcloud.com`.
   Your organization's Adobe Experience Cloud instance publish environment URL typically looks like: `https://publish-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.<REGION>.adobeaemcloud.com`. 
-- **Adobe Experience Cloud Account**: To connect to Adobe Experience Cloud and allow the Adobe Experience Manager Sites Microsoft Graph connector to update published webpages and metadata regularly, you need a technical account of your Adobe Experience Manager Sites with the credentials to access published webpages and metadata. The technical account is the secure, service-based account for external access to Adobe Experience Manager Sites. Find more details [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#generate-a-jwt-token-and-exchange-it-for-an-access-token).
+- **Adobe Experience Cloud Account**: To connect to Adobe Experience Cloud and allow the Adobe Experience Manager Assets Microsoft Graph connector to update published assets and metadata regularly, you need a technical account of your Adobe Experience Manager Assets with the credentials to access published assets and metadata. The technical account is the secure, service-based account for external access to Adobe Experience Manager Assets. Find more details [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#generate-a-jwt-token-and-exchange-it-for-an-access-token).
 
 ## Get started
 
@@ -50,21 +50,21 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. The display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Adobe Experience Cloud Instance URL
-To correctly access and update data from the Adobe Experience Manager Sites, both the author and publish environment URLs are essential.   
+To correctly access and update data from the Adobe Experience Manager Assets, both the author and publish environment URLs are essential.   
 
 ### 3. Authentication Type
-Authentication Type - We support the technical account for Adobe Experience Cloud. To enable and configure the technical account for Adobe Experience Manager Sites, please find more details [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#generate-a-jwt-token-and-exchange-it-for-an-access-token).
+Authentication Type - We support the technical account for Adobe Experience Cloud. To enable and configure the technical account for Adobe Experience Manager Assets, please find more details [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#generate-a-jwt-token-and-exchange-it-for-an-access-token).
 
 ### 4. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
-At this point, you are ready to create the connection for AEM Sites. You can click the **Create** button to publish your connection and index published web pages from your AEM Sites. 
+At this point, you are ready to create the connection for AEM Assets. You can click the **Create** button to publish your connection and index published web pages from your AEM Assets. 
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with AEM Sites data. You can see the default values below: 
+For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with AEM Assets data. You can see the default values below: 
 
 **Page** | **Settings** | **Default values**
 --- | ---- | ---
-Users | Access permissions | All published pages or posts indexed using the Adobe Experience Manager Sites Microsoft Graph connector are visible to all M365 users in your tenant, from Microsoft Search or Copilot.
+Users | Access permissions | All published pages or posts indexed using the Adobe Experience Manager Assets Microsoft Graph connector are visible to all M365 users in your tenant, from Microsoft Search or Copilot.
 Content | Index content | All published pages are selected by default. 
 Content | Manage properties | To check default properties and their schema, [click here](#content).
 Sync | Incremental crawl | Frequency: Every 15 mins
@@ -80,7 +80,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-Currently only published webpages from your AEM Sites are indexed. All data indexed using the Adobe Experience Manager Sites Microsoft Graph connector is visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+Currently only published assets from your AEM Assets are indexed. All data indexed using the Adobe Experience Manager Assets Microsoft Graph connector is visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ### Content 
 
@@ -96,14 +96,14 @@ Use the preview results button to verify the sample values of the selected prope
 
 **Manage properties**
 
-Here, you can check available properties from your Adobe Experience Manager Sites. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. 
+Here, you can check available properties from your Adobe Experience Manager Assets. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. 
 
 | **Source property** | **Semantic label**       | **Description**                                                                 | **Schema**                  |
 |----------------------|--------------------------|---------------------------------------------------------------------------------|-----------------------------|
 | CreatedBy           | Created by              | Date and time that the item was created in the data source                      | Query, Retrieve, Search     |
 | CreatedTime         | Created date time       | Date and time that the item was created in the data source                      | Query, Retrieve             |
 | Description         | Description             | A brief summary of the page's content                                           | Query, Retrieve             |
-| HtmlContent         | Content                 | The content of static webpages, not available for dynamic webpages              | Search                      |
+| HtmlContent         | Content                 | The content of static assets, not available for dynamic assets              | Search                      |
 | Title            |                          |  The title of the items                                                                               | Query, Retrieve             |
 | LastModifiedBy      | Last modified by        | Name of the person who most recently edited the item in the data source         | Search, Query, Retrieve     |
 | Link                | URL                     | The target URL of the item in the data source                                   | Query, Retrieve             |
@@ -112,8 +112,8 @@ Here, you can check available properties from your Adobe Experience Manager Site
 | PublishedBy         | Published by            | Name of the person who published the item in the data source                    | Query, Retrieve             |
 | PublishedTime       | Published date time     | Date and time the item was published in the data source                         | Query, Retrieve             |
 | Subtitle            | Subtitle                | The subtitle of the items                                                      | Query, Retrieve             |
-| PageTitle               | Title               | The pagetitle of the webpages                                                          | Query, Retrieve             |
-| Tags                | Tags                    | Tags defined in AEM Sites metadata. In AEM, tags are organized hierarchically   | Query, Retrieve, Search     |
+| PageTitle               | Title               | The pagetitle of the assets                                                          | Query, Retrieve             |
+| Tags                | Tags                    | Tags defined in AEM Assets metadata. In AEM, tags are organized hierarchically   | Query, Retrieve, Search     |
 
 
 ### Sync 
