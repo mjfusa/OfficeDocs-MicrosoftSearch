@@ -12,15 +12,15 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the GitHub Cloud Issue Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
+description: "Set up the GitHub Cloud Issue Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ms.date: 02/14/2025
 ---
 
-# GitHub Cloud Issue Microsoft Graph connectors (preview)
+# GitHub Cloud Issue Microsoft Graph connector (preview)
 
 The GitHub Cloud Issue Microsoft Graph connector allows your organization to index issues stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
-This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitHub Cloud Issue Microsoft Graph connectors.
+This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitHub Cloud Issue Microsoft Graph connector.
 
 ## Capabilities
 
@@ -37,16 +37,16 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 
 ## Prerequisites
 
-Before you set up the connector, make sure that:
+Before you set up the connector:
 
-1. Your GitHub instance is accessible via API.
-2. Set up an GitHub App for authentication purpose. ([Learn more](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app)
-3. You generate a **Client ID** and **Client secret** from the GitHub App for authentication.
-4. The user account used for authentication has access to the repositories and issues to be indexed.
-5. Ensure that the Client ID and Client Secret have the permissions to read the issues.
-6. Users who access indexed GitHub data have corresponding **Microsoft Entra ID** identities for permission mapping.
+1. Make sure that your GitHub instance is accessible via API.
+2. Set up a GitHub App for authentication purpose. For more information, see [Authenticating as a GitHub App](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app).
+3. Generate a **Client ID** and **Client secret** from the GitHub App for authentication.
+4. Verify that the user account used for authentication has access to the repositories and issues to be indexed.
+5. Verify that the Client ID and client secret have the permissions to read the issues.
+6. Make sure that users who access indexed GitHub data have corresponding **Microsoft Entra ID** identities for permission mapping./*
 
-*It is recommended to use a different GitHub App for OAuth authentication for each connection, as GitHub's rate limit is calculated per GitHub App.
+/* We recommend that you use a different GitHub App for OAuth authentication for each connection because the GitHub rate limit is calculated per GitHub App.
 
 ## Get started
 
@@ -75,13 +75,13 @@ To ensure correct permission enforcement, map GitHub user identities to Microsof
 If direct mapping fails, use **regular expressions (regex)** for transformation.
 
 ### Content
-You can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps** on the **Content** tab.
+On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
 ### Sync
-You can configure **incremental** and **full** crawls. The following are the default values:
+You can configure incremental and full crawls. The following are the default values:
 
-  - Incremental crawl runs **every 15 minutes** by default.
-  - Full crawl runs **daily** to ensure up-to-date indexing.
+  - Incremental crawl runs every 15 minutes by default.
+  - Full crawl runs daily to ensure up-to-date indexing.
 
 ## Next steps
 

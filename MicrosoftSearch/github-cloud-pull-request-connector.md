@@ -1,5 +1,5 @@
 ---
-title: "GitHub Could Pull Request Microsoft Graph connectors"
+title: "GitHub Could Pull Request Microsoft Graph connector (preview)"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,11 +12,11 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the GitHub Could Pull Request Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
+description: "Set up the GitHub Could Pull Request Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ms.date: 02/14/2025
 ---
 
-# GitHub Could Pull Request Microsoft Graph connectors (Preview)
+# GitHub Could Pull Request Microsoft Graph connectors (preview)
 
 The GitHub Could Pull Request Microsoft Graph connectors allow your organization to index pull requests stored in GitHub. After you configure the connector and index GitHub content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
