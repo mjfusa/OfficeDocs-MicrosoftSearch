@@ -19,39 +19,37 @@ ms.date: 3/14/2025
 
 # Guru Microsoft Graph connector (preview)
 
-With the Guru Microsoft Graph connector, your organization can index Tableau cards of your Guru. After you configure the connector and index content from Guru, end users can search for those  cards in Microsoft Copilot and from any Microsoft Search client. h.
+With the Guru Microsoft Graph connector, your organization can index Guru cards of your Guru. After you configure the connector and index content from Guru, end users can search for those cards in Microsoft Copilot and from any Microsoft Search client. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Guru Microsoft Graph connector. 
 
 ## Capabilities
-- Index cards of your Guru and supports ingestion filters based on top-level projects.
+- Index cards of your Guru and supports ingestion filters by Guru Query Language 
 - Retain access control lists (ACLs) defined by your organization
 - Customize your crawl frequency.
 - Create workflows using this connection and plugins from Microsoft Copilot Studio.  
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
-- cards in personal space aren't indexable
+- Comments aren't indexable
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Configure Connected Apps with Direct Trust in Tableau**: To connect to Guru and allow the Guru Microsoft Graph connector to update cards regularly, you need to configure and enable the Connected Apps with Direct Trust of your Tableau Site with the credentials to access cards. Tableau connected apps enable a seamless and secure authentication experience by facilitating an explicit trust relationship between your Guru site and external applications. Find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+- **Guru Instance Admin Account**: To connect to your Guru instance and allow Microsoft Graph Connector to update Guru cards regularly, you need an admin user account of your Guru instance with the permission to create an user token. Find more details [here](https://help.getguru.com/docs/gurus-api#obtaining-a-user-token).
 
 ## Get started
 
 ### 1. Display name 
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. The display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-### 2. Guru Site URL
-A Guru site URL typically looks like https://<>.online.tableau.com/#/site/<> 
 
-### 3. Authentication Type
-We support the Connected Apps with OAuth2.0 Client Secret for Guru. To enable and configure the Connected Apps with Direct Trust for Guru, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+### 2. Authentication Type
+We support the Basic Authentication for Guru, please use User token. You can find more details [here](https://help.getguru.com/docs/gurus-api#obtaining-a-user-token).
 
-### 4. Staged rollout to a limited audience
+### 3. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
-At this point, you are ready to create the connection for Guru. You can click the **Create** button to publish your connection and index cards from your Guru Site. 
+At this point, you are ready to create the connection for Guru. You can click the **Create** button to publish your connection and index cards from your Guru instance. 
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with Guru data. You can see the default values below: 
 
@@ -76,7 +74,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 The Guru Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
-If you choose Only people with access to this data source, you need to further choose whether your Guru Site has Microsoft Entra ID provisioned users or non-AAD users. 
+If you choose Only people with access to this data source, you need to further choose whether your Guru instance has Microsoft Entra ID provisioned users or non-AAD users. 
 
 To identify which option is suitable for your organization: 
 
@@ -93,27 +91,26 @@ To identify which option is suitable for your organization:
 
 **Content ingestion filters**   
 
-You can choose what data you want to index. All cards within the selected top-level project of your Guru Site will be indexed. Use the preview results button to verify the sample values of the selected properties and filters. 
+You can choose what data you want to index. Use the Guru Query Language to filter your data before it is indexed, allowing you to control what data is searchable. You may use the GQL filter to index e.g. content modified after a certain time using, lastModified > 2016-01-01T00:00:00.000-00:00. [Learn more](https://developer.getguru.com/docs/guru-query-language). 
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
 **Manage properties**
 
-Here, you can check available properties from your Guru. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. | Properties       | Semantic Label           | Schema                         |
+Here, you can check available properties from your Guru. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. 
 
-| **CreatedAt**       | **Created date time**       | **Query, Retrieve**              |
-|-----------------|-------------------------|--------------------------------|
-| IconUrl         | IconUrl                  | Retrieve                       |
-| LastModifiedBy  | Last modified by        | Query, Retrieve, Search        |
-| Name           | Title                    | Query, Retrieve, Search        |
-| ProjectName     |                          | Query, Search                  |
-| SheetType       |                          | Query, Refine, Retrieve        |
-| SheetUrl        | url                      | Retrieve                       |
-| Tags           |                          | Query, Refine, Retrieve        |
-| TopProjectName  |                          | Query, Search                  |
-| UpdatedAt       | Last modified date time | Query, Retrieve               |
-| WorkbookName    |                          | Query, Search                  |
-| WorkbookUrl     |                          |                                |
+| Properties       | Semantic Label          | Schema                      |
+|-----------------|------------------------|-----------------------------|
+| CollectionLink  |                        | Retrieve                    |
+| CollectionName  |                        | Query, Retrieve, Search     |
+| Content        | `CONTENT`               | Search                      |
+| CreatedTime    | Created date time       | Query, Retrieve             |
+| LastModifiedBy | Last modified by        | Query, Retrieve, Search     |
+| Link          | url                      | Retrieve                    |
+| ModifiedTime   | Last modified date time | Query, Refine, Retrieve     |
+| Owner         | Created by               | Query, Retrieve, Search     |
+| Title         | Title                    | Query, Retrieve, Search     |
+
 
 ### Sync 
 
