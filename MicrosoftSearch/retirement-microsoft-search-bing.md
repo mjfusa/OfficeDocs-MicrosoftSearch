@@ -29,6 +29,9 @@ Users can find work search results on M365.cloud.microsoft rather than on Bing.c
 
 Some Microsoft Search answers will no longer be available after March 31, 2025, including Q&As and location answers. Recommended bookmarks will also be retired—you can keep them by manually publishing or exporting them by April 30, 2025.
 
+> [!NOTE]
+> The Google Chrome browser extension that sets Bing as the default search engine is also being retired on March 31, 2025. Users of Google Chrome, Microsoft Edge, and other browsers can still select their default search engine in the browser settings. [Learn how to change your default search engine](https://support.microsoft.com/en-us/microsoft-edge/change-your-default-search-engine-f863c519-5994-a8ed-6859-00fbc123b782)
+
 ## When and where are these changes taking place? 
 
 Microsoft Search in Bing is being retired in all regions worldwide on March 31, 2025. It's being retired on all devices, including mobile.
