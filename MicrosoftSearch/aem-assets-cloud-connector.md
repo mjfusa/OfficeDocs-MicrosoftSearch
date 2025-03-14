@@ -23,9 +23,6 @@ With the Adobe Experience Manager Assets Microsoft Graph connector, your organiz
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Adobe Experience Manager Assets Microsoft Graph connector. 
 
->[!NOTE]
->The Adobe Experience Manager Assets connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
-
 ## Capabilities
 - Index published assets of your AEM Assets.
 - Supports ingestion filters based on page paths, allowing for exact matching and phrase matching using regular expressions.
@@ -90,7 +87,7 @@ You can choose to include or exclude certain content paths.
 
 - Content paths that should be fetched: Only support input exact paths. A valid content path must have at least three levels, starting with "/content/dam" as the first two segments. 
 
-- Content paths that should not be fetched: Only support input Java regular expression for paths. For information about writing regular expressions, see [Regular Expression Language Quick Reference](https://learn.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference). The priority of excluding content paths is higher than that of including content paths. 
+- Content paths that should not be fetched: Only support input Java regular expression for paths.The priority of excluding content paths is higher than that of including content paths. 
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
