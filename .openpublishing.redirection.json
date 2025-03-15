@@ -311,8 +311,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "troubleshoot-veeva-vault-connectors.md",
-            "redirect_url": "/MicrosoftSearch/troubleshoot-veeva-vault-promomats-connector",
+            "source_path": "MicrosoftSearch/troubleshoot-veeva-vault-promomats-connector.md",
+            "redirect_url": "/MicrosoftSearch/troubleshoot-veeva-vault-connectors",
             "redirect_document_id": true
         }
     ]
