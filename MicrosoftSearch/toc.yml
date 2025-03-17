@@ -273,6 +273,10 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Tableau Cloud
+          items:
+          - name: Setup
+            href: tableau-cloud-connector.md
         - name: Trello
           items:
           - name: Setup
