@@ -44,6 +44,9 @@ Each domain that your controller handles should get a separate folder. The follo
 
 ## Google Chrome on Windows 10, Version 1507 or later
 
+> [!NOTE]
+> The Google Chrome browser extension that sets Bing as the default search engine is being retired on March 31, 2025. Users of Google Chrome, Microsoft Edge, and other browsers can still select their default search engine in the browser settings. [Learn how to change your default search engine](https://support.microsoft.com/en-us/microsoft-edge/change-your-default-search-engine-f863c519-5994-a8ed-6859-00fbc123b782)
+
 Users won't be able to change the default search engine after this policy is set.
   
 Chrome comes with its own set of group policy settings which can be downloaded in the form of an ADMX file from [Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/187202).
