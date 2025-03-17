@@ -203,6 +203,10 @@ items:
           items:
           - name: Setup
             href: Google-Drive-connector.md
+        - name: Guru
+          items:
+          - name: Setup
+            href: guru-connector.md        
         - name: MediaWiki
           items:
           - name: Setup
