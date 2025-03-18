@@ -44,14 +44,14 @@ Before you set up the connector, make sure that:
 2. You generate a **Client ID** and **Client secret** from Bitbucket for authentication.
 3. The user account used for authentication has access to the repositories, pull requests, and knowledge files to be indexed.
 4. The client ID and client secret have the **repository:read**, **account:read,** and **pullrequest** permissions.
-5. Users who access indexed Bitbucket data have corresponding **Microsoft Entra ID** identities for permission mapping./*
+5. Users who access indexed Bitbucket data have corresponding **Microsoft Entra ID** identities for permission mapping.
 
 /*We recommend that you use a different user for OAuth authentication for each connection because the Bitbucket rate limit is calculated per user.
 
 ## Get started
 
 ### 1. Choose display name
-Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
+Choose a display name that helps users recognize merge requests or documentation in a Copilot response.
 
 ### 2. Bitbucket instance URL
 Enter the URL of your Bitbucket instance (for example, `https://bitbucket.org/testinstance`).
