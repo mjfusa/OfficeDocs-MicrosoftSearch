@@ -98,7 +98,7 @@ If direct mapping fails, use **regular expressions (regex)** to transform the da
 On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
 #### Time-range fitler
-You can also configure a time-range filter in the Content tab. The default setting is 365 days.
+You can configure a time-range filter in the Content tab. The default setting is 365 days.
 
 ### Sync
 You can configure incremental and full crawls. The following are the default values:
@@ -120,6 +120,6 @@ _*Setting up an IP restriction could cause the connector to stop working and lea
 
 ## Next steps
 
-- Click Auto generation to quickly populate your connection description with recommended defaults. This saves time and ensures consistency in your setup!
+- Click Auto generation to quickly populate your connection description with recommended defaults. This saves time and ensures consistency in your setup.
 - Review the connection status in the Microsoft 365 Admin Center. 
 - If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
