@@ -285,6 +285,10 @@ items:
           items:
           - name: Setup
             href: trello-connector.md
+        - name: Unily
+          items:
+          - name: Setup
+            href: unily-intranet-connector.md
         - name: Veeva Vault
           items:
           - name: Setup - Veeva Vault PromoMats
