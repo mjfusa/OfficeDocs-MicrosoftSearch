@@ -41,7 +41,7 @@ This documentation is for Microsoft 365 administrators or anyone who configures,
 ## Prerequisites
 - You must be the search admin for your organization's Microsoft 365 tenant.
 - To create a new connection, use your organization’s Unily instance URL. This URL is the specific web address used to access and interact with Unily API services for content retrieval, which usually looks like https://[your-organization-name].unily.com
-- To complete the authentication, you need a Client ID and Client Secret. To get your Unily Client ID and Secret, please contact Unily directly. Note that a Unily instance may have multiple applications, each with different permissions. Ensure that you obtain the correct credentials for the application to be used for the Graph connector.
+- To complete the authentication, you need a Client ID and Client Secret. To get your Unily Client ID and Secret, contact Unily directly. A Unily instance may have multiple applications, each with different permissions. Ensure that you obtain the correct credentials for the application to be used for the Graph connector.
 
 ## Get Started
 
@@ -70,7 +70,7 @@ Custom setup is for admins who want to edit the default values for settings. Onc
 **Access Permissions**
 
 All the data indexed using the Unily connector is visible to all Microsoft 365 users in your tenant, accessible through Microsoft Copilot or Search.
-The Unily connector is currently in preview. Once it becomes generally available, Access Control Lists (ACLs) will be valid. This capability will ensure that all user permissions and group access available in Unily are supported through the connector in Microsoft apps like Copilot and Search.
+The Unily connector is currently in preview. Once it becomes generally available, Access Control Lists (ACLs) will be valid. This capability ensures that all user permissions and group access available in Unily are supported through the connector in Microsoft apps like Copilot and Search.
  
 ### Content
 
