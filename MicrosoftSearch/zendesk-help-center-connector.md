@@ -34,7 +34,6 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
 
 ## Limitations
-- Doesn't support access restrictions to articles based on Zendesk user permissions. All users in your tenant have access to all indexed articles.
 - Doesn't index Zendesk Guide Community posts and topics.
 - Doesn't index attachments.
 
