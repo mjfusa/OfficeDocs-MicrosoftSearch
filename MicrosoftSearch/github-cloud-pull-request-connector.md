@@ -34,6 +34,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - The connector does not support indexing GitHub CI/CD pipelines beyond status indexing.
 - On-premises/self-hosted GitHub instances aren't currently supported.
 - Comments and the information about the commits are not crawled.
+- The connector is designed to support GitHub Enterprise. Users on Free or Team plans may experience limited functionality or reduced support.
 
 ## Prerequisites
 
@@ -92,6 +93,8 @@ To ensure correct permission enforcement, map GitHub user identities to Microsof
   - **Name:** Maps GitHub name with Microsoft Entra ID user properties.
 
 If direct mapping fails, use **regular expressions (regex)** to transform the data. For example: `[a-zA-Z0-9]+`
+
+\* For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
 
 ### Content
 On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
