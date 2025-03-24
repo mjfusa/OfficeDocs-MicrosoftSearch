@@ -91,6 +91,10 @@ items:
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Adobe Experience Manager Assets
+          items:
+          - name: Setup
+            href: aem-assets-cloud-connector.md        
         - name: Asana
           items:
           - name: Setup
@@ -199,6 +203,10 @@ items:
           items:
           - name: Setup
             href: Google-Drive-connector.md
+        - name: Guru
+          items:
+          - name: Setup
+            href: guru-connector.md        
         - name: MediaWiki
           items:
           - name: Setup
@@ -269,10 +277,18 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Tableau Cloud
+          items:
+          - name: Setup
+            href: tableau-cloud-connector.md
         - name: Trello
           items:
           - name: Setup
             href: trello-connector.md
+        - name: Unily
+          items:
+          - name: Setup
+            href: unily-intranet-connector.md
         - name: Veeva Vault
           items:
           - name: Setup - Veeva Vault PromoMats

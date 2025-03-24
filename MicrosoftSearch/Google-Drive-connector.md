@@ -151,7 +151,7 @@ Authentication error, one or more required OAuth scopes to your service account 
 ### Failed to capture file information. Ensure the workspace is not empty and has files accessible to the admin.
  During the connector setup, at least one file must be present in your organization's workspace to test the connection successfully.
 
-## What's next
+## Next steps
 
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
