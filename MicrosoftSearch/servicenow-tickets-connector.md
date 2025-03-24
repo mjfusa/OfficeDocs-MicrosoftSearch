@@ -21,7 +21,7 @@ With the ServiceNow Tickets Microsoft Graph connector, your organization can ind
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a ServiceNow Tickets Microsoft Graph connector. It supplements the general instructions provided in the [Set up Microsoft Graph connectors in the Microsoft 365 admin center](configure-connector.md) article. 
 
-Each step in the setup process is listed below along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only the ServiceNow Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).  
+Each step in the setup process is listed below, along with either a note that indicates you should follow the general setup instructions OR other instructions that apply to only the ServiceNow Microsoft Graph connector including information about [Troubleshooting](#troubleshooting) and [Limitations](#limitations).  
 
 ## Step 1: Add a connector in the Microsoft 365 admin center.
 
@@ -38,6 +38,9 @@ To connect to your ServiceNow data, you need your organization's **ServiceNow in
 Along with this URL, you'll need a **service account** to set up the connection to ServiceNow and to allow Microsoft Search and Microsoft 365 Copilot to periodically update the ticket details based on the refresh schedule. 
 
 In ServiceNow, the task table is the base class for ticket management. It can be extended to create ticket applications such as incident, problem, and change management. Learn more about [ServiceNow Task tables](https://docs.servicenow.com/bundle/washingtondc-platform-administration/page/administer/task-table/concept/c_TaskTable.html).
+
+> [!Note]
+> Crawling is done on the child tables that you've selected for ingestion and the task table.
 
 The service account you use to configure a connection **must have** read access to the following ServiceNow table records to successfully crawl default ticket fields.
 
