@@ -1,5 +1,5 @@
 --- 
-title: "Aha! Graph connector" 
+title: "Aha! Microsoft Graph connector" 
 ms.author: raynezou
 author: ms-raynezou
 manager: zezhangzhao
@@ -12,11 +12,11 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Aha! Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Aha! Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 03/27/2025
 ---
 
-# Aha! Microsoft Graph connector (Preview)
+# Aha! Microsoft Graph connector (preview)
 
 The Aha! Graph connector empowers your organization to index and search Aha! features across your enterprise. Once configured, the connector automatically crawls Aha! features, making them easily discoverable through Microsoft Copilot and any Microsoft Search client.
 
