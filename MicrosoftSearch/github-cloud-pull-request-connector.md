@@ -124,4 +124,4 @@ _*Setting up an IP restriction could cause the connector to stop working and lea
 
 - Click Auto generation to quickly populate your connection description with recommended defaults. This saves time and ensures consistency in your setup.
 - Review the connection status in the Microsoft 365 Admin Center. 
-- If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
