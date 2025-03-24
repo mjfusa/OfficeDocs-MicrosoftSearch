@@ -36,7 +36,7 @@ This article is intended for Microsoft 365 administrators and who are responsibl
 
 >[!IMPORTANT]
    >
-   > **Recommended : The Confluence Global Administrator should create the connection** </br>
+   > **Recommended: The Confluence Global Administrator should create the connection** </br>
    > 
    > **Who is the confluence global administrator?**
    > A Confluence Administrator is a user who has full administrative permissions. </br>
@@ -94,12 +94,7 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
   1. Go to Administration  > General configuration > Application links. 
   2. Select Create link
   3. Select External application, and then choose Incoming as the direction. 
-  4. Fill in the 
-   - Redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback` 
-   - Scope: </br>
-     a) If you are a Confluence Global Administrator, either of the following scopes is supported: **Admin** or **Read**. </br>
-     b) If you are any other type of Confluence Administrator, provide the **Admin** scope </br>
-  5. Complete the connection settings step using the client ID and secret. 
+  4. Fill in the redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback`.
 
 ### 6. Rollout to limited audience
 
@@ -107,7 +102,7 @@ Deploy this connection to a limited user base if you want to validate it in Copi
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector starts indexing page from your Confluence account.
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., We set defaults based on what works best with Confluence data. The default values are as follows:
+For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., We set defaults based on what works best with Confluence data. The default values are as follows:
 
 |**Users** |&nbsp;|
 |----|---|
@@ -198,7 +193,7 @@ Use the preview results button to verify selected properties and filters.
 The refresh interval determines how often your data is synchronized between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](configure-connector.md#guidelines-for-sync-settings).
 You can change the default values of refresh interval from here if you want to.
 
-### Review and Test your connection
+### Review and test your connection
 
 - For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout).
 - Search and validate your indexed content and permissions using [Index browser](./connectors-index-search.md).
