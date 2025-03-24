@@ -1,6 +1,6 @@
 --- 
 ms.date: 02/26/2025
-title: "Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector" 
+title: "Troubleshooting the Veeva Vault Microsoft Graph connectors" 
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -9,12 +9,12 @@ ms.audience: Admin
 ms.topic: article 
 ms.service: mssearch 
 ms.localizationpriority: medium 
-description: "Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Find troubleshooting information for the Veeva Vault Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot." 
 --- 
 
-# Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector
+# Troubleshooting the Veeva Vault Microsoft Graph connectors
 
-The following table lists common errors that can occur when you configure the Veeva Vault PromoMats Microsoft Graph connector.
+The following table lists common errors that can occur when you configure the Veeva Vault Microsoft Graph connectors.
 
 | Error | Description | Resolution|
 |:---------|:-------------------------|:------------------------|
@@ -27,7 +27,7 @@ To view more error types, select the connection and choose **error details** > *
 
 ## Share your feedback
 
-We value your feedback on the performance of the Veeva Vault PromoMats Microsoft Graph connector. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). Your feedback plays a key role in improving the service.
+We value your feedback on the performance of the Veeva Vault Microsoft Graph connectors. To help us improve, please take a moment to share your thoughts by using the thumbs-up/thumbs-down icons at the bottom of each response (it only takes a minute). Your feedback plays a key role in improving the service.
 
 1. When the feedback form opens, add your comments about what worked well or what didn't in the text field. 
     > [!Important]

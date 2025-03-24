@@ -154,12 +154,14 @@ The following table lists the default settings for the Veeva Vault PromoMats Mic
 
 ### Users
 
-**Access permissions**
+#### Access permissions
+
 The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, although this isn't recommended.
 
 ### Sync
 
-**Adjust sync schedules**  
+#### Adjust sync schedules
+
 You can modify the frequency of full crawls to fit your organization's requirements. The following are the default crawls:
 
 - Incremental crawl - 15 minutes.
@@ -168,10 +170,10 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 ## Troubleshooting
 
-For information about troubleshooting, see [Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector](troubleshoot-veeva-vault-promomats-connector.md).
+For information about troubleshooting, see [Troubleshooting the Veeva Vault Microsoft Graph connector](troubleshoot-veeva-vault-connectors.md).
 
 ## Next steps
 
-After the connector is configured and published, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
+After you configure and publish the connector, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
