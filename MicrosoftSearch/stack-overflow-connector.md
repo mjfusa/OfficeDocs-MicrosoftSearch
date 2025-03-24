@@ -2,7 +2,7 @@
 title: "Stack Overflow Connector for Microsoft Search and Copilot" 
 ms.author: rerabo
 author: vivg
-manager: igala
+manager: ereza
 audience: Admin
 ms.audience: Admin 
 ms.topic: article 
@@ -13,7 +13,7 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Stack Overflow Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.date: 11/25/2024
+ms.date: 03/19/2025
 ---
 
 # Stack Overflow Microsoft Graph connector
@@ -21,9 +21,6 @@ ms.date: 11/25/2024
 The Stack Overflow Graph connector allows your organization to index questions and answers from Stack Overflow. After you configure the connector, end users can search for these posts from Stack Overflow in Microsoft Copilot and from any Microsoft Search client. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Stack Overflow Graph connector. 
-
->[!NOTE]
->The Stack Overflow Graph connector is in preview. If you wish to get early access to try it, sign up using [this form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 - Index Stack Overflow questions and answers.
@@ -40,7 +37,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be a search admin for your organization's Microsoft 365 tenant.
 - To create a new connection, use your organization's Stack Overflow Instance URL.
-   - For Stack Overflow for Teams **Enterprise**, the instance URL is the home page URL, typically `https://stackoverflow.<company_name>.com`. 
+   - For Stack Overflow for Teams **Enterprise**, the instance URL is the home page URL, typically `https://<company_name>.stackoverflow.com`. 
    - For Stack Overflow for Teams **Business**, use the API URL, which usually looks like `https://api.stackoverflowteams.com/v3/teams/<company_name>`.
      
 ## Get Started
@@ -49,7 +46,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a content source filter. A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Stack Overflow URL
-Use your organization's Stack Overflow Instance URL. For Stack Overflow for Teams **Enterprise**, this will be the home page URL, typically `https://stackoverflow.<company_name>.com`. For Stack Overflow for Teams **Business**, use the API URL, which usually looks like `https://api.stackoverflowteams.com/v3/teams/<company_name>`.
+Use your organization's Stack Overflow Instance URL. For Stack Overflow for Teams **Enterprise**, this will be the home page URL, typically `https://<company_name>.stackoverflow.com`. For Stack Overflow for Teams **Business**, use the API URL, which usually looks like `https://api.stackoverflowteams.com/v3/teams/<company_name>`.
 
 ### 3. Authentication Type
 To authenticate and sync content from Stack Overflow, choose one of the two supported methods:<br>

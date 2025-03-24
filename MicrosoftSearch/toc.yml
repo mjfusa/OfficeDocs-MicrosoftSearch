@@ -91,6 +91,10 @@ items:
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Adobe Experience Manager Assets
+          items:
+          - name: Setup
+            href: aem-assets-cloud-connector.md        
         - name: Asana
           items:
           - name: Setup
@@ -125,6 +129,10 @@ items:
             href: MSSQL-connector.md
           - name: Troubleshooting
             href: troubleshoot-mssql-connector.md
+        - name: Bitbucket
+          items:
+          - name: Setup
+            href: bitbucket-connector.md
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -177,10 +185,14 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub (preview)
+        - name: GitHub Cloud Knowledge (preview)
           items:
-          - name: Setup
+          - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
+          - name: Setup - GitHub Cloud Issue
+            href: GitHub-cloud-issue-connector.md 
+          - name: Setup - GitHub Cloud Pull Request
+            href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
           - name: Setup
@@ -191,12 +203,24 @@ items:
           items:
           - name: Setup
             href: Google-Drive-connector.md
+        - name: Guru
+          items:
+          - name: Setup
+            href: guru-connector.md        
         - name: MediaWiki
           items:
           - name: Setup
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Monday.com
+          items:
+          - name: Setup
+            href: monday-connector.md
+        - name: Miro
+          items:
+          - name: Setup
+            href: miro-connector.md    
         - name: Oracle SQL
           items:
           - name: Setup
@@ -217,6 +241,10 @@ items:
           items:
           - name: Setup
             href: salesforce-knowledge-connector.md
+        - name: Seismic Content
+          items:
+          - name: Setup
+            href: seismic-content-connector.md
         - name: ServiceNow Catalog
           items:
           - name: Setup
@@ -241,16 +269,34 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Smartsheet Sheet
+          items:
+          - name: Setup
+            href: smartsheet-sheet-connector.md
         - name: Stack Overflow
           items:
           - name: Setup
             href: stack-overflow-connector.md
-        - name: Veeva Vault - PromoMats
+        - name: Tableau Cloud
           items:
           - name: Setup
-            href: Veeva-Vault-PromoMats-connector.md
+            href: tableau-cloud-connector.md
+        - name: Trello
+          items:
+          - name: Setup
+            href: trello-connector.md
+        - name: Unily
+          items:
+          - name: Setup
+            href: unily-intranet-connector.md
+        - name: Veeva Vault
+          items:
+          - name: Setup - Veeva Vault PromoMats
+            href: veeva-vault-promoMats-connector.md
+          - name: Setup - Veeva Vault QualityDocs
+            href: veeva-vault-qualitydocs-connector.md
           - name: Troubleshooting
-            href: troubleshoot-veeva-vault-promomats-connector.md
+            href: troubleshoot-veeva-vault-connectors.md
         - name: WordPress.org (on-prem)
           items:
           - name: Setup
@@ -259,6 +305,10 @@ items:
           items:
           - name: Setup
             href: zendesk-help-center-connector.md
+        - name: Zendesk Ticket
+          items:
+          - name: Setup
+            href: zendesk-ticket-connector.md      
     - name: Manage connections
       items:
       - name: Monitor connections

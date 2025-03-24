@@ -309,6 +309,11 @@
             "source_path": "MicrosoftSearch/connector-details-errors.md",
             "redirect_url": "/MicrosoftSearch/connector-view-details",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "MicrosoftSearch/troubleshoot-veeva-vault-promomats-connector.md",
+            "redirect_url": "/MicrosoftSearch/troubleshoot-veeva-vault-connectors",
+            "redirect_document_id": true
         }
     ]
 }
