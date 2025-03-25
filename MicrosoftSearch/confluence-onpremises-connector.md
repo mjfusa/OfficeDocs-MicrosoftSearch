@@ -31,18 +31,18 @@ This article is intended for Microsoft 365 administrators and who are responsibl
 
 ## Prerequisites
 1. **Install the GCA [Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](./graph-connector-agent.md)
-2. **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter)
+2. **Install plugin**: Download and install the confluence on-prem plugin from Atlassian marketplace on your confluence setup. Get the plugin from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=reviews&hosting=datacenter).
 3. **Authentication**: Ensure that you have authentication credentials with right access. 
 
 >[!IMPORTANT]
    >
-   > **Recommended : The Confluence Global Administrator should create the connection** </br>
+   > **Recommended: The Confluence Global Administrator should create the connection** </br>
    > 
    > **Who is the confluence global administrator?**
    > A Confluence Administrator is a user who has full administrative permissions. </br>
    > * To check permissions: Go to **Administration** > **General Configuration** > **Global Permissions** </br>
    > * Look for the group **Confluence-administrators**, which has all permissions enabled, including - Can Use, Personal Space, Create Space, Confluence Administrator, and System Administrator.
-   > * Any user creating a token must be a member of this group
+   > * Any user creating a token must be a member of this group.
 
 ## Get Started
 
@@ -60,19 +60,19 @@ To index your Confluence server or data center content, you must install and reg
 
 >[!NOTE]
 > GCA can be installed on a different Windows machine and need not be on the same machine as the On-premises server. The machine can help generate App ID and secret which can be used for the setup. You must ensure that the GCA machine is on during the crawling. 
-> You may find answers to common GCA related questions in [FAQ section](./frequently-asked-questions.md) .
+> You may find answers to common GCA related questions in [FAQ section](./frequently-asked-questions.md).
 
 ### 4. Install the Confluence on-premises plugin
 
-Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installed. You do not need to install the plugin for each confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
+Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installed. You don't need to install the plugin for each confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
 
    - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
-   - Log in to your confluence system
-   - Click on settings icon -> Click on manage apps
+   - Log in to your confluence system.
+   - Click on settings icon -> Click on manage apps.
 [![Screnshot that shows clicking on settings icon -> clicking on manage apps.](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea#lightbox)
-   - Click on upload app
+   - Click on upload app.
 [![Screnshot that shows clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a#lightbox)
-   - Choose the downloaded file and proceed
+   - Choose the downloaded file and proceed.
 [![Screnshot that shows Plugin sussuesfully installed)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d)](https://github.com/user-attachments/assets/58ba9e9e-e2c9-47e9-967d-401cd79a7c5d#lightbox)
 
 >[!NOTE]
@@ -91,15 +91,10 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
    **c. OAuth 2.0 (recommended)** <br> 
    The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
 
-  1. Go to Administration  > General configuration > Application links. 
-  2. Select Create link
-  3. Select External application, and then choose Incoming as the direction. 
-  4. Fill in the 
-   - Redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback` 
-   - Scope: </br>
-     a) If you are a Confluence Global Administrator, either of the following scopes is supported: **Admin** or **Read**. </br>
-     b) If you are any other type of Confluence Administrator, provide the **Admin** scope </br>
-  5. Complete the connection settings step using the client ID and secret. 
+  1. Go to **Administration** > **General configuration** > **Application links**. 
+  2. Select **Create link**.
+  3. Select **External application**, and then choose **Incoming** as the direction. 
+  4. Fill in the redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback`.
 
 ### 6. Rollout to limited audience
 
@@ -107,7 +102,7 @@ Deploy this connection to a limited user base if you want to validate it in Copi
 
 At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button and the Microsoft Graph connector starts indexing page from your Confluence account.
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., We set defaults based on what works best with Confluence data. The default values are as follows:
+For other settings, like Access Permissions, Data inclusion rules, Schema, and Crawl frequency. We set defaults based on what works best with Confluence data. The default values are as follows:
 
 |**Users** |&nbsp;|
 |----|---|
@@ -128,7 +123,7 @@ If you want to edit any of these values, you need to choose the `Custom Setup` o
 
 ## Custom Setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the default table. Once you click on the `Custom Setup` option, you see three more tabs – Users, Content, and Sync.
+Custom setup is for those admins who want to edit the default values for settings listed in the default table. Once you click on the **Custom Setup** option, you see three more tabs – Users, Content, and Sync.
 
 ### Users
 
@@ -198,7 +193,7 @@ Use the preview results button to verify selected properties and filters.
 The refresh interval determines how often your data is synchronized between the data source and the Graph connector index. There are two types of refresh intervals – full crawl and incremental crawl. For more details, click [here](configure-connector.md#guidelines-for-sync-settings).
 You can change the default values of refresh interval from here if you want to.
 
-### Review and Test your connection
+### Review and test your connection
 
 - For testing, you can choose [publish to limited audience](./staged-rollout-for-graph-connectors.md#modify-or-stop-staged-rollout).
 - Search and validate your indexed content and permissions using [Index browser](./connectors-index-search.md).
