@@ -41,11 +41,15 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 
 Before you set up the connector, make sure that:
 
-1. Your GitLab instance is accessible via API.
-2. You generate a **Client ID** and **Client secret** from GitLab for authentication.
+1. Your Gitlab instance is accessible via API.
+2. You generate a **Client ID** and **Client secret** from Gitlab for authentication.
 3. The user account used for authentication has access to the repositories, issues, merge requests, knowledge files, and wiki pages to be indexed.
 4. The **Client ID** and **Client secret** have the `read_api` permission scope.
 5. Users who access indexed GitLab data have corresponding **Microsoft Entra ID** identities for permission mapping.
+6. Specify the following **Redirect URLs** when configuring GitLab authentication:
+
+   - **For Microsoft 365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`.  
+   - **For Microsoft 365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`.
 
 ## Get started
 
