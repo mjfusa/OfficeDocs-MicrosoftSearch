@@ -32,7 +32,12 @@ The execution policy has to be set to allow the execution of remote signed scrip
 Get-ExecutionPolicy -List
 ```
 
-To know more and set the right execution policy, refer to [Execution Policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+For more information, see [Execution policy](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
+
+### Prerequisites
+
+The account used during the on-prem agent installation requires RBAC roles.
+
 
 ### Recommended configuration
 
@@ -43,7 +48,7 @@ Using the recommended configuration of the machine, the connector agent instance
 * [.NET Core Desktop Runtime 8.0 (x64)](https://dotnet.microsoft.com/download/dotnet/8.0)
 * 8 cores, 3 GHz
 * 16 GB RAM, 2 GB Disk Space
-* Network access to data source and internet through 443
+* Network access to the data source and internet through 443
 
 If your organization's proxy servers or firewalls block communication to unknown domains, add the following rules to the 'allow' list:
 
@@ -132,7 +137,7 @@ You can provide authentication details using a client secret or a certificate. F
 
 1. Go to the [Azure portal](https://portal.azure.com) and sign in with admin credentials for the tenant.
 
-2. Open **App Registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
+2. Open **App registration** from the navigation pane and go to the appropriate App. Under **Manage**, select **Certificates and secrets**.
 
 3. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret and save it because it is not shown again.
 
@@ -168,11 +173,9 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 
 ##### Step 2: Upload the certificate to the Azure portal
 
-1. Open the application and navigate to certificates and secrets section from left pane.
-
+1. Open the application and navigate to **Certificates and secrets**.
 2. Select **Upload certificate** and upload the .cer file.
-
-3. Open **App registration** and select **Certificates and secrets** from the navigation pane. Copy the certificate thumbprint.
+3. Open **App registration** and select **Certificates and secrets**. Copy the certificate thumbprint.
 
 :::image type="content" alt-text="List of thumbprint certificates when Certificates and secrets are selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
