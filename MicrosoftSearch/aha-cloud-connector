@@ -41,7 +41,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Instant URL
-An Aha! Instance URL is the unique web address assigned to each Aha! Instance, allowing you to access your specific Aha! environment. The URL follows the format, https://contoso.aha.io. 
+An Aha! instance URL is the unique web address assigned to each Aha! instance, allowing you to access your specific Aha! environment. The URL follows the format, https://contoso.aha.io. 
 
 ### 3. Authentication Type
 To use Aha! OAuth for authentication, an Aha! admin needs to create an Aha! OAuth2.0 app in the [Aha! developer console](https://secure.aha.io/session/new).
