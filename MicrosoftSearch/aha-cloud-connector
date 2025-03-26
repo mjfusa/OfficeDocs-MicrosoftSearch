@@ -47,7 +47,7 @@ An Aha! Instance URL is the unique web address assigned to each Aha! Instance, a
 To use Aha! OAuth for authentication, an Aha! admin needs to create an Aha! OAuth2.0 app in the [Aha! developer console](https://secure.aha.io/session/new).
 
 **Create Aha! OAuth 2.0 application**
-To properly register the Aha! OAuth application for GCS access, first navigate to **Personal** Settings, then choose **Developer**, and finally click **OAuth Applications** tab. Click the "Create" button to generate **Client ID** and **Secret** after entering the redirect URI.
+To properly register the Aha! OAuth application for GCS access, first navigate to **Personal settings**, choose **Developer**, and click **OAuth applications**. Click "Create" to generate the **Client ID** and **Secret** after entering the redirect URI.
 - For M365 Enterprise, copy and paste: https://gcs.office.com/v1.0/admin/oauth/callback.
 - For M365 Government, copy and paste: https://gcsgcc.office.com/v1.0/admin/oauth/callback.
 
