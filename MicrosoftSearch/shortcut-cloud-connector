@@ -29,7 +29,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Index stories from your Shortcut workspace
 - Customize your crawl frequency.  
 - Create workflows using this connection and plugins from Microsoft Copilot Studio.  
-- Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
+- Use [Semantic search in Microsoft 365 Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
 - The connector only crawls Shortcut stories from the most recent two-year period. 
@@ -44,7 +44,7 @@ Create or use an existing Shortcut account to access Shortcut’s developer port
 ## Get Started
 
 ### 1. Display name 
-A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
+A display name is used to identify each citation in Microsoft 365 Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Instant URL
 The Shortcut instance URL is always https://api.app.shortcut.com. 
@@ -85,7 +85,7 @@ Custom setup is for those admins who want to edit the default values for setting
 ### Users
 
 **Access permissions**
-The Shortcut Microsoft Graph connector allows your organization to index stories from Shortcut. After you configure the connector, end users can search for these stories from Shortcut in Microsoft Copilot and from any Microsoft Search client.
+The Shortcut Microsoft Graph connector allows your organization to index stories from Shortcut. After you configure the connector, end users can search for these stories from Shortcut in Microsoft 365 Copilot and from any Microsoft Search client.
 
 ### Content
 
@@ -107,7 +107,7 @@ Add or remove available properties from your Shortcut, assign a schema to the pr
 | IterationId      |                    |         | Query, Retrieve      |
 | IterationName    |               |         | Search, Query, Retrieve |
 | Labels           |                    |         | Retrieve, Search     |
-| Name            |  Title                 | The title of the item that you want shown in Copilot and other search experiences        | Query, Retrieve      |
+| Name            |  Title                 | The title of the item that you want shown in Microsoft 365 Copilot and other search experiences        | Query, Retrieve      |
 | Owners            |                    |         | Query, Retrieve      |
 | StoryType      |    |         | Query, Retrieve      |
 | TeamName            |                    |         | Query, Refine        |
