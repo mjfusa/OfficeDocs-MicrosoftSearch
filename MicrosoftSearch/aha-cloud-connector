@@ -89,7 +89,7 @@ Custom setup is for those admins who want to edit the default values for setting
 ### Users
 
 **Access permissions**
-The Aha! Graph connector allows your organization to index features from Aha!. After you configure the connector, end users can search for these features from Aha! in Microsoft Copilot and from any Microsoft Search client.
+The Aha! Microsoft Graph connector allows your organization to index features from Aha! After you configure the connector, end users can search for these features from Aha! in Microsoft 365 Copilot and from any Microsoft Search client.
 
 ### Content
 
