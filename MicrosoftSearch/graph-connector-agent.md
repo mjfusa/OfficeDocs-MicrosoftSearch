@@ -36,8 +36,13 @@ For more information, see [Execution policy](/powershell/module/microsoft.powers
 
 ### Prerequisites
 
-The account used during the on-prem agent installation requires RBAC roles.
+Before proceeding with the installation and configuration, confirm you have the required RBAC roles for each step.
 
+|Step| RBAC role|
+|---:|---:|
+|Account used during Onprem agent installation|Search Admin, Global Admin, Copilot Admin.|
+|Entra ID registration|Global Admin, Azure App Admin, Azure Admin.|
+|Onprem service account on the target servers|Review each connector setup page for specific roles.|
 
 ### Recommended configuration
 
