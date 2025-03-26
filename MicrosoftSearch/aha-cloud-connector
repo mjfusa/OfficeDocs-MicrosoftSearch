@@ -55,7 +55,7 @@ Copy the **Client ID** and **Secret** from the OAuth tab in the Aha! app and pas
 
 
 > [!NOTE]
-> * Please refer to the [Aha! OAuth2 Authentication](https://www.aha.io/api/oauth2#registering-an-application) to learn more.
+>For more information, see [Aha! OAuth2 Authentication](https://www.aha.io/api/oauth2#registering-an-application).
 
 
 ### 4. Roll out to limited audience
@@ -84,7 +84,7 @@ If you want to edit any of these values, choose the **Custom setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Content**, and **Sync**.
+Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
 
 ### Users
 
@@ -120,10 +120,11 @@ Add or remove available properties from your Aha!, assign a schema to the proper
 
 **Preview data**
 
-Use the preview results button to verify the sample values of the selected properties and query filter.
+Go to "Results" to verify the sample values of the selected properties and query filter.
 
 ### Sync
 
 The refresh interval determines how often your data is synced between the data source and the Aha! Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more information, see [Refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
-You can change the default values of the refresh interval from here if you want to.
+You can change the default refresh interval here if needed.
+If you have issues or want to provide feedback, contact [Microsoft Graph support (https://developer.microsoft.com/en-us/graph/support).
