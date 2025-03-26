@@ -80,7 +80,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 | Incremental crawl | Runs every 15 minutes. |
 | Full crawl | Runs every day. |
 
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
+If you want to edit any of these values, choose the **Custom setup**.
 
 ## Custom setup
 
