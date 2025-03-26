@@ -61,7 +61,7 @@ Copy the **Client ID** and **Secret** from the OAuth tab in the Aha! app and pas
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Aha!. You can click on the "Create" button to publish your connection and index features from your Aha! account.
+At this point, you're ready to create the connection for Aha!. Click "Create" to publish your connection and index features from your Aha! account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Aha! data.
 
