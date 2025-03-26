@@ -16,7 +16,7 @@ description: "Set up the Shortcut Graph connector for Microsoft Search and Micro
 ms.date: 03/27/2025
 ---
 
-# Shortcut Microsoft Graph connector (Preview)
+# Shortcut Microsoft Graph connector (preview)
 
 The Shortcut Graph connector empowers your organization to index and search Shortcut stories across your enterprise. Once configured, the connector automatically crawls Shortcut’s stories, making them easily discoverable through Microsoft Copilot and any Microsoft Search client.
 
