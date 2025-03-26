@@ -40,9 +40,9 @@ Before proceeding with the installation and configuration, confirm you have the 
 
 |Step| RBAC role|
 |:---|:---|
-|Account used during Onprem agent installation|Search Admin, Global Admin, Copilot Admin.|
+|Onprem agent installation|Search Admin, Global Admin, Copilot Admin.|
 |Entra ID registration|Global Admin, Azure App Admin, Azure Admin.|
-|Onprem service account on the target servers|Review each connector setup page for specific roles.|
+|Onprem service account on the target servers|Review each connector setup page.|
 
 ### Recommended configuration
 
