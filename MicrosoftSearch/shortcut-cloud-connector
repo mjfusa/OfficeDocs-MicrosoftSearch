@@ -12,7 +12,7 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Shortcut Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Shortcut Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 03/27/2025
 ---
 
@@ -23,7 +23,7 @@ The Shortcut Microsoft Graph connector empowers your organization to index and s
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Shortcut Microsoft Graph connector.
 
 >[!NOTE]
->The Shortcut connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Shortcut connector is in public preview. If you wish to get access to try it, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring in your admin account.
 
 ## Capabilities
 - Index stories from your Shortcut Workspace
@@ -38,7 +38,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 ### 1.	Get your API Key
-Create or use an existing Shortcut account to access Shortcut’s developer portal. Once signed in at Shortcut, navigate to your account settings and locate the API Tokens section. Generate a new API token. Learn more at [Shortcut Help Center](https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens#:~:text=You%20can%20use%20a%20Shortcut%20API%20token%20to,name%20for%20the%20token%20and%20click%20Generate%20Token).
+Create or use an existing Shortcut account to access Shortcut’s developer portal. Once signed in at Shortcut, navigate to your account settings and locate the API Tokens section. Generate a new API token. Learn more at [Shortcut help center](https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens#:~:text=You%20can%20use%20a%20Shortcut%20API%20token%20to,name%20for%20the%20token%20and%20click%20Generate%20Token).
 
 
 ## Get Started
@@ -55,7 +55,7 @@ The Shortcut instance URL is always https://api.app.shortcut.com.
 Choose "API Key" and enter the API key that you generated within Shortcut app.
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
 At this point, you're ready to create the connection for Shortcut. Click "Create" to publish your connection and index stories from your Shortcut account.
 
@@ -64,7 +64,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Users | Description |
 |----|---|
-| Access permissions | Only people with access to content in Data source. |
+| Access permissions | Only users with access to content in the data source. |
 | Map identities | Data source identities mapped using Microsoft Entra IDs. |
 
 | Content | Description |
