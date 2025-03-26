@@ -26,7 +26,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 >The Shortcut connector is in public preview. If you wish to get access to try it, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring in your admin account.
 
 ## Capabilities
-- Index stories from your Shortcut Workspace
+- Index stories from your Shortcut workspace
 - Customize your crawl frequency.  
 - Create workflows using this connection and plugins from Microsoft Copilot Studio.  
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
@@ -85,7 +85,7 @@ Custom setup is for those admins who want to edit the default values for setting
 ### Users
 
 **Access permissions**
-The Shortcut Graph connector allows your organization to index stories from Shortcut. After you configure the connector, end users can search for these stories from Shortcut in Microsoft Copilot and from any Microsoft Search client.
+The Shortcut Microsoft Graph connector allows your organization to index stories from Shortcut. After you configure the connector, end users can search for these stories from Shortcut in Microsoft Copilot and from any Microsoft Search client.
 
 ### Content
 
