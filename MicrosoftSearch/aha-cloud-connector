@@ -18,7 +18,7 @@ ms.date: 03/27/2025
 
 # Aha! Microsoft Graph connector (preview)
 
-The Aha! Graph connector empowers your organization to index and search Aha! features across your enterprise. Once configured, the connector automatically crawls Aha! features, making them easily discoverable through Microsoft Copilot and any Microsoft Search client.
+The Aha! Microsoft Graph connector empowers your organization to index and search Aha! features across your enterprise. Once configured, the connector automatically crawls Aha! features, making them easily discoverable through Microsoft Copilot and any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Aha! Microsoft Graph connector.
 
