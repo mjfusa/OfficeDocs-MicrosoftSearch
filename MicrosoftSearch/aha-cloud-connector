@@ -68,7 +68,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Users | Description |
 |----|---|
-| Access permissions | Only people with access to content in Data source. |
+| Access permissions | Only users with access to content in Data source. |
 | Map identities | Data source identities mapped using Microsoft Entra IDs. |
 
 | Content | Description |
