@@ -34,7 +34,7 @@ Some Microsoft Search answers are no longer available, including Q&As and locati
 
 ## When and where did these changes take place? 
 
-Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It is retired on all devices, including mobile.
+Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It's retired on all devices, including mobile.
 
 ## Where can users search for work and school answers? 
 
@@ -70,17 +70,17 @@ Users in organizations with education service plans can search for school resour
 
 ## What's happening to SafeSearch? 
 
-If you set the search experience for your organization to "School search," SafeSearch was set to Strict by default. You can ensure that your users continue to have SafeSearch set to Strict after the Microsoft Search in Bing retirement—just map www.bing.com to strict.bing.com at a network level. For more details, see [Blocking adult content with SafeSearch or blocking Chat](https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814).
+If you set the search experience for your organization to "School search," SafeSearch was set to Strict by default. You can ensure that your users continue to have SafeSearch set to Strict after the Microsoft Search in Bing retirement—just map www.bing.com to strict.bing.com at a network level. For more information, see [Blocking adult content with SafeSearch or blocking Chat](https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814).
 
 ## Why is this announcement important?  
 
-Searching for files, people, intranet sites, and more is an important part of daily productivity. We understand that the retirement of Microsoft Search in Bing may create some disruption in daily work. However, users can continue to access Microsoft Search through m365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online., as well as the Edge for Business address bar and Windows search box. 
+Daily productivity can depend on the ability to search for files, people, intranet sites, and more. We understand that the retirement of Microsoft Search in Bing may create some disruption in efficiency. However, users can continue to access Microsoft Search through m365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online., as well as the Edge for Business address bar and Windows search box. 
 
 ## Why is this happening?
 
 Customer productivity is our mission and making work search a better experience remains a priority for Microsoft. We hope to better serve you through Microsoft Search in the core productivity experiences of M365.cloud.microsoft and SharePoint Online. We’re also continuing to explore new ways to improve the experience and make work search more discoverable.
 
-## What happens if I linked my Entra ID and MSA accounts?
+## What happens if I linked my Entra ID and Managed Service Account (MSA)?
 
 You may have linked your Entra ID account (work or school account) and your MSA account (personal account) to earn points when you search on Bing, Edge, and MSN. If you linked your accounts, they remain linked. You continue to earn points on Bing, Edge, and MSN if your accounts are linked. When you're on Bing, you need to log in with your MSA account to continue to earn.
 
@@ -92,7 +92,7 @@ Find answers to other questions about [Microsoft Rewards](https://support.micros
 
 ## Can customers try to opt out of this change? 
 
-No, customers can't opt out of the change. Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It is retired on all devices, including mobile.
+No, customers can't opt out of the change. Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It's retired on all devices, including mobile.
 
 ## What's happening to bookmarks? 
 
