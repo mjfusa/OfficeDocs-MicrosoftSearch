@@ -34,7 +34,7 @@ Some Microsoft Search answers are no longer available, including Q&As and locati
 
 ## When and where did these changes take place? 
 
-Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It has been retired on all devices, including mobile.
+Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It is retired on all devices, including mobile.
 
 ## Where can users search for work and school answers? 
 
@@ -43,7 +43,7 @@ M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint O
 ## Edge address bar
 
 > [!NOTE]
-> Microsoft Edge version 134.0.3124.51+ is required for the work search functionality described below.
+> Microsoft Edge version 134.0.3124.51+ is required for the work search functionality described on this page.
 
 After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.
 
@@ -62,7 +62,7 @@ The "Work" scope is being retired in the Windows search box. The ability to disc
 
 ## What's happening to the "Work" or "School" tab? 
 
-Users who go to Bing after March 31, and were previously logged in to Bing with their Entra ID account, will continue to see the "Work" or "School" tab for a period of time. If they click on either of these tabs, they're redirected to m365.cloud.microsoft to complete their search. This experience is based on the user's cookies. So, if a user clears their cookies or gets a new browser or machine, they may no longer see these tabs. Visiting bing.com/work restores the "Work" or "School" tab.
+Users who go to Bing after March 31, and were previously logged in to Bing with their Entra ID account, may continue to see the "Work" or "School" tab. If they click on either of these tabs, they're redirected to m365.cloud.microsoft to complete their search. This experience is based on the user's cookies. So, if a user clears their cookies or gets a new browser or machine, they may no longer see these tabs. Visiting bing.com/work restores the "Work" or "School" tab.
 
 ## How do these changes affect users in educational organizations?
 
@@ -70,7 +70,7 @@ Users in organizations with education service plans can search for school resour
 
 ## What's happening to SafeSearch? 
 
-If you set the search experience for your organization to "School search," SafeSearch was set to Strict by default. You can ensure that your users continue to have SafeSearch set to Strict after the Microsoft Search in Bing retirement—just map www.bing.com to strict.bing.com at a network level. For mre details, see [Blocking adult content with SafeSearch or blocking Chat](https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814).
+If you set the search experience for your organization to "School search," SafeSearch was set to Strict by default. You can ensure that your users continue to have SafeSearch set to Strict after the Microsoft Search in Bing retirement—just map www.bing.com to strict.bing.com at a network level. For more details, see [Blocking adult content with SafeSearch or blocking Chat](https://support.microsoft.com/en-us/topic/blocking-adult-content-with-safesearch-or-blocking-chat-946059ed-992b-46a0-944a-28e8fb8f1814).
 
 ## Why is this announcement important?  
 
@@ -92,7 +92,7 @@ Find answers to other questions about [Microsoft Rewards](https://support.micros
 
 ## Can customers try to opt out of this change? 
 
-No, customers can't opt out of the change. Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It has been retired on all devices, including mobile.
+No, customers can't opt out of the change. Microsoft Search in Bing is retired in all regions worldwide as of March 31, 2025. It is retired on all devices, including mobile.
 
 ## What's happening to bookmarks? 
 
