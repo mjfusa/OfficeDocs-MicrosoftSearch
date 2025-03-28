@@ -80,7 +80,7 @@ If you want to edit any of these values, choose the **Custom setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
+Custom setup is for those admins who want to edit the default values for settings listed in the [Roll out to limited audience](#Roll-out-to-limited-audience) section. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
 
 ### Users
 
@@ -91,7 +91,7 @@ The Aha! Microsoft Graph connector allows your organization to index features fr
 
 **Manage properties**
 
-Add or remove available properties from your Aha!, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below.
+Add or remove available properties from your Aha!, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. These are the properties that are selected by default.
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
