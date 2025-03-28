@@ -80,7 +80,7 @@ If you want to edit any of these values, choose the **Custom setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the [Roll out to limited audience](#Roll-out-to-limited-audience) section. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
+Custom setup is for those admins who want to edit the default values for settings listed in the [Roll out to limited audience](###Roll-out-to-limited-audience) section. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
 
 ### Users
 
