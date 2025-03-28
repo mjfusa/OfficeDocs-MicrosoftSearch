@@ -120,7 +120,7 @@ Add the following client IP ranges in the firewall settings.
 | EUR    | 20.54.41.208/30, 51.105.159.88/30         | NA                                       |
 | APC    | 52.139.188.212/30, 20.43.146.44/30        | NA           
 
-_*Setting up an IP restriction could cause the connector to stop working and lead to crawl failures. Administrators can resolve this issue and resume crawling by adding the connector's IP address to the allowlist according to the above table._
+Setting up an IP restriction could cause the connector to stop working and lead to crawl failures. Administrators can resolve this issue and resume crawling by adding the connector's IP address to the allowlist according to the above table.
 
 ## Next steps
 
