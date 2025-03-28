@@ -109,7 +109,7 @@ You can configure incremental and full crawls. The following are the default val
   - Incremental crawl runs every 15 minutes by default.
   - Full crawl runs daily to ensure up-to-date indexing.
 
-## Firewall settings (for Azure SQL Microsoft Graph connector only)
+## Firewall settings (for the Azure SQL Microsoft Graph connector only)
 
 For added security, you may configure IP firewall rules for your Azure SQL Server or database. For more information, see [IP firewall rules](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure). 
 Add the following client IP ranges in the firewall settings.
