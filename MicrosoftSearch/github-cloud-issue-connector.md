@@ -57,7 +57,7 @@ Before you set up the connector:
 7. For enterprise-managed users who authenticate via Single Sign-On (SSO), the account must be signed in before performing any actions, as the GitHub authentication flow does not currently support SSO login.
 
 ### Additional tips
-1. We recommend that you use a different user for OAuth authentication for each connection because the GitHub rate limit is calculated per user.
+1. We recommend using separate user accounts for OAuth authentication with each connection, as GitHub's rate limit is calculated individually per user.
 2. You can specify which organizations and repositories a GitHub app is authorized to access, effectively determining what content the connector will crawl.
 3. For configuration about GitHub Apps and authentication, please check out below documentations
 
