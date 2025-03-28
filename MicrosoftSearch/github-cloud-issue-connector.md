@@ -40,8 +40,8 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 Before you set up the connector:
 
 1. Make sure that your GitHub instance is accessible via API.
-2. Set up a GitHub App for authentication.
-3. Generate a **Client ID** and **Client secret** from the GitHub App for authentication.
+2. Set up a GitHub App for authentication. You can specify which organizations and repositories a GitHub app is authorized to access, effectively determining what content the connector will crawl.
+3. Generate a **Client ID** and **Client secret** from the GitHub App for authentication. 
 4. Verify that the user account used for authentication has access to the repositories and issues to be indexed.
 5. Verify that the GitHub App has the following permissions configured to read issues:
     - **Repository permissions**
@@ -56,19 +56,6 @@ Before you set up the connector:
 6. Make sure that users who access indexed GitHub data have corresponding **Microsoft Entra ID** identities for permission mapping.
 7. For enterprise-managed users who authenticate via Single Sign-On (SSO), the account must be signed in before performing any actions, as the GitHub authentication flow does not currently support SSO login.
 
-### Additional tips
-1. We recommend using separate user accounts for OAuth authentication with each connection, as GitHub's rate limit is calculated individually per user.
-2. You can specify which organizations and repositories a GitHub app is authorized to access, effectively determining what content the connector will crawl.
-3. For configuration about GitHub Apps and authentication, please check out below documentations
-
-| Topic                                                | Documentation link                                                                                                                                                                                                                                                                                                                                 |
-|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| How to create/register a GitHub App                  | [Registering a GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app)                                                                                                                                                                                          |
-| How to install a GitHub App into organizations       | [Installing your own GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/installing-your-own-github-app)                                                                                                                                                                                                        |
-| How to authenticate a GitHub App on behalf of a user | [About creating GitHub Apps (acting on behalf of a user)](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps#github-apps-that-act-on-behalf-of-a-user)<br>[Authenticating with a GitHub App on behalf of a user](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user) |
-
-
-
 ## Get started
 
 ### 1. Choose display name
@@ -77,7 +64,7 @@ Choose a display name that helps users recognize the connection in a Copilot res
 ### 2. Authenticate
 
 - Enter your **Client ID** and **Client secret** from your GitHub App.
-- Choose **Authorize** to sign in and grant access.
+- Choose **Authorize** to sign in and grant access. We recommend using separate user accounts for OAuth authentication with each connection, as GitHub's rate limit is calculated individually per user.
 - Grant the required API scopes.
 
 ### 3. Roll out to limited audience
@@ -125,5 +112,13 @@ Setting up an IP restriction could cause the connector to stop working and lead 
 ## Next steps
 
 - Click Auto generation to quickly populate your connection description with recommended defaults. It saves time and ensures consistency in your setup.
-- Review the connection status in the Microsoft 365 Admin Center. 
+- Review the connection status in the Microsoft 365 Admin Center.
+- For configuration about GitHub Apps and authentication, please check out below documentations
+
+| Topic                                                | Documentation link                                                                                                                                                                                                                                                                                                                                 |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| How to create/register a GitHub App                  | [Registering a GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/registering-a-github-app/registering-a-github-app)                                                                                                                                                                                          |
+| How to install a GitHub App into organizations       | [Installing your own GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/installing-your-own-github-app)                                                                                                                                                                                                        |
+| How to authenticate a GitHub App on behalf of a user | [About creating GitHub Apps (acting on behalf of a user)](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps#github-apps-that-act-on-behalf-of-a-user)<br>[Authenticating with a GitHub App on behalf of a user](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-with-a-github-app-on-behalf-of-a-user) |
+
 If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
