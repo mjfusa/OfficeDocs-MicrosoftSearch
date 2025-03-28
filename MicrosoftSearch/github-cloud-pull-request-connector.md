@@ -110,7 +110,8 @@ You can configure incremental and full crawls. The following are the default val
 
 ## Firewall settings (for Azure SQL Microsoft Graph connector only)
 
-For added security, you may configure IP firewall rules for your Azure SQL Server or database. To learn more about setting up [IP firewall rules](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure), refer to the documentation on IP firewall rules. Add the following client IP ranges in the firewall settings.
+For added security, you may configure IP firewall rules for your Azure SQL Server or database. For more information, see [IP firewall rules](https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure).
+Add the following client IP ranges in the firewall settings.
 
 | Region | Microsoft 365 Enterprise                  | Microsoft 365 Government                 |
 |--------|-------------------------------------------|------------------------------------------|
