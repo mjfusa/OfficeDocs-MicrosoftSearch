@@ -30,7 +30,7 @@ Users can find work and school search results on M365.cloud.microsoft and ShareP
 Some Microsoft Search answers are no longer available, including Q&As and location answers. Recommended bookmarks are also retired—you can keep them by manually publishing or exporting them by April 30, 2025.
 
 > [!NOTE]
-> The Google Chrome browser extension that sets Bing as the default search engine is also retired as of March 31, 2025. Users of Google Chrome, Microsoft Edge, and other browsers can still select their default search engine in the browser settings. [Learn how to change your default search engine](https://support.microsoft.com/en-us/microsoft-edge/change-your-default-search-engine-f863c519-5994-a8ed-6859-00fbc123b782)
+> The Google Chrome browser extension that sets Bing as the default search engine is also retired as of March 31, 2025. Users of Google Chrome, Microsoft Edge, and other browsers can still select their default search engine in the browser settings. [Learn how to change your default search engine](https://support.microsoft.com/en-us/microsoft-edge/change-your-default-search-engine-f863c519-5994-a8ed-6859-00fbc123b782).
 
 ## When and where did these changes take place? 
 
