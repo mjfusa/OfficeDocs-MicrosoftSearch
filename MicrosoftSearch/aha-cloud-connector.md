@@ -1,7 +1,7 @@
 --- 
 title: "Aha! Microsoft Graph connector" 
 ms.author: raynezou
-author: ms-raynezou
+author: leizi2015
 manager: zezhangzhao
 audience: Admin
 ms.audience: Admin 
@@ -48,8 +48,8 @@ To use Aha! OAuth for authentication, an Aha! admin needs to create an Aha! OAut
 
 **Create Aha! OAuth 2.0 application**
 To properly register the Aha! OAuth application for GCS access, first navigate to **Personal settings**, choose **Developer**, and click **OAuth applications**. Click "Create" to generate the **Client ID** and **Secret** after entering the redirect URI.
-- For M365 Enterprise, copy and paste: https://gcs.office.com/v1.0/admin/oauth/callback.
-- For M365 Government, copy and paste: https://gcsgcc.office.com/v1.0/admin/oauth/callback.
+- For M365 Enterprise, copy and paste: `https://gcs.office.com/v1.0/admin/oauth/callback`.
+- For M365 Government, copy and paste: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`.
 
 Copy the **Client ID** and **Secret** from the OAuth tab in the Aha! app and paste it in the connector setup. Choose Authorize, and use the same Aha! admin account credential to authenticate permission to crawl. For more information, see [Aha! OAuth2 Authentication](https://www.aha.io/api/oauth2#registering-an-application).
 
