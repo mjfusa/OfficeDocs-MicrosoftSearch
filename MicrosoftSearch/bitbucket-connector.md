@@ -1,5 +1,5 @@
 ---
-title: "Bitbucket Microsoft Graph connectors"
+title: "Bitbucket Microsoft Graph connectors (preview)"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -16,9 +16,9 @@ description: "Set up the Bitbucket Microsoft Graph connectors for Microsoft Sear
 ms.date: 02/14/2025
 ---
 
-# Bitbucket Microsoft Graph connectors
+# Bitbucket Microsoft Graph connectors (preview)
 
-The Bitbucket Microsoft Graph connectors (Bitbucket Cloud Pull Request and Bitbucket Cloud Knowledge) allow your organization to index pull requests and documentation (txt and md files) stored in GitLab. After you configure the connector and index Bitbucket content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The Bitbucket Microsoft Graph connectors (Bitbucket Cloud Pull Request and Bitbucket Cloud Knowledge) allow your organization to index pull requests and documentation (.txt and .md files) stored in BitBucket. After you configure the connector and index Bitbucket content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
 This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors Bitbucket Microsoft Graph connectors.
 
@@ -42,19 +42,19 @@ Before you set up the connector, make sure that:
 
 1. Your Bitbucket instance is accessible via API.
 2. You generate a **Client ID** and **Client secret** from Bitbucket for authentication.
-3. The user account used for authentication has access to the repositories, pull requests,and knowledge files to be indexed.
-4. Ensure that the Client ID and Client Secret have the **repository:read**, **account:read,** and **pullrequest permission**
+3. The user account used for authentication has access to the repositories, pull requests, and knowledge files to be indexed.
+4. The client ID and client secret have the **repository:read**, **account:read,** and **pullrequest** permissions.
 5. Users who access indexed Bitbucket data have corresponding **Microsoft Entra ID** identities for permission mapping.
 
-*It is recommended to use a different user for OAuth authentication for each connection, as Bitbucket's rate limit is calculated per user.
+We recommend using separate user accounts for OAuth authentication with each connection as Bitbucket's rate limit is calculated individually per user.
 
 ## Get started
 
 ### 1. Choose display name
-Choose a display name that helps users recognize merge requests, issues, or documentation in a Copilot response.
+Choose a display name that helps users recognize merge requests or documentation in a Copilot response.
 
 ### 2. Bitbucket instance URL
-Enter the URL of your Bitbucket instance (e.g. `https://bitbucket.org/testinstance`).
+Enter the URL of your Bitbucket instance (for example, `https://bitbucket.org/testinstance`).
 
 ### 3. Authenticate
 
@@ -70,14 +70,17 @@ Custom setup is for admins who want to edit the default values for any settings.
 
 ### Users
 #### Identity mapping
+By default, due to the limitation of Bitbucket API, the connector maps emails in Microsoft Entra ID using public names from Bitbucket.
+If this mapping does not align with your configuration, customize the identity mapping.
+
 To ensure correct permission enforcement, map Bitbucket user identities to Microsoft Entra ID. The following are the options:
-  - **Username:** Matches Bitbucket usernames to Microsoft Entra ID user properties.
-  - **Name:** Maps Bitbucket user names with Microsoft Entra ID user properties.
+  - **Full name:** Matches Bitbucket full names to Microsoft Entra ID user properties.
+  - **Public name:** Maps Bitbucket public names with Microsoft Entra ID user properties.
 
 If direct mapping fails, use **regular expressions (regex)** for transformation.
 
 ### Content
-You can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps** on the **Content** tab.
+On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
 ### Sync
 You can configure **incremental** and **full** crawls. The following are the default values:
@@ -87,5 +90,5 @@ You can configure **incremental** and **full** crawls. The following are the def
 
 ## Next steps
 
-- Review the connection status in the Microsoft 365 admin center. 
+- Review the connection status in the Microsoft 365 Admin Center. 
 - If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
