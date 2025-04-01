@@ -22,7 +22,7 @@ Here's a list of the most common questions.
 > Don't see your question answered here? Ask your question in this article's feedback.
 
 > [!IMPORTANT]
-> Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+> As of March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Microsoft Search in Bing is no longer available. We encourage Microsoft Search in Bing users to update your bookmarks. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 ## Is advanced query understanding supported?
 
@@ -43,7 +43,7 @@ These are the instructions for setting the default search engine, default homepa
 - [Set Bing.com as your enterprise homepage](set-default-homepage.md)
  
 > [!IMPORTANT]
-> Beginning March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+> As of March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Microsoft Search in Bing is no longer available. We encourage Microsoft Search in Bing users to update your bookmarks. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 ## How are my search results protected?
 
