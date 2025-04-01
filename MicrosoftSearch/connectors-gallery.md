@@ -295,6 +295,7 @@ The following connectors are under website.
 |Aspider Web Crawler|Accenture|Crawls content from one or more websites. The content is submitted along with any metadata provided by the server. For more information, contact Accenture.|
 |RSS|Accenture|Allows you to retrieve feed information and trigger flows when new items are published in an RSS feed. For more information, contact Accenture.|
 |Selenium|Accenture|Crawls content from websites using an internet browser to retrieve the pages. For more information, contact Accenture.|
+|Web Pages|RheinInsights|Enterprise search and Copilot connector for indexing web pages and attached documents. Reliably and easily indexes web pages from a given site. Comes with full metadata sets, advanced processing pipelines, flexible metadata extraction, and support for custom permission models. For more information, see [Web Pages connector](https://www.rheininsights.com/en/connectors/web-pages.php).|
 
 ## Other
 
