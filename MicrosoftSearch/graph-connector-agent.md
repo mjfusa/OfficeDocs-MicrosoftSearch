@@ -38,11 +38,11 @@ For more information, see [Execution policy](/powershell/module/microsoft.powers
 
 Before proceeding with the installation and configuration, confirm you have the required RBAC roles for each step.
 
-|Step| RBAC role|
+|Step|RBAC role|
 |:---|:---|
-|Onprem agent installation|Search Admin, Global Admin, Copilot Admin.|
-|Entra ID registration|Global Admin, Azure App Admin, Azure Admin.|
-|Onprem service account on the target servers|Review each connector setup page.|
+|Install agent on-premises| Search Admin, Global Admin, Copilot Admin.|
+|Register the app in Entra ID| Global Admin, Azure App Admin, Azure Admin.|
+|Create the service account on the target servers|See the setup page for the connector.|
 
 ### Recommended configuration
 
