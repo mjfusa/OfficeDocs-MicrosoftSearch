@@ -75,27 +75,27 @@ The Microsoft Graph connector agent can be upgraded in two ways:
 
 1. Download and install the Microsoft Graph connector agent manually from the link provided in the installation section.
 
-2. Clicking on the "Upgrade" button available in the connection pane as shown in the image:
+1. Clicking on the **Upgrade** button available in the connection pane as shown in the image:
    :::image type="content" source="media/gca-releases/one-click-upgrade.png" alt-text="Sample snapshot of how to upgrade GCA with one-click from the connection pane.":::
 
-The upgrade button isn't available for agents upgrading from 1.x version to 2.x version. Follow these steps if the agent is upgrading from 1.x to 2.x version:
+    The upgrade button isn't available for agents upgrading from 1.x version to 2.x version. Follow these steps if the agent is upgrading from 1.x to 2.x version:
 
 1. Download the installer from the link provided in the installation section.
 
-2. The installer asks you to install .NET 8 Desktop runtime, if not already installed.
+1. The installer asks you to install .NET 8 Desktop runtime, if not already installed.
 
-3. Allow communication to the endpoint *.office.com.
+1. Allow communication to the endpoint *.office.com.
 
-4. Post installation, GCA configuration app restarts. If GCA isn't registered, sign in and proceed with the registration.
+1. Post installation, GCA configuration app restarts. If GCA isn't registered, sign in and proceed with the registration.
 
-5. If GCA is already registered, the GCA configuration app shows the following success message:
+1. If GCA is already registered, the GCA configuration app shows the following success message:
    :::image type="content" source="media/onprem-agent/health-check-sign-in.jpg" alt-text="Sample snapshot of Health check success on GCA sign-in page.":::
 
-6. If you observe any errors, follow the suggested mitigation steps in the error message and close & reopen the GCA configuration app.
+1. If you observe any errors, follow the suggested mitigation steps in the error message and close & reopen the GCA configuration app.
 
-7. If the error message says, "Can't determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
+1. If the error message says, "Can't determine the health of the agent. If the error persists, contact support.", restart GcaHostService(steps mentioned in the troubleshooting section), and open the GCA configuration app again.
 
-8. You can run the checks anytime by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
+1. You can run the checks anytime by closing and opening the GCA Config app or by using the "Health Check" button next to the "Edit" button in the registration details screen.
    :::image type="content" source="media/onprem-agent/health-check-registration.jpg" alt-text="Sample snapshot of Health check success on GCA registration page.":::
 
 >[!NOTE]
@@ -182,7 +182,7 @@ Export-PfxCertificate -Cert $certificatePath -FilePath ($filePath + '.pfx') -Pas
 2. Select **Upload certificate** and upload the .cer file.
 3. Open **App registration** and select **Certificates and secrets**. Copy the certificate thumbprint.
 
-:::image type="content" alt-text="List of thumbprint certificates when Certificates and secrets are selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
+    :::image type="content" alt-text="List of thumbprint certificates when Certificates and secrets are selected in the left pane." source="media/onprem-agent/certificates.png" lightbox="media/onprem-agent/certificates.png":::
 
 ##### Step 3: Assign the certificate to the agent
 
@@ -204,7 +204,7 @@ Using the sample script to generate a certificate would save the PFX file in the
 
 8. In the user selection dialog, write: **NT Service\GcaHostService** and select **Ok**. Don't select **Check Names**.
 
-9. Select ok on the permissions dialog. The agent machine is now configured for the agent to generate tokens using the certificate.
+9. Select **Ok** on the permissions dialog. The agent machine is now configured for the agent to generate tokens using the certificate.
 
 ## Troubleshooting
 
@@ -216,7 +216,7 @@ If the errors aren't resolvable, send an email to [Microsoft Graph | Support](ht
 
 ### Registration failure
 
-If signing in to configure the application fails and shows the error, "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeds, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In Task Manager, go to **Services**, and check if GcaHostService is in a running state. If not, right-click and start the service.
+If signing in to configure the application fails and shows the error, "Sign-in failed, please select the sign-in button to try again," even after browser authentication succeeds, then open services.msc and check if GcaHostService is running. If it doesn't start, start it manually. In the Task Manager, go to **Services**, and check if GcaHostService is in a running state. If not, right-click and start the service.
 
 ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
 
@@ -230,7 +230,7 @@ Post registration, some local settings may affect the connectivity of the agent.
 
 The agent is considered offline if it isn't able to contact the Microsoft Graph connector services. In such cases, follow these steps:
 
-1. Check if the agent is running - Sign in to the machine where the agent is installed and check if it's running. In Task Manager, go to **Services**, and check if the **GcaHostService** is in a running state. If not, right-click and start the service. 
+1. Check if the agent is running - Sign in to the machine where the agent is installed and check if it's running. In the Task Manager, go to **Services**, and check if the **GcaHostService** is in a running state. If not, right-click and start the service. 
 
     ![Screenshot of services in Task Manager.](media/onprem-agent/GcaHostService_GcaUpdateService.png)
 
