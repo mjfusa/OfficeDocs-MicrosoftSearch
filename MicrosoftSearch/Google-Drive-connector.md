@@ -108,7 +108,7 @@ g.	A private JSON key is saved to your computer.
 
 a.	Go to Google Workspace [Admin console](https://admin.google.com/ac/home?hl=en) and click **Security** > **Access and data control** > **API controls** in main menu.
 
-:::image type="content" source="media/google-drive-connector/gdrive-add-api-scope-1.png" lightbox="gdrive-add-api-scope-1.png" alt-text="Screenshot that shows how to add api scope-step1.":::
+:::image type="content" source="media/google-drive-connector/gdrive-add-api-scope-1.png" lightbox="media/google-drive-connector/gdrive-add-api-scope-1.png" alt-text="Screenshot that shows how to add api scope-step1.":::
 
 b.	Click **MANAGE DOMAIN WIDE DELEGATION** in section Domain wide delegation:
 
