@@ -1,7 +1,7 @@
 --- 
 title: "Zoom meetings Graph connector for Microsoft Search and Copilot" 
 ms.author: efgilboa
-author: rerabo
+author: vivg
 manager: ereza
 audience: Admin
 ms.audience: Admin 
@@ -18,7 +18,7 @@ ms.date: 03/31/2025
 
 # Zoom meetings Microsoft Graph connector (Preview)
 
-With the Microsoft Graph connector for Zoom meetings, your organization can index meeting related artifacts, such as transcript, summary and meta data, and allow the owners of meetings to search for such information in Microsoft Copilot and from any Microsoft Search client.
+With the Microsoft Graph connector for Zoom meetings, your organization can index meeting related artifacts such as transcripts, summary and meta data. This allows the owners of meetings to search for such information in Microsoft Copilot and from any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Zoom meetings Graph connector.
 
@@ -36,7 +36,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Zoom account**: To connect to your Zoom meetings data, you need an account which supports cloud recordings.
-- **Create a Zoom marketplace app for the Microsoft Graph connector**: By creating a Zoom marketplace app as detailed below, you can allow and control the access by the Graph connector to your Zoom meetings data.
+- **Create a Zoom marketplace app for the Microsoft Graph connector**: By creating a Zoom marketplace app, you can allow and control the access by the Graph connector to your Zoom meetings data.
 
 ### Create Zoom marketplace app
 
@@ -44,28 +44,28 @@ Create a Zoom marketplace app for the Microsoft Graph connector:
 
 1. Go to the Zoom marketplace at [https://marketplace.zoom.us](https://marketplace.zoom.us) and log-in using a Zoom admin credentials.
 
-2. Hover over the ‘Develop’ menu, and select ‘Build app’:
+2. Hover over the "Develop" menu, and select "Build app":
 [![Screenshot that shows the Zoom app marketplace page.](media/zoom-connector/Zoom-marketplace-page.png)](media/zoom-connector/Zoom-marketplace-page.png#lightbox)
 
-3. Select ‘Server to server OAuth app’ and click the Create button:
+3. Select "Server to server OAuth app" and click the Create button:
 [![Screenshot that shows the Zoom app selection.](media/zoom-connector/Zoom-app-selection.png)](media/zoom-connector/Zoom-app-selection.png#lightbox)
 
 4. Provide a name for the app, and click Create:
 [![Screenshot that shows the Zoom app creation.](media/zoom-connector/Zoom-app-creation.png)](media/zoom-connector/Zoom-app-creation.png#lightbox)
 
-5. In the next page, note the Client ID and the Client Secret. You will need to insert these when configuring the connector in the next section:
+5. In the next page, note the Client ID and the Client Secret. You will need to insert these details when configuring the connector in the next section:
 [![Screenshot that shows the Zoom app credentials.](media/zoom-connector/Zoom-app-credentials.png)](media/zoom-connector/Zoom-app-credentials.png#lightbox)
 
 6. Click continue
 
-7. Fill out the information in the ‘Information’ and ‘Feature’ tabs, click continue to get to the ‘Scopes’ tab.
+7. Fill out the information in the "Information" and "Feature" tabs, click continue to get to the "Scopes" tab.
 [![Screenshot that shows the Zoom app scopes tab.](media/zoom-connector/Zoom-app-scopes.png)](media/zoom-connector/Zoom-app-scopes.png#lightbox)
 
 8. Click the +Add scopes button and select the following scopes (use the value in brackets below to search for a scope, and mark the checkbox next to it to select it):
    a. Dashboard → View all users’ meetings information on dashboard → View meeting metrics (dashboard:read:list_meetings:admin)
    b. Dashboard →  View all users’ meetings information on dashboard → View meeting participants’ metrics (dashboard:read:list_meeting_participants:admin)
    c. Meeting → View all user meetings → View a meeting (meeting:read:meeting:admin)
-   d. Recording → View all user recordings → Returns all of ameeting’s recordings (cloud_recording:read:list_recording_files:admin)
+   d. Recording → View all user recordings → Returns all of a meeting’s recordings (cloud_recording:read:list_recording_files:admin)
    e. User → View all user information → View users (user:read:list_users:admin)
 [![Screenshot that shows an example of adding a scope to the Zoom app.](media/zoom-connector/Zoom-app-scopes-sample.png)](media/zoom-connector/Zoom-app-scopes-sample.png#lightbox)
 
@@ -86,14 +86,14 @@ A display name is used to identify each citation in Copilot, helping users easil
 
 To authenticate and sync content from Zoom, choose **OAuth 2.0**.
 
-Enter the Zoom account ID, the Client Id and the Client secret which were created as part of the Zoom marketplace app above, to authenticate to your instance.
+Enter the Zoom account ID, the Client ID, and the Client secret which were created as part of the Zoom marketplace app before, to authenticate to your instance.
 
 ### 3. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, see [staged rollout](staged-rollout-for-graph-connectors.md).
 
-At this point, you are ready to create the connection for Zoom meetings. You can click on the ‘Create’ button and the Microsoft Graph connector will start indexing meetings from your Zoom account.
+At this point, you are ready to create the connection for Zoom meetings. You can click on the ‘Create’ button and the Microsoft Graph connector starts indexing meetings from your Zoom account.
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency etc., we have set defaults based on what works best with Zoom data. You can see the default values below:
+For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we have defaults set based on what works best with Zoom data. You can see the default values here:
 - **Users**
    - Access Permissions: Only the **meeting owner** in Zoom has access to the meeting’s data in Microsoft Graph.
    - Map Identities: Data source identities mapped using Microsoft Entra IDs.
@@ -103,7 +103,7 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
    - Incremental Crawl: Frequency: Every 15 mins
    - Full crawl: Frequency: Every day
 
-If you want to edit any of these values, you need to choose the ‘Custom Setup’ option.
+If you want to edit any of these values, you need to choose the "Custom Setup" option.
 
 ## Custom Setup
 
@@ -117,7 +117,7 @@ The Zoom meetings connector supports access permissions only for the original ow
 
 **Mapping Identities**
 
-The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email id of Zoom users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe this would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](https://learn.microsoft.com/en-us/microsoftsearch/map-non-aad).
+The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the Email ID of Zoom users is same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra ID. If you believe this configuration would not work for your organization, you can provide a custom mapping formula. To know more about, mapping Non-EntraID identities, click [here](map-non-aad.md).
 
  
 ### Content
@@ -126,7 +126,7 @@ Choose the repositories and file types (initially markdown files and other non-c
 
 **Manage Properties**
 
-Here, you can add or remove available properties from your Zoom data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+Here, you can add or remove available properties from your Zoom data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
 
 **Source Property** | **Semantic Label** |**Description**| **Schema**
 --- | ---- | --- | ---
