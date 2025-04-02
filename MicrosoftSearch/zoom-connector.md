@@ -139,8 +139,6 @@ PlayRecordingUrl | url | A direct web link for streaming and viewing a Zoom meet
 StartTime | Created date time | The start time of the recording. | Query, Refine, Retrieve
 Topic | Title |	The title provided by the meeting host to summarize the subject or purpose of the Zoom meeting.	| Query, Retrieve
 Transcript | | Text-based record of the spoken content of the meeting. | Search
-
-
 WorkflowState | | | Retrieve
 
 ### Sync
