@@ -24,7 +24,7 @@ The PagerDuty Escalation Policies Microsoft Graph connector enables your organiz
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the PagerDuty Escalation Policies Microsoft Graph connector. 
 
 > [!NOTE]
-> The Microsoft Graph PagerDuty Escalation Policies connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
+> The PagerDuty Escalation Policies Microsoft Graph connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 
@@ -42,7 +42,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph PagerDuty Escalation Policies connector, complete the following steps:
+Before you create a PagerDuty Escalation Policies Microsoft Graph connector, complete the following steps:
 
 1. Create a PagerDuty account with administrator permission in the PagerDuty app.
 2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. See [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app) for more information.
@@ -119,8 +119,7 @@ You can add or remove available properties from your PagerDuty Escalation Policy
 
 ### Sync 
 
-Only full crawl is supported by PagerDuty Escalation Policies connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
-
+Only full crawl is supported by PagerDuty Escalation Policies Microsoft Graph connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
 
 
 ## Troubleshooting
@@ -131,7 +130,7 @@ The following are common errors that can occur and how to resolve them.
 
 Credential info has expired. Please create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
- **Invalid Credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
+ **Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
 
 Common credential error. Please go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
@@ -139,4 +138,4 @@ Common credential error. Please go back to the PagerDuty app registration settin
 
 After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
