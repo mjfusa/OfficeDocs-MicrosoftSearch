@@ -24,7 +24,7 @@ The Freshservice Microsoft Graph connector enables your organization to index Fr
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the Freshservice Microsoft Graph connector. 
 
 > [!NOTE]
-> The Microsoft Graph Freshservice connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
+> The Freshservice Microsoft Graph connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 
@@ -38,10 +38,10 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph Freshservice connector, complete the following steps:
+Before you create a Freshservice Microsoft Graph connector, complete the following steps:
 
-1. Created a Freshservice account with administrator permission in Freshservice application.
-2. Navigate to the user profile setting page with the administrator account in Freshservice application. Create an API key and copy it.
+1. Create a Freshservice account with administrator permission in the Freshservice application.
+2. Navigate to the user profile setting page with the administrator account in the Freshservice application. Create an API key and copy it.
 
 ## Get started
 
@@ -65,7 +65,7 @@ Custom setup is for admins who want to edit the default values for the settings.
 
 **Access permissions**
 
-Only public solution articles with folder visibility to all are indexed using the Freshservice graph connector. These solution articles will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
+Only public solution articles with folder visibility to all are indexed using the Freshservice Microsoft Graph connector. These solution articles will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
 
 ### Content 
 
@@ -102,7 +102,7 @@ The following are common errors that can occur and how to resolve them.
 
 **Your security credentials have expired for this session. Please go back and sign in again with your App key and App secret.**
 
-Credential info has expired. Please create a new key in Freshservice API key setting and copy the latest key from the user profile setting page to authenticate.
+Credential info has expired. Please create a new key in the Freshservice API key setting and copy the latest key from the user profile setting page to authenticate.
 
  **Invalid Credentials detected. Please check the credential info and check the permission scopes of the Freshservice App.**
 
@@ -112,4 +112,4 @@ Common credential error. Please go back to the Freshservice API key setting and 
 
 After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
