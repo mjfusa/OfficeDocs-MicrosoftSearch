@@ -110,7 +110,7 @@ For the GitHub App token:
 | Repository Permissions | Metadata | Read-only |
 | Account Permissions | Email addresses | Read-only |
 
-[![Screenshot that shows GitHub App for secure authentication.](media/github-connector/GitHub-app-for-secure-authentication.png)](media/github-connector/GitHub-app-for-secure-authentication.png#lightbox)
+[![Screenshot that shows GitHub App for secure authentication.](media/github-connector/GitHub-app-for-secure-authentication.jpg)](media/github-connector/GitHub-app-for-secure-authentication.jpg#lightbox)
 
 ## Custom Setup
 
