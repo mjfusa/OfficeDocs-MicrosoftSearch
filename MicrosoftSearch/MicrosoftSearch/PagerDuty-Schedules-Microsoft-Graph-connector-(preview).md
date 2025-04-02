@@ -78,7 +78,7 @@ PagerDuty allows customers to choose the geographic service region of the PagerD
 - For US service region, REST API URL is https://api.pagerduty.com.
 - For EU service region, REST API URL is https://api.eu.pagerduty.com.
 
-See [Service Regions](https://support.pagerduty.com/main/docs/service-regions) for more information.
+For more information, see [Service Regions](https://support.pagerduty.com/main/docs/service-regions).
 
 ### 3. Choose authentication type
 Enter the Client ID and Client Secret you obtained from your PagerDuty app registration setting.
@@ -130,7 +130,7 @@ You can add or remove available properties from your PagerDuty Schedule data sou
 
 ### Sync 
 
-Only full crawl is supported by PagerDuty Schedules connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
+Only full crawl is supported by PagerDuty Schedules Microsoft Graph connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
 
 
 
