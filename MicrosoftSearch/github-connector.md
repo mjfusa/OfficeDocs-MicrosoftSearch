@@ -57,7 +57,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## GitHub Authentication with Application Registration
 
-To set up GitHub authentication using an Application, please follow the detailed steps in the [GitHub guide on registering a GitHub App](/https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app). This guide will walk you through the process of registering and configuring your GitHub App, including creating the necessary credentials and permissions.
+To set up GitHub authentication using an Application, please follow the detailed steps in the [GitHub guide on registering a GitHub App](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app). This guide will walk you through the process of registering and configuring your GitHub App, including creating the necessary credentials and permissions.
 
 ## Get Started
 
@@ -100,7 +100,7 @@ If you have organization-owned repositories, follow these extra steps:
 
 
 2. **GitHub App installation token** <br>
-Use a registered GitHub App for secure authentication and controlled access to GitHub data , and enter the required values: **App ID** , **Account Name** , **Upload Private Key**.
+Use a registered GitHub App for secure authentication and controlled access to GitHub data, and enter the required values: **App ID** , **Account Name** , **Upload Private Key**.
 
 For the GitHub App token:
 

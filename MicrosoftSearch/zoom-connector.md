@@ -61,12 +61,12 @@ Create a Zoom marketplace app for the Microsoft Graph connector:
 7. Fill out the information in the "Information" and "Feature" tabs, click continue to get to the "Scopes" tab.
 [![Screenshot that shows the Zoom app scopes tab.](media/zoom-connector/Zoom-app-scopes.png)](media/zoom-connector/Zoom-app-scopes.png#lightbox)
 
-8. Click the +Add scopes button and select the following scopes (use the value in brackets below to search for a scope, and mark the checkbox next to it to select it):
-   a. Dashboard → View all users’ meetings information on dashboard → View meeting metrics (dashboard:read:list_meetings:admin)
-   b. Dashboard →  View all users’ meetings information on dashboard → View meeting participants’ metrics (dashboard:read:list_meeting_participants:admin)
-   c. Meeting → View all user meetings → View a meeting (meeting:read:meeting:admin)
-   d. Recording → View all user recordings → Returns all of a meeting’s recordings (cloud_recording:read:list_recording_files:admin)
-   e. User → View all user information → View users (user:read:list_users:admin)
+8. Click the +Add scopes button and select the following scopes (use the value in brackets below to search for a scope, and mark the checkbox next to it to select it):<br>
+   a. Dashboard → View all users’ meetings information on dashboard → View meeting metrics (dashboard:read:list_meetings:admin)<br>
+   b. Dashboard →  View all users’ meetings information on dashboard → View meeting participants’ metrics (dashboard:read:list_meeting_participants:admin)<br>
+   c. Meeting → View all user meetings → View a meeting (meeting:read:meeting:admin)<br>
+   d. Recording → View all user recordings → Returns all of a meeting’s recordings (cloud_recording:read:list_recording_files:admin)<br>
+   e. User → View all user information → View users (user:read:list_users:admin)<br>
 [![Screenshot that shows an example of adding a scope to the Zoom app.](media/zoom-connector/Zoom-app-scopes-sample.png)](media/zoom-connector/Zoom-app-scopes-sample.png#lightbox)
 
 9. Click Done and then click Continue.
