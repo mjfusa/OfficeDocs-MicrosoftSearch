@@ -79,6 +79,10 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: Aha! Cloud
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: 15Five High Fives
           items:
           - name: Setup
