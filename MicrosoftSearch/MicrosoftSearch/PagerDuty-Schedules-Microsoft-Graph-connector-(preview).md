@@ -24,7 +24,7 @@ The PagerDuty Schedules Microsoft Graph connector enables your organization to i
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the PagerDuty Schedules Microsoft Graph connector. 
 
 > [!NOTE]
-> The Microsoft Graph PagerDuty Schedules connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
+> The PagerDuty Schedules Microsoft Graph connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
 
 ## Capabilities
 
@@ -42,10 +42,10 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph PagerDuty Schedules connector, complete the following steps:
+Before you create a PagerDuty Schedules Microsoft Graph connector, complete the following steps:
 
-1. Created a PagerDuty account with administrator permission in PagerDuty application.
-2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. See [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app) for more information.
+1. Creat a PagerDuty account with administrator permission in the PagerDuty application.
+2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. For more information, see [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app).
 3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
 4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
    
@@ -150,4 +150,4 @@ Common credential error. Please go back to the PagerDuty app registration settin
 
 After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
