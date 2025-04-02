@@ -44,7 +44,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 Before you create a Microsoft Graph PagerDuty Escalation Policies connector, complete the following steps:
 
-1. Created a PagerDuty account with administrator permission in PagerDuty application.
+1. Create a PagerDuty account with administrator permission in the PagerDuty app.
 2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. See [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app) for more information.
 3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
 4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
