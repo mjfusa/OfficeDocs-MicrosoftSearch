@@ -142,7 +142,7 @@ The following are common errors that can occur and how to resolve them.
 
 Credential info has expired. Please create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
- **Invalid Credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
+ **Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
 
 Common credential error. Please go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
