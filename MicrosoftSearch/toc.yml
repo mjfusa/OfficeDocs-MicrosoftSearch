@@ -165,6 +165,10 @@ items:
           items:
             - name: Setup
               href: jira-data-center-connector.md
+        - name: Coda Enterprise
+          items:
+          - name: Setup
+            href: coda-enterprise-connector.md
         - name: CSV
           items:
           - name: Setup
