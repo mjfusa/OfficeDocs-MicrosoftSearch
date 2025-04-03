@@ -104,7 +104,7 @@ The following are common errors that can occur and how to resolve them.
 
 Credential info has expired. Please create a new key in the Freshservice API key setting and copy the latest key from the user profile setting page to authenticate.
 
- **Invalid Credentials detected. Please check the credential info and check the permission scopes of the Freshservice App.**
+ **Invalid credentials detected. Please check the credential info and check the permission scopes of the Freshservice App.**
 
 Common credential error. Please go back to the Freshservice API key setting and check if the key is correct.
 
