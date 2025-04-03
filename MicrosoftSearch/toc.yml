@@ -137,6 +137,10 @@ items:
           items:
           - name: Setup
             href: bitbucket-connector.md
+        - name: Coda Enterprise
+          items:
+          - name: Setup
+            href: coda-enterprise-connector.md        
         - name: Confluence Cloud
           items:
           - name: Setup
