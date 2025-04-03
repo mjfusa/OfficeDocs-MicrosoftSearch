@@ -210,7 +210,11 @@ items:
         - name: Guru
           items:
           - name: Setup
-            href: guru-connector.md        
+            href: guru-connector.md       
+        - name: iManage Cloud
+          items:
+          - name: Setup
+            href: imanage-cloud-connector.md     
         - name: MediaWiki
           items:
           - name: Setup
