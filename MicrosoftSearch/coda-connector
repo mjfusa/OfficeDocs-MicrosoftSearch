@@ -14,17 +14,17 @@ search.appverid:
 - MET150 
 - MOE150 
 description: "Set up the Coda Graph Connector for Microsoft Search and Microsoft 365 Copilot" 
-ms.date: 04/02/2025
+ms.date: 04/03/2025
 ---
 
 # Coda Microsoft Graph connector (Preview)
 
-The Coda Graph Connector allows your organization to index content from Coda. After you configure the connector, end users can search for these content from Coda in Microsoft Copilot and from any Microsoft Search client.
+The Coda Graph Connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for these content from Coda in Microsoft Copilot and from any Microsoft Search client.
  
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Graph Connector.
 
 >[!NOTE]
->The Coda connector is in private preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Coda connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 - **Indexing with Access Control**: Index documents and emails from Coda while maintaining access control.
