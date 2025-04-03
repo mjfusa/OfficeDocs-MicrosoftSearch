@@ -24,7 +24,7 @@ The iManage Cloud Graph Connector allows your organization to index content from
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a iManage Cloud Graph Connector.
 
 >[!NOTE]
->The iManage Cloud connector is in private preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The iManage Cloud connector is in private preview for invited customers only. If you are invited and wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 - **Indexing with Access Control**: Index documents and emails from iManage Cloud while maintaining access control.
