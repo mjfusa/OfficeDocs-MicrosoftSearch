@@ -11,7 +11,7 @@ ms.service: mssearch
 ms.localizationpriority: Medium 
 search.appverid: 
 - BFB160 
-- MET150 
+- MET150  
 - MOE150 
 description: "Set up the Coda Enterprise Graph Connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 04/03/2025
