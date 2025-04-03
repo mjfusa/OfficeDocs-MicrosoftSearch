@@ -58,7 +58,7 @@ We support OAuth 2.0 authentication for iManage Cloud. The connector is register
 
 #### Step 1: Add Microsoft iManage Cloud connector application ####
 A new application registered and authorized for your iManage Cloud environment isn't enabled by default. Apps may be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege.
-You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control center for your environment with below recommended values:[Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
+You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control center for your environment with below recommended values. [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
 Area  |  Field | Recommended Value
 --- | --- | ---
@@ -119,7 +119,7 @@ To identify which option is suitable for your organization:
 ### Content
 
 **Content filter**
-To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](https://learn.microsoft.com/en-us/graph/connecting-external-content-api-limits)
+To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](/graph/connecting-external-content-api-limits)
 
 **Select the libraries**: Choose the specific libraries for the content to be indexed. Only the content within these selected libraries will be indexed.
 
