@@ -19,7 +19,7 @@ ms.date: 04/03/2025
 
 # Coda Enterprise Graph connector (Preview)
 
-The Coda Enterprise Graph Connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for these content from Coda in Microsoft Copilot and from any Microsoft Search client.
+The Coda Enterprise Graph Connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for this content from Coda in Microsoft Copilot and from any Microsoft Search client.
  
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Enterprise Graph Connector.
 
@@ -32,7 +32,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - **[Semantic search in Copilot](semantic-index-for-copilot.md)**: Enable users to find relevant content based on keywords, personal preferences, and social connections
 
 ## Limitations
-- **Supported Edition**: This Graph Connector is exclusively compatible with Coda Enterprise edition. 
+- **Supported Edition**: This Connector is exclusively compatible with Coda Enterprise edition. 
 - **Unsupported Edition**: Coda Free, Pro and Team Edition are not supported now due to Coda API restrictions on those editions.
 
 ## Prerequisites
@@ -52,7 +52,7 @@ The Coda Enterprise Organization ID is required to setup the connection, which u
 
 To connect to the Coda Enterprise instance and allow Microsoft Graph Connector to index the Coda documents and pages regularly, you need to create a Coda Enterprise API token from the Coda Org Admin account.
 
-Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the default values below:
+Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the following default values:
 Field | Default Value
 --- | ---
 Type of restriction | Doc or table
@@ -86,7 +86,7 @@ If you want to edit any of these values, you need to choose the "Custom Setup" o
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Data**, and **Crawl**.
+Custom setup is for those admins who want to edit the default values for settings listed in the previous table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Data**, and **Crawl**.
 
 ### Users
 
@@ -108,14 +108,14 @@ To identify which option is suitable for your organization:
 **Content filter**
 Currently, Coda API limits are attached to a user/IP. To optimize the indexing performance, consider setting up multiple connections or utilizing content filter to reduce the number of items indexed per connection. 
 
-**Select time range**: Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range will be indexed. Select an appropriate time range based on the volume of content to be indexed. 
+**Select time range**: Define a time range for the content to index. Only content with a last modified date and time within the specified range to index. Select an appropriate time range based on the volume of content to index. 
 
 >[!CAUTION]
-> Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to be indexed.
+> Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to index.
 
 **Manage properties**
 
-Here, you can view available properties from your Coda, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+Here, you can view available properties from your Coda. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default in following list.
 
 | Properties   | Semantic Label          | Schema                     | Description                                      |
 |--------------|-------------------------|----------------------------|--------------------------------------------------|
@@ -139,7 +139,7 @@ The refresh interval determines how often your data is synced between the data s
 You can change the default values of the refresh interval from here if you want to.
 
 >[!TIP]
-> If you have a substantial amount of content stored in your Coda Enterprise instance that needs to be indexed with this connector, we strongly recommend you setup an approperiate crawl frequency to balance between content freshness in Copilot and the Coda Enterprise instance performance. Also, you can contact Coda support if any performance issues introduced by Coda API rate limits.
+> If you have a large amount of content in your Coda Enterprise instance that needs indexing with this connector, we highly recommend setting an appropriate crawl frequency to balance content freshness in Copilot with the performance of your Coda Enterprise instance.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
