@@ -1,6 +1,6 @@
 --- 
 
-title: "iManage Cloud Graph connector" 
+title: "iManage Cloud Graph Connector" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
@@ -13,61 +13,65 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the iManage Cloud Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the iManage Cloud Graph Connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 04/02/2025
 ---
 
 # iManage Cloud Microsoft Graph connector (Preview)
 
-The iManage Cloud Graph connector allows your organization to index content from iManage Cloud. After you configure the connector, end users can search for these content from iManage Cloud in Microsoft Copilot and from any Microsoft Search client.
+The iManage Cloud Graph Connector allows your organization to index content from iManage Cloud. After you configure the connector, end users can search for these content from iManage Cloud in Microsoft Copilot and from any Microsoft Search client.
  
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a iManage Cloud Graph connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a iManage Cloud Graph Connector.
 
 >[!NOTE]
 >The iManage Cloud connector is in private preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- Index documents and emails from iManage Cloud with access control.
-- Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content based on keywords, personal preferences, and social connections.
+- **Indexing with Access Control**: Index documents and emails from iManage Cloud while maintaining access control.
+- **Selective Content Indexing**: Use content filters to selectively index content based on criteria such as time range filter and library filter.
+- **Sensitive Content Exclusion**: By default, content marked as HIPAA compliant will not be indexed to ensure sensitive information is excluded.
+- **[Semantic search in Copilot](semantic-index-for-copilot.md)**: Enable users to find relevant content based on keywords, personal preferences, and social connections
 
 ## Limitations
-- This Graph Connector is exclusively compatible with iManage Cloud (imanagecloud.com). iManage Work on-premises is not supported at this time. 
-- Content marked as requiring HIPAA compliance will not be indexed. 
+- **Compatibility**: This Graph Connector is exclusively compatible with iManage multi-tenant Cloud (also known as iManage Work at cloudimanage.com).
+- **Unsupported Environments**: iManage Work on-premises or iManage single-tenant Cloud hosted in iManage Cloud at imanage.work and other domains are not supported at this time.
+- **HIPAA Compliance**: iManage content marked as requiring HIPAA compliance will not be indexed.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **iManage Cloud instance URL**: You will need your organization's iManage Cloud instance URL, which is typically: [https://cloudimanage.com](https://cloudimanage.com/).
-- **iManage Cloud NRTADMIN account**: To install the Microsoft iManage Cloud connector application in iManage Cloud, you need an iManage account with NRTADMIN permission.
-- **iManage Cloud Help Center account**: To obtain the OAuth 2.0 Client ID and Client Secret, you need an active iManage Cloud Help Center account to register the application via iManage Support for your organization and get the OAuth 2.0 credentials.
-## Get Started
+- **iManage Cloud NRTADMIN account**: To install the Microsoft iManage Cloud connector application in iManage Cloud, you need an iManage account with NRTADMIN permission to complete the OAuth 2.0 Authentication in Microsoft Admin Center.
+- **OAuth Client_ID and Client_Secret**: Obtain the OAuth Client_ID and Client_Secret from iManage support before setting up the iManage Cloud connection in the Microsoft Admin Center.
+- **Add and authorize Microsoft iManage Cloud application**: You need to add and authorize the Microsoft iManage Cloud application in the iManage Cloud Control Center.
 
 ### 1. Display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
 ### 2. iManage Cloud instance URL
 The iManage Cloud instance URL is essential to correctly access and update data from, which is typically: [https://cloudimanage.com](https://cloudimanage.com/).
-By the instance URL, the Graph Connector can reliably synchronize data changes and ensure accurate content delivery from iManage Cloud to connected Microsoft 365.
 
 ### 3. Authentication Type
 
-**iManage Cloud OAuth**
+**iManage Cloud OAuth 2.0**
 
-We support the OAuth 2.0 authentication for iManage Cloud. To use the iManage Cloud OAuth for authentication, follow these steps.
-#### Step 1: Install Microsoft iManage Cloud connector in iManage Cloud ####
-Your organization's iManage Cloud administrator needs to install the **Microsoft - iManage Cloud Graph Connector** in iManage Control center with below recommended settings:
+We support OAuth 2.0 authentication for iManage Cloud. The connector is registered as an application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps before setting up the iManage Cloud connection in [Microsoft 365 Admin center](https://admin.microsoft.com/Adminportal#/MicrosoftSearch/connectors).
 
+#### Step 1: Add Microsoft iManage Cloud connector application ####
+A new application registered and authorized for your iManage Cloud environment isn't enabled by default. Apps may be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege.
+You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control center for your environment with below recommended values:[Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
-A iManage administrator needs to create an OAuth client in the [iManage App Registration portal](https://apps.iManage.com/apps). To learn more, see [Login with authorization_code flow](https://developer.iManage.com/iManagesoftware/reference/authorization-code-login) in the iManage documentation.
-
-The following table provides the mandatory values for OAuth client creation:
-
-Field | Description | Recommended Value
+Area  |  Field | Recommended Value
 --- | --- | ---
-Authentication Method | The OAuth 2 Authentication Method to authenticate and authorize users securely | OAuth2 - Authorization Code Flow (User Authentication)
-Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  
-Scopes | The scopes to create a new version and a new client id and secret. | Below scopes are mandatory: iManage.user.view, iManage.configuration.view, iManage.reporting, iManage.library.view 
+Status | Status | Enabled
+Authentication | Allow Refresh Token | Yes
+Authentication | Refresh Token Expiry | 365 days
+Authentication | Access Token Expiry | 5000 mins
+Security | Allow access to | All Users
+
+#### Step 2: Contact iManage support for OAuth credentials ####
+Please create a ticket to iManage support to get your client_id and Client_secret for this iManage application to setup the iManage Cloud connection in Microsoft 365 Admin center. 
    
-Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use a iManage administrator account credential to authenticate permission to crawl.
+Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use a iManage NRTADMIN account credential to authenticate permission to crawl.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
@@ -115,8 +119,18 @@ To identify which option is suitable for your organization:
 ### Content
 
 **Content filter**
+To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](https://learn.microsoft.com/en-us/graph/connecting-external-content-api-limits)
 
-Select time range: Select a time range for the content to be indexed. Only content with a last modified date and time within the selected range will be indexed. Choose an appropriate time range based on the volume of content to be indexed. Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to be indexed.
+**Select the libraries**: Choose the specific libraries for the content to be indexed. Only the content within these selected libraries will be indexed.
+
+**Select time range**: Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range will be indexed. Select an appropriate time range based on the volume of content to be indexed. 
+
+>[!CAUTION]
+> Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to be indexed.
+
+>[!TIP]
+> If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach will help balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
+
 
 **Manage properties**
 
@@ -124,31 +138,45 @@ Here, you can view available properties from your iManage Cloud, assign a schema
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
-| AssignedToProfiles | | | Search |
-| Content |  | | Search |
-| CreatedAt | Created date time | Data and time that the item was created in the data source. | Query, Refine, Retrieve |
-| CreatedBy | Created by | Name of the person who created the item in the data source. | Query, Retrieve, Search |
-| Description | | | Query, Retrieve, Search |
-| ExpiresAt | | | |
-| Format | File extension | | Query, Refine, Retrieve |
-| IconUrl | IconUrl | | Query, Retrieve, Search |
-| Id | | | |
-| ModifiedAt | Last modified date time | Date and time the item was last modified in the data source. | Query, Refine, Retrieve |
-| ModifiedBy | Last modified by | Name of the person who most recently edited the item in the data source. | Query, Retrieve, Search |
-| Name | Title | The title of the item that you want to be shown in Copilot and other search experiences. | Query, Retrieve, Search |
-| Properties | | | Search |
-| Repository | | | Query, Retrieve, Search |
-| Size | | | |
-| Status | | | |
-| Type | | | |
-| Url | url | The target URL of the item in the data source. | Query, Retrieve, Search |
-| Version | | | |
+| Author             | Created by              | The person who created the content | Retrieve, Search       |
+| CC                 |                         | Carbon copy recipients  | Query, Retrieve        |
+| CoAuthors          |                         | Additional authors of the content |                        |
+| Authors            |                         | The main authors of the content | Retrieve, Search       |
+| Comment            |                         | Comments associated with the content | Retrieve, Search       |
+| Content            |                         | The main body of the content | Search                 |
+| ConversationName   |                         | The name of the conversation | Retrieve, Search       |
+| CreateDate         | Created date time       | The date and time when the content was created | Query, Retrieve        |
+| CustomProperties   |                         | Custom properties associated with the content | Query, Retrieve        |
+| DocumentNumber     |                         | The document number     | Query, Retrieve        |
+| EditDate           | Last modified date time | The date and time when the content was last modified | Query, Retrieve        |
+| Extension          | File extension          | The file extension       | Query, Retrieve        |
+| FileCreateDate     |                         | The date and time when the file was created | Query, Retrieve        |
+| FileEditDate       |                         | The date and time when the file was last edited | Query, Retrieve        |
+| From               |                         | The sender of the content | Retrieve, Search       |
+| HasAttachment      |                         | Indicates if the content has an attachment | Retrieve               |
+| Id                 |                         | The unique identifier of the content | Query, Retrieve        |
+| LastUser           | Last modified by        | The last user who modified the content | Query, Retrieve, Search|
+| Library            |                         | The library where the content is stored | Query, Retrieve        |
+| Name               | File name               | The name of the file    | Retrieve, Search       |
+| ReceivedDate       |                         | The date and time when the content was received | Query, Retrieve        |
+| RelatedDocuments   |                         | Documents related to the content | Retrieve, Search       |
+| SentDate           |                         | The date and time when the content was sent | Query, Retrieve        |
+| Subject            |                         | The subject of the content | Retrieve, Search       |
+| Title              | Title                   | The title of the content | Retrieve, Search       |
+| To                 |                         | The recipients of the content | Retrieve, Search       |
+| Url                | url                     | The URL of the content  | Retrieve, Search       |
+| Version            |                         | The version of the content | Query, Retrieve        |
+| WSType             |                         | The workspace type      | Query, Retrieve        |
+| WorkspaceName      |                         | The name of the workspace | Query, Retrieve        |
 
 ### Sync
 
 The refresh interval determines how often your data is synced between the data source and the iManage Cloud Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more details, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
 You can change the default values of the refresh interval from here if you want to.
+
+>[!TIP]
+> If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach will help balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
