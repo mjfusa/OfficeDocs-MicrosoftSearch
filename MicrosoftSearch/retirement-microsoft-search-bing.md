@@ -47,13 +47,16 @@ M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint O
 
 After March 31, 2025, the Microsoft Edge for Business address bar sends users to work results on M365.cloud.microsoft rather than Bing.com. Users of the address bar can continue to find work-related documents, bookmarks, and people in suggested results—clicking on these suggestions takes users to work results on M365.cloud.microsoft. Users can also type "work" in the address bar, hit the tab key, then type in their work-related query to get work results on a M365.cloud.microsoft page. Work search results continue to include documents, people, and bookmarks.
 
+See how it works:
+ > [!VIDEO fc86ae5a-1aa7-4b5a-8710-0e1d264cbbbd]
+
 ## Changes to the Edge address bar policy
 
 The *AddressBarMicrosoftSearchInBingProviderEnabled* policy, used to configure Microsoft Search in Bing results in the Edge for Business address bar, is being retired in May 2025. The new policy to replace it is *AddressBarWorkSearchResultsEnabled*. This policy is now available, allowing admins to configure the display of work suggestions in the address bar. 
 
 ## Windows search box
 
-The "Work" scope is being retired in the Windows search box. The ability to discover company content such as suggested people through Search Home is also unavailable, and there's no longer company-specific branding (the "Commercial Gleam"). However, users can still find work files from both the "All" scope and the "Documents" scope. Additionally, users can find people through the "All" and "People" scopes.
+The "Work" scope is being retired in the Windows search box, and there's no longer company-specific branding (the "Commercial Gleam"). However, users can still find work files from both the "All" scope and the "Documents" scope. Additionally, users can find people through the "All" and "People" scopes.
 
 ## What actions are required for customers? 
 
