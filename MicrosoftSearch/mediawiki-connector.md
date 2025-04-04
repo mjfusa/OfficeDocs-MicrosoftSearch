@@ -27,7 +27,7 @@ This article is for anyone who configures, runs, and monitors a MediaWiki Micros
 
 <!---Insert "Before you get started" recommendations for this data source-->
 
->[!NOTE]
+> [!NOTE]
 > The wiki should be hosted under subdirectory/wiki.
 
 ## Step 1: Add a connector in the Microsoft 365 admin center
