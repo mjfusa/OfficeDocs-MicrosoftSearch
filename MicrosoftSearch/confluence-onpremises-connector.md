@@ -62,9 +62,9 @@ To index your Confluence server or data center content, you must install and reg
 
 Verify that the Microsoft Graph connectors Confluence On-prem Plugin is installed. You don't need to install the plugin for each Confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
 
-   - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
+   - Download the app from [Microsoft Graph connectors Confluence On-prem plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
    - Log in to your Confluence system.
-   - Go to **Settings > **Manage apps**.
+   - Go to **Settings** > **Manage apps**.
 [![Screnshot that shows clicking on settings icon -> clicking on manage apps.](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea)](https://github.com/user-attachments/assets/16a6a8f0-844e-49bd-9939-694d8741eaea#lightbox)
    - Click **upload app**.
 [![Screnshot that shows clicking on upload app](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a)](https://github.com/user-attachments/assets/e1216fef-7c35-4e87-a1ad-4aef7062fd1a#lightbox)
@@ -82,7 +82,7 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
    To authenticate to your instance, enter the username and password of your Confluence account. <br>
 
    **b. OAuth1.0a** <br>
-   Generate a public/private key pair and create an application link in the Confluence On-premises site so that the connector agent can access the instance. To learn more, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira) on how to configure OAuth 1.0a. <br>
+   Generate a public/private key pair and create an application link in the Confluence On-premises site so that the connector agent can access the instance. For more information, see [step 1 in Atlassian developer documentation](https://developer.atlassian.com/server/jira/platform/oauth/#step-1--configure-jira).<br>
  
    **c. OAuth 2.0 (recommended)** <br> 
    The following steps provide guidance on how to register the app [Configure an incoming link](https://confluence.atlassian.com/doc/configure-an-incoming-link-1115674733.html). 
