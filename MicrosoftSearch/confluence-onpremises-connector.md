@@ -22,10 +22,15 @@ The Confluence On-premises Microsoft Graph connector allows your organization to
 
 This article is intended for Microsoft 365 administrators who are responsible for configuring, running, and monitoring the Confluence On-premises Microsoft Graph connector. It supplements the general instructions provided for setting up Microsoft Graph connectors in the Microsoft 365 admin center.
 
-## Benefits
+## Capabilities
 - Ask natural language questions about Wiki content in Copilot, such as summarizing the architecture document and how to get access to a portal, with enhanced search capabilities.
 - Perform natural language queries for accurate responses using Semantic Search support.
 - Support Confluence versions above 8.0 for compatibility.
+
+## Limitations
+- Doesn't index blogs, attachment files, or comments.
+- Only indexes current pages; archived pages are excluded.
+- CQL (Confluence Query Language) isn't supported for Confluence on-premises; however, we support a space and page level filter.
 
 ## Prerequisites
 1. **Install the GCA [Microsoft Graph connector agent]**: Ensure that the GCA is installed on a Windows machine within the same network as the data source, accessible via the Confluence URL. You can find more information [Microsoft Graph connector agent](./graph-connector-agent.md)
@@ -196,12 +201,7 @@ You can change the default values of the refresh interval from here if you want 
 - Search and validate your indexed content and permissions using [Index browser](./connectors-index-search.md).
 - Find answers to common questions in our [FAQ section](./frequently-asked-questions.md).
 
-For MS Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).
-
-## Limitations
-- Doesn't index blogs, attachment files, or comments.
-- Only indexes current pages; archived pages are excluded.
-- CQL (Confluence Query Language) isn't supported for Confluence on-premises; however, we support a space and page level filter.
+For Microsoft Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).
 
 ## Troubleshooting
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
