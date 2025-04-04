@@ -204,6 +204,7 @@ You can change the default values of the refresh interval from here if you want 
 For Microsoft Search, if you need to customize the search results page. To learn about customizing search results, see [Customize the search results page](customize-search-page.md).
 
 ## Troubleshooting
+
 After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 For more information, see [Troubleshooting the Confluence On-premises Microsoft Graph connector](troubleshoot-confluence-onpremises-connector.md).
 
