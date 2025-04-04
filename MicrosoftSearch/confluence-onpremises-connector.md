@@ -90,7 +90,7 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
   1. Go to **Administration** > **General configuration** > **Application links**. 
   2. Select **Create link**.
   3. Select **External application**, and then choose **Incoming** as the direction.
-  4. The scope is **Admin**.
+  4. Select **Admin** as the scope.
   5. Fill in the redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback`.
 
 ### 6. Rollout to limited audience
@@ -181,7 +181,7 @@ Add or remove available properties from your Confluence On-prem data source. Ass
 
 **Preview data**
 
-Use the preview results button to verify selected properties and filters.
+Go to preview results to view the selected properties and filters.
 > [!NOTE]
 > The preview only respects space-level filtering.
 
