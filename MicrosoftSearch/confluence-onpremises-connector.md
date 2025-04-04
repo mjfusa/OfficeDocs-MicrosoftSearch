@@ -16,7 +16,7 @@ search.appverid:
 description: "Set up the Confluence On-premises Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot"
 ---
 
-# Confluence On-premises Microsoft Graph Connector
+# Confluence On-premises Microsoft Graph connector
 
 The Confluence On-premises Microsoft Graph connector allows your organization to index Confluence server or data center content. After you configure the connector and index data from the Confluence site, end users can search for that content in Microsoft Search and Microsoft 365 Copilot.
 
@@ -60,7 +60,7 @@ To index your Confluence server or data center content, you must install and reg
 
 ### 4. Install the Confluence on-premises plugin
 
-Verify that the Microsoft Graph Connectors Confluence On-prem Plugin is installed. You don't need to install the plugin for each Confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
+Verify that the Microsoft Graph connectors Confluence On-prem Plugin is installed. You don't need to install the plugin for each Confluence connector; if it's already installed in your Confluence instance, you can skip this step for subsequent Confluence on-prem connections.
 
    - Download the app from [Microsoft Graph Connectors Confluence On-prem Plugin | Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234846?tab=overview&hosting=datacenter).
    - Log in to your Confluence system.
@@ -90,14 +90,14 @@ To authenticate and synchronize content from Confluence On-prem, choose **one of
   1. Go to **Administration** > **General configuration** > **Application links**. 
   2. Select **Create link**.
   3. Select **External application**, and then choose **Incoming** as the direction.
-  4. The scope is ***Admin**.
+  4. The scope is **Admin**.
   5. Fill in the redirect URL: `https://gcs.office.com/v1.0/admin/oauth/callback`.
 
 ### 6. Rollout to limited audience
 
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, click [here](./staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. For more information, see [Staged rollout for Microsoft Graph connectors](./staged-rollout-for-graph-connectors.md).
 
-At this point, you are ready to create the connection for ServiceNow Knowledge. You can click on the "Create" button, and the Microsoft Graph connector starts indexing the page from your Confluence account.
+You can now create the connection for ServiceNow Knowledge. Click "Create" for the Confluence On-premises Microsoft Graph connector to index the page from your Confluence account.
 
 For other settings, like access permissions, data inclusion rules, schema, and crawl frequency. We set defaults based on what works best with Confluence data. The default values are as follows:
 
