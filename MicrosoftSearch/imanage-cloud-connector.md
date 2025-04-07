@@ -109,7 +109,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
 
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
+If you want to edit any of these values, you need to choose the **Custom Setup** option.
 
 ## Custom setup
 
@@ -185,7 +185,7 @@ Here, you can view available properties from your iManage Cloud. Assign a schema
 
 ### Sync
 
-The refresh interval determines how often your data is synced between the data source and the iManage Cloud Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more information, see [refresh settings](configure-connector.md#guidelines-for-sync-settings).
+The refresh interval determines how often your data is synced between the data source and the iManage Cloud Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more information, see [Refresh settings](configure-connector.md#guidelines-for-sync-settings).
 
 You can change the default values of the refresh interval from here if you want to.
 
@@ -196,6 +196,6 @@ You can change the default values of the refresh interval from here if you want 
 Upon creating the connection, navigate to the Success page. Here, you can click the **Auto Suggestion** button to use the default Connection description. Alternatively, you may create a custom Connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
