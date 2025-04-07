@@ -86,6 +86,8 @@ To connect to your Salesforce instance, you need your Salesforce instance URL, t
 
         - Perform requests on your behalf at any time (refresh_token, offline_access).
 
+    - Uncheck the **Require PKCE Extension** option.
+
     - Select the checkbox for **Require secret for web server flow**.
 
     - Save the app.
