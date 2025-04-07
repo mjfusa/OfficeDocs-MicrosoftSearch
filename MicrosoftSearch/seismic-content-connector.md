@@ -38,7 +38,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Seismic Content instance URL**: To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
 - **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update published content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access published content and metadata.
-
+- **Seismic Bulk Get Content Access Data API**: The Microsoft Seismic Content Graph connector utilizes the [Seismic Bulk Get Content Access Data API](https://developer.seismic.com/seismicsoftware/reference/getitemsuniquepermissions) for content access control, which remains in Early Access as of April 2025. To proceed with the setup of the Microsoft Seismic Content Graph connector, please ensure that this Early Access Seismic API is enabled in your production environment. You need to contact your Seismic account representatives or Seismic support to enable this API in your production environment. Should you encounter any issues or have any questions, please contact your Seismic representative for assistance.
 ## Get Started
 
 ### 1. Display name 

@@ -79,6 +79,10 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: Aha! Cloud
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: 15Five High Fives
           items:
           - name: Setup
@@ -91,6 +95,10 @@ items:
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Adobe Experience Manager Assets
+          items:
+          - name: Setup
+            href: aem-assets-cloud-connector.md        
         - name: Asana
           items:
           - name: Setup
@@ -183,8 +191,12 @@ items:
             href: troubleshoot-file-share-connector.md
         - name: GitHub Cloud Knowledge (preview)
           items:
-          - name: Setup
+          - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
+          - name: Setup - GitHub Cloud Issue
+            href: GitHub-cloud-issue-connector.md 
+          - name: Setup - GitHub Cloud Pull Request
+            href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
           - name: Setup
@@ -195,6 +207,10 @@ items:
           items:
           - name: Setup
             href: Google-Drive-connector.md
+        - name: Guru
+          items:
+          - name: Setup
+            href: guru-connector.md        
         - name: MediaWiki
           items:
           - name: Setup
@@ -265,10 +281,18 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Tableau Cloud
+          items:
+          - name: Setup
+            href: tableau-cloud-connector.md
         - name: Trello
           items:
           - name: Setup
             href: trello-connector.md
+        - name: Unily
+          items:
+          - name: Setup
+            href: unily-intranet-connector.md
         - name: Veeva Vault
           items:
           - name: Setup - Veeva Vault PromoMats
@@ -288,7 +312,11 @@ items:
         - name: Zendesk Ticket
           items:
           - name: Setup
-            href: zendesk-ticket-connector.md      
+            href: zendesk-ticket-connector.md
+        - name: Zoom
+          items:
+          - name: Setup
+            href: zoom-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
