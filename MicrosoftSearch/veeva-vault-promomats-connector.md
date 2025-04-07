@@ -16,7 +16,7 @@ search.appverid:
 description: "Set up the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 02/26/2025
 ---
-# Veeva Vault PromoMats Microsoft Graph connector (preview)
+# Veeva Vault PromoMats Microsoft Graph connector (Preview)
 
 The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
