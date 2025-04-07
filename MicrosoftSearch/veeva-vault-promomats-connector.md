@@ -16,7 +16,7 @@ search.appverid:
 description: "Set up the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 02/26/2025
 ---
-# Veeva Vault PromoMats Microsoft Graph connector
+# Veeva Vault PromoMats Microsoft Graph connector (preview)
 
 The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
@@ -154,12 +154,14 @@ The following table lists the default settings for the Veeva Vault PromoMats Mic
 
 ### Users
 
-**Access permissions**
+#### Access permissions
+
 The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, although this isn't recommended.
 
 ### Sync
 
-**Adjust sync schedules**  
+#### Adjust sync schedules
+
 You can modify the frequency of full crawls to fit your organization's requirements. The following are the default crawls:
 
 - Incremental crawl - 15 minutes.
@@ -172,6 +174,6 @@ For information about troubleshooting, see [Troubleshooting the Veeva Vault Micr
 
 ## Next steps
 
-After the connector is configured and published, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
+After you configure and publish the connector, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
