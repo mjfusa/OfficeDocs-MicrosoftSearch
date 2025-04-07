@@ -1,6 +1,6 @@
 --- 
 
-title: "iManage Cloud Graph Connector" 
+title: "iManage Cloud Microsoft Graph connector" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
