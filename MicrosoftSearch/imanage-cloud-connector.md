@@ -40,7 +40,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **iManage Cloud instance URL**: You need your organization's iManage Cloud instance URL, which is typically: [https://cloudimanage.com](https://cloudimanage.com/).
-- **iManage Cloud NRTADMIN account**: To install the Microsoft iManage Cloud connector application in iManage Cloud, you need an iManage account with NRTADMIN permission to complete the OAuth 2.0 Authentication in Microsoft Admin Center.
+- **iManage Cloud NRTADMIN account**: To install the Microsoft iManage Cloud Microsoft Graph connector application in iManage Cloud, you need an iManage account with NRTADMIN permission to complete the OAuth 2.0 Authentication in Microsoft Admin Center.
 - **OAuth Client_ID and Client_Secret**: Obtain the OAuth Client_ID and Client_Secret from iManage support before setting up the iManage Cloud connection in the Microsoft Admin Center.
 - **Add and authorize Microsoft iManage Cloud application**: You need to add and authorize the Microsoft iManage Cloud application in the iManage Cloud Control Center.
 
@@ -71,7 +71,7 @@ Customer/Tenant ID (Required): _____
 Microsoft Account representitive (Optional):_____
 
 
-#### Step 2: Add Microsoft iManage Cloud connector application ####
+#### Step 2: Add Microsoft iManage Cloud Microsoft Graph connector application ####
 A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
 Area  |  Field | Recommended value
@@ -86,9 +86,9 @@ Security | Allow access to | All Users
 Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Please use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for iManage Cloud. You can click on the "Create" button to publish your connection and index content from your iManage account.
+At this point, you're ready to create the connection for iManage Cloud. You can click create to publish your connection and index content from your iManage account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with iManage data.
 
