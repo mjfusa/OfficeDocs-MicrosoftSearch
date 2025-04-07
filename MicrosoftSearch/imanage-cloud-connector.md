@@ -33,9 +33,9 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search](semantic-index-for-copilot.md) in Copilot to enable users to find relevant content.
 
 ## Limitations
-- **Compatibility**: This Connector is exclusively compatible with iManage multi-tenant Cloud (also known as iManage Work at cloudimanage.com).
-- **Unsupported Environments**: iManage Work on-premises or iManage single-tenant Cloud hosted in iManage Cloud at imanage.work and other domains aren't supported at this time.
-- **HIPAA Compliance**: iManage content marked as requiring HIPAA compliance will not be indexed.
+- Support the iManage multi-tenant Cloud, also known as iManage Work at cloudimanage.com, as this connector is exclusively compatible with it.
+- Exclude iManage Work on-premises or iManage single-tenant Cloud hosted in iManage Cloud at imanage.work and other domains, as they aren't supported at this time.
+- Exclude iManage content marked as requiring HIPAA compliance from indexing.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
