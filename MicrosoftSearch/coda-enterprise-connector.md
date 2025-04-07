@@ -1,6 +1,6 @@
 --- 
 
-title: "Coda Enterprise Graph Connector" 
+title: "Coda Enterprise Graph Microsoft connector" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
@@ -13,23 +13,23 @@ search.appverid:
 - BFB160 
 - MET150  
 - MOE150 
-description: "Set up the Coda Enterprise Graph Connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Coda Enterprise Graph Microsoft connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 04/03/2025
 ---
 
-# Coda Enterprise Graph connector (Preview)
+# Coda Enterprise Graph Microsoft connector (preview)
 
-The Coda Enterprise Graph Connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for this content from Coda in Microsoft Copilot and from any Microsoft Search client.
+The Coda Enterprise Graph Microsoft connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for this content from Coda in Microsoft Copilot and from any Microsoft Search client.
  
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Enterprise Graph Connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Enterprise Graph Microsoft connector.
 
 >[!NOTE]
->The Coda Enterprise connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Coda Enterprise connector is in public preview. If you wish to get access to try it, you need to enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- **Indexing with Access Control**: Index documents and emails from Coda Enterprise instance while maintaining access control.
-- **Selective Content Indexing**: Use content filters to selectively index content based on criteria such as time range filter.
-- **[Semantic search in Copilot](semantic-index-for-copilot.md)**: Enable users to find relevant content based on keywords, personal preferences, and social connections
+- Index documents and emails from Coda Enterprise instance while maintaining access control.
+- Use content filters to selectively index content based on criteria such as time range filter.
+- Use [Semantic search](semantic-index-for-copilot.md) in Copilot to enable users to find relevant content.
 
 ## Limitations
 - **Supported Edition**: This Connector is exclusively compatible with Coda Enterprise edition. 
@@ -60,9 +60,8 @@ Type of access | Read and write
 Doc or table to grant access to | `not required, leave it to empty`
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
-
-At this point, you're ready to create the connection for Coda. You can click on the "Create" button to publish your connection and index content from your Coda account.
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
+At this point, you're ready to create the connection for Coda. You can click create to publish your connection and index content from your Coda account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Coda data.
 
@@ -92,7 +91,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-The Coda Enterprise Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
+The Coda Enterprise Graph Microsoft connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
 **Mapping identities**
 
