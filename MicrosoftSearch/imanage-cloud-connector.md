@@ -17,7 +17,7 @@ description: "Set up the iManage Cloud Microsoft Graph connector for Microsoft S
 ms.date: 04/02/2025
 ---
 
-# iManage Cloud Microsoft Graph connector (Preview)
+# iManage Cloud Microsoft Graph connector (preview)
 
 The iManage Cloud Graph Connector allows your organization to index content from iManage Cloud. After you configure the connector, end users can search for this content from iManage Cloud in Microsoft Copilot and from any Microsoft Search client.
  
