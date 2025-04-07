@@ -32,12 +32,12 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search](semantic-index-for-copilot.md) in Copilot to enable users to find relevant content.
 
 ## Limitations
-- **Supported Edition**: This Connector is exclusively compatible with Coda Enterprise edition. 
-- **Unsupported Edition**: Coda Free, Pro and Team Edition are not supported now due to Coda API restrictions on those editions.
+- Support the Enterprise edition as this connector is exclusively compatible with Coda Enterprise edition. 
+- Exclude Coda Free, Pro, and Team editions, as they are not supported due to Coda API restrictions on those editions.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Coda Org Administrator account**: To setup the Microsoft Coda Enterprise connector, you need an Coda Org administrator account to obtain the API Token to index content of your organization.
+- **Coda Org Administrator account**: To setup the Coda Enterprise Microsoft Graph connector, you need an Coda Org administrator account to obtain the API Token to index content of your organization.
 - **API Key**: Coda Enterprise supports API token authentication. The Coda API token can be obtained from the **Account settings** page of the Coda Org administrator.
 
 ### 1. Display name 
@@ -50,7 +50,7 @@ The Coda Enterprise Organization ID is required to setup the connection, which u
 
 **Coda API Key**
 
-To connect to the Coda Enterprise instance and allow Microsoft Graph Connector to index the Coda documents and pages regularly, you need to create a Coda Enterprise API token from the Coda Org Admin account.
+To connect to the Coda Enterprise instance and allow the Microsoft Graph connector to index the Coda documents and pages regularly, you need to create a Coda Enterprise API token from the Coda Org Admin account.
 
 Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the following default values:
 Field | Default Value
@@ -91,7 +91,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-The Coda Enterprise Graph Microsoft connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
+The Coda Enterprise Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
 **Mapping identities**
 
