@@ -1,6 +1,6 @@
 --- 
 
-title: "Coda Enterprise Graph Microsoft connector" 
+title: "Coda Enterprise Microsoft Graph connector" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
@@ -13,18 +13,18 @@ search.appverid:
 - BFB160 
 - MET150  
 - MOE150 
-description: "Set up the Coda Enterprise Graph Microsoft connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Coda Enterprise Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 04/03/2025
 ---
 
-# Coda Enterprise Graph Microsoft connector (preview)
+# Coda Enterprise Microsoft Graph connector (preview)
 
-The Coda Enterprise Graph Microsoft connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for this content from Coda in Microsoft Copilot and from any Microsoft Search client.
+The Coda Enterprise Microsoft Graph connector allows your organization to index documents and pages from Coda. After you configure the connector, end users can search for this content from Coda in Microsoft Copilot and from any Microsoft Search client.
  
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Enterprise Graph Microsoft connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Coda Enterprise Microsoft Graph connector.
 
 >[!NOTE]
->The Coda Enterprise connector is in public preview. If you wish to get access to try it, you need to enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Coda Enterprise Microsoft Graph connector is in public preview. If you wish to get access to try it, you need to enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 - Index documents and emails from Coda Enterprise instance while maintaining access control.
