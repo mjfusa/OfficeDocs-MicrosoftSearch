@@ -13,7 +13,7 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the iManage Cloud Graph Connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the iManage Cloud Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 04/02/2025
 ---
 
