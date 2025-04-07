@@ -1,6 +1,6 @@
 --- 
 
-title: "iManage Cloud Microsoft Graph connector" 
+title: "iManage Cloud Microsoft Graph connector (preview)" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
@@ -56,7 +56,7 @@ The iManage Cloud instance URL is essential to correctly access and update data 
 
 We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
 
-#### Step 1: Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization ####
+#### Step 1: Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization
 The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
 **Email template for application registration:**
 To: iManageGCAppRegistra@microsoft.com
@@ -71,7 +71,7 @@ Customer/Tenant ID (Required): _____
 Microsoft Account representitive (Optional):_____
 
 
-#### Step 2: Add Microsoft iManage Cloud Microsoft Graph connector application ####
+#### Step 2: Add Microsoft iManage Cloud Microsoft Graph connector application
 A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
 Area  |  Field | Recommended value
