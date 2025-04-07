@@ -74,7 +74,7 @@ Microsoft Account representitive (Optional):_____
 #### Step 2: Add Microsoft iManage Cloud connector application ####
 A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
-Area  |  Field | Recommended Value
+Area  |  Field | Recommended value
 --- | --- | ---
 Status | Status | Enabled
 Authentication | Allow Refresh Token | Yes
