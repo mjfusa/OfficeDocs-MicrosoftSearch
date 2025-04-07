@@ -27,10 +27,10 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 >The iManage Cloud Microsoft Graph connector is in private preview for invited customers only. If you are invited and wish to get access to try it, you need to enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
-- **Indexing with Access Control**: Index documents and emails from iManage Cloud while maintaining access control.
-- **Selective Content Indexing**: Use content filters to selectively index content based on criteria such as time range filter and library filter.
-- **Sensitive Content Exclusion**: By default, content marked as HIPAA compliant are not indexed to ensure sensitive information is excluded.
-- **[Semantic search in Copilot](semantic-index-for-copilot.md)**: Enable users to find relevant content based on keywords, personal preferences, and social connections
+- Index documents and emails from iManage Cloud while maintaining access control.
+- Use content filters to selectively index content based on criteria such as time range filter and library filter.
+- Exclude content designated as HIPAA compliant from the index to ensure that sensitive information is automatically excluded by default.
+- Use [Semantic search](semantic-index-for-copilot.md) in Copilot to enable users to find relevant content.
 
 ## Limitations
 - **Compatibility**: This Connector is exclusively compatible with iManage multi-tenant Cloud (also known as iManage Work at cloudimanage.com).
@@ -54,11 +54,25 @@ The iManage Cloud instance URL is essential to correctly access and update data 
 
 **iManage Cloud OAuth 2.0**
 
-We support OAuth 2.0 authentication for iManage Cloud. The connector is registered as an application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps before setting up the iManage Cloud connection in [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal#/MicrosoftSearch/connectors).
+We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
 
-#### Step 1: Add Microsoft iManage Cloud connector application ####
-A new application registered and authorized for your iManage Cloud environment isn't enabled by default. Apps may be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege.
-You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control center for your environment with below recommended values. [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
+#### Step 1: Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization ####
+The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
+**Email template for application registration:**
+To: iManageGCAppRegistra@microsoft.com
+
+Subject: New cloudimanage.com  {{ApplicationName}}  application for CustomerName
+
+Body:
+Please create a new application for iManage Cloud Microsoft Graph connector per-customer universal app.
+
+CustomerName (Required): ____
+Customer/Tenant ID (Required): _____
+Microsoft Account representitive (Optional):_____
+
+
+#### Step 2: Add Microsoft iManage Cloud connector application ####
+A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
 Area  |  Field | Recommended Value
 --- | --- | ---
@@ -68,10 +82,8 @@ Authentication | Refresh Token Expiry | 365 days
 Authentication | Access Token Expiry | 5,000 mins
 Security | Allow access to | All Users
 
-#### Step 2: Contact iManage support for OAuth credentials ####
-Create a ticket to iManage support to get your Client_id and Client_secret for this iManage application to set up the iManage Cloud connection in Microsoft 365 admin center.
-   
-Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use an iManage NRTADMIN account credential to authenticate permission to crawl.
+#### Step 3: Authroize the OAuth Client ####
+Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Please use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
