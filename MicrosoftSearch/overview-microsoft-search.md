@@ -17,6 +17,9 @@ description: "Get an overview of what Microsoft Search is, its benefits, and whi
 ---
 # Overview of Microsoft Search
 
+> [!IMPORTANT]
+> As of March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Microsoft Search in Bing is no longer available. We encourage Microsoft Search in Bing users to update your bookmarks. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+
 Microsoft Search helps you find what you need to complete what you're working on. Whether you're searching for people, files, organization charts, sites, or answers to common questions, you can use Microsoft Search throughout your workday to get answers.
 
 Microsoft Search helps users find the right answers, people, and content to complete their tasks in the app they're already working in.

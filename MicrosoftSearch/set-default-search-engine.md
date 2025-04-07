@@ -19,7 +19,7 @@ ms.date: 01/08/2019
 # Make Bing the default search engine
   
 > [!IMPORTANT]
-> Beginning March 31, 2025, Microsoft365.com, Office.com, and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+> As of March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Microsoft Search in Bing is no longer available. We encourage Microsoft Search in Bing users to update your bookmarks. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 This article explains how you can make Bing the default search engine for Microsoft Edge, Google Chrome, and Internet Explorer. 
   
@@ -43,6 +43,9 @@ Each domain that your controller handles should get a separate folder. The follo
 
 
 ## Google Chrome on Windows 10, Version 1507 or later
+
+> [!NOTE]
+> The Google Chrome browser extension that sets Bing as the default search engine is being retired on March 31, 2025. Users of Google Chrome, Microsoft Edge, and other browsers can still select their default search engine in the browser settings. [Learn how to change your default search engine](https://support.microsoft.com/en-us/microsoft-edge/change-your-default-search-engine-f863c519-5994-a8ed-6859-00fbc123b782)
 
 Users won't be able to change the default search engine after this policy is set.
   
