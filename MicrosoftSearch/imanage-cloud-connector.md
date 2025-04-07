@@ -82,7 +82,7 @@ Authentication | Refresh Token Expiry | 365 days
 Authentication | Access Token Expiry | 5,000 mins
 Security | Allow access to | All Users
 
-#### Step 3: Authroize the OAuth Client ####
+#### Step 3: Authorize the OAuth Client
 Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Please use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
