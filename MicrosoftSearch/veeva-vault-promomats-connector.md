@@ -69,34 +69,48 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 #### Step 1: Register an application in Microsoft Entra ID
 
-1. Go to **Microsoft Entra admin center** > **Applications** > **Register a new application**.
+1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. In the creation form, fill out the name as your preference, select the **Accounts in this organizational directory only** in the Supported account types, select **Web** in the Redirect URI, and add the following links to the **Redirect URI** field:
 
-2. Set up API permissions:
-   - Add **Microsoft Graph** > **Delegated permissions**.
-   - Include scope: `offline_access {clientId}/.default`
-   - Grant **Admin Consent**.
-
-3. Under **Certificates & Secrets**, generate a client secret and store it securely.
-
-4. In the **OAuth 2** section of the **Setting** tab in the Veeva Vault app console, add the following links to the **Redirect URLs** field:
    - For **Microsoft 365 Enterprise**, copy and paste:
      `https://gcs.office.com/v1.0/admin/oauth/callback`
    - For **Microsoft 365 Government**, copy and paste:
      `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
+2. Under **Certificates & Secrets**, generate a client secret and store it securely.
+
 #### Step 2: Configure OAuth in Veeva Vault
 
-1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
+1. **Create a new profile**:
+   - Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
+   - **Label, Name, Description**: Fill in as your preference.
+   - **Status**: Set as active.
+   - **Authorization Server Provider:** select Azure AD.
+   - Click **Upload AS metadata**, select **Provide Authorization Server Metadata URL**, copy **OpenID Connect metadata document** in the Endpoints tab on the overview page of the application that was just created on Microsoft Entra admin center, and paste it in the field.
+   - Identity Claim: select **Identity is in another claim** and fill in **upn** in the claim.
+   - **User ID Type**: select Federated ID
+   - **Perform strict Audience Restriction validation**: uncheck the option.
+ 
+*Please make sure your upn is the same as your federated ID.*
 
-2. Create a new profile:
-   - **Authorization Server Provider:** Azure
-   - **Upload Microsoft Entra ID Metadata:** Use the following URL:
-     `https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration`
-   - **Identity Claim:** Use the appropriate **Identity Claim** to associate the identities of Microsoft Entra ID and Veeva Vault.
+2. **Create client application**: Stay in the page of the profile that we just created, click **Add** under **Client Applications**. Use the **Client ID** from the application that was just created on Entra admin center, where you can find on the overview page of the Entra application.
 
-3. Add the client application. Use the **Client ID** from Entra ID.
+3. **Create security poilicies**:
+   - Go to **Admin** > **Users & Groups** > **Security Policies**.
+   - Click **Create** > **Single sign-on**
+   - Fill out the name and description as your preference
+   - Select **active** for status
+   - Select **Single Sign-on** for authentication type
+   - Select a single sign-on based profile for Single Sign-on Profile
+   - Select **None** for eSignature Profile
+   - Select the Oauth 2.0 profile that was just created for OAuth 2.0 / OpenID Connect Profile
+   - For the rest of the setting, keep the default settings
 
-4. Activate the profile and link it to a security policy under **Users & Groups > Security Policies**.
+4. **Link user with the security policy**:
+   - Go to **Admin** > **Users & Groups**
+   - Select a user who is the vault owner
+   - Click the edit button
+   - Change **Details** > **Security Policy** to the security policy that was just created
+   - Change **Details** > **Federated ID** to be the upn claim of the admin identity, which is planned to be used for the connection setup
 
 ## Get started
 
@@ -105,29 +119,15 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 Provide a meaningful display name for your connector in the Microsoft 365 Admin Center. This name helps identify the connection in your workspace.
 
 ### 2. Add the Veeva Vault URL
-Enter the verified URL of your Veeva Vault instance. For example: `https://<your-vault-domain>.veevavault.com`.
+Enter the URL of your Veeva Vault instance. For example: `https://<your-vault-domain>.veevavault.com`.
 
 ### 3. Provide authentication details
 
-To configure the Veeva Vault PromoMats connector, you must provide authentication credentials. 
-The connector supports basic authentication and Entra ID authentication.
+To configure the Veeva Vault PromoMats connector, select **Azure Active Directory (OIDC)** and fill in the following information:
 
-#### Basic authentication 
-
-#### Microsoft Entra ID Authentication
-To use Microsoft Entra ID authentication, you need the following:
-- **Vault Session ID URL**:  
-  Format: `https://login.veevavault.com/auth/oauth/session/{oath_oidc_profile_id}`
-- **Client ID**: The application ID of your Microsoft Entra ID app registered for Veeva Vault.
-- **Client secret**: The corresponding client secret. Securely store and restrict access to this value.
-
-#### Entra ID authentication 
-
-method applies Entra ID for secure and centralized identity management. The following are the required fields:
-
-- **Vault session ID URL:** The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
-- **Client ID:** The application ID for your Azure AD app registered for Veeva Vault. 
-- **Client secret:** The client secret associated with the Entra ID  app. Make sure that it is securely stored and accessible only to authorized personnel. 
+- **Vault session ID URL:** You can find the session ID URL on the Veeva Vault interface under the path: **Admin panel** > **Settings** > **OAuth 2.0/ OpenID Connect Profiles** > the profile that's created for the connection > **Vault Session ID URL**.
+- **Client ID:** The application ID for your Entra application registered for Veeva Vault. 
+- **Client secret:** The client secret associated with the Entra application. Make sure that it is securely stored and accessible only to authorized personnel. 
  
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
