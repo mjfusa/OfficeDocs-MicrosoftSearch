@@ -71,21 +71,21 @@ For Microsoft 365 Government:
 
 e.	Click "Register" when you fill all the required fields:
 
- ![Screenshot of the company website](media/egnyte/registration-complete.png)
+ ![Screenshot of the register button](media/egnyte/registration-complete.png)
 
 
 
 
 f.	You'll receive a confirmation email within 24 hrs, if you can't find the message in your box, check your spam folder or click "resend" to check the confirmation email.
 
- ![Screenshot of the company website](media/egnyte/Email-confirmation.png)
+ ![Screenshot of the confirmation email](media/egnyte/Email-confirmation.png)
 
 
 
 ## 3. Obtain the client ID and secret from developer account
 Go to [Egnyte for Developers](https://developers.egnyte.com/apps/mykeys), sign in the developer account you create in step2. Record the "key" and "Secret" for Graph Connector set up.
 
-![Egnyte for Developers](media/egnyte/api-key-and-scerect.png)
+![Screenshot of the client id and secret](media/egnyte/api-key-and-scerect.png)
 
 
 
