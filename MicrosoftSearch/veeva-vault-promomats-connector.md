@@ -69,7 +69,8 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 #### Step 1: Register an application in Microsoft Entra ID
 
-1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. In the creation form, fill out the name as your preference, select the **Accounts in this organizational directory only** in the Supported account types, select **Web** in the Redirect URI, and add the following links to the **Redirect URI** field:
+1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
+2. In the creation form, fill out the name as your preference, select the **Accounts in this organizational directory only** in the Supported account types, select **Web** in the redirect URI, and add the following links to the **Redirect URI** field:
 
    - For **Microsoft 365 Enterprise**, copy and paste:
      `https://gcs.office.com/v1.0/admin/oauth/callback`
