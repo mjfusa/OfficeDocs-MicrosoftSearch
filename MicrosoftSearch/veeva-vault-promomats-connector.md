@@ -67,7 +67,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 ## Prerequisites
 ### Configure Microsoft Entra ID OAuth 2.0/OpenID Connect for Veeva Vault Microsoft Graph connector
 
-#### Step 1: Register an application in Microsoft Entra ID
+#### Register an application in Microsoft Entra ID
 
 1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
 2. In the creation form, fill out the name as your preference, select the **Accounts in this organizational directory only** in the Supported account types, select **Web** in the redirect URI, and add the following links to the **Redirect URI** field:
@@ -79,32 +79,33 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 3. Under **Certificates & Secrets**, generate a client secret and store it securely.
 
-#### Step 2: Configure OAuth in Veeva Vault
+#### Configure OAuth in Veeva Vault
 
-1. **Create a new profile**:
-   - Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
-   - **Label, Name, Description**: Fill in as your preference.
-   - **Status**: Set as active.
-   - **Authorization Server Provider:** select Azure AD.
-   - Click **Upload AS metadata**, select **Provide Authorization Server Metadata URL**, copy **OpenID Connect metadata document** in the Endpoints tab on the overview page of the application that was just created on Microsoft Entra admin center, and paste it in the field.
-   - Identity Claim: select **Identity is in another claim** and fill in **upn** in the claim.
-   - **User ID Type**: select Federated ID
-   - **Perform strict Audience Restriction validation**: uncheck the option.
- 
-*Please make sure your upn is the same as your federated ID.*
+1. Create a new profile.
+   1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
+   2. Fill out the **Label, Name, and Description** as your preference.
+   3. Set **Status** as active.
+   4. In **Authorization Server Provider**, select **Azure AD**.
+   5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
+   6. Copy the **OpenID Connect metadata document** from the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
+   7. Select **Identity is in another claim** and fill in **UPN** in the claim.
+   8. In **User ID Type**, select **Federated ID**, and uncheck **Perform strict Audience Restriction validation**.
 
-2. **Create client application**: Stay in the page of the profile that we just created, click **Add** under **Client Applications**. Use the **Client ID** from the application that was just created on Entra admin center, where you can find on the overview page of the Entra application.
+> [Note:] Make sure your UPN is the same as your federated ID.
 
-3. **Create security policies**:
-   - Go to **Admin** > **Users & Groups** > **Security Policies**.
-   - Click **Create** > **Single sign-on**
-   - Fill out the name and description as your preference
-   - Select **active** for status
-   - Select **Single Sign-on** for authentication type
-   - Select a single sign-on based profile for Single Sign-on Profile
-   - Select **None** for eSignature Profile
-   - Select the Oauth 2.0 profile that was just created for OAuth 2.0 / OpenID Connect Profile
-   - For the rest of the setting, keep the default settings
+2. In the newly created profile page, click **Client Applications** > **Add**. Use the **Client ID** from the newly created application in the Entra admin center.
+
+3. Create security policies.
+   1. Go to **Admin** > **Users & Groups** > **Security Policies**.
+   2. Click **Create** > **Single sign-on**
+   3. Fill out the name and description as your preference
+   4. Select **active** for status
+   5. Select **Single Sign-on** for authentication type
+   6. Select a single sign-on based profile for Single Sign-on Profile
+   7. Select **None** for eSignature Profile
+   8. Select the Oauth 2.0 profile that was just created for OAuth 2.0 / OpenID Connect Profile
+
+For the rest of the setting, keep the default settings
 
 4. **Link user with the security policy**:
    - Go to **Admin** > **Users & Groups**
