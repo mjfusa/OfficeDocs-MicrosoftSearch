@@ -93,7 +93,7 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
    7. Select **Identity is in another claim** and fill in **UPN** in the claim.
    8. In **User ID Type**, select **Federated ID**, and uncheck **Perform strict Audience Restriction validation**.
 
-> [Note:] Make sure your UPN is the same as your federated ID.
+> **Note:** Make sure your UPN is the same as your federated ID.
 
 2. In the newly created profile page, click **Client Applications** > **Add**. Use the **Client ID** from the newly created application in the Entra admin center.
 
