@@ -79,6 +79,10 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
+        - name: Aha! Cloud
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: 15Five High Fives
           items:
           - name: Setup
@@ -312,7 +316,11 @@ items:
         - name: Zendesk Ticket
           items:
           - name: Setup
-            href: zendesk-ticket-connector.md      
+            href: zendesk-ticket-connector.md
+        - name: Zoom
+          items:
+          - name: Setup
+            href: zoom-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
