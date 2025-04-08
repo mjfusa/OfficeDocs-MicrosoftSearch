@@ -65,9 +65,9 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites
-### Configure Microsoft Entra ID OAuth 2.0/OpenID Connect for Veeva Vault Microsoft Graph connector
+To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Microsoft Graph connector, follow these steps.
 
-#### Register an application in Microsoft Entra ID
+### Register an application in Microsoft Entra ID
 
 1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
 2. In the creation form, fill out the name as your preference, select the **Accounts in this organizational directory only** in the Supported account types, select **Web** in the redirect URI, and add the following links to the **Redirect URI** field:
@@ -79,7 +79,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 3. Under **Certificates & Secrets**, generate a client secret and store it securely.
 
-#### Configure OAuth in Veeva Vault
+### Configure OAuth in Veeva Vault
 
 1. Create a new profile.
    1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
