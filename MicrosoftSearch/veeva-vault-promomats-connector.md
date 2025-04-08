@@ -83,7 +83,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 1. Create a new profile.
    1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
-   2. Fill out the **Label, Name, and Description** as your preference.
+   2. Fill out the label, name, and description as your preference.
    3. Set **Status** as active.
    4. In **Authorization Server Provider**, select **Azure AD**.
    5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
@@ -97,22 +97,21 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 3. Create security policies.
    1. Go to **Admin** > **Users & Groups** > **Security Policies**.
-   2. Click **Create** > **Single sign-on**
-   3. Fill out the name and description as your preference
-   4. Select **active** for status
-   5. Select **Single Sign-on** for authentication type
-   6. Select a single sign-on based profile for Single Sign-on Profile
-   7. Select **None** for eSignature Profile
-   8. Select the Oauth 2.0 profile that was just created for OAuth 2.0 / OpenID Connect Profile
+   2. Click **Create** > **Single sign-on**.
+   3. Fill out the name and description as your preference.
+   4. In status choose **active**.
+   5. In authentication type, choose **Single Sign-on**, and **Single Sign-on Profile**, choose single sign-on.
+   7. In **eSignature Profile**, select **None**.
+   8. Select the newly created Oauth 2.0 profile.
 
-For the rest of the setting, keep the default settings
+For the rest of the settings, keep the default values.
 
-4. **Link user with the security policy**:
-   - Go to **Admin** > **Users & Groups**
-   - Select a user who is the vault owner
-   - Click the edit button
-   - Change **Details** > **Security Policy** to the security policy that was just created
-   - Change **Details** > **Federated ID** to be the upn claim of the admin identity, which is planned to be used for the connection setup
+4. Link user with the security policy.
+   1. Go to **Admin** > **Users & Groups**.
+   2. Select a user who is the vault owner.
+   3. Click **Edit**.
+   4. Change **Details** > **Security Policy** to the newly created policy.
+   - Change **Details** > **Federated ID** to be the UPN claim of the admin identity, which is used in the connector setup.
 
 ## Get started
 
