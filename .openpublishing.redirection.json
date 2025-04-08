@@ -316,7 +316,7 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "/MicrosoftSearch/veeva-vault-qualitydocs-connector",
+            "source_path": "MicrosoftSearch/veeva-vault-qualitydocs-connector.md",
             "redirect_url": "/MicrosoftSearch/veeva-vault-promomats-connector",
             "redirect_document_id": true
         }
