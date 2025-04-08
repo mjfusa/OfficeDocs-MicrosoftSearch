@@ -78,7 +78,7 @@ PagerDuty allows customers to choose the geographic service region of the PagerD
 - For US service region, REST API URL is https://api.pagerduty.com.
 - For EU service region, REST API URL is https://api.eu.pagerduty.com.
 
-See [Service Regions](https://support.pagerduty.com/main/docs/service-regions) for more information.
+For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
 
 ### 3. Choose authentication type
 Enter the Client ID and Client Secret you obtained from your PagerDuty app registration setting.
