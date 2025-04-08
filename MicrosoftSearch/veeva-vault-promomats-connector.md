@@ -110,8 +110,7 @@ For the rest of the settings, keep the default values.
    1. Go to **Admin** > **Users & Groups**.
    2. Select a user who is the vault owner.
    3. Click **Edit**.
-   4. Change **Details** > **Security Policy** to the newly created policy.
-   - Change **Details** > **Federated ID** to be the UPN claim of the admin identity, which is used in the connector setup.
+   4. In **Details** > **Security Policy**, change the values to the newly created policy. And in **Federated ID**, change it to the UPN claim of the admin identity, which is also used in the connector setup.
 
 ## Get started
 
