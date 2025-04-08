@@ -71,7 +71,7 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
 
 1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
 2. In the creation form, fill out the name as your preference.
-3. In the Supported account types, chosee **Accounts in this organizational directory only**.
+3. In the Supported account types, choose **Accounts in this organizational directory only**.
 4. In the redirect URI, select **Web**, and add the following links to the **Redirect URI** field:
 
    - For **Microsoft 365 Enterprise**, copy and paste:
@@ -91,11 +91,12 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
    5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
    6. Copy the **OpenID Connect metadata document** from the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
    7. Select **Identity is in another claim** and fill in **UPN** in the claim.
-   8. In **User ID Type**, select **Federated ID**, and uncheck **Perform strict Audience Restriction validation**.
+   8. In **User ID Type**, select **Federated ID**, and uncheck **Perform Strict Audience Restriction validation**.
 
 > **Note:** Make sure your UPN is the same as your federated ID.
 
-2. In the newly created profile page, click **Client Applications** > **Add**. Use the **Client ID** from the newly created application in the Entra admin center.
+2. In the newly created profile page, click **Client Applications** > **Add**. 
+Use the **Client ID** from the newly created application in the Entra admin center.
 
 3. Create security policies.
    1. Go to **Admin** > **Users & Groups** > **Security Policies**.
