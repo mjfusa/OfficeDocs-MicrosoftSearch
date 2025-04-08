@@ -101,7 +101,7 @@ Choose a display name that helps users easily recognize associated files or item
 
 
 ### 2. Add the instance URL
-http://<your domain>.egnyte.com
+http://<company domain>.egnyte.com
 
 ### 3. Choose authentication type
 Enter the client ID and client secret you obtained from your developer account
