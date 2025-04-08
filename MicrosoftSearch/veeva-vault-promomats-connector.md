@@ -76,7 +76,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
    - For **Microsoft 365 Government**, copy and paste:
      `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
-2. Under **Certificates & Secrets**, generate a client secret and store it securely.
+3. Under **Certificates & Secrets**, generate a client secret and store it securely.
 
 #### Step 2: Configure OAuth in Veeva Vault
 
@@ -94,7 +94,7 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 
 2. **Create client application**: Stay in the page of the profile that we just created, click **Add** under **Client Applications**. Use the **Client ID** from the application that was just created on Entra admin center, where you can find on the overview page of the Entra application.
 
-3. **Create security poilicies**:
+3. **Create security policies**:
    - Go to **Admin** > **Users & Groups** > **Security Policies**.
    - Click **Create** > **Single sign-on**
    - Fill out the name and description as your preference
