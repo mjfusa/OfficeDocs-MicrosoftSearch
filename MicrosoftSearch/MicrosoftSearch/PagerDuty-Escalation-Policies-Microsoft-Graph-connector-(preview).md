@@ -111,7 +111,7 @@ You can add or remove available properties from your PagerDuty Escalation Policy
 |LastModifiedBy	| `lastModifiedBy` | The name of the user who last modified the escalation policy. |
 |LastModifiedTime	| `lastModifiedDateTime` | The time at which the escalation policy was last modified. |
 |Name	| `title` | The name of the escalation policy. |
-|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this will be identical to `name`, though it is not intended to be an identifier. |
+|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, it's identical to `name`, though it is not intended to be an identifier. |
 |Description	| Not applicable         | Escalation policy description. |
 |RuleDetail	| Not applicable         | This is a list of entries in the escalation policy, including the number of minutes before an unacknowledged incident escalates away from this rule, and the targets an incident should be assigned to upon reaching the rule. |
 |UsedByServices	| Not applicable | The services associated with the escalation policy. |
