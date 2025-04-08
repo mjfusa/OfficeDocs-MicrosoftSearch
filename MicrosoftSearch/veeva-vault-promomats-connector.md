@@ -65,21 +65,22 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites
+
 To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Microsoft Graph connector, follow these steps.
 
 ### Register an application in Microsoft Entra ID
 
 1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
-2. In the creation form, fill out the name as your preference.
-3. In the Supported account types, choose **Accounts in this organizational directory only**.
-4. In the redirect URI, select **Web**, and add the following links to the **Redirect URI** field:
+1. In the creation form, fill out the name as your preference.
+1. In the Supported account types, choose **Accounts in this organizational directory only**.
+1. In the redirect URI, select **Web**, and add the following links to the **Redirect URI** field:
 
    - For **Microsoft 365 Enterprise**, copy and paste:
      `https://gcs.office.com/v1.0/admin/oauth/callback`
    - For **Microsoft 365 Government**, copy and paste:
      `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
-3. Under **Certificates & Secrets**, generate a client secret and store it securely.
+1. Under **Certificates & Secrets**, generate a client secret and store it securely.
 
 ### Configure OAuth in Veeva Vault
 
@@ -93,7 +94,8 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
    7. Select **Identity is in another claim** and fill in **UPN** in the claim.
    8. In **User ID Type**, select **Federated ID**, and uncheck **Perform Strict Audience Restriction validation**.
 
-> **Note:** Make sure your UPN is the same as your federated ID.
+   > [!NOTE]
+   > Make sure your UPN is the same as your federated ID.
 
 2. In the newly created profile page, click **Client Applications** > **Add**. 
 Use the **Client ID** from the newly created application in the Entra admin center.
@@ -102,12 +104,12 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    1. Go to **Admin** > **Users & Groups** > **Security Policies**.
    2. Click **Create** > **Single sign-on**.
    3. Fill out the name and description as your preference.
-   4. In status choose **active**.
+   4. In status, choose **active**.
    5. In authentication type, choose **Single Sign-on**, and **Single Sign-on Profile**, choose single sign-on.
    7. In **eSignature Profile**, select **None**.
    8. Select the newly created Oauth 2.0 profile.
 
-For the rest of the settings, keep the default values.
+   For the rest of the settings, keep the default values.
 
 4. Link user with the security policy.
    1. Go to **Admin** > **Users & Groups**.
@@ -169,7 +171,6 @@ You can modify the frequency of full crawls to fit your organization's requireme
 
 - Incremental crawl - 15 minutes.
 - Full crawl - daily.
-
 
 ## Troubleshooting
 
