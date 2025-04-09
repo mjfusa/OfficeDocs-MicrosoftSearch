@@ -39,26 +39,26 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **iManage Cloud instance URL**: You need your organization's iManage Cloud instance URL, which is typically: [https://cloudimanage.com](https://cloudimanage.com/).
-- **iManage Cloud NRTADMIN account**: To install the Microsoft iManage Cloud Microsoft Graph connector application in iManage Cloud, you need an iManage account with NRTADMIN permission to complete the OAuth 2.0 Authentication in Microsoft Admin Center.
-- **OAuth Client_ID and Client_Secret**: Obtain the OAuth Client_ID and Client_Secret from iManage support before setting up the iManage Cloud connection in the Microsoft Admin Center.
-- **Add and authorize Microsoft iManage Cloud application**: You need to add and authorize the Microsoft iManage Cloud application in the iManage Cloud Control Center.
+- Get your organization's iManage Cloud instance URL, typically found at[https://cloudimanage.com](https://cloudimanage.com/).
+- Use an iManage account with NRTADMIN permissions to complete OAuth 2.0 Authentication in Microsoft Admin Center.
+- Obtain the OAuth Client_ID and Client_Secret from iManage support before configuring the iManage Cloud connection in Microsoft Admin Center.
+- Add and authorize the Microsoft iManage Cloud application within the iManage Cloud Control Center.
 
-### 1. Display name 
+### 1. Configure the display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
-### 2. iManage Cloud instance URL
+### 2. Add the iManage Cloud instance URL
 The iManage Cloud instance URL is essential to correctly access and update data from, which is typically: [https://cloudimanage.com](https://cloudimanage.com/).
 
-### 3. Authentication Type
+### 3. Provide authentication details
 
-**iManage Cloud OAuth 2.0**
+#### iManage Cloud OAuth 2.0
 
 We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
 
-#### Step 1: Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization
+1. Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization.
 The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
-**Email template for application registration:**
+The email template for application registration is:
 To: iManageGCAppRegistra@microsoft.com
 
 Subject: New cloudimanage.com  {{ApplicationName}}  application for CustomerName
@@ -70,31 +70,29 @@ CustomerName (Required): ____
 Customer/Tenant ID (Required): _____
 Microsoft Account representitive (Optional):_____
 
-
-#### Step 2: Add Microsoft iManage Cloud Microsoft Graph connector application
+2. Add Microsoft iManage Cloud Microsoft Graph connector application.
 A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
 
-Area  |  Field | Recommended value
---- | --- | ---
-Status | Status | Enabled
-Authentication | Allow Refresh Token | Yes
-Authentication | Refresh Token Expiry | 365 days
-Authentication | Access Token Expiry | 5,000 mins
-Security | Allow access to | All Users
+|Area  |  Field | Recommended value|
+|:--- |:--- |:---|
+|Status | Status | Enabled|
+|Authentication | Allow Refresh Token | Yes|
+|Authentication | Refresh Token Expiry | 365 days|
+|Authentication | Access Token Expiry | 5,000 mins|
+|Security | Allow access to | All Users|
 
-#### Step 3: Authorize the OAuth Client
-Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Please use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
+3. Authorize the OAuth Client
+Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for iManage Cloud. You can click create to publish your connection and index content from your iManage account.
+To create the connection for iManage Cloud, click **create** to publish your connection and index content from your iManage account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with iManage data.
 
-
 | Users | Description |
-|----|---|
+|:----|:---|
 | Access permissions | _Only people with access to content in Data source._ |
 | Map Identities | _Data source identities mapped using Microsoft Entra IDs._ |
 
@@ -109,25 +107,24 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
 
-If you want to edit any of these values, you need to choose the **Custom Setup** option.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Content**, and **Sync**.
+In custom setup you can edit any of the default values for users, content and sync.
 
 ### Users
 
-**Access permissions**
+#### Access permissions
 
 The iManage Cloud Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
-**Mapping identities**
+#### Mapping identities
 
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the email ID of iManage users is the same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To learn more about mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Microsoft Entra ID** option if the Email ID of iManage users is the **same** as the UserPrincipalName (UPN) or email of users in Microsoft Entra ID.
+1. Choose **Microsoft Entra ID**, if the Email ID of iManage users is the **same** as the UserPrincipalName (UPN) or email of users in Microsoft Entra ID.
 2. Choose the **Non-Microsoft Entra ID** option if the Email ID of iManage users is **different** from the UserPrincipalName (UPN) and Email of users in Microsoft Entra ID.
 
 ### Content
