@@ -40,31 +40,33 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - **Coda Org Administrator account**: To setup the Coda Enterprise Microsoft Graph connector, you need an Coda Org administrator account to obtain the API Token to index content of your organization.
 - **API Key**: Coda Enterprise supports API token authentication. The Coda API token can be obtained from the **Account settings** page of the Coda Org administrator.
 
-### 1. Display name 
+## Get started
+
+### 1. Configure the display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
-### 2. Coda Enterprise instance Organization ID
-The Coda Enterprise Organization ID is required to setup the connection, which usually follows this format, org-AbCDeFGHIj, and can be found in the page URL of Coda admin settings page such as `https://coda.io/organizations/org-AbCDeFGHIj/about`
+### 2. Add thr Coda Enterprise instance organization ID
+The Coda Enterprise organization ID is required to setup the connection, which usually follows this format, org-AbCDeFGHIj, and can be found in the page URL of Coda admin settings page such as `https://coda.io/organizations/org-AbCDeFGHIj/about`
 
-### 3. Authentication Type
+### 3. Provide authentication details
 
-**Coda API Key**
+#### Coda API Key
 
 To connect to the Coda Enterprise instance and allow the Microsoft Graph connector to index the Coda documents and pages regularly, you need to create a Coda Enterprise API token from the Coda Org Admin account.
 
 Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the following default values:
+
 Field | Default Value
 --- | ---
-Type of restriction | Doc or table
-Type of access | Read and write
-Doc or table to grant access to | `not required, leave it to empty`
+Type of restriction | Doc or table.
+Type of access | Read and write.
+Doc or table to grant access to | `not required, leave it to empty`.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 At this point, you're ready to create the connection for Coda. You can click create to publish your connection and index content from your Coda account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Coda data.
-
 
 | Users | Description |
 |----|---|
@@ -81,19 +83,19 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
 
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
+To edit any of these values, go to **Custom setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the previous table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Data**, and **Crawl**.
+Custom setup is for those admins who want to edit the default values for settings listed in the previous table. Once you click **Custom Setup**, edit the values in  **Users**, **Data**, and **Crawl**.
 
 ### Users
 
-**Access permissions**
+#### Access permissions
 
 The Coda Enterprise Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
 
-**Mapping identities**
+#### Mapping identities
 
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the email ID of Coda users is the same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To learn more about mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
@@ -104,32 +106,32 @@ To identify which option is suitable for your organization:
 
 ### Data
 
-**Content filter**
+#### Content filter
 Currently, Coda API limits are attached to a user/IP. To optimize the indexing performance, consider setting up multiple connections or utilizing content filter to reduce the number of items indexed per connection. 
 
-**Select time range**: Define a time range for the content to index. Only content with a last modified date and time within the specified range to index. Select an appropriate time range based on the volume of content to index. 
+Define a time range for the content to index. Only content with a last modified date and time within the specified range to index. Select an appropriate time range based on the volume of content to index. 
 
 >[!CAUTION]
 > Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to index.
 
-**Manage properties**
+#### Manage properties
 
-Here, you can view available properties from your Coda. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default in following list.
+You can view the available properties from your Coda. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default in following list.
 
 | Properties   | Semantic Label          | Schema                     | Description                                      |
 |--------------|-------------------------|----------------------------|--------------------------------------------------|
-| BrowserLink  | url                     | Retrieve                   | The URL link to the document or page             |
-| Content      | CONTENT                 | Search                     | The main content of the document                 |
-| CreatedAt    | Created date time       | Query, Retrieve            | The date and time when the document was created  |
-| FolderId     | Query                   |                            | The unique identifier for the folder             |
-| FolderName   | Query, Retrieve, Search |                            | The name of the folder                           |
-| Id           | Query, Retrieve         |                            | The unique identifier for the document           |
-| Name         | Title                   | Query, Retrieve, Search    | The title or name of the document                |
-| Owner        | Query, Retrieve, Search |                            | The owner of the document                        |
-| OwnerName    | Created by              | Query, Retrieve, Search    | The name of the person who created the document  |
-| UpdatedAt    | Last modified date time | Query, Retrieve            | The date and time when the document was last modified |
-| WorkspaceId  | Query                   |                            | The unique identifier for the workspace          |
-| WorkspaceName| Query, Retrieve, Search |                            | The name of the workspace                        |
+| BrowserLink  | url                     | Retrieve                   | The URL link to the document or page.             |
+| Content      | CONTENT                 | Search                     | The main content of the document.                |
+| CreatedAt    | Created date time       | Query, Retrieve            | The date and time when the document was created.  |
+| FolderId     | Query                   |                            | The unique identifier for the folder.             |
+| FolderName   | Query, Retrieve, Search |                            | The name of the folder.                           |
+| Id           | Query, Retrieve         |                            | The unique identifier for the document.           |
+| Name         | Title                   | Query, Retrieve, Search    | The title or name of the document.                |
+| Owner        | Query, Retrieve, Search |                            | The owner of the document.                        |
+| OwnerName    | Created by              | Query, Retrieve, Search    | The name of the person who created the document.  |
+| UpdatedAt    | Last modified date time | Query, Retrieve            | The date and time when the document was last modified. |
+| WorkspaceId  | Query                   |                            | The unique identifier for the workspace.          |
+| WorkspaceName| Query, Retrieve, Search |                            | The name of the workspace.                        |
 
 ### Crawl
 
