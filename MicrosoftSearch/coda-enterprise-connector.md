@@ -56,11 +56,11 @@ To connect to the Coda Enterprise instance and allow the Microsoft Graph connect
 
 Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the following default values:
 
-Field | Default Value
---- | ---
-Type of restriction | Doc or table.
-Type of access | Read and write.
-Doc or table to grant access to | `not required, leave it to empty`.
+|Field | Default value|
+|:--- |:---|
+|Type of restriction | Doc or table.|
+|Type of access | Read and write.|
+|Doc or table to grant access to | `not required, leave it to empty`.|
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
@@ -69,17 +69,17 @@ At this point, you're ready to create the connection for Coda. You can click cre
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Coda data.
 
 | Users | Description |
-|----|---|
+|:----|:---|
 | Access permissions | _Only people with access to content in Data source._ |
 | Map Identities | _Data source identities mapped using Microsoft Entra IDs._ |
 
 | Content | Description |
-|---|---|
+|:---|:---|
 | Select time range | _Last 1 year_ |
 | Manage Properties | _12 default properties and their schema._ |
 
 | Sync | Description |
-|---|---|
+|:---|:---|
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
 
@@ -119,7 +119,7 @@ Define a time range for the content to index. Only content with a last modified 
 You can view the available properties from your Coda. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default in following list.
 
 | Properties   | Semantic Label          | Schema                     | Description                                      |
-|--------------|-------------------------|----------------------------|--------------------------------------------------|
+|:-------------|:------------------------|:---------------------------|:-------------------------------------------------|
 | BrowserLink  | url                     | Retrieve                   | The URL link to the document or page.             |
 | Content      | CONTENT                 | Search                     | The main content of the document.                |
 | CreatedAt    | Created date time       | Query, Retrieve            | The date and time when the document was created.  |
