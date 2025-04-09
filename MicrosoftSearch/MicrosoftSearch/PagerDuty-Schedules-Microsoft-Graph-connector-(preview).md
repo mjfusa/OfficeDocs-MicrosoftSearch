@@ -123,7 +123,7 @@ You can add or remove available properties from your PagerDuty Schedule data sou
 |LastModifiedBy	| `lastModifiedBy` | The name of the user who last modified the schedule. |
 |LastModifiedDateTime	| `lastModifiedDateTime` | The time at which the schedule was last modified. |
 |Name	| `title` | The name of the schedule. |
-|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this will be identical to `name`, though it is not intended to be an identifier. |
+|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this property is identical to `name`, though it is not intended to be an identifier. |
 |Timezone	| Not applicable | The time zone of the schedule. |
 |Usage	| Not applicable | The escalation policies associated with the schedule. |
 
@@ -148,6 +148,6 @@ Common credential error. Please go back to the PagerDuty app registration settin
 
 ## Next steps
 
-After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](https://gcs.office.com/v1.0/admin/oauth/callback).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
