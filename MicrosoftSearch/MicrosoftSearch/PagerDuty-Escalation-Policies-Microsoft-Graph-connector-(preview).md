@@ -45,7 +45,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 Before you create a PagerDuty Escalation Policies Microsoft Graph connector, complete the following steps:
 
 1. Create a PagerDuty account with administrator permission in the PagerDuty app.
-2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. See [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app) for more information.
+2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. For more information, see [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app).
 3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
 4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
 
@@ -113,13 +113,13 @@ You can add or remove available properties from your PagerDuty Escalation Policy
 |Name	| `title` | The name of the escalation policy. |
 |Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, it's identical to `name`, though it is not intended to be an identifier. |
 |Description	| Not applicable         | Escalation policy description. |
-|RuleDetail	| Not applicable         | This is a list of entries in the escalation policy, including the number of minutes before an unacknowledged incident escalates away from this rule, and the targets an incident should be assigned to upon reaching the rule. |
+|RuleDetail	| Not applicable         | This property is a list of entries in the escalation policy, including the number of minutes before an unacknowledged incident escalates away from this rule, and the targets an incident should be assigned to upon reaching the rule. |
 |UsedByServices	| Not applicable | The services associated with the escalation policy. |
 
 
 ### Sync 
 
-Only full crawl is supported by PagerDuty Escalation Policies Microsoft Graph connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
+PagerDuty Escalation Policies Microsoft Graph connector only supports full crawl. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
 
 
 ## Troubleshooting
@@ -128,11 +128,11 @@ The following are common errors that can occur and how to resolve them.
 
 **Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.**
 
-Credential info has expired. Please create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
+Credential info expires. Create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
  **Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
 
-Common credential error. Please go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
+Common credential error. Go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
 ## Next steps
 
