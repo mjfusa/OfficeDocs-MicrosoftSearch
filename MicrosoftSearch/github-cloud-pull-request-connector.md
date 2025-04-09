@@ -76,7 +76,7 @@ To ensure correct permission enforcement, map GitHub user identities to Microsof
 
 If direct mapping fails, use **regular expressions (regex)** for transformation.
 
-\* For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
+For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
 
 ### Content
 On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
