@@ -54,7 +54,7 @@ The Coda Enterprise organization ID is required to setup the connection, which u
 
 To connect to the Coda Enterprise instance and allow the Microsoft Graph connector to index the Coda documents and pages regularly, you need to create a Coda Enterprise API token from the Coda Org Admin account.
 
-Navigate to **Account settings** -> **API Settings** page of a Coda Org Admin account, Click **Generate API Token** to generate a new token using the following default values:
+Navigate to **Account settings** > **API Settings** of a Coda Org Admin account, and click **Generate API Token** to generate a new token. Use the default values.
 
 |Field | Default value|
 |:--- |:---|
