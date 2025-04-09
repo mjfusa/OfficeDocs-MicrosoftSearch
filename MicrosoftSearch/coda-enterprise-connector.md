@@ -37,15 +37,15 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Coda Org Administrator account**: To setup the Coda Enterprise Microsoft Graph connector, you need an Coda Org administrator account to obtain the API Token to index content of your organization.
-- **API Key**: Coda Enterprise supports API token authentication. The Coda API token can be obtained from the **Account settings** page of the Coda Org administrator.
+- A Coda org administrator account to obtain the API Token to index content in your organization.
+- Coda Enterprise supports API token authentication. The Coda API token can be obtained from the **Account settings** in the Coda org administrator.
 
 ## Get started
 
 ### 1. Configure the display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
-### 2. Add thr Coda Enterprise instance organization ID
+### 2. Add the Coda Enterprise instance organization ID
 The Coda Enterprise organization ID is required to setup the connection, which usually follows this format, org-AbCDeFGHIj, and can be found in the page URL of Coda admin settings page such as `https://coda.io/organizations/org-AbCDeFGHIj/about`
 
 ### 3. Provide authentication details
