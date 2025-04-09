@@ -63,7 +63,7 @@ Navigate to **Account settings** > **API Settings** of a Coda Org Admin account,
 |Doc or table to grant access to | `not required, leave it to empty`.|
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 To create the connection for Coda, click **create** to publish your connection and index content from your Coda account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Coda data.
