@@ -33,8 +33,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Create workflows by using this connection and actions from Microsoft Copilot Studio.
 
 ## Limitations
-
-- Doesn't index attachments.
+- Only [text item](https://developers.miro.com/docs/text-1)on the board are indexed. Content in cards, sticky notes, embeds, tags, frames, mind maps, previews, and shapes are not indexed. [Learn more](https://developers.miro.com/docs/board-items) about board item in Miro.   
 - Doesn't index comments and reply.
 
 ## Prerequisites
