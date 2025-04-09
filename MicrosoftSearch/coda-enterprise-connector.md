@@ -101,7 +101,7 @@ The default method for mapping your data source identities with Microsoft Entra 
 
 To identify which option is suitable for your organization:
 
-1. Choose the **Microsoft Entra ID** option if the Email ID of Coda users is the **same** as the UserPrincipalName (UPN) or email of users in Microsoft Entra ID.
+1. Choose **Microsoft Entra ID** if the Email ID of Coda users is the **same** as the UserPrincipalName (UPN) or email of users in Microsoft Entra ID.
 2. Choose the **Non-Microsoft Entra ID** option if the Email ID of Coda users is **different** from the UserPrincipalName (UPN) and Email of users in Microsoft Entra ID.
 
 ### Data
