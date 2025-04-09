@@ -119,7 +119,7 @@ You can add or remove available properties from your PagerDuty Schedule data sou
 |CreatedBy |`createdBy`  | The name of the user who created the schedule. |
 |CreatedDateTime | `createdDateTime` | The time at which the schedule was created. |
 |Description	| Not applicable | The description of the schedule. |
-|FinalSchedule	| Not applicable | This is a list of entries in the final schedule, including user, the start time of the entry, the end time of the entry. |
+|FinalSchedule	| Not applicable | This property is a list of entries in the final schedule, including user, the start time of the entry, the end time of the entry. |
 |LastModifiedBy	| `lastModifiedBy` | The name of the user who last modified the schedule. |
 |LastModifiedDateTime	| `lastModifiedDateTime` | The time at which the schedule was last modified. |
 |Name	| `title` | The name of the schedule. |
@@ -140,14 +140,14 @@ The following are common errors that can occur and how to resolve them.
 
 **Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.**
 
-Credential info has expired. Please create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
+Credential info expires. Create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
  **Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
 
-Common credential error. Please go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
+Common credential error. Go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
 ## Next steps
 
-After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector).
+After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
