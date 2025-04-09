@@ -136,7 +136,7 @@ To configure the Veeva Vault PromoMats connector, select **Azure Active Director
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
 
-### 4. Rollout to limited audience
+### 4. Roll out to limited audience
 Deploy this connection to a limited group of users to validate indexing and access control functionality before a full rollout. 
 
 ### 5. Customize sync schedules
