@@ -56,7 +56,7 @@ The *AddressBarMicrosoftSearchInBingProviderEnabled* policy, used to configure M
 
 ## Windows search box
 
-The "Work" scope is being retired in the Windows search box. The ability to discover company content such as suggested people through Search Home is also unavailable, and there's no longer company-specific branding (the "Commercial Gleam"). However, users can still find work files from both the "All" scope and the "Documents" scope. Additionally, users can find people through the "All" and "People" scopes.
+The "Work" scope is being retired in the Windows search box, and there's no longer company-specific branding (the "Commercial Gleam"). However, users can still find work files from both the "All" scope and the "Documents" scope. Additionally, users can find people through the "All" and "People" scopes.
 
 ## What actions are required for customers? 
 
