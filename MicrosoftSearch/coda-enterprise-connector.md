@@ -145,4 +145,4 @@ You can change the default values of the refresh interval from here if you want 
 ## Troubleshooting
 After publishing your connection, you can review the status under **Data sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/graph/support).
