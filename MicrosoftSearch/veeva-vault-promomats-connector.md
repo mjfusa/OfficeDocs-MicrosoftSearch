@@ -91,7 +91,7 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
    4. In **Authorization Server Provider**, select **Azure AD**.
    5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
    6. Copy the **OpenID Connect metadata document** from **endpoints** in the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
-   7. Select **Identity is in another claim** and fill in **upn** in the claim.
+   7. Select **Identity is in another claim** and enter the **UPN** of the claim.
    8. In **User ID Type**, select **Federated ID**, and uncheck **Perform Strict Audience Restriction validation**.
 
    > [!NOTE]
@@ -106,9 +106,9 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    3. Fill out the name and description as your preference.
    4. In status, choose **active**.
    5. In authentication type, choose **Single Sign-on**
-   6. In Single Sign-on Profile, choose a profile that's created based on single sign-on.
+   6. In **Single Sign-on Profile**, choose a profile created based on single sign-on.
    7. In eSignature Profile, select **None**.
-   8. In OAuth 2.0 / OpenID Connect Profile, select the newly created OAuth 2.0 profile.
+   8. In the OAuth 2.0 / OpenID Connect Profile, select the newly created OAuth 2.0 profile.
 
    For the rest of the settings, keep the default values.
 
