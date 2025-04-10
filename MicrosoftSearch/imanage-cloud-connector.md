@@ -149,35 +149,35 @@ To view available properties from your iManage Cloud, assign a schema to the pro
 |Default property|Label|Description|Schema|
 |:---|:---|:---|:---|
 | Author             | Created by              | The person who created the content | Retrieve, Search.       |
-| CC                 |                         | Carbon copy recipients  | Query, Retrieve        |
-| CoAuthors          |                         | Other authors of the content |                        |
-| Authors            |                         | The main authors of the content | Retrieve, Search       |
-| Comment            |                         | Comments associated with the content | Retrieve, Search       |
-| Content            |                         | The main body of the content | Search                 |
-| ConversationName   |                         | The name of the conversation | Retrieve, Search       |
-| CreateDate         | Created date time       | The date and time when the content was created | Query, Retrieve        |
-| CustomProperties   |                         | Custom properties associated with the content | Query, Retrieve        |
-| DocumentNumber     |                         | The document number     | Query, Retrieve        |
-| EditDate           | Last modified date time | The date and time when the content was last modified | Query, Retrieve        |
-| Extension          | File extension          | The file extension       | Query, Retrieve        |
-| FileCreateDate     |                         | The date and time when the file was created | Query, Retrieve        |
-| FileEditDate       |                         | The date and time when the file was last edited | Query, Retrieve        |
-| From               |                         | The sender of the content | Retrieve, Search       |
-| HasAttachment      |                         | Indicates if the content has an attachment | Retrieve               |
-| ID                |                         | The unique identifier of the content | Query, Retrieve        |
-| LastUser           | Last modified by        | The last user who modified the content | Query, Retrieve, Search|
-| Library            |                         | The library where the content is stored | Query, Retrieve        |
-| Name               | File name               | The name of the file    | Retrieve, Search       |
-| ReceivedDate       |                         | The date and time when the content was received | Query, Retrieve        |
+| CC                 |                         | Carbon copy recipients  | Query, Retrieve.        |
+| CoAuthors          |                         | Other authors of the content. |                        |
+| Authors            |                         | The main authors of the content | Retrieve, Search.       |
+| Comment            |                         | Comments associated with the content | Retrieve, Search.      |
+| Content            |                         | The main body of the content | Search.                |
+| ConversationName   |                         | The name of the conversation | Retrieve, Search.      |
+| CreateDate         | Created date time       | The date and time when the content was created | Query, Retrieve.        |
+| CustomProperties   |                         | Custom properties associated with the content | Query, Retrieve.        |
+| DocumentNumber     |                         | The document number     | Query, Retrieve.        |
+| EditDate           | Last modified date time | The date and time when the content was last modified | Query, Retrieve.        |
+| Extension          | File extension          | The file extension       | Query, Retrieve.        |
+| FileCreateDate     |                         | The date and time when the file was created | Query, Retrieve.        |
+| FileEditDate       |                         | The date and time when the file was last edited | Query, Retrieve.        |
+| From               |                         | The sender of the content | Retrieve, Search.       |
+| HasAttachment      |                         | Indicates if the content has an attachment | Retrieve.               |
+| ID                |                         | The unique identifier of the content | Query, Retrieve.        |
+| LastUser           | Last modified by        | The last user who modified the content | Query, Retrieve, Search.|
+| Library            |                         | The library where the content is stored | Query, Retrieve.        |
+| Name               | File name               | The name of the file    | Retrieve, Search.       |
+| ReceivedDate       |                         | The date and time when the content was received | Query, Retrieve.        |
 | RelatedDocuments   |                         | Documents related to the content | Retrieve, Search       |
-| SentDate           |                         | The date and time when the content was sent | Query, Retrieve        |
-| Subject            |                         | The subject of the content | Retrieve, Search       |
-| Title              | Title                   | The title of the content | Retrieve, Search       |
-| To                 |                         | The recipients of the content | Retrieve, Search       |
-| Url                | url                     | The URL of the content  | Retrieve, Search       |
-| Version            |                         | The version of the content | Query, Retrieve        |
-| WSType             |                         | The workspace type      | Query, Retrieve        |
-| WorkspaceName      |                         | The name of the workspace | Query, Retrieve        |
+| SentDate           |                         | The date and time when the content was sent | Query, Retrieve.        |
+| Subject            |                         | The subject of the content | Retrieve, Search.       |
+| Title              | Title                   | The title of the content | Retrieve, Search.       |
+| To                 |                         | The recipients of the content | Retrieve, Search.       |
+| Url                | url                     | The URL of the content  | Retrieve, Search.       |
+| Version            |                         | The version of the content | Query, Retrieve.        |
+| WSType             |                         | The workspace type      | Query, Retrieve.       |
+| WorkspaceName      |                         | The name of the workspace | Query, Retrieve.        |
 
 ### Sync
 
@@ -185,11 +185,10 @@ The refresh interval determines how often your data is synced between the data s
 
 You can change the default values of the refresh interval from here if you want to.
 
-
 ### Connection description
-Upon creating the connection, navigate to the Success page. Here, you can click the **Auto Suggestion** button to use the default Connection description. Alternatively, you may create a custom Connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
+Upon creating the connection, navigate to the success page. Click **Auto Suggestion** to use the default connection description. Alternatively, you may create a custom connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
