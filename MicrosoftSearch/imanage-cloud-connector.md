@@ -129,12 +129,11 @@ To identify which option is suitable for your organization:
 
 ### Content
 
-**Content filter**
-To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](/graph/connecting-external-content-api-limits)
+1. To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](/graph/connecting-external-content-api-limits)
 
-**Select the libraries**: Choose the specific libraries for the content to be indexed. Only the content within these selected libraries are indexed.
+2. Choose the specific libraries for the content to be indexed. Only the content within these selected libraries is indexed.
 
-**Select time range**: Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range to be indexed. Select an appropriate time range based on the volume of content to be indexed. 
+3. Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range is to be indexed. Select an appropriate time range based on the volume of content to be indexed. 
 
 >[!CAUTION]
 > Selecting "All time" may significantly impact your platform's performance if there's a large volume of content to be indexed.
@@ -143,13 +142,13 @@ To optimize the indexing process, consider setting up multiple connections or ut
 > If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
 
 
-**Manage properties**
+4. Manage properties
 
-Here, you can view available properties from your iManage Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Properties Some properties are selected by default.
 
-|Source property|Label|Description|Schema|
-|---|---|---|---|
-| Author             | Created by              | The person who created the content | Retrieve, Search       |
+|Default property|Label|Description|Schema|
+|:---|:---|:---|:---|
+| Author             | Created by              | The person who created the content | Retrieve, Search.       |
 | CC                 |                         | Carbon copy recipients  | Query, Retrieve        |
 | CoAuthors          |                         | Other authors of the content |                        |
 | Authors            |                         | The main authors of the content | Retrieve, Search       |
