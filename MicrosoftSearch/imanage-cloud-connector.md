@@ -54,7 +54,7 @@ The iManage Cloud instance URL is essential to correctly access and update data 
 
 #### iManage Cloud OAuth 2.0
 
-We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Graph Connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
+We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Microsoft Graph connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
 
 1. Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization.
 The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
@@ -110,7 +110,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 ## Custom setup
 
-In custom setup you can edit any of the default values for users, content and sync.
+In custom setup you can edit any of the default values for users, content, and sync.
 
 ### Users
 
@@ -186,9 +186,9 @@ The refresh interval determines how often your data is synced between the data s
 You can change the default values of the refresh interval from here if you want to.
 
 ### Connection description
-Upon creating the connection, navigate to the success page. Click **Auto Suggestion** to use the default connection description. Alternatively, you may create a custom connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
+Upon creating the connection, navigate to the success page. Click **Auto suggestion** to use the default connection description. Alternatively, you may create a custom connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under **Data sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
