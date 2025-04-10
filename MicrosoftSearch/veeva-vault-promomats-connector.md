@@ -107,8 +107,8 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    4. In status, choose **active**.
    5. In authentication type, choose **Single Sign-on**
    6. In Single Sign-on Profile, choose a profile that's created based on single sign-on.
-   7. In **eSignature Profile**, select **None**.
-   8. Select the newly created Oauth 2.0 profile.
+   7. In eSignature Profile, select **None**.
+   8. In OAuth 2.0 / OpenID Connect Profile, Select the newly created Oauth 2.0 profile.
 
    For the rest of the settings, keep the default values.
 
