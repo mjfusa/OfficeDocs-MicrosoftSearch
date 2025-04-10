@@ -88,11 +88,9 @@ Go to [Egnyte for Developers](https://developers.egnyte.com/apps/mykeys), sign i
 ![Screenshot of the client id and secret](media/egnyte/api-key-and-scerect.png)
 
 
-
 ## 4. Request a rate increase from Egynte
-Your new Egnyte application lets you connect to your Egnyte account. However, it's likely that it doesn't allow you to migrate content to Microsoft 365 due to the limits Egnyte imposes on new applications. Sign into your Egynte developer account to determine your existing rate limit. Then contact Egynte support to submit your request.
-
-
+Your new Egnyte Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/en-us/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary. 
+ 
 
 ## Get started
 
