@@ -28,9 +28,9 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Capabilities
 
-- Access files in Copilot by using the power of Semantic search.
+- Access boards in Copilot by using the power of Semantic search.
 - Customize your crawl frequency.
-- Create workflows by using this connection and actions from Microsoft Copilot Studio.
+- Create an agent using data source of the connection from Microsoft Copilot Studio.
 
 ## Limitations
 - Only [text item](https://developers.miro.com/docs/text-1)on the board are indexed. Content in cards, sticky notes, embeds, tags, frames, mind maps, previews, and shapes are not indexed. [Learn more](https://developers.miro.com/docs/board-items) about board item in Miro.   
