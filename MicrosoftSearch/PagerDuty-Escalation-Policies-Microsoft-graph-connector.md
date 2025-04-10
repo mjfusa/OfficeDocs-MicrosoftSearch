@@ -72,7 +72,7 @@ Before you create a PagerDuty Escalation Policies Microsoft Graph connector, com
 ### 1. Choose display name   
 Choose a display name that helps users easily recognize associated files or items in a Copilot response.
 
-### 2. Instance REST API URL
+### 2. Add the instance REST API URL
 PagerDuty allows customers to choose the geographic service region of the PagerDuty data centers that host their account. 
 
 - For US service region, REST API URL is https://api.pagerduty.com.
@@ -92,18 +92,18 @@ Custom setup is for admins who want to edit the default values for the settings.
 
 ### Users 
 
-**Access permissions**
+### Access permissions
 
 Determine which users in your organization can access each item in Copilot or Search surfaces. Choose whether indexed data is visible to everyone in the organization or only to users who have access to the data source.
 
 ### Content 
 
-**Manage properties**
+#### Manage properties
 
 You can add or remove available properties from your PagerDuty Escalation Policy data source. Assign a schema, change the semantic label, and add an alias to the property. The following properties are indexed by default.
 
 |Source property|Label|Description|
-|--- | ---- | --- |
+|:--- |:---- |:--- |
 |Id |Not applicable  | Unique ID of the escalation policy. |
 |HtmlUrl |`url`  | URL of the escalation policy in PagerDuty. |
 |CreatedBy |`createdBy`  | The name of the user who created the escalation policy. |
@@ -116,26 +116,23 @@ You can add or remove available properties from your PagerDuty Escalation Policy
 |RuleDetail	| Not applicable         | This property is a list of entries in the escalation policy, including the number of minutes before an unacknowledged incident escalates away from this rule, and the targets an incident should be assigned to upon reaching the rule. |
 |UsedByServices	| Not applicable | The services associated with the escalation policy. |
 
-
 ### Sync 
 
 PagerDuty Escalation Policies Microsoft Graph connector only supports full crawl. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
-
 
 ## Troubleshooting
 
 The following are common errors that can occur and how to resolve them.
 
-**Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.**
+1. Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.
 
-Credential info expires. Create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
+Credential info expires. Create a new app ID in the PagerDuty app registration setting and copy the latest Client ID and Client secret from **settings** to authenticate.
 
- **Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.**
+2. Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.
 
 Common credential error. Go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
 ## Next steps
-
-After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After you publish your connection, you can review the status under **Data sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
