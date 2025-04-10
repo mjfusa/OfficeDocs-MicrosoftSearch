@@ -118,7 +118,7 @@ You can add or remove available properties from your PagerDuty Escalation Policy
 
 ### Sync 
 
-PagerDuty Escalation Policies Microsoft Graph connector only supports full crawl. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
+The PagerDuty Escalation Policies Microsoft Graph connector only supports full crawl. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
 
 ## Troubleshooting
 
