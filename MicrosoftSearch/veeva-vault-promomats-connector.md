@@ -179,6 +179,6 @@ For information about troubleshooting, see [Troubleshooting the Veeva Vault Micr
 
 ## Next steps
 
-After you configure and publish the connector, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+After you configure and publish the connector, monitor its status on **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
 For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
