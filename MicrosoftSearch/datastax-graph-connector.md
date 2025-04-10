@@ -22,9 +22,9 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Capabilities
 
 - Index records in DataStax Astra DB collections.
-- Enable your users to ask for advices based on the knowledge from DataStax in Copilot. For example, you have configured the connector to access the collection of moive reviews in DataStax:
-   - Recommend a moive based on review texts and your interest.
-   - Summarize the review text on moive Paa.
+- Enable your users to ask for advices based on the knowledge from DataStax in Copilot. For example, you have configured the connector to access the collection of movie reviews in DataStax:
+   - Recommend a movie based on review texts and your interest.
+   - Summarize the review text on movie Paa.
    - Identify the movie generating heated discussions.
 
 
