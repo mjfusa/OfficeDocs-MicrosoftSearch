@@ -90,12 +90,12 @@ To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Mic
    3. Set **Status** as active.
    4. In **Authorization Server Provider**, select **Azure AD**.
    5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
-   6. Copy the **OpenID Connect metadata document** from the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
-   7. Select **Identity is in another claim** and fill in **UPN** in the claim.
+   6. Copy the **OpenID Connect metadata document** from **endpoints** in the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
+   7. Select **Identity is in another claim** and enter the **UPN** of the claim.
    8. In **User ID Type**, select **Federated ID**, and uncheck **Perform Strict Audience Restriction validation**.
 
    > [!NOTE]
-   > Make sure your UPN is the same as your federated ID. Please note that the mapping is case sensitive.
+   > Make sure your UPN is the same as your federated ID.
 
 2. In the newly created profile page, click **Client Applications** > **Add**. 
 Use the **Client ID** from the newly created application in the Entra admin center.
@@ -105,9 +105,10 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    2. Click **Create** > **Single sign-on**.
    3. Fill out the name and description as your preference.
    4. In status, choose **active**.
-   5. In authentication type, choose **Single Sign-on**, and **Single Sign-on Profile**, choose single sign-on.
-   6. In **eSignature Profile**, select **None**.
-   7. Select the newly created Oauth 2.0 profile.
+   5. In authentication type, choose **Single Sign-on**
+   6. In Single Sign-on Profile, choose a profile created based on single sign-on.
+   7. In eSignature Profile, select **None**.
+   8. In the OAuth 2.0 / OpenID Connect Profile, select the newly created OAuth 2.0 profile.
 
    For the rest of the settings, keep the default values.
 
@@ -115,7 +116,8 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    1. Go to **Admin** > **Users & Groups**.
    2. Select a user who is the vault owner.
    3. Click **Edit**.
-   4. In **Details** > **Security Policy**, change the values to the newly created policy. And in **Federated ID**, change it to the UPN claim of the admin identity, which is also used in the connector setup. 
+   4. In **Details** > **Security Policy**, change the values to the newly created policy.
+   5. In **Federated ID**, change it to the UPN claim of the admin identity, which is also used in the connector setup. 
 
 ## Get started
 
@@ -177,6 +179,6 @@ For information about troubleshooting, see [Troubleshooting the Veeva Vault Micr
 
 ## Next steps
 
-After you configure and publish the connector, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+After you configure and publish the connector, monitor its status on **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
-For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
