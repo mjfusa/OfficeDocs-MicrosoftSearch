@@ -88,7 +88,7 @@ Deploy this connection to a limited user base to validate it in Copilot and othe
 
 ## Custom setup 
 
-Custom setup is for admins who want to edit the default values for the settings. When you choose **Custom setup**, you see three other tabs: **Users**, **Content**, and **Sync**. 
+In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users 
 
