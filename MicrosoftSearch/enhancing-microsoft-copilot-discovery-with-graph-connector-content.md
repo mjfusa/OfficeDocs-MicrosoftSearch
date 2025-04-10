@@ -30,7 +30,7 @@ Pay attention to assigning a **representative and concise name** to each connect
 
 For Microsoft-built connectors, you have the flexibility to **modify the connection name and description** in the admin portal at any time to reflect updates or changes in the content. These modifications are swiftly propagated to the system, typically within minutes.
 
-   1. Go to the M365 Admin portal. In the navigation pane, select **Settings**, and then select **Search & intelligence**. 
+1. Go to the M365 Admin portal. In the navigation pane, select **Settings**, and then select **Search & intelligence**. 
    2. Select the [Data sources tab](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
    3. Select the connector that you would like to update the description for and click 'Edit' at the bottom of the right panel.
       ![Connection details pane](/MicrosoftSearch/media/connection-details-pane.png)
@@ -46,7 +46,7 @@ For Microsoft-built connectors, you have the flexibility to **modify the conne
    ### Good practices to write a connector description
 
    The connection description serves as a crucial element in aiding users to locate the desired content. Make sure that the following elements are present:
-   * A brief overview of the content type. 
+* A brief overview of the content type. 
    * The scope of the content available within the connection. 
    * Keywords that users might employ to find this content (ex. _Tickets_, _Wiki_, _Knowledge Base_, _How to_, etc.).
    * Alternative names for the connection that users might be familiar with. 
@@ -63,6 +63,9 @@ Here are three examples of effective connection names and descriptions:
 
    _Keywords - Work items, Bugs, Tasks, Epic, User Story, Tickets, Backlog, Issue, ADO, Azure DevOps_
 
-4. **Salesforce**: _Salesforce CRM stores a wide range of data to support various business functions. Types of data stored in Salesforce CRM include common record categories such as Leads, Accounts, Contacts, Opportunities, and Cases. Salesforce CRM's data model is designed to make data understandable and accessible, representing database tables as objects, columns as fields, and rows as records._
+1. **Salesforce**: _Salesforce CRM stores a wide range of data to support various business functions. Types of data stored in Salesforce CRM include common record categories such as Leads, Accounts, Contacts, Opportunities, and Cases. Salesforce CRM's data model is designed to make data understandable and accessible, representing database tables as objects, columns as fields, and rows as records._
 
    _The content in this connection can also be referred to as SFDC, Salesforce data or Salesforce Sales cloud._
+   
+1. **BambooHR**: *This connection to BambooHR people data populates profiles of people in M365 experiences like Teams or CoPilot. It is used to see or query about e.g. titles, emails, birthdays and other people related data.*
+
