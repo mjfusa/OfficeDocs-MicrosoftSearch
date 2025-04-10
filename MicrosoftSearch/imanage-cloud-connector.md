@@ -186,8 +186,6 @@ The refresh interval determines how often your data is synced between the data s
 
 You can change the default values of the refresh interval from here if you want to.
 
->[!TIP]
-> If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
 
 ### Connection description
 Upon creating the connection, navigate to the Success page. Here, you can click the **Auto Suggestion** button to use the default Connection description. Alternatively, you may create a custom Connection description to help Copilot better understand the indexed content and enhance the end user prompts when referencing content from this connection for your organization.
