@@ -158,7 +158,7 @@ items:
         - name: Freshservice
           items:
           - name: Setup
-            href: Freshservice-Microsoft-graph-connector.md.
+            href: freshservice-connector.md.
         - name: Jira Cloud
           items:
             - name: Setup
