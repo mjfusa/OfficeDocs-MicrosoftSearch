@@ -144,7 +144,7 @@ To identify which option is suitable for your organization:
 
 4. Manage properties
 
-To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Properties Some properties are selected by default.
+To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
 |Default property|Label|Description|Schema|
 |:---|:---|:---|:---|
