@@ -1,6 +1,6 @@
 --- 
 title: "Shortcut Microsoft Graph connector" 
-ms.author: ms-raynezou
+ms.author: raynezou
 author: raynezou
 manager: zezhangzhao
 audience: Admin
