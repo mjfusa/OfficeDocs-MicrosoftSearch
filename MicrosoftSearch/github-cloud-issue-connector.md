@@ -78,7 +78,7 @@ For personal accounts, mapping accuracy may be impacted due to variations in ema
 ### Content
 On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
-#### Time-range fitler
+#### Time-range filter 
 You can configure a time-range filter in the content tab. The default setting is 365 days.
 
 ### Sync

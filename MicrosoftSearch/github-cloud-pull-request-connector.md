@@ -85,12 +85,10 @@ If direct mapping fails, use **regular expressions (regex)** to transform the da
 
 For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
 
-For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
-
 ### Content
 In **Content**, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
-#### Time-range fitler
+#### Time-range filter 
 You can configure a time-range filter in the content tab. The default setting is 365 days.
 
 ### Sync
