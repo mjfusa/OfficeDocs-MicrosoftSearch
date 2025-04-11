@@ -193,13 +193,13 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub Cloud Knowledge (preview)
+        - name: GitHub
           items:
           - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
-          - name: Setup - GitHub Cloud Issue
+          - name: Setup - GitHub Cloud Issues
             href: GitHub-cloud-issue-connector.md 
-          - name: Setup - GitHub Cloud Pull Request
+          - name: Setup - GitHub Cloud Pull Requests
             href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
