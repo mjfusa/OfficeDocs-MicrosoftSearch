@@ -23,7 +23,7 @@ The Shortcut Microsoft Graph connector empowers your organization to index and s
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Shortcut Microsoft Graph connector.
 
 >[!NOTE]
->The Shortcut connector is in public preview. If you wish to get access to try it, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring in your admin account.
+>The Shortcut Microsoft Graph connector is in public preview. If you wish to get access to try it, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring in your admin account.
 
 ## Capabilities
 - Index stories from your Shortcut workspace
@@ -37,8 +37,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - The connector doesn't index customized fields.
 
 ## Prerequisites
-### 1.	Get your API Key
-Create or use an existing Shortcut account to access Shortcut’s developer portal. Once signed in at Shortcut, navigate to your account settings and locate the API Tokens section. Generate a new API token. Learn more at [Shortcut help center](https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens#:~:text=You%20can%20use%20a%20Shortcut%20API%20token%20to,name%20for%20the%20token%20and%20click%20Generate%20Token).
+Create or use an existing Shortcut account to access Shortcut’s developer portal. Once signed in at Shortcut, navigate to your account settings and locate the API Tokens section. Generate a new API token. For more information, see [Shortcut help center](https://help.shortcut.com/hc/en-us/articles/205701199-Shortcut-API-Tokens#:~:text=You%20can%20use%20a%20Shortcut%20API%20token%20to,name%20for%20the%20token%20and%20click%20Generate%20Token).
 
 
 ## Get Started
