@@ -59,14 +59,14 @@ We support OAuth 2.0 authentication for iManage Cloud. This connector is registe
 1. Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization.<br>
 
    The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
+   
    The email template for application registration is:<br>
 
    To: iManageGCAppRegistra@microsoft.com<br>
 
    Subject: New cloudimanage.com  {{ApplicationName}}  application for CustomerName<br>
 
-   Body:<br>
-   Please create a new application for iManage Cloud Microsoft Graph connector per-customer universal app.<br>
+   Body: Please create a new application for iManage Cloud Microsoft Graph connector per-customer universal app.<br>
 
    CustomerName (Required): ____<br>
    Customer/Tenant ID (Required): _____<br>
@@ -139,11 +139,11 @@ To identify which option is suitable for your organization:
 
 3. Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range is to be indexed. Select an appropriate time range based on the volume of content to be indexed. 
 
-  >[!CAUTION]
-  > Selecting "All time" may significantly impact your platform's performance if there's a large volume of content to be indexed.
+   >[!CAUTION]
+   > Selecting "All time" may significantly impact your platform's performance if there's a large volume of content to be indexed.
 
-  >[!TIP]
-  > If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
+   >[!TIP]
+   > If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
 
 
 4. Manage properties <br>
