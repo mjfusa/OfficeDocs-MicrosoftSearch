@@ -56,36 +56,40 @@ The iManage Cloud instance URL is essential to correctly access and update data 
 
 We support OAuth 2.0 authentication for iManage Cloud. This connector is registered as an iManage Per-Customer Universal Application titled **Microsoft - iManage Cloud Microsoft Graph connector**, which you can find on the iManage Cloud application page. To enable this application for your organization, follow these steps.
 
-1. Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization.
-The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
-The email template for application registration is:
-To: iManageGCAppRegistra@microsoft.com
+1. Contact Microsoft to enable iManage Cloud Microsoft Graph connector for your organization.<br>
 
-Subject: New cloudimanage.com  {{ApplicationName}}  application for CustomerName
+   The iManage Cloud Microsoft Graph connector is registered as an iManage Per-Customer Universal Application. You need to contact your Microsoft account representative to enable this application for your organization during the application preview phase. Please send an email using the template below once aligned with your Microsoft account representative. Microsoft will work with the iManage support team to register this application for your organization and share the OAuth 2.0 Client Secret to set up the iManage Cloud Microsoft Graph connector for your organization.
+   The email template for application registration is:<br>
 
-Body:
-Please create a new application for iManage Cloud Microsoft Graph connector per-customer universal app.
+   To: iManageGCAppRegistra@microsoft.com<br>
 
-CustomerName (Required): ____
-Customer/Tenant ID (Required): _____
-Microsoft Account representitive (Optional):_____
+   Subject: New cloudimanage.com  {{ApplicationName}}  application for CustomerName<br>
 
-2. Add Microsoft iManage Cloud Microsoft Graph connector application.
-A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html)
+   Body:<br>
+   Please create a new application for iManage Cloud Microsoft Graph connector per-customer universal app.<br>
 
-|Area  |  Field | Recommended value|
-|:--- |:--- |:---|
-|Status | Status | Enabled|
-|Authentication | Allow Refresh Token | Yes|
-|Authentication | Refresh Token Expiry | 365 days|
-|Authentication | Access Token Expiry | 5,000 mins|
-|Security | Allow access to | All Users|
+   CustomerName (Required): ____<br>
+   Customer/Tenant ID (Required): _____<br>
+   Microsoft Account representative (Optional): _____<br>
 
-3. Authorize the OAuth Client
-Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
+2. Add Microsoft iManage Cloud Microsoft Graph connector application.<br>
+
+   A new application registered and authorized for your iManage Cloud environment isn't enabled by default. This application needs to be enabled in iManage Control Center by a user assigned to a Global Management role that has the App Management privilege. You need to add the **Microsoft - iManage Cloud Graph Connector** in iManage Control Center for your environment with the recommended values below.  [Learn more](https://docs.imanage.com/cloud/cc-help/en-US/Adding_an_application.html).
+
+   |Area  |  Field | Recommended value|
+   |:--- |:--- |:---|
+   |Status | Status | Enabled|
+   |Authentication | Allow Refresh Token | Yes|
+   |Authentication | Refresh Token Expiry | 365 days|
+   |Authentication | Access Token Expiry | 5,000 mins|
+   |Security | Allow access to | All Users|
+
+3. Authorize the OAuth Client<br>
+
+   Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
 To create the connection for iManage Cloud, click **create** to publish your connection and index content from your iManage account.
 
@@ -129,55 +133,55 @@ To identify which option is suitable for your organization:
 
 ### Content
 
-1. To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](/graph/connecting-external-content-api-limits)
+1. To optimize the indexing process, consider setting up multiple connections or utilizing content filters to reduce the number of items indexed per connection if the content exceeds the [connection limits](/graph/connecting-external-content-api-limits).
 
 2. Choose the specific libraries for the content to be indexed. Only the content within these selected libraries is indexed.
 
 3. Define a time range for the content to be indexed. Only content with a last modified date and time within the specified range is to be indexed. Select an appropriate time range based on the volume of content to be indexed. 
 
->[!CAUTION]
-> Selecting "All time" may significantly impact your platform's performance if there's a large volume of content to be indexed.
+  >[!CAUTION]
+  > Selecting "All time" may significantly impact your platform's performance if there's a large volume of content to be indexed.
 
->[!TIP]
-> If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
+  >[!TIP]
+  > If you have a substantial amount of content stored in your iManage libraries that needs to be indexed with this connector, we strongly recommend creating multiple connections. Each connection should cover only a small portion of the content stored in the iManage Cloud, with different full crawl starting times. This approach helps balance content freshness and performance. For example, each connection should index content less than 1-5 million items and have a full crawl starting time different from other connections.
 
 
-4. Manage properties
+4. Manage properties <br>
 
-To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
+   To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
-|Default property|Label|Description|Schema|
-|:---|:---|:---|:---|
-| Author             | Created by              | The person who created the content | Retrieve, Search.       |
-| CC                 |                         | Carbon copy recipients  | Query, Retrieve.        |
-| CoAuthors          |                         | Other authors of the content. |                        |
-| Authors            |                         | The main authors of the content | Retrieve, Search.       |
-| Comment            |                         | Comments associated with the content | Retrieve, Search.      |
-| Content            |                         | The main body of the content | Search.                |
-| ConversationName   |                         | The name of the conversation | Retrieve, Search.      |
-| CreateDate         | Created date time       | The date and time when the content was created | Query, Retrieve.        |
-| CustomProperties   |                         | Custom properties associated with the content | Query, Retrieve.        |
-| DocumentNumber     |                         | The document number     | Query, Retrieve.        |
-| EditDate           | Last modified date time | The date and time when the content was last modified | Query, Retrieve.        |
-| Extension          | File extension          | The file extension       | Query, Retrieve.        |
-| FileCreateDate     |                         | The date and time when the file was created | Query, Retrieve.        |
-| FileEditDate       |                         | The date and time when the file was last edited | Query, Retrieve.        |
-| From               |                         | The sender of the content | Retrieve, Search.       |
-| HasAttachment      |                         | Indicates if the content has an attachment | Retrieve.               |
-| ID                |                         | The unique identifier of the content | Query, Retrieve.        |
-| LastUser           | Last modified by        | The last user who modified the content | Query, Retrieve, Search.|
-| Library            |                         | The library where the content is stored | Query, Retrieve.        |
-| Name               | File name               | The name of the file    | Retrieve, Search.       |
-| ReceivedDate       |                         | The date and time when the content was received | Query, Retrieve.        |
-| RelatedDocuments   |                         | Documents related to the content | Retrieve, Search       |
-| SentDate           |                         | The date and time when the content was sent | Query, Retrieve.        |
-| Subject            |                         | The subject of the content | Retrieve, Search.       |
-| Title              | Title                   | The title of the content | Retrieve, Search.       |
-| To                 |                         | The recipients of the content | Retrieve, Search.       |
-| Url                | url                     | The URL of the content  | Retrieve, Search.       |
-| Version            |                         | The version of the content | Query, Retrieve.        |
-| WSType             |                         | The workspace type      | Query, Retrieve.       |
-| WorkspaceName      |                         | The name of the workspace | Query, Retrieve.        |
+   |Default property|Label|Description|Schema|
+   |:---|:---|:---|:---|
+   | Author             | Created by              | The person who created the content | Retrieve, Search.       |
+   | CC                 |                         | Carbon copy recipients  | Query, Retrieve.        |
+   | CoAuthors          |                         | Other authors of the content. |                        |
+   | Authors            |                         | The main authors of the content | Retrieve, Search.       |
+   | Comment            |                         | Comments associated with the content | Retrieve, Search.      |
+   | Content            |                         | The main body of the content | Search.                |
+   | ConversationName   |                         | The name of the conversation | Retrieve, Search.      |
+   | CreateDate         | Created date time       | The date and time when the content was created | Query, Retrieve.        |
+   | CustomProperties   |                         | Custom properties associated with the content | Query, Retrieve.        |
+   | DocumentNumber     |                         | The document number     | Query, Retrieve.        |
+   | EditDate           | Last modified date time | The date and time when the content was last modified | Query, Retrieve.        |
+   | Extension          | File extension          | The file extension       | Query, Retrieve.        |
+   | FileCreateDate     |                         | The date and time when the file was created | Query, Retrieve.        |
+   | FileEditDate       |                         | The date and time when the file was last edited | Query, Retrieve.        |
+   | From               |                         | The sender of the content | Retrieve, Search.       |
+   | HasAttachment      |                         | Indicates if the content has an attachment | Retrieve.               |
+   | ID                |                         | The unique identifier of the content | Query, Retrieve.        |
+   | LastUser           | Last modified by        | The last user who modified the content | Query, Retrieve, Search.|
+   | Library            |                         | The library where the content is stored | Query, Retrieve.        |
+   | Name               | File name               | The name of the file    | Retrieve, Search.       |
+   | ReceivedDate       |                         | The date and time when the content was received | Query, Retrieve.        |
+   | RelatedDocuments   |                         | Documents related to the content | Retrieve, Search       |
+   | SentDate           |                         | The date and time when the content was sent | Query, Retrieve.        |
+   | Subject            |                         | The subject of the content | Retrieve, Search.       |
+   | Title              | Title                   | The title of the content | Retrieve, Search.       |
+   | To                 |                         | The recipients of the content | Retrieve, Search.       |
+   | Url                | url                     | The URL of the content  | Retrieve, Search.       |
+   | Version            |                         | The version of the content | Query, Retrieve.        |
+   | WSType             |                         | The workspace type      | Query, Retrieve.       |
+   | WorkspaceName      |                         | The name of the workspace | Query, Retrieve.        |
 
 ### Sync
 
