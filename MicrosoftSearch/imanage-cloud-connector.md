@@ -89,7 +89,7 @@ We support OAuth 2.0 authentication for iManage Cloud. This connector is registe
    Enter the Client ID and Client Secret to authorize the client application to connect to your instance. Use an iManage NRTADMIN account credential to authorize the application in the browser popup window.
 
 ### 4. Roll out to limited audience
-Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout,see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
+Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
 To create the connection for iManage Cloud, click **create** to publish your connection and index content from your iManage account.
 
