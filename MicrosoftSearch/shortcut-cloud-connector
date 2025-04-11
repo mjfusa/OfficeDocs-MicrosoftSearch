@@ -84,7 +84,7 @@ The Shortcut Microsoft Graph connector allows your organization to index stories
 
 #### Manage properties
 
-Add or remove available properties from your Shortcut, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below.
+To view available properties from your Shortcut, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
 |Source property|Label|Description|Schema|
 |:---|:---|:---|:---|
