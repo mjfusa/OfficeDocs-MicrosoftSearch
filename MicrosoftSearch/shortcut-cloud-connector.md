@@ -20,7 +20,7 @@ ms.date: 03/27/2025
 
 The Shortcut Microsoft Graph connector empowers your organization to index and search Shortcut stories across your enterprise. Once configured, the connector automatically crawls Shortcut’s stories, making them easily discoverable through Microsoft 365 Copilot and any Microsoft Search client.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Shortcut Microsoft Graph connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the Shortcut Microsoft Graph connector.
 
 >[!NOTE]
 >The Shortcut Microsoft Graph connector is in public preview. If you wish to get access to try it, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring in your admin account.
@@ -45,7 +45,7 @@ Create or use an existing Shortcut account to access Shortcut’s developer port
 A display name is used to identify each citation in Microsoft 365 Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Add the instance URL
-The Shortcut instance URL is always https://api.app.shortcut.com. 
+The Shortcut instance URL is always `https://api.app.shortcut.com`. 
 
 ### 3. Authentication Type
 Choose "API Key" and enter the API key that you generated within Shortcut app.
@@ -116,4 +116,4 @@ Use the preview results button to verify the sample values of the selected prope
 The refresh interval determines how often your data is synced between the data source and the Shortcut Microsoft Graph connector index. There are two types of refresh intervals - full crawl and incremental crawl. For more information, see [Refresh settings](configure-connector.md#guidelines-for-sync-settings).
 You can change the default refresh interval here if needed.
 
-If you have issues or want to provide feedback, contact [Microsoft Graph support (https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
