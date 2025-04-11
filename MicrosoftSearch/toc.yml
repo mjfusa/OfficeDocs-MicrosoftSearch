@@ -155,6 +155,10 @@ items:
           items:
           - name: Setup
             href: Dropbox-connector.md
+        - name: Freshservice
+          items:
+          - name: Setup
+            href: Freshservice-Microsoft-graph-connector.md.
         - name: Jira Cloud
           items:
             - name: Setup
