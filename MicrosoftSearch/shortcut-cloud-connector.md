@@ -53,7 +53,7 @@ Choose "API Key" and enter the API key that you generated within Shortcut app.
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. For more information, see [Staged rollout for Microsoft Graph connectors](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Shortcut. Click "Create" to publish your connection and index stories from your Shortcut account.
+To create the connection for Shortcut, click "Create" to publish your connection and index stories from your Shortcut account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Shortcut data.
 
