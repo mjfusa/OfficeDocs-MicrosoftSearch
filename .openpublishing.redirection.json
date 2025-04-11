@@ -322,7 +322,7 @@
         },
         {
             "source_path": "MicrosoftSearch/manage-dynamics365.md",
-            "redirect_url": "/MicrosoftSearch/connectors-overview",
+            "redirect_url": "/MicrosoftSearch/overview-microsoft-search",
             "redirect_document_id": true
         }
     ]
