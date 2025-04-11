@@ -333,10 +333,6 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Deploy Microsoft Graph connectors in Teams admin center
       href: connectors-deploy-teams.md
-  - name: Federated Search connectors
-    items:
-    - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
   - name: Semantic index
     items:
     - name: Semantic indexing for Microsoft 365 Copilot
