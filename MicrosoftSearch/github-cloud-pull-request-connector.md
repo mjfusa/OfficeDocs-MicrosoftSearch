@@ -35,6 +35,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - On-premises/self-hosted GitHub instances aren't currently supported.
 - Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
 - Comments and the information about the commits are not crawled.
+- The connector is designed to support GitHub Enterprise. Users on Free or Team plans may experience limited functionality or reduced support.
 
 ## Prerequisites
 
@@ -74,6 +75,8 @@ To ensure correct permission enforcement, map GitHub user identities to Microsof
   - **Name:** Maps GitHub name with Microsoft Entra ID user properties.
 
 If direct mapping fails, use **regular expressions (regex)** for transformation.
+
+For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
 
 ### Content
 On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
