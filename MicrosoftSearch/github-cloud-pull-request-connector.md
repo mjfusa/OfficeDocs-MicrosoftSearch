@@ -41,7 +41,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 Before you set up the connector:
 
 1. Make sure that your GitHub instance is accessible via API.
-2. Set up a GitHub App for authentication.
+2. Set up the GitHub App for authentication.
 3. Generate a **Client ID** and **Client secret** from the GitHub App for authentication. You can specify which organizations and repositories a GitHub app is authorized to access, effectively determining what content the connector will crawl.
 4. Verify that the user account used for authentication has access to the repositories and pull requests to be indexed.
 5. Verify that the GitHub App has the following permissions configured to read issues:
@@ -88,7 +88,7 @@ For personal accounts, mapping accuracy may be impacted due to variations in ema
 For personal accounts, mapping accuracy may be impacted due to variations in email domains and individual email visibility settings.
 
 ### Content
-On the **Content** tab, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
+In **Content**, you can verify property mappings in the sample data for metadata such as **content**, **labels**, **description**, and **timestamps**.
 
 #### Time-range fitler
 You can configure a time-range filter in the content tab. The default setting is 365 days.
