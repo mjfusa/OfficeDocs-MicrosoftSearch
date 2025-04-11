@@ -43,10 +43,10 @@ Create or use an existing Shortcut account to access Shortcut’s developer port
 
 ## Get Started
 
-### 1. Display name 
+### 1. Configure the display name 
 A display name is used to identify each citation in Microsoft 365 Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. Display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
-### 2. Instant URL
+### 2. Add the instance URL
 The Shortcut instance URL is always https://api.app.shortcut.com. 
 
 
@@ -80,7 +80,7 @@ If you want to edit any of these values, choose **Custom setup**.
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click **Custom setup**, you see **Users**, **Content**, and **Sync**.
+In custom setup you can edit any of the default values for users, content, and sync.
 
 ### Users
 
