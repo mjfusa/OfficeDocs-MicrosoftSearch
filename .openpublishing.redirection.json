@@ -322,7 +322,7 @@
         },
         {
             "source_path": "MicrosoftSearch/manage-dynamics365.md",
-            "redirect_url": "/MicrosoftSearch/overview-faqs",
+            "redirect_url": "/MicrosoftSearch/frequently-asked-questions",
             "redirect_document_id": true
         }
     ]
