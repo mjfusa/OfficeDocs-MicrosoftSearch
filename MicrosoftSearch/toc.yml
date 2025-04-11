@@ -136,7 +136,7 @@ items:
         - name: Bitbucket
           items:
           - name: Setup
-            href: bitbucket-connector.md
+            href: bitbucket-connector.md     
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -215,6 +215,10 @@ items:
           items:
           - name: Setup
             href: guru-connector.md       
+        - name: iManage Cloud
+          items:
+          - name: Setup
+            href: imanage-cloud-connector.md     
         - name: MediaWiki
           items:
           - name: Setup
@@ -277,6 +281,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Shortcut Story
+          items:
+          - name: Setup
+            href: shortcut-cloud-connector.md
         - name: Smartsheet Sheet
           items:
           - name: Setup
