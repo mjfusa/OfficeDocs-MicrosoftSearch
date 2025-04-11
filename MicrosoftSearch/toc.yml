@@ -242,7 +242,7 @@ items:
         - name: PagerDuty Escalation Policies
           items:
           - name: Setup
-            href: PagerDuty-Escalation-Policies-Microsoft-graph-connector.md
+            href: PagerDuty-Escalation-Policies-connector.md
         - name: Salesforce CRM
           items:
           - name: Setup
