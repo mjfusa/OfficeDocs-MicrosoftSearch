@@ -136,7 +136,7 @@ items:
         - name: Bitbucket
           items:
           - name: Setup
-            href: bitbucket-connector.md
+            href: bitbucket-connector.md     
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -193,13 +193,13 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub Cloud Knowledge (preview)
+        - name: GitHub
           items:
           - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
-          - name: Setup - GitHub Cloud Issue
+          - name: Setup - GitHub Cloud Issues
             href: GitHub-cloud-issue-connector.md 
-          - name: Setup - GitHub Cloud Pull Request
+          - name: Setup - GitHub Cloud Pull Requests
             href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
@@ -215,6 +215,10 @@ items:
           items:
           - name: Setup
             href: guru-connector.md       
+        - name: iManage Cloud
+          items:
+          - name: Setup
+            href: imanage-cloud-connector.md     
         - name: MediaWiki
           items:
           - name: Setup
@@ -281,6 +285,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Shortcut Story
+          items:
+          - name: Setup
+            href: shortcut-cloud-connector.md
         - name: Smartsheet Sheet
           items:
           - name: Setup
@@ -337,10 +345,6 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Deploy Microsoft Graph connectors in Teams admin center
       href: connectors-deploy-teams.md
-  - name: Federated Search connectors
-    items:
-    - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
   - name: Semantic index
     items:
     - name: Semantic indexing for Microsoft 365 Copilot
