@@ -95,15 +95,13 @@ Deploy this connection to a limited user base if you want to validate it in Copi
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with data in Egnyte. The default values settings are as follows.
 
-**Page** | **Settings** | **Default Values**
---- | ---- | ---
-Users | Access Permissions | All files that are accessible to anyone in Egnyte are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
-Content | Index Content | All published posts and pages are selected by default.
-Content | Manage Properties | To check default properties and their schema.
-Sync | Incremental Crawl | Frequency: Every 4 hours
-Sync | Full crawl | Frequency: Every day
-
-If you want to edit any of these values, you need to choose the **Custom Setup** option. 
+|Page|Settings|Default values|
+|:--- |:---- |:---|
+|Users | Access Permissions | All files that are accessible to anyone in Egnyte are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.|
+|Content | Index Content | All published posts and pages are selected by default.|
+|Content | Manage Properties | To check default properties and their schema.|
+|Sync | Incremental Crawl | Frequency: Every 4 hours|
+|Sync | Full crawl | Frequency: Every day|
 
 ## Custom Setup 
 
@@ -111,7 +109,7 @@ To edit default settings, go to **Custom setup**.
 
 ### Users 
 
-**Access permissions**
+#### Access permissions
 
 The Egnyte Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
@@ -136,22 +134,21 @@ To add or remove available properties from your Egnyte data source, assign a sch
 
 |Source Property|Label|Description|Schema|
 |:--- |:---- |:--- |:---|
-checksum	|		|	Checksum value of the current version of the file used to determine file changes	|	
-size	|		|	Size of the file in bytes of the version	|	Query
-path	|		|	Full path of the file	|	Query, Retrieve, Search
-name	|	fileName	|	Name of the file	|	Query, Retrieve, Search
-locked	|		|	Status of the lock on the file	|	Query, Retrieve, Search
-entry_id	|		|	Unique id of the current version of the file	|	
-group_id	|		|	The id to reference the file as a whole	|	
-parent_id	|		|	The id of the parent folder requested	|	
-last_modified	|	lastModifiedDateTime	|	Last modified time of the current version of a file.  "last_modified" time for the file), the upload time will be used.	If not passed during upload (for example, when willing to preserve the original "last_modified" time for the file), the upload time will be used.	|	Query, Retrieve, Search
-uploaded_by	|	createdBy	|	Username of the user that uploaded the version	|	Query, Retrieve, Search
-uploaded	|		|	Uploaded time of the current version of the file. It might be different from the "last_modified" time when the "last_modified" time is passed during upload.	|	Query, Retrieve
-num_versions	|		|	The total number of versions associated with the specific file path	|	
-url	|	 url 	|		|	Query, Retrieve
-content	|		|		|	Query
-File extension	|	fileExtension	|		|	Query, Retrieve, Search
-
+|checksum	|		|	Checksum value of the current version of the file used to determine file changes.|	
+|size	|		|	Size of the file in bytes of the version	|	Query.|
+|path	|		|	Full path of the file	|	Query, Retrieve, Search.|
+|name	|	fileName	|	Name of the file	|	Query, Retrieve, Search.|
+|locked	|		|	Status of the lock on the file	|	Query, Retrieve, Search.|
+|entry_id	|		|	Unique id of the current version of the file.|	
+|group_id	|		|	The id to reference the file as a whole.|	
+|parent_id	|		|	The id of the parent folder requested.|	
+|last_modified	|	lastModifiedDateTime	|	Last modified time of the current version of a file.  "last_modified" time for the file), the upload time will be used.	If not passed during upload (for example, when willing to preserve the original "last_modified" time for the file), the upload time will be used.	|	Query, Retrieve, Search.|
+|uploaded_by	|	createdBy	|	Username of the user that uploaded the version	|	Query, Retrieve, Search
+|uploaded	|		|	Uploaded time of the current version of the file. It might be different from the "last_modified" time when the "last_modified" time is passed during upload.	|	Query, Retrieve.|
+|num_versions	|		|	The total number of versions associated with the specific file path.|	
+|url	|	 url 	|		|	Query, Retrieve.|
+|content	|		|		|	Query.|
+|File extension	|	fileExtension	|		|	Query, Retrieve, Search.|
 
 ### Sync 
 
@@ -160,6 +157,6 @@ You can configure full and incremental crawls based on the scheduling options pr
 
 ## Next steps
 
-After you publish your connection, you can review the status under the **Data sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After you publish your connection, you can review the status under **Data sources** in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
