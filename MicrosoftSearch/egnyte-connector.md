@@ -73,7 +73,7 @@ Go to [Egnyte for developers](https://developers.egnyte.com/apps/mykeys), sign i
 ![Screenshot of the client id and secret](media/egnyte/api-key-and-scerect.png)
 
 4. Request a rate increase from Egynte
-Your new Egnyte Microsoft Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/en-us/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary. 
+Your new Egnyte Microsoft Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary. 
  
 ## Get started
 
@@ -151,4 +151,4 @@ You can configure full and incremental crawls based on the scheduling options pr
 
 After you publish your connection, you can review the status under **Data sources** in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/graph/support).
