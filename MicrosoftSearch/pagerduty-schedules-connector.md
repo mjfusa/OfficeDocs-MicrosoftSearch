@@ -43,7 +43,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
    
    ·    For M365 Enterprise, copy and paste this [URL](https://gcs.office.com/v1.0/admin/oauth/callback)
    
-   ·    For M365 Government, copy and paste this [URL](https://gcsgcc.office.com/v1.0/admin/oauth/callback)
+   ·    For M365 Government, copy and paste this [URL](https://gcsgcc.office.com/v1.0/admin/oauth/callback).
 
 7. Select the following scopes in PagerDuty new app registration setting page.
 
@@ -65,8 +65,8 @@ Choose a display name that helps users easily recognize associated files or item
 ### 2. Add the Instance REST API URL
 PagerDuty allows customers to choose the geographic service region of the PagerDuty data centers that host their account. 
 
-- For the US service region, the REST API URL is [](https://api.pagerduty.com).
-- For the EU service region, the REST API URL is [](https://api.eu.pagerduty.com).
+- For the US service region, the REST API URL is (https://api.pagerduty.com).
+- For the EU service region, the REST API URL is (https://api.eu.pagerduty.com).
 
 For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
 
