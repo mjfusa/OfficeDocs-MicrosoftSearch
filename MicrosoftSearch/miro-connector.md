@@ -24,7 +24,7 @@ The Miro Microsoft Graph connector allows your organization to index boards from
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Miro Microsoft Graph connector.
 
 >[!NOTE]
->The Miro connector is in public preview. To get access to the connector, enable the [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Miro Microsfot Graph connector is in public preview. To get access to the connector, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 
@@ -33,7 +33,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Create an agent using data source of the connection from Microsoft Copilot Studio.
 
 ## Limitations
-- Only [text item](https://developers.miro.com/docs/text-1)on the board are indexed. Content in cards, sticky notes, embeds, tags, frames, mind maps, previews, and shapes are not indexed. [Learn more](https://developers.miro.com/docs/board-items) about board item in Miro.   
+- Only [text items](https://developers.miro.com/docs/text-1) on the board are indexed. Content in cards, sticky notes, embeds, tags, frames, mind maps, previews, and shapes is not indexed. For more information, see [Miro docs for developers](https://developers.miro.com/docs/board-items).   
 - Doesn't index comments and reply.
 
 ## Prerequisites
@@ -56,18 +56,18 @@ Click **Install app and get OAuth token** and record the `Client ID` and `Client
 
 ## Get started
 
-### 1. Display name
+### 1. Configure the display name
 
 A display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is provided for this field; you can customize it to a name that users in your organization recognize.
 
-### 2. Team ID
+### 2. Add the Team ID
 
 A Miro Team ID is an identifier for a specific team within the Miro platform. To find your Team ID, sign in to Miro in a browser, go to the settings of the team from your dashboard, and copy the ID.
 
 >[!NOTE]
 > You can only associate one team ID in the connection. If you have multiple team IDs in your Miro workspace, create a separate connection.
 
-### 3. Authentication Type
+### 3. Provide the authentication Type
 
 **Miro OAuth**
 Enter the Client ID and Client secret you obtained from your Miro app. For more information, see [Get started with OAuth 2.0 and Miro](https://developers.miro.com/docs/getting-started-with-oauth).
@@ -93,11 +93,9 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 |---|---|
 | Full crawl | Frequency: Every day |
 
-If you want to edit any of these values, choose the **Custom Setup** option.
-
 ## Custom setup
 
-Custom setup is for admins who want to edit the default values for any settings. When you choose **Custom Setup**, you see three tabs: **Users**, **Content**, and **Sync**.
+In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users
 
@@ -121,21 +119,21 @@ To identify which option is best for your organization:
 You can add or remove available properties from your Miro, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), and change the semantic label and add an alias to the property. The following table lists the properties that are selected by default.
 
 |Source property|Label|Description|Schema|
-|---|---|---|---|
+|:---|:---|:---|:---|
 |	Body	|	NA	|	NA	|	Search	|
-|	CreatedAt	|	Created date time	|	Date and time that the item was created in the data source	|	Query, Retrieve	|
-|	CreatedBy	|	Created by	|	The user who created the item 	|	Query, Retrieve, Search	|
-|	Description	|	NA	|	NA	|	Query, Retrieve	|
-|	Id	|	NA	|	NA	|	Query, Retrieve	|
-|	ModifiedAt	|	Last modified date time	|	Date and time the item was last modified in the data source.	|	Query, Retrieve	|
-|	ModifiedBy	|	Last modified by	|	The user who made the last modification 	|	Query, Retrieve, Search	|
-|	Name	|	Title	|	The title of the item that you want shown in Copilot and other search experiences	|	Query, Retrieve, Search	|
-|	Team	|	NA	|	NA	|	Query, Retrieve	|
-|	ViewLink	|	url	|	The target URL of the item in the data source	|	Query, Retrieve	|
+|	CreatedAt	|	Created date time	|	Date and time that the item was created in the data source	|	Query, Retrieve.	|
+|	CreatedBy	|	Created by	|	The user who created the item 	|	Query, Retrieve, Search.	|
+|	Description	|	NA	|	NA	|	Query, Retrieve.	|
+|	Id	|	NA	|	NA	|	Query, Retrieve.	|
+|	ModifiedAt	|	Last modified date time	|	Date and time the item was last modified in the data source	|	Query, Retrieve.	|
+|	ModifiedBy	|	Last modified by	|	The user who made the last modification 	|	Query, Retrieve, Search.	|
+|	Name	|	Title	|	The title of the item that you want shown in Copilot and other search experiences	|	Query, Retrieve, Search.	|
+|	Team	|	NA	|	NA	|	Query, Retrieve.	|
+|	ViewLink	|	url	|	The target URL of the item in the data source	|	Query, Retrieve.	|
 
 #### Preview data
 
-Use the preview results button to verify the sample values of the selected properties and query filter.
+Click **preview results** to verify the sample values of the selected properties and query filter.
 
 ### Sync
 
@@ -147,29 +145,23 @@ You can change the default values of the refresh interval.
 
 The following are common errors and how to resolve them.
 
-**Required permission scopes are missing. Ensure the necessary scopes are selected in the Miro App.**
+1. Required permission scopes are missing. Ensure the necessary scopes are selected in the Miro App.
+You don't have the required permission scopes. Make sure that you selected `boards:read Read boards you have access to` in the permission field of your Apps configuration.
 
-You don't have the required permission scopes. Make sure that you selected `boards:read
-Read boards you have access to` in the permission field of your Apps configuration tab.
+2. OAuth 2.0 flow failed. Verify the credential information and make sure that the Miro App is configured with the correct settings.
+This is a common authentication error. Go back to the Miro app and verify that the OAuth2 in **Settings** is correctly configured.
 
-**OAuth 2.0 flow failed. Verify the credential information and make sure that the Miro App is configured with the correct settings.**
-
-This is a common authentication error. Go back to the Miro app and verify that the OAuth2 in the setting tab is correctly configured.
-
-**OAuth 2.0 flow failed. Confirm that the Miro user associated with this team access token holds the team admin role and is an active user.**
-
+3. OAuth 2.0 flow failed. Confirm that the Miro user associated with this team access token holds the team admin role and is an active user.
 This is a common authentication error. Go back to the Miro app console and verify that the creator has an admin role and the account status is active.
 
-**Your security credentials have expired for this session. Go back and sign in again with your App key and App secret.**
-
+4. Your security credentials have expired for this session. Go back and sign in again with your App key and App secret.
 Your credential information expired. Refresh the Miro app and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
-**Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.**
-
-This is a common credential error. Go back to the Miro App and verify that the scopes in the permission tab are correctly configured.
+5. Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.**
+This is a common credential error. Go back to the Miro App and verify that the scopes in **Permissions** are correctly configured.
 
 ## Next steps
 
-After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
+After you publish your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
-For help and support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
