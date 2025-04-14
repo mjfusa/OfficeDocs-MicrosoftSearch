@@ -40,7 +40,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ### 1. Create a Developer team for your Miro account
 
-Create or use an existing Miro account to access Miro and click the [link](https://miro.com/app/dashboard/?createDevTeam=1) to create a Developer team for your active Miro account. If your organization is on an Enterprise plan, go to [Enterprise Developer teams](https://help.miro.com/hc/en-us/articles/4766759572114). For more information, see [Create a Developer team](https://developers.miro.com/docs/create-a-developer-team).
+Create or use an existing Miro account to access Miro and click the [link](https://miro.com/app/dashboard/?createDevTeam=1) to create a Developer team for your active Miro account. If your organization is on an Enterprise plan, go to [Enterprise Developer teams](https://help.miro.com/hc/articles/4766759572114). For more information, see [Create a Developer team](https://developers.miro.com/docs/create-a-developer-team).
 
 ### 2. Create your app in Miro
 
@@ -164,4 +164,4 @@ This is a common credential error. Go back to the Miro App and verify that the s
 
 After you publish your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/graph/support).
