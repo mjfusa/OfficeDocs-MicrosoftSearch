@@ -242,7 +242,11 @@ items:
         - name: PostgreSQL
           items:
           - name: Setup
-            href: postgresql-connector.md
+            href: postgresql-connector.md    
+        - name: PagerDuty Escalation Policies
+          items:
+          - name: Setup
+            href: PagerDuty-Escalation-Policies-connector.md
         - name: Salesforce CRM
           items:
           - name: Setup
