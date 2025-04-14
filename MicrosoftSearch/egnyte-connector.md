@@ -103,7 +103,7 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |Sync | Incremental Crawl | Frequency: Every 4 hours|
 |Sync | Full crawl | Frequency: Every day.|
 
-## Custom Setup 
+## Custom setup
 In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users 
@@ -112,11 +112,8 @@ In custom setup you can edit any of the default values for users, content, and s
 The Egnyte Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 If you choose Only people with access to this data source, you need to further choose whether your  has Microsoft Entra ID provisioned users or non-AAD users. 
-
 To identify which option is suitable for your organization: 
-
 1. Choose the **Microsoft Entra ID** option if the email ID of Egnyte users is same as the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
-
 2. Choose the **non-AAD** option if the email ID of Egnyte users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 
 >[!Important]
@@ -149,9 +146,7 @@ To add or remove available properties from your Egnyte data source, assign a sch
 |File extension	|	fileExtension	|		|	Query, Retrieve, Search.|
 
 ### Sync 
-
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 4 hours, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
-
 
 ## Next steps
 

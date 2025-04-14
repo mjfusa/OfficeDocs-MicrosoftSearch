@@ -116,7 +116,7 @@ To identify which option is best for your organization:
 
 #### Manage properties
 
-You can add or remove available properties from your Miro, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), and change the semantic label and add an alias to the property. The following table lists the properties that are selected by default.
+To add or remove available properties from your Miro data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), and change the semantic label and add an alias to the property. Some properties are selected by default.
 
 |Source property|Label|Description|Schema|
 |:---|:---|:---|:---|
