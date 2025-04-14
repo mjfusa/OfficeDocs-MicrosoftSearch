@@ -41,19 +41,19 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
 4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
    
-   ·    For M365 Enterprise, copy and paste this [URL](https://gcs.office.com/v1.0/admin/oauth/callback)
+   - For M365 Enterprise, copy and paste this [URL](https://gcs.office.com/v1.0/admin/oauth/callback)
    
-   ·    For M365 Government, copy and paste this [URL](https://gcsgcc.office.com/v1.0/admin/oauth/callback).
+   - For M365 Government, copy and paste this [URL](https://gcsgcc.office.com/v1.0/admin/oauth/callback).
 
 7. Select the following scopes in PagerDuty new app registration setting page.
 
-   ·    Audit records – Read Access
+   - Audit records – Read Access
 
-   ·    Schedules – Read Access
+   - Schedules – Read Access
 
-   ·    Teams – Read Access
+   - Teams – Read Access
 
-   ·    Users – Read Access
+   - Users – Read Access
 
 8. After you successfully complete app registration in PagerDuty, copy Client ID and Client Secret.
 
@@ -90,8 +90,9 @@ Determine which users in your organization can access each item in Copilot or Se
 #### Content filter
 
 Two extra parameters can be used to specify the date range for crawling final schedule content in PagerDuty.
-•	Days Before
-•	Days After
+
+- Days Before
+- Days After
 
 The crawl start date is (Today – Days Before) and the crawl end date is (Today + Days After).
 
@@ -123,10 +124,10 @@ Only full crawl is supported by PagerDuty Schedules Microsoft Graph connector. T
 
 The following are common errors that can occur and how to resolve them.
 
-1.Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.
+1. Your security credentials have expired for this session. Please go back and sign in again with your Client ID and Client secret.
 Credential info expires. Create a new app id in PagerDuty app registration setting and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
-2. Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.
+1. Invalid credentials detected. Please check the credential info and check the permission scopes of the PagerDuty App.
 Common credential error. Go back to the PagerDuty app registration setting and check if the Client ID and Client secret have the correct permission scope.
 
 ## Next steps
