@@ -66,7 +66,7 @@ Only public solution articles with folder visibility to all are indexed using th
 #### Manage properties
 To view available properties from your iManage Cloud data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
-|Source property|Label|Description|
+|Default property|Label|Description|
 |:--- |:---- |:--- |
 |Id |Not applicable  | Unique ID of the solution article. |
 |url |`url`  | URL of the solution article. |
