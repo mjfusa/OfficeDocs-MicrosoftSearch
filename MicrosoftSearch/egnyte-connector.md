@@ -30,7 +30,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Create workflows by using this connection and actions from Microsoft Copilot Studio.
   
 ## Limitations
-- Doesn't index comments and reply.
+- Doesn't index comments and replies.
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ Go to [Egnyte for developers](https://developers.egnyte.com/apps/mykeys), sign i
 ![Screenshot of the client id and secret](media/egnyte/api-key-and-scerect.png)
 
 4. Request a rate increase from Egynte
-Your new Egnyte Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/en-us/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary. 
+Your new Egnyte Microsoft Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/en-us/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary. 
  
 ## Get started
 
@@ -101,16 +101,14 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |Content | Index Content | All published posts and pages are selected by default.|
 |Content | Manage Properties | To check default properties and their schema.|
 |Sync | Incremental Crawl | Frequency: Every 4 hours|
-|Sync | Full crawl | Frequency: Every day|
+|Sync | Full crawl | Frequency: Every day.|
 
 ## Custom Setup 
-
-To edit default settings, go to **Custom setup**.
+In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users 
 
 #### Access permissions
-
 The Egnyte Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 If you choose Only people with access to this data source, you need to further choose whether your  has Microsoft Entra ID provisioned users or non-AAD users. 
