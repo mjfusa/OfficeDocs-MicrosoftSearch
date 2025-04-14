@@ -1,5 +1,4 @@
 --- 
-
 title: "Egnyte Microsoft Graph connector (preview)" 
 ms.author: anggao
 author: ms-anggao
@@ -60,7 +59,7 @@ For Microsoft 365 Enterprise:
 For Microsoft 365 Government: 
 `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
-e.	Click "Register" when you fill all the required fields:
+e.	Click "Register" after entering all the required fields:
 
  ![Screenshot of the register button](media/egnyte/registration-complete.png)
 
