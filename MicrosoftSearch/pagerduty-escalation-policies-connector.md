@@ -59,7 +59,7 @@ Before you create a PagerDuty Escalation Policies Microsoft Graph connector, com
 
 ## Get started
 
-### 1. Choose display name   
+### 1. Configure display name   
 Choose a display name that helps users easily recognize associated files or items in a Copilot response.
 
 ### 2. Add the instance REST API URL
@@ -70,7 +70,7 @@ PagerDuty allows customers to choose the geographic service region of the PagerD
 
 For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
 
-### 3. Choose authentication type
+### 3. Provide authentication type
 Enter the Client ID and Client Secret you obtained from your PagerDuty app registration setting.
 
 ### 4. Roll out to a limited audience
