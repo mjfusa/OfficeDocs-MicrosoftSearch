@@ -36,7 +36,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - When Advanced Permissions is enabled in PagerDuty, only members of the teams linked to a specific schedule can access and search for that schedule in Microsoft Search and Microsoft 365 Copilot.
 
 ## Prerequisites
-1. Creat a PagerDuty account with administrator permission in the PagerDuty application.
+1. Create a PagerDuty account with administrator permission in the PagerDuty application.
 2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. For more information, see [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app).
 3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
 4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
@@ -68,7 +68,7 @@ Choose a display name that helps users easily recognize associated files or item
 PagerDuty allows customers to choose the geographic service region of the PagerDuty data centers that host their account. 
 
 - For US service region, REST API URL is https://api.pagerduty.com.
-- For EU service region, REST API URL is https://api.eu.pagerduty.com.
+- For EU service region, REST API URL is (https://api.eu.pagerduty.com).
 
 For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
 
