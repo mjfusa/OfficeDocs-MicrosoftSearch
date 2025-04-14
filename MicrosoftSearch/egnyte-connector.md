@@ -42,15 +42,15 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
       a. Go to [Egnyte for developers](https://developers.egnyte.com/member/register) in the Egnyte developer portal and enter all required fields.  
          
-         ![Screenshot of how to register a developer account.](media/egnyte/register-a-developer-account.png)
+      ![Screenshot of how to register a developer account.](media/egnyte/register-a-developer-account.png)
 
       b. Email: Use the admin email you own in your Egnyte workspace  
          
-         ![Screenshot of the filed email in developer account reqisteration page.](media/egnyte/email.png)
+      ![Screenshot of the filed email in developer account reqisteration page.](media/egnyte/email.png)
 
       c. Company website: {your domain name}.egnyte.com  
          
-         ![Screenshot of the company website.](media/egnyte/company-website.png)
+      ![Screenshot of the company website.](media/egnyte/company-website.png)
 
    d. Registered OAuth Redirect URI:
 
@@ -62,7 +62,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
    e. Click "Register" after entering all the required fields:  
    
-      ![Screenshot of the register button.](media/egnyte/registration-complete.png)
+         ![Screenshot of the register button.](media/egnyte/registration-complete.png)
 
    f. You'll receive a confirmation email within 24 hrs, if you can't find the message in your box, check your spam folder or click "resend" to check the confirmation email.  
       
