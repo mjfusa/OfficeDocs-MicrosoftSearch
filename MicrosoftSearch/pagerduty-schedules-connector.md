@@ -67,8 +67,8 @@ Choose a display name that helps users easily recognize associated files or item
 ### 2. Add the Instance REST API URL
 PagerDuty allows customers to choose the geographic service region of the PagerDuty data centers that host their account. 
 
-- For US service region, REST API URL is (https://api.pagerduty.com).
-- For EU service region, REST API URL is (https://api.eu.pagerduty.com).
+- For the US service region, the REST API URL is [](https://api.pagerduty.com).
+- For the EU service region, the REST API URL is [](https://api.eu.pagerduty.com).
 
 For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
 
