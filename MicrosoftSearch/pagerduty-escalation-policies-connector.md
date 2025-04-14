@@ -39,21 +39,21 @@ Before you create a PagerDuty Escalation Policies Microsoft Graph connector, com
 
 1. Create a PagerDuty account with administrator permission in the PagerDuty app.
 2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. For more information, see [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app).
-3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
-4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
+3. Select 'Scoped OAuth' in PagerDuty new app registration setting page.
+4. Use the following links for the field 'Redirect URL' in PagerDuty new app registration setting page.
 
-   ·    For M365 Enterprise, copy and paste this URL 
+   - For M365 Enterprise, copy and paste this URL 
    https://gcs.office.com/v1.0/admin/oauth/callback
    
-   ·    For M365 Government, copy and paste this URL
+   - For M365 Government, copy and paste this URL
    https://gcsgcc.office.com/v1.0/admin/oauth/callback
 
 7. Select the following scopes in PagerDuty new app registration setting page.
 
-   ·    Audit records – Read Access
-   ·    Escalation Policies – Read Access
-   ·    Teams – Read Access
-   ·    Users – Read Access
+   - Audit records – Read Access
+   - Escalation Policies – Read Access
+   - Teams – Read Access
+   - Users – Read Access
 
 8. After you successfully complete app registration in PagerDuty, copy Client ID and Client Secret.
 
