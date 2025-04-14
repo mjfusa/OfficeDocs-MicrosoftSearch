@@ -67,7 +67,7 @@ Choose a display name that helps users easily recognize associated files or item
 ### 2. Add the Instance REST API URL
 PagerDuty allows customers to choose the geographic service region of the PagerDuty data centers that host their account. 
 
-- For US service region, REST API URL is https://api.pagerduty.com.
+- For US service region, REST API URL is (https://api.pagerduty.com).
 - For EU service region, REST API URL is (https://api.eu.pagerduty.com).
 
 For more information, see [Service regions](https://support.pagerduty.com/main/docs/service-regions).
@@ -101,7 +101,7 @@ The crawl start date is (Today – Days Before) and the crawl end date is (Today
 To view available properties from your iManage Cloud, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
 |Source property|Label|Description|
-|--- | ---- | --- |
+|:---- |:---- |:---- |
 |Id |Not applicable  | Unique ID of the schedule. |
 |HtmlUrl |`url`  | URL of the schedule in PagerDuty. |
 |IconUrl |`IconUrl` |  |
