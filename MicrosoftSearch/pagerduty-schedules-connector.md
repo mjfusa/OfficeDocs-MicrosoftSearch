@@ -38,8 +38,8 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 1. Create a PagerDuty account with administrator permission in the PagerDuty application.
 2. Add a new app in PagerDuty with OAuth 2.0 functionality enabled. For more information, see [OAuth Functionality](https://developer.pagerduty.com/docs/oauth-functionality) and [Register an App](https://developer.pagerduty.com/docs/register-an-app).
-3. Select ‘Scoped OAuth’ in PagerDuty new app registration setting page.
-4. Use the following links for the field ‘Redirect URL’ in PagerDuty new app registration setting page.
+3. Select 'Scoped OAuth' in PagerDuty new app registration setting page.
+4. Use the following links for the field 'Redirect URL' in PagerDuty new app registration setting page.
    
    - For M365 Enterprise, copy and paste this [URL](https://gcs.office.com/v1.0/admin/oauth/callback)
    
@@ -77,7 +77,7 @@ Enter the Client ID and Client Secret you obtained from your PagerDuty app regis
 Deploy this connection to a limited user base to validate it in Copilot and other search surfaces before you roll it out to a broader audience.
 
 ## Custom setup 
-In custom setup you can edit any of the default values for users, content, and sync.
+In custom setup, you can edit any of the default values for users, content, and sync.
 
 ### Users 
 
@@ -112,7 +112,7 @@ To view available properties from your iManage Cloud, assign a schema to the pro
 |LastModifiedBy	| `lastModifiedBy` | The name of the user who last modified the schedule. |
 |LastModifiedDateTime	| `lastModifiedDateTime` | The time at which the schedule was last modified. |
 |Name	| `title` | The name of the schedule. |
-|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this property is identical to `name`, though it is not intended to be an identifier. |
+|Summary	| Not applicable | A short-form, server-generated string by PagerDuty that provides succinct, important information about an object suitable for primary labeling of an entity in a client. In many cases, this property is identical to `name`, though it isn't intended to be an identifier. |
 |Timezone	| Not applicable | The time zone of the schedule. |
 |Usage	| Not applicable | The escalation policies associated with the schedule. |
 
