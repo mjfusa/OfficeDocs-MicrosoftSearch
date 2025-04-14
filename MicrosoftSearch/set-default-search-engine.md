@@ -19,7 +19,7 @@ ms.date: 01/08/2019
 # Make Bing the default search engine
   
 > [!IMPORTANT]
-> Beginning March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online will be the new homes for Microsoft Search. Microsoft Search in Bing will no longer be available. We encourage Microsoft Search in Bing users to update your bookmarks now. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
+> As of March 31, 2025, M365.cloud.microsoft (formerly Office.com and Microsoft365.com) and SharePoint Online are the new homes for Microsoft Search. Microsoft Search in Bing is no longer available. We encourage Microsoft Search in Bing users to update your bookmarks. [Learn more](/microsoftsearch/retirement-microsoft-search-bing). 
 
 This article explains how you can make Bing the default search engine for Microsoft Edge, Google Chrome, and Internet Explorer. 
   
