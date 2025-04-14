@@ -56,11 +56,11 @@ Click **Install app and get OAuth token** and record the `Client ID` and `Client
 
 ## Get started
 
-### 1. Configure the display name
+### 1. Configure display name
 
 A display name is used to identify each citation in Copilot to help users easily recognize the associated file or item. The display name also signifies trusted content and is used as a [content source filter](/MicrosoftSearch/custom-filters#Content-source-filters). A default value is provided for this field; you can customize it to a name that users in your organization recognize.
 
-### 2. Add the Team ID
+### 2. Add Team ID
 
 A Miro Team ID is an identifier for a specific team within the Miro platform. To find your Team ID, sign in to Miro in a browser, go to the settings of the team from your dashboard, and copy the ID.
 
