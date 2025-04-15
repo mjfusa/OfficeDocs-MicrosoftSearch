@@ -87,7 +87,7 @@ items:
           items:
           - name: Setup
             href: 15five-priorities-connector.md
-         - name: Adobe Experience Manager Sites
+        - name: Adobe Experience Manager Sites
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
