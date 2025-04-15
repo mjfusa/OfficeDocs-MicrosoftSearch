@@ -79,10 +79,6 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
-        - name: Aha! Cloud
-          items:
-          - name: Setup
-            href: aha-cloud-connector.md
         - name: 15Five High Fives
           items:
           - name: Setup
@@ -91,7 +87,7 @@ items:
           items:
           - name: Setup
             href: 15five-priorities-connector.md
-        - name: Adobe Experience Manager Sites
+         - name: Adobe Experience Manager Sites
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
@@ -99,6 +95,10 @@ items:
           items:
           - name: Setup
             href: aem-assets-cloud-connector.md        
+        - name: Aha!
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: Asana
           items:
           - name: Setup
