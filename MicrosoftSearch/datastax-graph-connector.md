@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: mssearch 
 ms.localizationpriority: medium 
 search.appverid: 
-description: "Set up the DataStax Microsoft Graph connector for Microsoft 365 Copilot." 
+description: "Set up the DataStax Microsoft Graph connector for Microsoft 365 Copilot and Microsoft Search." 
 ms.date: 04/08/2025
 ---
 
@@ -20,7 +20,6 @@ The DataStax Microsoft Graph connector allows your organization to index records
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an DataStax Microsoft Graph connector.
 
 ## Capabilities
-
 - Index records in DataStax Astra DB collections.
 - Enable your users to ask for advices based on the knowledge from DataStax in Copilot. For example, you have configured the connector to access the collection of movie reviews in DataStax:
    - Recommend a movie based on review texts and your interest.
@@ -50,8 +49,6 @@ To connect to your DataStax database, you need the DataStax API Endpoint. The en
 
 ### 3. Add the DataStax database ID
 To connect to your DataStax database, you need the DataStax database ID. The database ID can be found in the overview of your database.
-
-
 
 ### 4. Generate the Application Token
 To use **DataStax Application Token** for authentication, a DataStax admin needs to generate the application token for the database with a proper user role, such as using "Read Only User".
