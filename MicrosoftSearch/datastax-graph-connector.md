@@ -17,11 +17,11 @@ ms.date: 04/08/2025
 
 The DataStax Microsoft Graph connector allows your organization to index records in your DataStax Astra DB collections. After you configure the connector and index content from the DataStax databases, users can search for those items in Microsoft 365 Copilot.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an DataStax Microsoft Graph connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the DataStax Microsoft Graph connector.
 
 ## Capabilities
 - Index records in DataStax Astra DB collections.
-- Enable your users to ask for advices based on the knowledge from DataStax in Copilot. For example, you have configured the connector to access the collection of movie reviews in DataStax:
+- Enable your users to ask for advice based on the knowledge from DataStax in Copilot. For example, you have configured the connector to access the collection of movie reviews in DataStax:
    - Recommend a movie based on review texts and your interest.
    - Summarize the review text on movie Paa.
    - Identify the movie generating heated discussions.
@@ -54,7 +54,7 @@ To use **DataStax Application Token** for authentication, a DataStax admin needs
 
 [![Screenshot that shows the DataStax API Endpoint, Database ID and Generate Token in the Astra DB overview.](media/datastax-api-endpoint.png)](media/datastax-api-endpoint.png#lightbox)
 
-Copy the generated applicationa token from the token details which is typically a long string starts with "AstraCS:..." and paste it in the connector setup. Choose **Authorize**, and use the same token to authenticate permission to crawl.
+Copy the generated application token from the token details which is typically a long string starts with "AstraCS:..." and paste it in the connector setup. Choose **Authorize**, and use the same token to authenticate permission to crawl.
 
 ### 5. Roll out to a limited audience
 Deploy the connection to a limited user base if you want to validate it in Copilot and other Search surfaces before you roll it out to a broader audience. For more information, see [Staged rollout for connectors](staged-rollout-for-graph-connectors.md).
