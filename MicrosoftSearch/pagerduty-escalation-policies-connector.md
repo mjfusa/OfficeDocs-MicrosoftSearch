@@ -22,9 +22,6 @@ The PagerDuty Escalation Policies Microsoft Graph connector enables your organiz
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the PagerDuty Escalation Policies Microsoft Graph connector. 
 
-> [!NOTE]
-> The PagerDuty Escalation Policies Microsoft Graph connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
-
 ## Capabilities
 - Access PagerDuty escalation policies in Copilot using the power of Semantic search.
 - Retain ACLs defined by your organization.
