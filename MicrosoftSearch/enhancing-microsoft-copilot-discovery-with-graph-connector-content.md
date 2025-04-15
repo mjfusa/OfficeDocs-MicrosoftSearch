@@ -30,12 +30,12 @@ Pay attention to assigning a **representative and concise name** to each connect
 
 For Microsoft-built connectors, you have the flexibility to **modify the connection name and description** in the admin portal at any time to reflect updates or changes in the content. These modifications are swiftly propagated to the system, typically within minutes.
 
-1. Go to the M365 Admin portal. In the navigation pane, select **Settings**, and then select **Search & intelligence**. 
+1. Go to the Microsoft 365 Copilot Admin portal. In the navigation pane, select **Settings**, and then select **Search & intelligence**. 
    2. Select [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
    3. Select the connector that you would like to update the description for and click 'Edit' at the bottom of the right panel.
       ![Connection details pane](/MicrosoftSearch/media/connection-details-pane.png)
 
-   4. In the 'Name and ID' step, you will find the description field. Add a description that best fits your organization's scenarios.
+   4. In the 'Name and ID' step, you can find the description field. Add a description that best fits your organization's scenarios.
       ![Update the connection description](/MicrosoftSearch/media/update-the-connection-description.png)
 
    >[!Note]
@@ -67,5 +67,5 @@ Here are three examples of effective connection names and descriptions:
 
    _The content in this connection can also be referred to as SFDC, Salesforce data or Salesforce Sales cloud._
    
-1. **BambooHR**: *This connection to BambooHR people data populates profiles of people in M365 experiences like Teams or CoPilot. It is used to see or query about e.g. titles, emails, birthdays and other people related data.*
+1. **BambooHR**: *This connection to BambooHR people data populates profiles of people in Microsoft 365 Copilot experiences like Teams or CoPilot. It's used to see or query about e.g., titles, emails, birthdays, and other people-related data.*
 
