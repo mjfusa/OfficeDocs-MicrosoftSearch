@@ -41,7 +41,7 @@ Before you create a PagerDuty Escalation Policies Microsoft Graph connector, com
 
    - For M365 Enterprise, use `https://gcs.office.com/v1.0/admin/oauth/callback`
    
-   - For M365 Government, `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
+   - For M365 Government, use `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
 7. Select the following scopes in PagerDuty new app registration setting page.
 
