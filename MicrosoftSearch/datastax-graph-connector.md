@@ -26,7 +26,6 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
    - Summarize the review text on movie Paa.
    - Identify the movie generating heated discussions.
 
-
 ## Limitations
 - The connector doesn't index Non-Vector DB.
 - The connector doesn't index Langflow.
@@ -77,11 +76,9 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 |---|---|
 | Full crawl | Runs every day. |
 
-If you want to edit any of these values, choose the **Custom setup** option.
-
 ## Custom setup
 
-Custom setup is for admins who want to edit the default values for any settings. When you choose **Custom setup**, you see three other tabs: **Users**, **Content**, and **Sync**. 
+In custom setup you can edit any of the default values for users, content, and sync.
 
 ### Users
 
@@ -106,19 +103,18 @@ To identify which option is best for your organization:
 
 #### Manage properties
 
-You can add or remove available properties from your DataStax, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. The following table lists the default properties.
+To view available properties from your DataStax data source, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias in the property. Some properties are selected by default.
 
-|Source property|Label|Description|Schema|
-|---|---|---|---|
-| Collection | Not applicable | The collection name | Query, Retrieve, Search |
-| Content | Not applicable | The record in the collection | Search |
-| IconUrl | IconUrl | The icon url of the record | Retrieve |
-| Id | url | The record ID in the collection | Query, Retrieve |
-| Keyspace | Not applicable | The person who created this task | Query, Retrieve, Search |
-| Title | Title | The title created by combining the collection name and the record ID  | Query, Retrieve, Search |
+|Default property|Label|Description|Schema|
+|:---|:---|:---|:---|
+| Collection | Not applicable | The collection name | Query, Retrieve, Search. |
+| Content | Not applicable | The record in the collection | Search. |
+| IconUrl | IconUrl | The icon url of the record | Retrieve. |
+| Id | url | The record ID in the collection | Query, Retrieve. |
+| Keyspace | Not applicable | The person who created this task | Query, Retrieve, Search. |
+| Title | Title | The title created by combining the collection name and the record ID  | Query, Retrieve, Search. |
 
 #### Preview data
-
 Use the preview results button to verify the sample values of the selected properties and query filter.
 
 ### Sync
@@ -130,6 +126,6 @@ The refresh interval determines how often your data is synced between the data s
 You can change the default values of the refresh interval.
 
 ## Next steps
-After you publish your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After you publish your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
