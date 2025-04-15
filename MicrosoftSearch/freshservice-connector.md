@@ -23,9 +23,6 @@ The Freshservice Microsoft Graph connector enables your organization to index Fr
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the Freshservice Microsoft Graph connector. 
 
-> [!NOTE]
-> The Freshservice Microsoft Graph connector is in preview.  If you wish to get access to try it, enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account..
-
 ## Capabilities
 - Access Freshservice solution articles using the power of semantic search.
 - Customize your crawl frequency.
