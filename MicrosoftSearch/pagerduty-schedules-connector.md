@@ -23,9 +23,6 @@ The PagerDuty Schedules Microsoft Graph connector enables your organization to i
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the PagerDuty Schedules Microsoft Graph connector. 
 
-> [!NOTE]
-> The PagerDuty Schedules Microsoft Graph connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
-
 ## Capabilities
 - Access PagerDuty schedules in Copilot using the power of Semantic search.
 - Retain ACLs defined by your organization.
