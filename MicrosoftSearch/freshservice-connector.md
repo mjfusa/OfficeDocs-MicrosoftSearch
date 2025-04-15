@@ -43,7 +43,7 @@ Choose a display name that helps users easily recognize associated files or item
 ### 2. Add the domain URL
 Enter the domain URL of your Freshservice account.
 
-### 3. Choose authentication type
+### 3. Provide authentication type
 Select the available authentication type and enter the API key you obtained from your Freshservice user profile setting page.
 
 ### 4. Roll out to a limited audience
@@ -80,7 +80,7 @@ To view available properties from your iManage Cloud data source, assign a schem
 |Tags	|  | The tags associated with the solution article. |
 
 ### Sync 
-Only full crawl is supported by Freshservice connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
+Only full crawl is supported by the Freshservice Microsoft Graph connector. The default schedule of the full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs. 
 
 ## Troubleshooting
 The following are common errors that can occur and how to resolve them.
