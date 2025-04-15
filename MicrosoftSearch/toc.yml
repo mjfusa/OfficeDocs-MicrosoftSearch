@@ -151,10 +151,18 @@ items:
               href: troubleshoot-confluence-onpremises-connector.md
             - name: License agreement for Microsoft Graph connector plugin for Confluence
               href: graph-connector-atlassian-plugin-eula.md
+        - name: DataStax
+          items:
+          - name: Setup
+            href: datastax-graph-connector.md
         - name: Dropbox
           items:
           - name: Setup
             href: Dropbox-connector.md
+        - name: Freshservice
+          items:
+          - name: Setup
+            href: freshservice-connector.md
         - name: Jira Cloud
           items:
             - name: Setup
