@@ -34,11 +34,11 @@ For Microsoft-built connectors, you have the flexibility to **modify the conne
    2. Select [Data sources](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/Connectors).
    3. Select the connector that you would like to update the description for and click 'Edit' at the bottom of the right panel.
 
-      ![Screenshot that shows Connection details pane.](/MicrosoftSearch/media/connection-details-pane.png)
+      [![Screenshot that shows Connection details pane.](/MicrosoftSearch/media/connection-details-pane.png)](/MicrosoftSearch/media/connection-details-pane.png#lightbox)
 
    4. In the 'Name and ID' step, you can find the description field. Add a description that best fits your organization's scenarios.
       
-      ![Screenshot that shows Update the connection description](/MicrosoftSearch/media/update-the-connection-description.png)
+      [![Screenshot that shows Update the connection description](/MicrosoftSearch/media/update-the-connection-description.png)](/MicrosoftSearch/media/update-the-connection-description.png#lightbox)
 
    >[!Note]
    >1. Microsoft Graph connectors for Jira, ServiceNow Tickets, ADO Work Items, and Salesforce have a default description tailored to the generic use of the connectors.
