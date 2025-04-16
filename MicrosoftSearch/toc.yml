@@ -79,10 +79,6 @@ items:
       - name: Prebuilt Microsoft Graph connectors
         href: pre-built-connectors-overview.md
         items:
-        - name: Aha! Cloud
-          items:
-          - name: Setup
-            href: aha-cloud-connector.md
         - name: 15Five High Fives
           items:
           - name: Setup
@@ -99,6 +95,10 @@ items:
           items:
           - name: Setup
             href: aem-assets-cloud-connector.md        
+        - name: Aha!
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: Asana
           items:
           - name: Setup
@@ -136,7 +136,7 @@ items:
         - name: Bitbucket
           items:
           - name: Setup
-            href: bitbucket-connector.md
+            href: bitbucket-connector.md     
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -151,10 +151,18 @@ items:
               href: troubleshoot-confluence-onpremises-connector.md
             - name: License agreement for Microsoft Graph connector plugin for Confluence
               href: graph-connector-atlassian-plugin-eula.md
+        - name: DataStax
+          items:
+          - name: Setup
+            href: datastax-graph-connector.md
         - name: Dropbox
           items:
           - name: Setup
             href: Dropbox-connector.md
+        - name: Freshservice
+          items:
+          - name: Setup
+            href: freshservice-connector.md
         - name: Jira Cloud
           items:
             - name: Setup
@@ -215,6 +223,10 @@ items:
           items:
           - name: Setup
             href: guru-connector.md       
+        - name: iManage Cloud
+          items:
+          - name: Setup
+            href: imanage-cloud-connector.md     
         - name: MediaWiki
           items:
           - name: Setup
@@ -238,7 +250,11 @@ items:
         - name: PostgreSQL
           items:
           - name: Setup
-            href: postgresql-connector.md
+            href: postgresql-connector.md    
+        - name: PagerDuty Escalation Policies
+          items:
+          - name: Setup
+            href: PagerDuty-Escalation-Policies-connector.md
         - name: Salesforce CRM
           items:
           - name: Setup
@@ -277,6 +293,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Shortcut Story
+          items:
+          - name: Setup
+            href: shortcut-cloud-connector.md
         - name: Smartsheet Sheet
           items:
           - name: Setup
@@ -333,10 +353,6 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Deploy Microsoft Graph connectors in Teams admin center
       href: connectors-deploy-teams.md
-  - name: Federated Search connectors
-    items:
-    - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
   - name: Semantic index
     items:
     - name: Semantic indexing for Microsoft 365 Copilot
