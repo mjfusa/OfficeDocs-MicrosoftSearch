@@ -23,8 +23,8 @@ The Miro Microsoft Graph connector allows your organization to index boards from
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Miro Microsoft Graph connector.
 
->[!NOTE]
->The Miro Microsfot Graph connector is in public preview. To get access to the connector, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+> [!NOTE]
+> The Miro Microsfot Graph connector is in public preview. To get access to the connector, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 
@@ -64,12 +64,13 @@ A display name is used to identify each citation in Copilot to help users easily
 
 A Miro Team ID is an identifier for a specific team within the Miro platform. To find your Team ID, sign in to Miro in a browser, go to the settings of the team from your dashboard, and copy the ID.
 
->[!NOTE]
+> [!NOTE]
 > You can only associate one team ID in the connection. If you have multiple team IDs in your Miro workspace, create a separate connection.
 
 ### 3. Provide the authentication Type
 
 **Miro OAuth**
+
 Enter the Client ID and Client secret you obtained from your Miro app. For more information, see [Get started with OAuth 2.0 and Miro](https://developers.miro.com/docs/getting-started-with-oauth).
 
 ### 4. Roll out to limited audience
@@ -157,7 +158,7 @@ This is a common authentication error. Go back to the Miro app console and verif
 4. Your security credentials have expired for this session. Go back and sign in again with your App key and App secret.
 Your credential information expired. Refresh the Miro app and copy the latest Client ID and Client secret from the setting tab to authenticate.
 
-5. Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.**
+5. Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.
 This is a common credential error. Go back to the Miro App and verify that the scopes in **Permissions** are correctly configured.
 
 ## Next steps
