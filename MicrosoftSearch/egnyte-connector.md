@@ -43,15 +43,15 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
    1. Go to [Egnyte for developers](https://developers.egnyte.com/member/register) in the Egnyte developer portal and enter all required fields.  
 
-   :::image type="content" alt-text="Screenshot of how to register a developer account." source="media/egnyte/register-a-developer-account.png" lightbox="media/egnyte/register-a-developer-account.png":::
+      :::image type="content" alt-text="Screenshot of how to register a developer account." source="media/egnyte/register-a-developer-account.png" lightbox="media/egnyte/register-a-developer-account.png":::
 
    1. Email: Use the admin email you own in your Egnyte workspace  
 
-   :::image type="content" alt-text="Screenshot of the filed email in developer account reqisteration page." source="media/egnyte/email.png" lightbox="media/egnyte/email.png":::
+      :::image type="content" alt-text="Screenshot of the filed email in developer account reqisteration page." source="media/egnyte/email.png" lightbox="media/egnyte/email.png":::
 
    1. Company website: {your domain name}.egnyte.com  
 
-   :::image type="content" alt-text="Screenshot of the company website." source="media/egnyte/company-website.png" lightbox="media/egnyte/company-website.png":::
+      :::image type="content" alt-text="Screenshot of the company website." source="media/egnyte/company-website.png" lightbox="media/egnyte/company-website.png":::
 
    1. Registered OAuth Redirect URI:
 
@@ -66,14 +66,14 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
    1. You'll receive a confirmation email within 24 hrs, if you can't find the message in your box, check your spam folder or click "resend" to check the confirmation email.  
 
-   :::image type="content" alt-text="Screenshot of the confirmation email." source="media/egnyte/Email-confirmation.png" lightbox="media/egnyte/Email-confirmation.png":::
+      :::image type="content" alt-text="Screenshot of the confirmation email." source="media/egnyte/Email-confirmation.png" lightbox="media/egnyte/Email-confirmation.png":::
 
 3. Obtain the client ID and secret from the developer account.  
    Go to [Egnyte for developers](https://developers.egnyte.com/apps/mykeys), sign in to the developer account you created in step 2. Record the **key** and **secret** for the Microsoft Graph connector setup.  
 
    :::image type="content" alt-text="Screenshot of the client id and secret" source="media/egnyte/api-key-and-scerect.png" lightbox="media/egnyte/api-key-and-scerect.png":::
 
-4. Request a rate increase from Egynte  
+4. Request a rate increase from Egynte. 
    Your new Egnyte Microsoft Graph Connector connects your Engyte system with the Microsoft Graph. It's important to review the thresholds Egnyte imposes on data access and synchronization, with more information available [here](https://helpdesk.egnyte.com/hc/articles/17683455594125-Public-API-Usage-Restrictions-by-Plan). Please determine your existing rate limit (by signing into your Egnyte developer account) and contact Egnyte support to procure increases if necessary.
 
 
@@ -114,13 +114,15 @@ The Egnyte Microsoft Graph connector supports data visible to Only people with a
 
 If you choose Only people with access to this data source, you need to further choose whether your  has Microsoft Entra ID provisioned users or non-AAD users. 
 To identify which option is suitable for your organization: 
+
 1. Choose the **Microsoft Entra ID** option if the email ID of Egnyte users is same as the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
+
 2. Choose the **non-AAD** option if the email ID of Egnyte users is **different** from the UserPrincipalName (UPN) of users in Microsoft Entra ID.
 
->[!Important]
->- If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from Egnyte directly to UPN property from Microsoft Entra ID.
->- If you chose "non-AAD" for the identity type see Map your non-Azure AD Identities for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
->- Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions. 
+> [!Important]
+> - If you choose Microsoft Entra ID as the type of identity source, the connector maps the email IDs of users obtained from Egnyte directly to UPN property from Microsoft Entra ID.
+> - If you chose "non-AAD" for the identity type see Map your non-Azure AD Identities for instructions on mapping the identities. You can use this option to provide the mapping regular expression from email ID to UPN.
+> - Updates to users or groups governing access permissions are synced in full crawls only. Incremental crawls do not currently support the processing of updates to permissions. 
 
 ### Content
 
