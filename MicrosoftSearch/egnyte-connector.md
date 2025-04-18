@@ -61,7 +61,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
       - For Microsoft 365 Government:  
         `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
-   1. Click "Register" after entering all the required fields
+   1. Select **Register** after entering all the required fields
 
 
    1. You'll receive a confirmation email within 24 hrs, if you can't find the message in your box, check your spam folder or click "resend" to check the confirmation email.  
@@ -80,18 +80,23 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Get started
 
 ### 1. Choose a display name
+
 Choose a display name that helps users easily recognize associated files or items in a Copilot response.
 
 ### 2. Add the instance URL
-http://{your company domain}.egnyte.com
+
+`http://<your company domain>.egnyte.com`
 
 ### 3. Provide authentication type
+
 Enter the client ID and client secret you obtained from your developer account
 
 ### 4. Roll out to a limited audience
+
 Deploy this connection to a limited user base to validate it in Copilot and other search surfaces before you roll it out to a broader audience.
 
 ### 5. Roll out to limited audience
+
 Deploy this connection to a limited user base if you want to validate it in Copilot and other search surfaces before expanding the rollout to a broader audience.
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with data in Egnyte. The default values settings are as follows.
@@ -105,11 +110,13 @@ For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl
 |Sync | Full crawl | Frequency: Every day.|
 
 ## Custom setup
+
 In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users 
 
 #### Access permissions
+
 The Egnyte Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 If you choose Only people with access to this data source, you need to further choose whether your  has Microsoft Entra ID provisioned users or non-AAD users. 
@@ -149,6 +156,7 @@ To add or remove available properties from your Egnyte data source, assign a sch
 |File extension	|	fileExtension	|		|	Query, Retrieve, Search.|
 
 ### Sync 
+
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 4 hours, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
 
 ## Next steps
