@@ -60,9 +60,8 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
       - For Microsoft 365 Government:  
         `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
 
-   e. Click "Register" after entering all the required fields:  
+   e. Click "Register" after entering all the required fields
 
-   ![Screenshot of the register button.](media/egnyte/registration-complete.png)
 
    f. You'll receive a confirmation email within 24 hrs, if you can't find the message in your box, check your spam folder or click "resend" to check the confirmation email.  
 
