@@ -183,6 +183,10 @@ items:
             href: csv-connector.md
           - name: Troubleshooting
             href: troubleshoot-csv-connector.md
+        - name: Egnyte
+          items:
+          - name: Setup
+            href: egnyte-connector.md
         - name: Enterprise websites Cloud
           items:
           - name: Setup
