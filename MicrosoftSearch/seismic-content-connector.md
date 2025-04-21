@@ -1,6 +1,6 @@
 --- 
 
-title: "Seismic Content Graph connector" 
+title: "Seismic Content Microsoft Graph connector" 
 ms.author: depang
 author: dennypanggh
 manager: jecui
@@ -13,18 +13,18 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the Seismic Content Graph connector for Microsoft Search and Microsoft 365 Copilot" 
+description: "Set up the Seismic Content Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 03/13/2025
 ---
 
 # Seismic Content Microsoft Graph connector (Preview)
 
-The Seismic Content Graph connector allows your organization to index content from Seismic. After you configure the connector, end users can search for these content from Seismic in Microsoft Copilot and from any Microsoft Search client.
+The Seismic Content Microsoft Graph connector allows your organization to index content from Seismic. After you configure the connector, end users can search for this content from Seismic in Microsoft Copilot and any Microsoft Search client.
  
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Seismic Content Graph connector.
 
 >[!NOTE]
->The Seismic Content connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
+>The Seismic Content Microsoft Graph connector is in public preview. If you wish to get access to try it, you need to enable [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
 
 ## Capabilities
 - Index Seismic content from Seismic Content Enterprise edition.
@@ -32,26 +32,24 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Limitations
 - Only content from the Seismic Content Enterprise edition will be indexed.
-- Only content that has been published will be indexed. Any content that has not been published in WorkSpace will not be indexed.
-- Seismic content crawled is public to everyone in your organization in Microsoft 365 products such as Copilot and Microsoft Search due to Seismic API restrictions.
+- Only content that has been published is indexed. Any content that has not been published in Workspace isn't indexed.
+- To connect to Seismic Content and allow the Microsoft Graph connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Seismic Content instance URL**: To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
-- **Seismic Content account**: To connect to Seismic Content and allow the Microsoft Graph connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access public content and metadata.
+- To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
+- To connect to Seismic Content and allow the Microsoft Graph connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access public content and metadata.
 
 ## Get Started
 
-### 1. Display name 
+### 1. Choose display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
-### 2. Seismic Content instance URL
+### 2. Add the Seismic Content instance URL
 The Seismic Content instance URL is essential to correctly access and update data from, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
 By the instance URL, the Graph Connector can reliably synchronize data changes and ensure accurate content delivery from Seismic Content to connected Microsoft 365.
 
-### 3. Authentication Type
-
-**Seismic OAuth**
+### 3. Provide authentication Type
 
 We support the OAuth 2.0 authentication for Seismic Content. To use the Seismic OAuth for authentication, follow these steps.
 
@@ -59,21 +57,20 @@ A Seismic administrator needs to create an OAuth client in the [Seismic App Regi
 
 The following table provides the mandatory values for OAuth client creation:
 
-Field | Description | Recommended Value
---- | --- | ---
-Authentication Method | The OAuth 2 Authentication Method to authenticate and authorize users securely | OAuth2 - Authorization Code Flow (User Authentication)
-Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  
-Scopes | The scopes to create a new version and a new client id and secret. | Below scopes are mandatory: seismic.user.view, seismic.configuration.view, seismic.reporting, seismic.library.view 
+|Field | Description | Recommended value|
+|:--- |:--- |:--- |
+|Authentication Method | The OAuth 2 Authentication Method to authenticate and authorize users securely | OAuth2 - Authorization Code Flow (User Authentication)|
+|Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  |
+|Scopes | The scopes to create a new version and a new client ID and secret. | Below scopes are mandatory: seismic.user.view, seismic.configuration.view, seismic.reporting, seismic.library.view |
    
 Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use a Seismic administrator account credential to authenticate permission to crawl.
 
 ### 4. Roll out to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience. To know more about limited rollout, [click here](staged-rollout-for-graph-connectors.md).
 
-At this point, you're ready to create the connection for Seismic Content. You can click on the "Create" button to publish your connection and index content from your Seismic account.
+To create the connection for Seismic Content, click "Create" to publish your connection and index content from your Seismic account.
 
 For other settings, like **Access permissions**, **Schema**, and **Crawl frequency**, we have default values based on what works best with Seismic data.
-
 
 | Users | Description |
 |----|---|
@@ -88,8 +85,6 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 |---|---|
 | Incremental Crawl | _Frequency: Every 15 mins_ |
 | Full Crawl | _Frequency: Every Day_ |
-
-If you want to edit any of these values, you need to choose the "Custom Setup" option.
 
 ## Custom setup
 
