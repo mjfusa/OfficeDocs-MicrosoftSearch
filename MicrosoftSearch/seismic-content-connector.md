@@ -47,7 +47,7 @@ A display name is used to identify each reference in Copilot, helping users easi
 
 ### 2. Add the Seismic Content instance URL
 The Seismic Content instance URL is essential to correctly access and update data from, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
-By the instance URL, the Graph Connector can reliably synchronize data changes and ensure accurate content delivery from Seismic Content to connected Microsoft 365.
+By the instance URL, the Seismic Content Microsoft Graph connector can reliably synchronize data changes and ensure accurate content delivery from Seismic Content to connected Microsoft 365.
 
 ### 3. Provide authentication Type
 
@@ -92,12 +92,10 @@ In custom setup, you can edit any of the default values for users, content, and 
 
 ### Users
 
-**Access permissions**
+#### Access permissions
+Currently, the Seismic Content Microsoft Graph connector only supports permissions visible to **Everyone** due to Seismic API restrictions. All public content indexed using the Seismic Content graph connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot. 
 
-Currently the Seismic Content Microsoft Graph connector only supports permissions visible to **Everyone** due to Seismic API restrictions. All public content indexed using the Seismic Content graph connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot. 
-
-**Mapping identities**
-
+#### Mapping identities**
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the email ID of Seismic users is the same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To learn more about mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is suitable for your organization:
@@ -107,13 +105,12 @@ To identify which option is suitable for your organization:
 
 ### Content
 
-**Content filter**
-
+#### Content filter
 Select time range: Select a time range for the content to be indexed. Only content with a last modified date and time within the selected range will be indexed. Choose an appropriate time range based on the volume of content to be indexed. Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to be indexed.
 
-**Manage properties**
+#### Manage properties
 
-Here, you can view available properties from your Seismic Content, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label and add an alias to the property. Properties that are selected by default are listed below.
+To view available properties from your Seismic Content, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Some properties are indexed by default.
 
 |Source property|Label|Description|Schema|
 |---|---|---|---|
@@ -144,6 +141,6 @@ The refresh interval determines how often your data is synced between the data s
 You can change the default values of the refresh interval from here if you want to.
 
 ## Troubleshooting
-After publishing your connection, you can review the status under the **Data Sources** tab in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
+After publishing your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
