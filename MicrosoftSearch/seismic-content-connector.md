@@ -17,7 +17,7 @@ description: "Set up the Seismic Content Microsoft Graph connector for Microsoft
 ms.date: 03/13/2025
 ---
 
-# Seismic Content Microsoft Graph connector (Preview)
+# Seismic Content Microsoft Graph connector (preview)
 
 The Seismic Content Microsoft Graph connector allows your organization to index content from Seismic. After you configure the connector, end users can search for this content from Seismic in Microsoft Copilot and any Microsoft Search client.
  
@@ -45,7 +45,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ### 1. Choose display name 
 A display name is used to identify each reference in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content.
 
-### 2. Add the Seismic Content instance URL
+### 2. Add Seismic Content instance URL
 The Seismic Content instance URL is essential to correctly access and update data from, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
 By the instance URL, the Seismic Content Microsoft Graph connector can reliably synchronize data changes and ensure accurate content delivery from Seismic Content to connected Microsoft 365.
 
@@ -60,7 +60,7 @@ The following table provides the mandatory values for OAuth client creation:
 |Field | Description | Recommended value|
 |:--- |:--- |:--- |
 |Authentication Method | The OAuth 2 Authentication Method to authenticate and authorize users securely | OAuth2 - Authorization Code Flow (User Authentication)|
-|Redirect URIs (redirect_uri) | The callback URL for Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  |
+|Redirect URIs (redirect_uri) | The callback URL for the Microsoft Graph connector | `https://gcs.office.com/v1.0/admin/oauth/callback`  |
 |Scopes | The scopes to create a new version and a new client ID and secret. | Below scopes are mandatory: seismic.user.view, seismic.configuration.view, seismic.reporting, seismic.library.view |
    
 Enter the client ID (Unique identifier) and Secret to connect to your instance. After connecting, use a Seismic administrator account credential to authenticate permission to crawl.
