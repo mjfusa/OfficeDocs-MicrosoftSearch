@@ -88,7 +88,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 ## Custom setup
 
-Custom setup is for those admins who want to edit the default values for settings listed in the above table. Once you click on the **Custom Setup** option, you see three more tabs - **Users**, **Content**, and **Sync**.
+In custom setup, you can edit any of the default values for users, content, and sync.
 
 ### Users
 
