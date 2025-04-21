@@ -33,11 +33,12 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Limitations
 - Only content from the Seismic Content Enterprise edition will be indexed.
 - Only content that has been published will be indexed. Any content that has not been published in WorkSpace will not be indexed.
+- Seismic content crawled is public to everyone in your organization in Microsoft 365 products such as Copilot and Microsoft Search due to Seismic API restrictions.
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Seismic Content instance URL**: To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
-- **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update published content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access published content and metadata.
+- **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access public content and metadata.
 - **Seismic Bulk Get Content Access Data API**: The Microsoft Seismic Content Graph connector utilizes the [Seismic Bulk Get Content Access Data API](https://developer.seismic.com/seismicsoftware/reference/getitemsuniquepermissions) for content access control, which remains in Early Access as of April 2025. To proceed with the setup of the Microsoft Seismic Content Graph connector, please ensure that this Early Access Seismic API is enabled in your production environment. You need to contact your Seismic account representatives or Seismic support to enable this API in your production environment. Should you encounter any issues or have any questions, please contact your Seismic representative for assistance.
 ## Get Started
 
@@ -98,7 +99,7 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-The Seismic Content Microsoft Graph connector supports search permissions visible to **Everyone** or **Only people with access to this data source**. If you choose **Everyone**, indexed data appears in the search results for all users. If you choose **Only people with access to this data source**, indexed data appears in the search results for users who have access to them.
+Currently the Seismic Content Microsoft Graph connector only supports permissions visible to **Everyone** due to Seismic API restrictions. All public content indexed using the Seismic Content graph connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot. 
 
 **Mapping identities**
 
