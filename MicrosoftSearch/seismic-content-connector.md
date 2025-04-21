@@ -112,7 +112,7 @@ Select time range: Select a time range for the content to be indexed. Only conte
 
 To view available properties from your Seismic Content, assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Some properties are indexed by default.
 
-|Source property|Label|Description|Schema|
+|Default property|Label|Description|Schema|
 |---|---|---|---|
 | AssignedToProfiles | | | Search |
 | Content |  | | Search |
