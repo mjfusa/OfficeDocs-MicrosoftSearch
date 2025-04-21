@@ -38,7 +38,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **Seismic Content instance URL**: To connect to your Seismic Content data, you need your organization's Seismic Content instance URL, which typically follows this format: https://&lt;your domain&gt;.seismic.com.
-- **Seismic Content account**: To connect to Seismic Content and allow Microsoft Graph Connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access public content and metadata.
+- **Seismic Content account**: To connect to Seismic Content and allow the Microsoft Graph connector to update public content and metadata regularly, you need Seismic Content OAuth 2.0 credentials to access public content and metadata.
 
 ## Get Started
 
