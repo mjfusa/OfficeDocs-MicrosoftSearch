@@ -95,7 +95,7 @@ In custom setup, you can edit any of the default values for users, content, and 
 #### Access permissions
 Currently, the Seismic Content Microsoft Graph connector only supports permissions visible to **Everyone** due to Seismic API restrictions. All public content indexed using the Seismic Content graph connector will be visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot. 
 
-#### Mapping identities**
+#### Mapping identities
 The default method for mapping your data source identities with Microsoft Entra ID is by checking whether the email ID of Seismic users is the same as the UserPrincipalName (UPN), or Mail of the users in Microsoft Entra. If you believe the default mapping wouldn't work for your organization, you can provide a custom mapping formula. To learn more about mapping Non-Microsoft Entra ID identities, see [Map your non-Azure AD Identities](map-non-aad.md).
 
 To identify which option is suitable for your organization:
