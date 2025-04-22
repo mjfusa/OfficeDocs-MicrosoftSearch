@@ -1,5 +1,5 @@
 --- 
-title: "WordPress.com Microsoft 365 Copilot connector" 
+title: "WordPress.com Microsoft 365 Copilot connector (preview)" 
 ms.author: rantang
 author: ranran1998
 manager: jecui
@@ -16,7 +16,7 @@ description: "Set up the WordPress.com Microsoft 365 Copilot connector."
 ms.date: 04/23/2025
 ---
 
-#WordPress.com Microsoft 365 Copilot connector (preview)
+# WordPress.com Microsoft 365 Copilot connector (preview)
 
 With the WordPress.com Microsoft 365 Copilot connector, your organization can index published posts and pages of your WordPress.com-built websites. After configuring the connector and index content from WordPress.com-built websites, end users can search for those published posts and pages in Microsoft Copilot and any Microsoft Search client. 
 
