@@ -89,7 +89,7 @@ To add or remove available properties from your WordPress.com data source, assig
 |Default property|Label|Description|Schema| 
 | --- | ---- | --- | ---
 | Author | Authors | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve.| 
-| Categories  |  |Categories of Posts,not avaiable for Pages  | Query, Retrieve, Refine.| 
+| Categories  |  |Categories of Posts, not available for Pages  | Query, Retrieve, Refine.| 
 | Content |  | The content of Posts or Pages| Search, Retrieve. | 
 | Created | Created date time | Data and time that the item was created in the data source. | Query, Retrieve. | 
 | CreatedBy | Created by| Name of the person who created the item in the data source.| Search, Query, Retrieve. | 
@@ -107,4 +107,4 @@ You can configure full and incremental crawls based on the scheduling options pr
 ## Troubleshooting
 After publishing your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). To learn how to make updates and deletions, see [Manage your connector](manage-connector.md).
 
-If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/graph/support).
