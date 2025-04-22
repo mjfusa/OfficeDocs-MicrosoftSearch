@@ -1,5 +1,4 @@
 --- 
-
 title: "WordPress.com Graph connector for Microsoft Search and Copilot" 
 ms.author: rantang
 author: ranran1998
@@ -24,9 +23,6 @@ With the Microsoft Graph connector for WordPress.com-built websites, your organi
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a WordPress.com Graph connector. 
 
 
->[!NOTE]
->The WordPress.com connector is in public preview. If you wish to get access to try it, you need to enable [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
-
 ## Capabilities
 - Index published posts and pages of your WordPress.com-built website.    
 - Set ingestion filters of published posts by categories. 
@@ -40,9 +36,8 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Install the Microsoft Graph connector agent**: To access your WordPress.com-built website, you must install and configure the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045). [Download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your WordPress.com-built website with the graph connector. 
 - **WordPress.com-built website URL**: To connect to your WordPress.com-built website data, you need your organization's WordPress.com-built website URL. 
-- **WordPress.com-built website Admin account**: To connect to your WordPress.com-built website and allow Microsoft Graph Connector to update published posts and pages regularly, you need an **admin user account** of your WordPress.com-built website with the permission to create an **application password**. Application password is used to authenticate with a third-party service or application that connects to your WordPress.com-built website via REST API. 
+- **Configure OAuth2 Authentication in WordPress.com**: To connect to WordPress.com and allow the WordPress.com Graph Connector to update webpages regularly, you need to configure and enable OAuth 2.0 Authentication in WordPress.com with the credentials to access your WordPress.com-built websites. OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. Find more details here.. 
 
 ## Get Started
 
