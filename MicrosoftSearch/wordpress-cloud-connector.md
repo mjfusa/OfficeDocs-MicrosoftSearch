@@ -35,8 +35,8 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **WordPress.com-built website URL**: To connect to your WordPress.com-built website data, you need your organization's WordPress.com-built website URL. 
-- **Configure OAuth2 Authentication in WordPress.com**: To connect to WordPress.com and allow the WordPress.com Copilot connector to update webpages regularly, you need to configure and enable OAuth 2.0 Authentication in WordPress.com with the credentials to access your WordPress.com-built websites. OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. Find more details [here](https://developer.wordpress.com/docs/oauth2/). 
+- To connect to your WordPress.com-built website data, you need your organization's WordPress.com-built website URL. 
+- To connect to WordPress.com and allow the WordPress.com Copilot connector to update webpages regularly, you need to configure and enable OAuth 2.0 Authentication in WordPress.com with the credentials to access your WordPress.com-built websites. OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. For more information, see [Wordpress.com documentation](https://developer.wordpress.com/docs/oauth2/). 
 
 ## Get Started
 
@@ -47,7 +47,7 @@ A display name is used to identify each citation in Copilot, helping users easil
 A WordPress.com-built website URL is the unique web address assigned to each WordPress.com-built website, allowing you to access your specific WordPress.com-built website.   
 
 ### 3. Provide authentication Type
-We support the OAuth 2.0 authentication method.OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. To enable and configure OAuth 2.0 authentication for WordPress.com-built websites, please find more details [here](https://developer.wordpress.com/docs/oauth2/). 
+We support the OAuth 2.0 authentication method.OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. To enable and configure OAuth 2.0 authentication for WordPress.com-built websites. For more information, see [Wordpress.com docs for developers](https://developer.wordpress.com/docs/oauth2/). 
 
 ### 5. Staged rollout to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
