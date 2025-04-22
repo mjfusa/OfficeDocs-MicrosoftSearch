@@ -37,7 +37,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
 - **WordPress.com-built website URL**: To connect to your WordPress.com-built website data, you need your organization's WordPress.com-built website URL. 
-- **Configure OAuth2 Authentication in WordPress.com**: To connect to WordPress.com and allow the WordPress.com Graph Connector to update webpages regularly, you need to configure and enable OAuth 2.0 Authentication in WordPress.com with the credentials to access your WordPress.com-built websites. OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. Find more details here.. 
+- **Configure OAuth2 Authentication in WordPress.com**: To connect to WordPress.com and allow the WordPress.com Graph Connector to update webpages regularly, you need to configure and enable OAuth 2.0 Authentication in WordPress.com with the credentials to access your WordPress.com-built websites. OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. Find more details [here](https://developer.wordpress.com/docs/oauth2/). 
 
 ## Get Started
 
@@ -47,13 +47,8 @@ A display name is used to identify each citation in Copilot, helping users easil
 ### 2. WordPress.com-built website URL
 A WordPress.com-built website URL is the unique web address assigned to each WordPress.com-built website, allowing you to access your specific WordPress.com-built website.   
 
-### 3. Graph Connector Agent
-The graph connector agent acts as a bridge between your WordPress.com instance and the connector APIs, enabling secure and efficient data transfer. In this step, select the agent configuration you want to use for your connector.  
-
-If you have not installed the [Microsoft Graph connector agent](https://www.microsoft.com/download/details.aspx?id=104045) already, you can [download the agent installer](https://www.microsoft.com/download/details.aspx?id=104045) and follow the installation instructions to set it up. Once installed, ensure that the agent is configured correctly to connect your on-premises WordPress.com instance with the Graph connector. 
-
-### 4. Authentication Type
-We support the basic authentication method. To enable and configure basic authentication in WordPress.com, find more details [here](https://make.WordPress.com/core/2020/11/05/application-passwords-integration-guide/).  
+### 3. Authentication Type
+We support the OAuth 2.0 authentication method.OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. To enable and configure OAuth 2.0 authentication for WordPress.com-built websites, please find more details [here](https://developer.wordpress.com/docs/oauth2/). 
 
 ### 5. Staged rollout to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
@@ -97,15 +92,13 @@ Here, you can add or remove available properties from your WordPress.com data so
 **Source Property** | **Label** |**Description**| **Schema**
 --- | ---- | --- | ---
 Author | Authors | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve
-Categories  |  |  | Query, Retrieve, Refine
-Content |  | | Search, Retrieve 
+Categories  |  |Categories of Posts,not avaiable for Pages  | Query, Retrieve, Refine
+Content |  | The content of Posts or Pages| Search, Retrieve 
 Created | Created date time | Data and time that the item was created in the data source. | Query, Retrieve 
 CreatedBy | Created by| Name of the person who created the item in the data source.| Search, Query, Retrieve 
-Excerpt | | |Search, Retrieve 
-id | | |Query, Retrieve 
-Tags | | | Query, Retrieve, Refine 
-Title |Title| The title of the item that you want to be shown in Copilot and other search experiences. |Search, Retrieve 
-Type | | | Query, Retrieve, Refine
+Excerpt | |Summaries of Posts or Pages content  |Search, Retrieve 
+Title |Title| The title of Posts or Pages |Search, Retrieve 
+Type | |The type of the file, the potential value are Post or Page | Query, Retrieve, Refine
 Updated | Last modified date time | Date and time the item was last modified in the data source. |Query, Retrieve 
 UpdatedBy | Last modified by | Name of the person who most recently edited the item in the data source |Search, Query, Retrieve 
 Url | url | The target URL of the item in the data source.  |Retrieve 
