@@ -1,5 +1,5 @@
 --- 
-title: "WordPress.com Graph connector for Microsoft Search and Copilot" 
+title: "WordPress.com Microsoft 365 Copilot connector" 
 ms.author: rantang
 author: ranran1998
 manager: jecui
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160 
 - MET150 
 - MOE150 
-description: "Set up the WordPress.com Microsoft Graph connector for Microsoft Search and Copilot" 
+description: "Set up the WordPress.com Microsoft 365 Copilot connector." 
 ms.date: 04/23/2025
 ---
 
-# WordPress.com Microsoft Graph connector (Preview)
+#WordPress.com Microsoft 365 Copilot connector (preview)
 
-With the Microsoft Graph connector for WordPress.com-built websites, your organization can index published posts and pages of your WordPress.com-built websites. After you configure the connector and index content from WordPress.com-built websites, end users can search for those published posts and pages in Microsoft Copilot and from any Microsoft Search client. 
+With the WordPress.com Microsoft 365 Copilot connector, your organization can index published posts and pages of your WordPress.com-built websites. After configuring the connector and index content from WordPress.com-built websites, end users can search for those published posts and pages in Microsoft Copilot and any Microsoft Search client. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a WordPress.com Graph connector. 
 
