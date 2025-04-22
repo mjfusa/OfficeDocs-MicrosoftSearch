@@ -22,7 +22,6 @@ With the WordPress.com Microsoft 365 Copilot connector, your organization can in
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a WordPress.com Copilot connector. 
 
-
 ## Capabilities
 - Index published posts and pages of your WordPress.com-built website.    
 - Set ingestion filters for published posts by categories. 
@@ -57,13 +56,13 @@ To create the connection for a WordPress.com-built website, click **Create* to p
 
 For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with WordPress.com-built website data. The default values settings are as follows.
 
-**Page** | **Settings** | **Default Values**
---- | ---- | ---
-Users | Access Permissions | All published pages or posts indexed using the WordPress.com Copilot connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.
-Content | Index Content | All published posts and pages are selected by default.
-Content | Manage Properties | To check default properties and their schema, [click here](#content).
-Sync | Incremental Crawl | Frequency: Every 15 mins
-Sync | Full crawl | Frequency: Every day
+|Page|Settings|Default values|
+|--- | ---- | ---|
+|Users | Access Permissions | All published pages or posts indexed using the WordPress.com Copilot connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.|
+|Content | Index Content | All published posts and pages are selected by default.|
+|Content | Manage Properties | To check default properties and their schema, see [content](#content).|
+|Sync | Incremental Crawl | Frequency: Every 15 mins|
+|Sync | Full crawl | Frequency: Every day|
 
 ## Custom Setup 
 
