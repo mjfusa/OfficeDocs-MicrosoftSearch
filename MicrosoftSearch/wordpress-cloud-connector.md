@@ -55,11 +55,11 @@ Use the information in the following table to fill out the OAuth application cre
 
 Field | Description | Recommended Value
 --- | --- | ---
-Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search and Copilot
-Description | (Optional) A short description of the OAuth client. | Use an appropriate description
-Website URL | The URL to an informational home page about your application. | Your WordPress.com-built website URL
-Redirect URL | A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback</br></br>For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
-Type|application app type|Web|
+Name | (Required)Unique value that identifies the application that you require OAuth access for. | Microsoft Search and Copilot
+Description | (Required)A short description of the OAuth client. | Use an appropriate description
+Website URL | (Required)The URL to an informational home page about your application. | Your WordPress.com-built website URL
+Redirect URL | (Required)A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback</br></br>For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
+Type|(Required)application app type|Web|
 
 Enter the client ID (unique identifier) and secret to connect to your instance. After you connect, use a WordPress.com-built website admin account credential to authenticate permission to crawl.
 
