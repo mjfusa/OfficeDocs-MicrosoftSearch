@@ -43,7 +43,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 A display name is used to identify each citation in Copilot, helping users easily recognize the associated file or item. Display name also signifies trusted content. The display name is also used as a [content source filter](/MicrosoftSearch/custom-filters#content-source-filters). A default value is present for this field, but you can customize it to a name that users in your organization recognize.
 
 ### 2. Tableau Cloud Site URL
-A Tableau Cloud site URL typically looks like https://<>.online.tableau.com/#/site/<> 
+A Tableau Cloud site URL typically looks like `https://<your-domain>.online.tableau.com/#/site/<site-name>`
 
 ### 3. Authentication Type
 Use the following steps to use Tableau Connected Apps with Direct Trust for authentication. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
@@ -73,18 +73,18 @@ When finished, select the Create button.
  ![Generate a secret for the APP](media/tableau-generate-a-secret.png)
 2. Make note of the **Secret ID** ，**Secret Value** and **Client Id** to use in Step 3 below.
 
-**Step3: Enter the requird fields of Tableau Graph Connector Authentication**.
+**Step3: Enter the required fields of Tableau Graph Connector Authentication**.
 
 Enter the User, Connected App Client Id, Connected App Secret Id and Connected App Secret Key to connect to your Tableau Cloud Site. 
 ![media/tableau-gc-auth](media/tableau-gc-auth.png)
 
-Refer to the following table to learn the descriptions of the requird fields of Tableau Graph Connector Authentication
+Refer to the following table to learn the descriptions of the required fields of Tableau Graph Connector Authentication
 Field | Description 
 --- | --- 
 User| The admin user email. Recommend to fill the email of an admin user who configured the Tableau Connected Apps with Direct Trust.
-Connected App Client Id| **Client ID** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
-Connected App Secret Id| **Secret ID** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
-Connected App Secret Key| **Secret Value** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Client Id| **Client ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Secret Id| **Secret ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Secret Key| **Secret Value** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
 
 ### 4. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
@@ -117,8 +117,8 @@ The Tableau Cloud Microsoft Graph connector supports data visible to **Only peop
 >[!NOTE]
 >Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This ensures that the content indexed by the Graph Connector is **not overshared** with users who do not have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
 > - For admin users, they are always ALLOWED.
-> - If the user is a “deny user”, part of a “deny group” or in a “deny group set” , the user is DENIED.
-> - If the user is a project leader or a content owner, the user is is ALLOWED.
+> - If the user is a “denied user”, part of a “denied group” or in a “denied group set” , the user is DENIED.
+> - If the user is a project leader or a content owner, the user is ALLOWED.
 > - If the user is an “allowed user”, part of an “allowed group” or in an “allowed group set”, the user is ALLOWED.
 > - If none of the above conditions are satisfied, the user is DENIED.
 
