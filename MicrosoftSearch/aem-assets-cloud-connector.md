@@ -87,13 +87,13 @@ Currently only published assets from your AEM Assets are indexed. All data index
 
 - Content paths that should be fetched: Only support input exact paths. A valid content path must have at least three levels, starting with "/content/dam" as the first two segments. 
 
-- Content paths that should not be fetched: Only support input Java regular expression for paths.For information about writing regular expressions, see [Regular Expression Language Quick Reference](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference). The priority of excluding content paths is higher than that of including content paths.
+- Content paths that should not be fetched: Only support input Java regular expression for paths. The priority of excluding content paths is higher than that of including content paths.
 
 
 ##### Select content by metadata properties
 You can also set ingestion filters based on the value of **metadata properties**,including both OOB metadata properties and custom metedata properties. Input the **json-path of the property**, select the **Operator** and input the **Target-value**. 
 
-![aem-assets-property-filters](media/aem-assets-property-filters.png)
+![The screenshot of ingestion filters by metedata values](media/aem-assets-property-filters.png)
 
 ###### **Json-path of the property**
 
@@ -115,11 +115,11 @@ property.value=Activate
 
 **Step 3**: After the results successfully returned, click on "**JSON QueryBuilder Link**", then you can see the json content with all properties in a new tab.
 
-![aem-assets-query-builder-debugger](media/aem-assets-query-builder-debugger.png)
+![The screenshot of AEM Assets Query Builder Debugger](media/aem-assets-query-builder-debugger.png)
 
 **Step 4**: Find the property and json-path of the property. For example, the json path of the property `dc:format` shown in below snapshot is `hits.jcr:content.metadata.dc:format`
 
-![aem-assets-jcrpath-sample](media/aem-assets-jcrpath-sample.png)
+![The sample of JCR Path](media/aem-assets-jcrpath-sample.png)
 
 ###### **Operator and Target-value:**
 **Operator**: A drop-down menu for setting "=", "!=", "In", "Not In". 
@@ -132,7 +132,7 @@ property.value=Activate
 
 Following table shows the examples of correct and incorrect user input: 
 
-![aem-assets-metedata-ingestion-filter-sample-input](media/aem-assets-metedata-ingestion-filter-sample-input.png)
+![Ingestion Filters sample input](media/aem-assets-metedata-ingestion-filter-sample-input.png)
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
@@ -161,10 +161,10 @@ Here, you can check available properties from your Adobe Experience Manager Asse
 | Width   |     | Width         | Query, Retrieve   |
 | Tags                | Tags                    | Tags defined in AEM Assets metadata. In AEM, tags are organized hierarchically   | Query, Retrieve, Search     |
 
-##### More Properties
+##### Add More Properties
 In the above table, there only list the standard properties of Adobe Experience Manager Assets by default, such as titles, tags, description, createdby, publishedby etc. If you would like to add more other properties besides these standard properties of Adobe Experience Manager Assets, you could click “**Add Property**” to add it. 
 
-![aem-assets-add-property](media/aem-assets-add-property.png)
+![The screenshot of Adding a property](media/aem-assets-add-property.png)
 
 
 ### Sync 
