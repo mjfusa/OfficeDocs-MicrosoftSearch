@@ -52,7 +52,7 @@ Use the following steps to use Tableau Connected Apps with Direct Trust for auth
 Create a connected app from Tableau Cloud’s Settings page.
 1. As a site admin, sign in to Tableau Cloud.
 2. From the left pane, select **Settings > Connected Apps**.
-![tableau-navigation-to-settings-apps](media/tableau-navigation-to-settings-apps.png)
+![The Screenshot of navigation to apps configuration](media/tableau-navigation-to-settings-apps.png)
 3. Select the New Connected App button drop-down arrow and select **Direct Trust**.
 4. Use the information in the following table to fill out the **Create Connected App dialog box**.
 
@@ -66,11 +66,11 @@ When finished, select the Create button.
 ![tableau direct trust configuration.](media/tableau-direct-trust-configuration.png)
 
 5. Next to the connected app's name, select the actions menu and select **Enable**.
-![tableau-enable-app](media/tableau-enable-app.png)
+![Enable Tableau App](media/tableau-enable-app.png)
 
 **Step 2: Generate a secret**
 1. On the detail page of the connected app you created in Step 1, select the **Generate New Secret** button.
- ![tableau-generate-a-secret](media/tableau-generate-a-secret.png)
+ ![Generate a secret for the APP](media/tableau-generate-a-secret.png)
 2. Make note of the **Secret ID** ，**Secret Value** and **Client Id** to use in Step 3 below.
 
 **Step3: Enter the requird fields of Tableau Graph Connector Authentication**.
@@ -115,7 +115,7 @@ Custom setup is for those admins who want to edit the default values for setting
 The Tableau Cloud Microsoft Graph connector supports data visible to **Only people with access to this data source (recommended)** or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 >[!NOTE]
->Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This ensures that the content indexed by the Graph Connector is **not overshared** with users who do not have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![tableau-connector-acl-workflow](media/tableau-connector-acl-workflow.png)
+>Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This ensures that the content indexed by the Graph Connector is **not overshared** with users who do not have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
 > - For admin users, they are always ALLOWED.
 > - If the user is a “deny user”, part of a “deny group” or in a “deny group set” , the user is DENIED.
 > - If the user is a project leader or a content owner, the user is is ALLOWED.
