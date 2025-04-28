@@ -46,7 +46,45 @@ A display name is used to identify each citation in Copilot, helping users easil
 A Tableau Cloud site URL typically looks like https://<>.online.tableau.com/#/site/<> 
 
 ### 3. Authentication Type
-We support the Connected Apps with OAuth2.0 Client Secret for Tableau Cloud. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+Use the following steps to use Tableau Connected Apps with Direct Trust for authentication. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+
+**Step 1: Create a Tableau Connected Apps with Direct Trust**
+Create a connected app from Tableau Cloud’s Settings page.
+1. As a site admin, sign in to Tableau Cloud.
+2. From the left pane, select **Settings > Connected Apps**.
+![tableau-navigation-to-settings-apps](media/tableau-navigation-to-settings-apps.png)
+3. Select the New Connected App button drop-down arrow and select **Direct Trust**.
+4. Use the information in the following table to fill out the **Create Connected App dialog box**.
+
+Field | Description | Recommended Value
+--- | --- | ---
+Connected app name| Unique value that identifies the application that you require Direct Trust for. | Microsoft Search and Copilot
+Access Level | select All project or Only one project to control which views or metrics can be embedded. If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA#projects).|All project or Only one project
+Domain allowlist|the domains where views or metrics can be embedded|All domins
+
+When finished, select the Create button.
+![tableau direct trust configuration.](media/tableau-direct-trust-configuration.png)
+
+5. Next to the connected app's name, select the actions menu and select **Enable**.
+![tableau-enable-app](media/tableau-enable-app.png)
+
+**Step 2: Generate a secret**
+1. On the detail page of the connected app you created in Step 1, select the **Generate New Secret** button.
+ ![tableau-generate-a-secret](media/tableau-generate-a-secret.png)
+2. Make note of the **Secret ID** ，**Secret Value** and **Client Id** to use in Step 3 below.
+
+**Step3: Enter the requird fields of Tableau Graph Connector Authentication**.
+
+Enter the User, Connected App Client Id, Connected App Secret Id and Connected App Secret Key to connect to your Tableau Cloud Site. 
+![media/tableau-gc-auth](media/tableau-gc-auth.png)
+
+Refer to the following table to learn the descriptions of the requird fields of Tableau Graph Connector Authentication
+Field | Description 
+--- | --- 
+User| The admin user email. Recommend to fill the email of an admin user who configured the Tableau Connected Apps with Direct Trust.
+Connected App Client Id| **Client ID** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Secret Id| **Secret ID** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Secret Key| **Secret Value** of the the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
 
 ### 4. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
