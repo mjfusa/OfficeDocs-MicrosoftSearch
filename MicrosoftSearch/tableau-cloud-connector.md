@@ -112,10 +112,17 @@ Custom setup is for those admins who want to edit the default values for setting
 
 **Access permissions**
 
-The Tableau Cloud Microsoft Graph connector supports data visible to Only people with access to this data source (recommended) or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
+The Tableau Cloud Microsoft Graph connector supports data visible to **Only people with access to this data source (recommended)** or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
+
+>[!NOTE]
+>Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This ensures that the content indexed by the Graph Connector is **not overshared** with users who do not have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![tableau-connector-acl-workflow](media/tableau-connector-acl-workflow.png)
+> - For admin users, they are always ALLOWED.
+> - If the user is a “deny user”, part of a “deny group” or in a “deny group set” , the user is DENIED.
+> - If the user is a project leader or a content owner, the user is is ALLOWED.
+> - If the user is an “allowed user”, part of an “allowed group” or in an “allowed group set”, the user is ALLOWED.
+> - If none of the above conditions are satisfied, the user is DENIED.
 
 If you choose Only people with access to this data source, you need to further choose whether your Tableau Cloud Site has Microsoft Entra ID provisioned users or non-AAD users. 
-
 To identify which option is suitable for your organization: 
 
 1. Choose the **Microsoft Entra ID** option if the email ID of Tableau Cloud users is same as the UserPrincipalName (UPN) of users in Microsoft Entra ID. 
