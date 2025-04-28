@@ -81,17 +81,25 @@ Currently only published assets from your AEM Assets are indexed. All data index
 
 ### Content 
 
-**Content ingestion filters**   
+#### Content ingestion filters
 
-You can choose to include or exclude certain content paths.  
+##### Choose to include or exclude certain content paths
 
 - Content paths that should be fetched: Only support input exact paths. A valid content path must have at least three levels, starting with "/content/dam" as the first two segments. 
 
 - Content paths that should not be fetched: Only support input Java regular expression for paths.For information about writing regular expressions, see [Regular Expression Language Quick Reference](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference). The priority of excluding content paths is higher than that of including content paths.
 
-You can also set ingestion filters based on the value of **custom metadata properties**. Input the json-path of the property, select the relationship and input the value. Following are the steps about how to find and verify the property path in the [Query Builder debugger console| Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api#testing-and-debugging).
 
-**Step 1**: Open the Query Builder Debugger with http://<host>:<port>/libs/cq/search/content/querydebug.html and input the following query
+##### Select content by metadata properties
+You can also set ingestion filters based on the value of **metadata properties**,including both OOB metadata properties and custom metedata properties. Input the **json-path of the property**, select the **Operator** and input the **Target-value**. 
+
+![aem-assets-property-filters](media/aem-assets-property-filters.png)
+
+###### **Json-path of the property**
+
+Following are the steps about **how to find and verify the property path** in the [Query Builder debugger console| Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api#testing-and-debugging).
+
+**Step 1**: Open the Query Builder Debugger with `http://<host>:<port>/libs/cq/search/content/querydebug.html` and input the following query
 
 ```plaintext
 p.limit=10
@@ -107,16 +115,30 @@ property.value=Activate
 
 **Step 3**: After the results successfully returned, click on "**JSON QueryBuilder Link**", then you can see the json content with all properties in a new tab.
 
-![aem-assets-query-builder-debugger](MicrosoftSearch/media/aem-assets-query-builder-debugger.png)
+![aem-assets-query-builder-debugger](media/aem-assets-query-builder-debugger.png)
 
-**Step 4**: Find and verify the property path
+**Step 4**: Find the property and json-path of the property. For example, the json path of the property `dc:format` shown in below snapshot is `hits.jcr:content.metadata.dc:format`
 
+![aem-assets-jcrpath-sample](media/aem-assets-jcrpath-sample.png)
+
+###### **Operator and Target-value:**
+**Operator**: A drop-down menu for setting "=", "!=", "In", "Not In". 
+
+**Target-value**: Single-value and multi-value settings are different. 
+
+- Single-value usage in (=) and (!=) conditions: Give a single value without any quotes. 
+
+- Multi-value usage in (In) and (Not In) conditions: If multi-value is a group of text, enclose them in double quotes and square brackets []. If it’s a group of numbers, a user only needs to enclose them in square brackets []. It doesn’t matter if there are quotes or not. 
+
+Following table shows the examples of correct and incorrect user input: 
+
+![aem-assets-metedata-ingestion-filter-sample-input](media/aem-assets-metedata-ingestion-filter-sample-input.png)
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
-**Manage properties**
-
-Here, you can check available properties from your Adobe Experience Manager Assets. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below. 
+#### Manage properties
+##### Standard Properties
+Here, you can check available properties from your Adobe Experience Manager Assets and its schema(define whether a property is searchable, queryable, retrievable, or refinable) and semantic label to the property and add an alias to the property. Properties that are selected by default are listed below. 
 
 | **Source property** | **Semantic label**       | **Description**                                                                 | **Schema**                  |
 |----------------------|--------------------------|---------------------------------------------------------------------------------|-----------------------------|
@@ -138,6 +160,11 @@ Here, you can check available properties from your Adobe Experience Manager Asse
 |title            |               | The title of the items                                                      |Query, Retrieve, Search           |
 | Width   |     | Width         | Query, Retrieve   |
 | Tags                | Tags                    | Tags defined in AEM Assets metadata. In AEM, tags are organized hierarchically   | Query, Retrieve, Search     |
+
+##### More Properties
+In the above table, there only list the standard properties of Adobe Experience Manager Assets by default, such as titles, tags, description, createdby, publishedby etc. If you would like to add more other properties besides these standard properties of Adobe Experience Manager Assets, you could click “**Add Property**” to add it. 
+
+![aem-assets-add-property](media/aem-assets-add-property.png)
 
 
 ### Sync 
