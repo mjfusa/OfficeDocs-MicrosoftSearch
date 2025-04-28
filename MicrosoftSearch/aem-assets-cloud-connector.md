@@ -87,7 +87,30 @@ You can choose to include or exclude certain content paths.
 
 - Content paths that should be fetched: Only support input exact paths. A valid content path must have at least three levels, starting with "/content/dam" as the first two segments. 
 
-- Content paths that should not be fetched: Only support input Java regular expression for paths.The priority of excluding content paths is higher than that of including content paths. 
+- Content paths that should not be fetched: Only support input Java regular expression for paths.For information about writing regular expressions, see [Regular Expression Language Quick Reference](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference). The priority of excluding content paths is higher than that of including content paths.
+
+You can also set ingestion filters based on the value of **custom metadata properties**. Input the json-path of the property, select the relationship and input the value. Following are the steps about how to find and verify the property path in the [Query Builder debugger console| Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api#testing-and-debugging).
+
+**Step 1**: Open the Query Builder Debugger with http://<host>:<port>/libs/cq/search/content/querydebug.html and input the following query
+
+```plaintext
+p.limit=10
+p.guessTotal=true
+p.hits=full
+type=dam:Asset
+p.nodedepth=2
+property=jcr:content/cq:lastReplicationAction
+property.value=Activate
+```
+
+**Step 2**: Click "**search**"
+
+**Step 3**: After the results successfully returned, click on "**JSON QueryBuilder Link**", then you can see the json content with all properties in a new tab.
+
+![aem-assets-query-builder-debugger](MicrosoftSearch/media/aem-assets-query-builder-debugger.png)
+
+**Step 4**: Find and verify the property path
+
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
