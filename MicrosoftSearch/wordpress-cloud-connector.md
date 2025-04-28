@@ -46,10 +46,24 @@ A display name is used to identify each citation in Copilot, helping users easil
 ### 2. Add WordPress.com-built website URL
 A WordPress.com-built website URL is the unique web address assigned to each WordPress.com-built website, allowing you to access your specific WordPress.com-built website.   
 
-### 3. Provide authentication Type
-We support the OAuth 2.0 authentication method.OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. To enable and configure OAuth 2.0 authentication for WordPress.com-built websites. For more information, see [Wordpress.com docs for developers](https://developer.wordpress.com/docs/oauth2/). 
+### 3. Authentication Type
+**WordPress.com OAuth 2.0**
+Use the following steps to use WordPress.com OAuth 2.0 for authentication. 
+A WordPress.com-built website admin needs to create an OAuth Application in the [WordPress.com Developer Center](https://developer.wordpress.com/apps/new/). OAuth2 is a protocol that allows applications to interact with blogs on WordPress.com-built sites running Jetpack. For more information, see [Wordpress.com docs for developers](https://developer.wordpress.com/docs/oauth2/). 
 
-### 5. Staged rollout to limited audience
+Use the information in the following table to fill out the OAuth application creation form.
+
+Field | Description | Recommended Value
+--- | --- | ---
+Name | Unique value that identifies the application that you require OAuth access for. | Microsoft Search and Copilot
+Description | (Optional) A short description of the OAuth client. | Use an appropriate description
+Website URL | The URL to an informational home page about your application. | Your WordPress.com-built website URL
+Redirect URL | A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback</br></br>For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
+Type|application app type|Web|
+
+Enter the client ID (unique identifier) and secret to connect to your instance. After you connect, use a WordPress.com-built website admin account credential to authenticate permission to crawl.
+
+### 4. Staged rollout to limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
 To create the connection for a WordPress.com-built website, click **Create* to publish your connection and index published posts and pages from your WordPress.com-built website.  
