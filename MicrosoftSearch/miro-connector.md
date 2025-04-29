@@ -139,19 +139,19 @@ You can change the default values of the refresh interval.
 The following are common errors and how to resolve them.
 
 1. Required permission scopes are missing. Ensure the necessary scopes are selected in the Miro App.
-You don't have the required permission scopes. Make sure that you selected `boards:read Read boards you have access to` in the permission field of your Apps configuration.
+  You don't have the required permission scopes. Make sure that you selected `boards:read Read boards you have access to` in the permission field of your Apps configuration.
 
 2. OAuth 2.0 flow failed. Verify the credential information and make sure that the Miro App is configured with the correct settings.
-This is a common authentication error. Go back to the Miro app and verify that the OAuth2 in **Settings** is correctly configured.
+  This is a common authentication error. Go back to the Miro app and verify that the OAuth2 in **Settings** is correctly configured.
 
 3. OAuth 2.0 flow failed. Confirm that the Miro user associated with this team access token holds the team admin role and is an active user.
-This is a common authentication error. Go back to the Miro app console and verify that the creator has an admin role and the account status is active.
+  This is a common authentication error. Go back to the Miro app console and verify that the creator has an admin role and the account status is active.
 
 4. Your security credentials have expired for this session. Go back and sign in again with your App key and App secret.
-Your credential information has expired. Refresh the Miro app and copy the latest Client ID and Client secret from the settings tab to authenticate.
+  Your credential information has expired. Refresh the Miro app and copy the latest Client ID and Client secret from the settings tab to authenticate.
 
 5. Invalid Credentials detected. Check the credential info and check the permission scopes of the Miro App.
-This is a common credential error. Go back to the Miro App and verify that the scopes in **Permissions** are correctly configured.
+  This is a common credential error. Go back to the Miro App and verify that the scopes in **Permissions** are correctly configured.
 
 ## Next steps
 After you publish your connection, you can review the status under **Data Sources** in the [admin center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
