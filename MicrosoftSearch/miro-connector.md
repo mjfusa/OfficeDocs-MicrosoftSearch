@@ -17,8 +17,8 @@ description: "Set up the Miro Microsoft 365 Copilot connector."
 ms.date: 03/11/2025
 ---
 
-# Miro  Microsoft 365 Copilot connector (preview)
-The Miro Copilot connector allows your organization to index boards from Miro. After you configure the connector, users can search for these boards from Miro in Microsoft 365 Copilot and any Microsoft Search client.
+# Miro Microsoft 365 Copilot connector (preview)
+The Miro Microsoft 365 Copilot allows your organization to index boards from Miro. After you configure the connector, users can search for these boards from Miro in Microsoft 365 Copilot and any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Miro Copilot connector.
 
