@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: mssearch
 ms.localizationpriority: medium
 ms.collection: essentials-overview
-ms.date: 03/11/2022
+ms.date: 04/29/2025
 search.appverid:
 - BFB160
 - MET150
