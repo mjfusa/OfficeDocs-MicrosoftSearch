@@ -110,7 +110,7 @@ To identify which option is suitable for your organization:
 Select a time range for the content to be indexed. Only content with a last modified date and time within the selected range will be indexed. Choose an appropriate time range based on the volume of content to be indexed. Selecting "All time" may significantly impact your platform's performance if there is a large volume of content to be indexed.
 
 ##### Content profiles to include
-Select one or more Seismic content profiles (also known as DocCenter) to index. All content under the selected profiles will be indexed and made publicly accessible to everyone within your organization. 
+Select one or more Seismic content profiles to index. All content under the selected profiles will be indexed and made publicly accessible to everyone within your organization. 
 
 
 #### Manage properties
