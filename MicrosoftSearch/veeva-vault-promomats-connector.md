@@ -138,11 +138,22 @@ To configure the Veeva Vault PromoMats connector, select **Azure Active Director
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
 
-### 4. Roll out to limited audience
+### 4. Set Up Identity Mapping
+
+For customers who need the security settings of their PromoMats instance to be honored, click **Custom Setup** and navigate to the **User** tab. In the **Map Identities** section, select **Non-ME-ID** as the identity type for your content source.
+
+Fill in the required information for identity mapping. For example, if you want to map identities based on email addresses:
+
+- Select **Mail** as the **Microsoft Entra user property**.
+- Select **Email** as the **non-Microsoft Entra user property**.
+- Use a regular expression such as `([^@]+)` to capture a sequence of one or more characters that are not the `@` symbol.
+- Finally, create a formula to complete the mapping, such as `{0}@<your-domain>`.
+
+This ensures that user identity mappings are correctly established and that security permissions are properly enforced.
+
+### 5. Roll out to limited audience
 Deploy this connection to a limited group of users to validate indexing and access control functionality before a full rollout. 
 
-### 5. Customize sync schedules
-Set up periodic incremental crawls (default: 15 minutes) and full crawls (default: daily). 
 
 ## Default settings
 
