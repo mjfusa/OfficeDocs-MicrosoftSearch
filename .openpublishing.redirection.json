@@ -319,6 +319,16 @@
             "source_path": "MicrosoftSearch/veeva-vault-qualitydocs-connector.md",
             "redirect_url": "/MicrosoftSearch/veeva-vault-promomats-connector",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "MicrosoftSearch/manage-dynamics365.md",
+            "redirect_url": "/MicrosoftSearch/frequently-asked-questions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "MicrosoftSearch/imanage-cloud-connector.md", 
+            "redirect_url": "index",
+            "redirect_document_id": false
         }
     ]
 }
