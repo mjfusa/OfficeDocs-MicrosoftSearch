@@ -50,7 +50,15 @@ Sign in to Miro and create a new app in [Your apps](https://miro.com/app/setting
 
 Add the `boards:read Read boards you have access to` plan in the app you created in your app's configuration
 
-### 4. Install your app and record credentials
+### 4. Add redirect URL to your app
+Add the following links into the filed "Redirect URL for OAuth2.0" in the app creation page:
+
+
+For M365 Enterprise, copy and paste: `https://gcs.office.com/v1.0/admin/oauth/callback`
+
+For M365 Government, copy and paste: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
+
+### 5. Install your app and record credentials
 
 Click **Install app and get OAuth token** and record the `Client ID` and `Client secret` from the app credentials.
 
