@@ -106,7 +106,7 @@ Use the **Client ID** from the newly created application in the Entra admin cent
    3. Fill out the name and description as your preference.
    4. In status, choose **active**.
    5. In authentication type, choose **Single Sign-on**
-   6. In Single Sign-on Profile, choose a profile created based on single sign-on.
+   6. In Single Sign-on Profile, choose a profile created based on single sign-on. Visit Veeva's [official guide](https://platform.veevavault.help/en/gr/13977/) for more information.
    7. In eSignature Profile, select **None**.
    8. In the OAuth 2.0 / OpenID Connect Profile, select the newly created OAuth 2.0 profile.
 
