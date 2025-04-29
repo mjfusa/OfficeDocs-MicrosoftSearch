@@ -20,7 +20,7 @@ ms.date: 03/11/2025
 # Miro  Microsoft 365 Copilot connector (preview)
 The Miro Copilot connector allows your organization to index boards from Miro. After you configure the connector, users can search for these boards from Miro in Microsoft 365 Copilot and any Microsoft Search client.
 
-This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Miro Microsoft Graph connector.
+This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Miro Copilot connector.
 
 > [!NOTE]
 > The Miro Copilot connector is in public preview. To get access to the connector, enable the [Targeted release](/microsoft-365/admin/manage/release-options-in-office-365#set-up-the-release-option-in-the-admin-center) ring for your Admin account.
@@ -80,7 +80,7 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 
 | Users | Description |
 |----|---|
-| Access permissions | Only people with access to content in Data source. |
+| Access permissions | Only people with access to the content in the data source. |
 | Map identities | Data source identities mapped using Microsoft Entra IDs. |
 
 | Content | Description |
@@ -92,7 +92,6 @@ For other settings, like **Access permissions**, **Schema**, and **Crawl frequen
 | Full crawl | Frequency: Every day |
 
 ## Custom setup
-
 In custom setup you can edit any of the default values for users, content, and sync. 
 
 ### Users
