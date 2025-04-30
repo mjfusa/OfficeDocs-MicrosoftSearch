@@ -44,7 +44,7 @@ Before you set up the connector, make sure that:
 1. Your GitLab instance is accessible via API.
 2. You generate a **Client ID** and **Client secret** from GitLab for authentication.
 3. The user account used for authentication has access to the repositories, issues, merge requests, knowledge files, and wiki pages to be indexed.
-4. The **Client ID** and **Client secret** have the `read_api` permission scope.
+4. The **Client ID** and **Client secret** have the `read_api` and `read_repository` permission scope.
 5. Users who access indexed GitLab data have corresponding **Microsoft Entra ID** identities for permission mapping.
 6. Specify the following **redirect URLs** when configuring GitLab authentication:
 
@@ -88,11 +88,14 @@ You can configure **incremental** and **full** crawls. The following are the def
 
 ## GitLab Server Connector Specifics
 
-When setting up GitLab Server Connectors, please note the following differences:
+When setting up GitLab Server Connectors for the self managed GitLab instances, please note the following differences:
 
-### VPN Gateway Prerequisite
+### Prerequisite: GitLab Version
+The version of the self-managed GitLab has to be 17.7 or above.
 
-A VPN gateway is required before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for detailed instructions on configuring the gateway.
+### Prerequisite: Microsoft Graph connector agent
+
+Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server where the self-managed GitLab is hosted before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
 
 ### Admin Authentication
 
@@ -100,11 +103,42 @@ The user account used for authentication must have administrative privileges to 
 
 ### Public Project Visibility
 
-Due to misalignments between GitLab documentation and observed behaviors, access to Merge Requests for public projects with visibility restricted to project members is conservatively set to Reporter roles and above.
+Due to security consideration, access to Merge Requests for public projects with visibility restricted to project members is conservatively set to the reporter role and above.
 
 ### Internal Project Visibility
 
-Due to misalignments between GitLab documentation and observed behaviors, access to Merge Requests for internal projects restricted to project members is conservatively set to Reporter roles and above.
+Due to security consideration, access to Merge Requests for internal projects restricted to project members is conservatively set to Reporter roles and above.
+
+### Disable API Rate Limit (Optional)
+
+For optimal performance of the connector crawling in self-managed GitLab instances, it is recommended to disable or increase the following API rate limits on **User and IP rate limits**:
+
+#### User and IP Rate Limits
+- Uncheck: `Enable authenticated API request rate limit`  
+- Uncheck: `Enable authenticated web request rate limit`
+
+#### Files API Rate Limits
+- Uncheck: `Enable authenticated API request rate limit`
+
+#### Deprecated API Rate Limits
+- Uncheck: `Enable authenticated API request rate limit`
+
+#### Users API Rate Limits
+- Set a high value (e.g., `100000`) for:  
+  - `Max requests per 10 minutes per user`
+
+#### Groups API Rate Limits
+- Set all values to `0` to disable limits
+
+#### Projects API Rate Limits
+- Set all values to `0` to disable limits
+
+#### Members API Rate Limits
+- Set to `0`
+
+For further guidance, refer to the official GitLab documentation:  
+[GitLab document: User and IP rate limits](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.)
+
 
 ## Next steps
 
