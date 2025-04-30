@@ -23,9 +23,6 @@ The 15Five High Fives Microsoft Graph connector enables your organization to ind
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors the 15Five High Fives Microsoft Graph connector. 
 
-> [!NOTE]
-> The Microsoft Graph 15Five High Fives connector is in preview. To request early access, submit the following [request form](https://forms.office.com/r/JniPmK5bzm).
-
 ## Capabilities
 
 - Access 15Five high fives using the power of semantic search.
@@ -38,7 +35,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 
-Before you create a Microsoft Graph 15Five Priorities connector, complete the following steps:
+Before you create a Microsoft Graph 15Five High Fives connector, complete the following steps:
 
 1. Create a 15Five account with HR administrator permission.
 2. As an HR administrator, go to the Integrations admin setting page in 15Five. Create a company API key and get the access token.

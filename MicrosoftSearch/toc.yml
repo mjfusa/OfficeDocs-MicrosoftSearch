@@ -91,6 +91,14 @@ items:
           items:
           - name: Setup
             href: aem-sites-cloud-connector.md
+        - name: Adobe Experience Manager Assets
+          items:
+          - name: Setup
+            href: aem-assets-cloud-connector.md        
+        - name: Aha!
+          items:
+          - name: Setup
+            href: aha-cloud-connector.md
         - name: Asana
           items:
           - name: Setup
@@ -128,7 +136,7 @@ items:
         - name: Bitbucket
           items:
           - name: Setup
-            href: bitbucket-connector.md
+            href: bitbucket-connector.md     
         - name: Confluence Cloud
           items:
           - name: Setup
@@ -143,10 +151,18 @@ items:
               href: troubleshoot-confluence-onpremises-connector.md
             - name: License agreement for Microsoft Graph connector plugin for Confluence
               href: graph-connector-atlassian-plugin-eula.md
+        - name: DataStax
+          items:
+          - name: Setup
+            href: datastax-graph-connector.md
         - name: Dropbox
           items:
           - name: Setup
             href: Dropbox-connector.md
+        - name: Freshservice
+          items:
+          - name: Setup
+            href: freshservice-connector.md
         - name: Jira Cloud
           items:
             - name: Setup
@@ -157,12 +173,20 @@ items:
           items:
             - name: Setup
               href: jira-data-center-connector.md
+        - name: Coda Enterprise
+          items:
+          - name: Setup
+            href: coda-enterprise-connector.md
         - name: CSV
           items:
           - name: Setup
             href: csv-connector.md
           - name: Troubleshooting
             href: troubleshoot-csv-connector.md
+        - name: Egnyte
+          items:
+          - name: Setup
+            href: egnyte-connector.md
         - name: Enterprise websites Cloud
           items:
           - name: Setup
@@ -181,10 +205,14 @@ items:
             href: fileshare-connector.md
           - name: Troubleshooting
             href: troubleshoot-file-share-connector.md
-        - name: GitHub Cloud Knowledge (preview)
+        - name: GitHub
           items:
-          - name: Setup
+          - name: Setup - GitHub Cloud Knowledge
             href: GitHub-connector.md 
+          - name: Setup - GitHub Cloud Issues
+            href: GitHub-cloud-issue-connector.md 
+          - name: Setup - GitHub Cloud Pull Requests
+            href: GitHub-cloud-pull-request-connector.md 
         - name: GitLab (preview)
           items:
           - name: Setup
@@ -195,12 +223,20 @@ items:
           items:
           - name: Setup
             href: Google-Drive-connector.md
+        - name: Guru
+          items:
+          - name: Setup
+            href: guru-connector.md       
         - name: MediaWiki
           items:
           - name: Setup
             href: mediawiki-connector.md
           - name: Troubleshooting
             href: troubleshoot-media-wiki-connector.md 
+        - name: Monday.com
+          items:
+          - name: Setup
+            href: monday-connector.md
         - name: Miro
           items:
           - name: Setup
@@ -214,7 +250,13 @@ items:
         - name: PostgreSQL
           items:
           - name: Setup
-            href: postgresql-connector.md
+            href: postgresql-connector.md    
+        - name: PagerDuty
+          items:
+          - name: Setup PagerDuty Escalation Policies
+            href: PagerDuty-Escalation-Policies-connector.md
+          - name: Setup PagerDuty Schedules
+            href: pagerduty-schedules-connector.md
         - name: Salesforce CRM
           items:
           - name: Setup
@@ -253,6 +295,10 @@ items:
           items:
           - name: Setup
             href: sharepoint-server-connector.md
+        - name: Shortcut Story
+          items:
+          - name: Setup
+            href: shortcut-cloud-connector.md
         - name: Smartsheet Sheet
           items:
           - name: Setup
@@ -261,20 +307,30 @@ items:
           items:
           - name: Setup
             href: stack-overflow-connector.md
+        - name: Tableau Cloud
+          items:
+          - name: Setup
+            href: tableau-cloud-connector.md
         - name: Trello
           items:
           - name: Setup
             href: trello-connector.md
-        - name: Veeva Vault - PromoMats
+        - name: Unily
           items:
           - name: Setup
-            href: Veeva-Vault-PromoMats-connector.md
+            href: unily-intranet-connector.md
+        - name: Veeva Vault
+          items:
+          - name: Setup - Veeva Vault PromoMats
+            href: veeva-vault-promoMats-connector.md
           - name: Troubleshooting
-            href: troubleshoot-veeva-vault-promomats-connector.md
-        - name: WordPress.org (on-prem)
+            href: troubleshoot-veeva-vault-connectors.md
+        - name: WordPress
           items:
-          - name: Setup
+          - name: Setup WordPress.org (on-prem)
             href: WordPress-onprem-connector.md
+          - name: WordPress.com
+            href: wordpress-cloud-connector.md
         - name: Zendesk Help Center
           items:
           - name: Setup
@@ -282,7 +338,11 @@ items:
         - name: Zendesk Ticket
           items:
           - name: Setup
-            href: zendesk-ticket-connector.md      
+            href: zendesk-ticket-connector.md
+        - name: Zoom
+          items:
+          - name: Setup
+            href: zoom-connector.md
     - name: Manage connections
       items:
       - name: Monitor connections
@@ -297,10 +357,6 @@ items:
         href: connectors-viva-topics-item-delete-notification.md
     - name: Deploy Microsoft Graph connectors in Teams admin center
       href: connectors-deploy-teams.md
-  - name: Federated Search connectors
-    items:
-    - name: Dataverse and Dynamics 365
-      href: manage-dynamics365.md
   - name: Semantic index
     items:
     - name: Semantic indexing for Microsoft 365 Copilot

@@ -16,9 +16,9 @@ search.appverid:
 description: "Set up the Veeva Vault PromoMats Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot" 
 ms.date: 02/26/2025
 ---
-# Veeva Vault PromoMats Microsoft Graph connector
+# Veeva Vault PromoMats Microsoft Graph connector (preview)
 
-The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
+The Veeva Vault PromoMats Microsoft Graph connector allows organizations to index promotional marketing materials from Veeva Vault into Microsoft Graph, making them accessible across Microsoft 365 experiences, including Microsoft 365 Copilot.
 
 The connector integrates Vault PromoMats' built-in permission model, ensuring that users only access authorized content, and supports faster content generation and review through content analysis and preparation. By enhancing efficiency throughout the content lifecycle, it helps maintain brand consistency. This functionality is beneficial for marketing, medical affairs, and regulatory teams, enabling informed decision-making and reducing the time-to-market for promotional materials.
 
@@ -34,7 +34,7 @@ This guide is for Microsoft 365 administrators or anyone responsible for configu
 
 ## Capabilities
 
-The The Veeva Vault PromoMats connector enables the following capabilities:
+The Veeva Vault PromoMats connector enables the following capabilities:
 
 - Generates summaries to understand and make decisions based on promotional materials and key documents.
 - Improves the searchability of promotional documents by using advanced Microsoft 365 search capabilities.
@@ -61,16 +61,63 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 ## Limitations
 
 - Indexes only the latest versions of documents.
-- Supports file types including Microsoft Office documents, PDFs, and text-based files only; does not support PNG, JPG, or video files.
+- Supports file types including Microsoft Office documents, PDFs, and text-based files only; doesn't support PNG, JPG, or video files.
 - Partially indexes files larger than 4 MB.
 
 ## Prerequisites
 
-- Make sure that you have a Veeva Vault account with administrative privileges.
-- Enable the API access in your Veeva Vault instance.
-- Activate REST API access in your Veeva Vault instance. For more information, see [Veeva Vault API documentation](https://developer.veevavault.com/docs/).
-- Verify the URL for your Veeva Vault instance. The following is the typical URL format: `https://<your-vault-domain>.veevavault.com`
+To configure Microsoft Entra ID OAuth 2.0/OpenID Connect for the Veeva Vault Microsoft Graph connector, follow these steps.
 
+### Register an application in Microsoft Entra ID
+
+1. Go to **Microsoft Entra admin center** > **Applications** > **App registrations** > **New registration**. 
+1. In the creation form, fill out the name as your preference.
+1. In the Supported account types, choose **Accounts in this organizational directory only**.
+1. In the redirect URI, select **Web**, and add the following links to the **Redirect URI** field:
+
+   - For **Microsoft 365 Enterprise**, copy and paste:
+     `https://gcs.office.com/v1.0/admin/oauth/callback`
+   - For **Microsoft 365 Government**, copy and paste:
+     `https://gcsgcc.office.com/v1.0/admin/oauth/callback`
+
+1. Under **Certificates & Secrets**, generate a client secret and store it securely.
+
+### Configure OAuth in Veeva Vault
+
+1. Create a new profile.
+   1. Go to **Admin** > **Settings** > **OAuth 2.0 / OpenID Connect Profiles**.
+   2. Fill out the label, name, and description as your preference.
+   3. Set **Status** as active.
+   4. In **Authorization Server Provider**, select **Azure AD**.
+   5. Click **Upload AS metadata** and select **Provide Authorization Server Metadata URL**.
+   6. Copy the **OpenID Connect metadata document** from **endpoints** in the overview page of the newly created application in Microsoft Entra admin center, and paste it into the field.
+   7. Select **Identity is in another claim** and enter the **UPN** of the claim.
+   8. In **User ID Type**, select **Federated ID**, and uncheck **Perform Strict Audience Restriction validation**.
+
+   > [!NOTE]
+   > Make sure your UPN is the same as your federated ID.
+
+2. In the newly created profile page, click **Client Applications** > **Add**. 
+Use the **Client ID** from the newly created application in the Entra admin center.
+
+3. Create security policies.
+   1. Go to **Admin** > **Settings** > **Security Policies**.
+   2. Click **Create** > **Single sign-on**.
+   3. Fill out the name and description as your preference.
+   4. In status, choose **active**.
+   5. In authentication type, choose **Single Sign-on**
+   6. In Single Sign-on Profile, choose a profile created based on single sign-on. For more information, see [Veeva Vault documentation](https://platform.veevavault.help/en/gr/13977/).
+   7. In eSignature Profile, select **None**.
+   8. In the OAuth 2.0 / OpenID Connect Profile, select the newly created OAuth 2.0 profile.
+
+   For the rest of the settings, keep the default values.
+
+4. Link user with the security policy.
+   1. Go to **Admin** > **Users & Groups**.
+   2. Select a user who is the vault owner.
+   3. Click **Edit**.
+   4. In **Details** > **Security Policy**, change the values to the newly created policy.
+   5. In **Federated ID**, change it to the UPN claim of the admin identity, which is also used in the connector setup. 
 
 ## Get started
 
@@ -78,36 +125,35 @@ The following table lists example prompts that show how Microsoft 365 Copilot, i
 Provide a meaningful display name for your connector in the Microsoft 365 Admin Center. This name helps identify the connection in your workspace.
 
 ### 2. Add the Veeva Vault URL
-Enter the verified URL of your Veeva Vault instance. For example: `https://<your-vault-domain>.veevavault.com`.
+Enter the URL of your Veeva Vault instance. For example: `https://<your-vault-domain>.veevavault.com`.
 
 ### 3. Provide authentication details
 
-To configure the Veeva Vault PromoMats connector, you must provide authentication credentials. 
-The connector supports basic authentication and Entra ID authentication.
+To configure the Veeva Vault PromoMats connector, select **Azure Active Directory (OIDC)** and fill in the following information:
 
-#### Basic authentication 
-
-For basic authentication, provide: 
-
-- The username associated with your Veeva Vault account. 
-- The password for the account. Keep this credential secure. 
-
-#### Entra ID authentication 
-
-method applies Entra ID for secure and centralized identity management. The following are the required fields:
-
-- **Vault session ID URL:** The URL endpoint for retrieving session tokens. Typically formatted as: `https://<your-vault-domain>.veevavault.com/api/v<version>/session`. 
-- **Client ID:** The application ID for your Azure AD app registered for Veeva Vault. 
-- **Client secret:** The client secret associated with the Entra ID  app. Make sure that it is securely stored and accessible only to authorized personnel. 
+- **Vault session ID URL:** You can find the session ID URL on the Veeva Vault interface under the path: **Admin panel** > **Settings** > **OAuth 2.0/ OpenID Connect Profiles** > the profile that's created for the connection > **Vault Session ID URL**.
+- **Client ID:** The application ID for your Entra application registered for Veeva Vault. 
+- **Client secret:** The client secret associated with the Entra application. Make sure that it is securely stored and accessible only to authorized personnel. 
  
 > [!Important]
 > Configure both Microsoft Entra ID and Veeva Vault admin settings to enable Microsoft Entra ID authentication.
 
-### 4. Rollout to limited audience
+### 4. Set up identity mapping
+
+For customers who need the security settings of their Veeva PromoMats instance to be honored, click **Custom setup** > **User**. In **Map identities**, select **Non-ME-ID** as the identity type for your content source.
+
+Enter the required information for identity mapping. For example, if you want to map identities based on email addresses, you can follow these steps.
+
+1. Select **Mail** as the **Microsoft Entra user property**.
+2. Select **Email** as the **non-Microsoft Entra user property**.
+3. Use a regular expression such as `([^@]+)` to capture a sequence of one or more characters that are not the `@` symbol.
+4. Create a formula to complete the mapping, such as `{0}@<your-domain>`.
+
+This process ensures that user identity mappings are correctly established and security permissions are properly enforced.
+
+### 5. Roll out to limited audience
 Deploy this connection to a limited group of users to validate indexing and access control functionality before a full rollout. 
 
-### 5. Customize sync schedules
-Set up periodic incremental crawls (default: 15 minutes) and full crawls (default: daily). 
 
 ## Default settings
 
@@ -125,24 +171,25 @@ The following table lists the default settings for the Veeva Vault PromoMats Mic
 
 ### Users
 
-**Access permissions**
+#### Access permissions
+
 The connector adheres to the ACLs defined in Veeva Vault. Only users with view permissions in Veeva Vault can see the indexed content in Microsoft 365. Admins can optionally allow all users access to all indexed content, although this isn't recommended.
 
 ### Sync
 
-**Adjust sync schedules**  
+#### Adjust sync schedules
+
 You can modify the frequency of full crawls to fit your organization's requirements. The following are the default crawls:
 
 - Incremental crawl - 15 minutes.
 - Full crawl - daily.
 
-
 ## Troubleshooting
 
-For information about troubleshooting, see [Troubleshooting the Veeva Vault PromoMats Microsoft Graph connector](troubleshoot-veeva-vault-promomats-connector.md).
+For information about troubleshooting, see [Troubleshooting the Veeva Vault Microsoft Graph connector](troubleshoot-veeva-vault-connectors.md).
 
 ## Next steps
 
-After the connector is configured and published, monitor its status on the **Data sources** tab in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md) guide.
+After you configure and publish the connector, monitor its status on **Data sources** in the [Admin Center](https://admin.microsoft.com). For more information, see [Manage your connector](manage-connector.md).
 
-For help and support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
+If you have issues or want to provide feedback, contact [Microsoft Graph support](https://developer.microsoft.com/graph/support). 
