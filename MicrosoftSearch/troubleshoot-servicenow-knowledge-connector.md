@@ -109,6 +109,8 @@ If you see differences in the user criteria validation between ServiceNow and Mi
 
 ### 6. A 'Logout successfully' window appears when completing the OAuth process
 
+<details>
+<summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
 While completing the OAuth process, a "Logout successfully" window may appear without prompting for ServiceNow credentials.
 
 By default, ServiceNow attempts to connect using Microsoft 365 Admin credentials through Single Sign-On (SSO) from a browser login, which can cause the connection to fail. As a result, the "Logout successfully" window appears.
@@ -124,3 +126,52 @@ To resolve this issue, follow these steps:
 ![Screenshot shows the 'Oauth configuration' window](media/servicenow-knowledge-connector/image2-issue6.png)
 
 If you have issues or want to provide feedback, contact [Microsoft Graph | Support](https://developer.microsoft.com/en-us/graph/support).
+</details>
+
+### 7. Missing Access to Certain Tables
+
+<details>
+<summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
+
+#### **Impact:**  
+- Without the right access, all contennt might not be indexed and permissions might not be granted accurately.
+---
+
+#### Resolution
+
+#### Role Required
+- ServiceNow Admin
+
+#### Steps to Validate Table Permissions using REST API Explorer:
+
+1. Impersonate the crawling account you have created in your ServiceNow instance.  
+   > Ensure the account has the following roles: `rest_api_explorer` and `web_service_admin`.
+2. Navigate to:  
+   **System Web Services > REST > REST API Explorer**
+3. Select one of the tables mentioned in the error message.
+
+   ![Screenshot showing the 'REST API explorer' page](media/tsg-servicenowkb-table-access-1.png)
+
+4. Set `sysparm_limit` to `10` (to limit results for testing).
+
+   ![Screenshot showing the 'sysparm_limit' field](media/tsg-servicenowkb-table-access-2.png)
+
+5. Click on **Send**.
+6. Review the Response:
+   - **If you receive a `403 Status Code`** and an error message stating you're not authorized to access the table, follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow.md) to provide table-level access.
+   - **If you receive a `200 Status Code`** but the response body contains empty results (e.g., no fields), this indicates row access exists but field-level access is missing. Follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow.md#step-5-grant-field-level-access) to grant field-level access.
+   ![Screenshot showing the 'Response' section](media/tsg-servicenowkb-table-access-3.png)
+   
+   > ⚠️ **Note:** If you do not see the table name in the dropdown, it may indicate lack of access to the table itself.
+
+---
+
+### Alternate Method: Using Browser to Check Access
+
+1. Open an **incognito** browser window.
+2. Enter the following URL (replace placeholders appropriately):  
+   `https://<instance-url>/api/now/table/<table_name>?sysparm_limit=10`
+3. When prompted, log in using the **crawling account's credentials**.
+4. Review the response:
+   - If there is no response or an error appears, the account likely lacks necessary access.
+</details>
