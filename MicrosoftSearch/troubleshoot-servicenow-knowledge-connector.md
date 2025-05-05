@@ -164,8 +164,8 @@ If you have issues or want to provide feedback, contact [Microsoft Graph | Suppo
    - **If you receive a `403 Status Code`** and an error message stating you're not authorized to access the table, follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow) to provide table-level access.
    - **If you receive a `200 Status Code`** but the response body contains empty results (e.g., no fields), this indicates row access exists but field-level access is missing. Follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow#step-5-grant-field-level-access) to grant field-level access.
    ![Screenshot showing the 'Response' section](media/tsg-servicenowkb-table-access-3.png)(media/tsg-servicenowkb-table-access-3.png#lightbox)
-   
-   > [!NOTE]: If you do not see the table name in the dropdown, it may indicate lack of access to the table itself.
+
+   **If you do not see the table name in the dropdown, it may indicate lack of access to the table itself.**
 
 ---
 
