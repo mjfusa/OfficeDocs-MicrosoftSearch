@@ -56,13 +56,18 @@ The following common errors are observed while configuring the connector, or dur
     
 If your organization uses single sign-on (SSO) to ServiceNow, you may have trouble logging in with the service account. You can bring up a username and password-based login by adding <em> `login.do`</em> to the ServiceNow instance URL. Example. `https://<your-organization-domain>.service-now.com./login.do`
 
-### 3. Unauthorized or forbidden response to API request
+### 3. Couldn't connect with the ServiceNow instance
+
 <details>
 <summary>(Click to expand) Follow the steps to troubleshoot this issue.</summary><br>
 
-1. **Check table access permissions:** If you see a forbidden or unauthorized response in connection status, check if the service account has the required access to the tables mentioned in [Prerequisites](/MicrosoftSearch/servicenow-knowledge-connector.md/#prerequisites). Check whether the service account has 'read' access to all the tables in the column.
+If you see a forbidden or unauthorized response in connection status, it may be due to one of the following reasons:
 
-2. **Change in account password:** The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. Ensure that the service account password isn't changed after publishing the connection. You may need to reauthenticate the connection if there's a change in the password.
+1. **Incorrect account password:** If you are using Basic authentication, it could be that the credentials you are using are incorrect. Please check the credentials again. 
+
+If you are using OAuth2.0, check if the account password is correct or hasn't been reset. The ServiceNow Knowledge Microsoft Graph connector uses an access token fetched on behalf of the service account for the crawl. The access token refreshes every 12 hours. You may need to reauthenticate the connection if there's a change in the password.
+
+2. **Check table access permissions:** Check if the service account has the required access to the tables mentioned in [Prerequisites](/MicrosoftSearch/servicenow-knowledge-connector/#prerequisites). Check whether the service account has ['read' access](/MicrosoftSearch/troubleshoot-servicenow-knowledge-connector#7-missing-access-to-certain-tables) to all the tables in the column.
 
 3. **Check if the ServiceNow instance is behind a firewall:** The ServiceNow Knowledge Microsoft Graph connector may not be able to reach your ServiceNow instance if it is behind a network firewall. You need to explicitly allow access to the connector service. You can find the public IP address range of the connector service in this table. Based on your tenant region, add it to your ServiceNow instance network allowlist.
 
@@ -148,19 +153,19 @@ If you have issues or want to provide feedback, contact [Microsoft Graph | Suppo
    **System Web Services > REST > REST API Explorer**
 3. Select one of the tables mentioned in the error message.
 
-   ![Screenshot showing the 'REST API explorer' page](media/tsg-servicenowkb-table-access-1.png)
+   ![Screenshot showing the 'REST API explorer' page](media/tsg-servicenowkb-table-access-1.png)(media/tsg-servicenowkb-table-access-1.png#lightbox)
 
 4. Set `sysparm_limit` to `10` (to limit results for testing).
 
-   ![Screenshot showing the 'sysparm_limit' field](media/tsg-servicenowkb-table-access-2.png)
+   ![Screenshot showing the 'sysparm_limit' field](media/tsg-servicenowkb-table-access-2.png)(media/tsg-servicenowkb-table-access-2.png#lightbox)
 
 5. Click on **Send**.
 6. Review the Response:
-   - **If you receive a `403 Status Code`** and an error message stating you're not authorized to access the table, follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow.md) to provide table-level access.
-   - **If you receive a `200 Status Code`** but the response body contains empty results (e.g., no fields), this indicates row access exists but field-level access is missing. Follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow.md#step-5-grant-field-level-access) to grant field-level access.
-   ![Screenshot showing the 'Response' section](media/tsg-servicenowkb-table-access-3.png)
+   - **If you receive a `403 Status Code`** and an error message stating you're not authorized to access the table, follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow) to provide table-level access.
+   - **If you receive a `200 Status Code`** but the response body contains empty results (e.g., no fields), this indicates row access exists but field-level access is missing. Follow the [steps here](/MicrosoftSearch/granting-table-access-servicenow#step-5-grant-field-level-access) to grant field-level access.
+   ![Screenshot showing the 'Response' section](media/tsg-servicenowkb-table-access-3.png)(media/tsg-servicenowkb-table-access-3.png#lightbox)
    
-   > ⚠️ **Note:** If you do not see the table name in the dropdown, it may indicate lack of access to the table itself.
+   > [!NOTE]: If you do not see the table name in the dropdown, it may indicate lack of access to the table itself.
 
 ---
 
