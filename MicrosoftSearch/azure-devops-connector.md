@@ -19,7 +19,7 @@ The Azure DevOps Work Items Microsoft Graph connector allows your organization t
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors an Azure DevOps Work Items Microsoft Graph connector.
 
 >[!IMPORTANT]
->The Azure DevOps Work Items Microsoft Graph connector supports only the Azure DevOps cloud service. Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013 are not supported by this connector.
+>The Azure DevOps Work Items Microsoft Graph connector supports only the Azure DevOps cloud service. The connector doesn't support Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015, and TFS 2013.
 
 ## Capabilities
 - Index Work Items from Azure DevOps
@@ -31,7 +31,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Crawl Account**: The connector utilizes the logged-in M365 Admin's account as the crawl service account. To connect to Azure DevOps and allow the Microsoft Graph connector to update work items regularly, you need to grant the M365 Admin account with the following permissions.
+- **Crawl Account**: The connector utilizes the logged-in Microsoft 365 Admin's account as the crawl service account. To connect to Azure DevOps and allow the Microsoft Graph connector to update work items regularly, you need to grant the Microsoft 365 Admin account with the following permissions.
 
     | Permission name | Permission type | Required for |
     | ------------ | ------------ | ------------ |
@@ -54,8 +54,8 @@ The Azure DevOps connector allows indexing of one organization per connection. T
 
 >[!IMPORTANT]
 > - Ensure that you enter the name of the organization only and not the complete URL of the organization.
-> - Here is an example of **incorrect** input - `https://dev.azure.com/<Organization_name>/`
-> - Here is an example of **correct** input - `<Organization_name>`
+> - Here's an example of **incorrect** input - `https://dev.azure.com/<Organization_name>/`
+> - Here's an example of **correct** input - `<Organization_name>`
 
 ### 3. Authentication type
 
@@ -98,7 +98,7 @@ The Azure DevOps Graph connector only indexes content from an ADO organization c
     - For **M365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
 12. Under **Implicit grant and hybrid flows**, check the option for `ID tokens (used for implicit and hybrid flows)` and click **Configure**.
 13. From the navigation pane, select **Certificates and secrets** under **Manage**.
-14. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it is not shown again.
+14. Select **New Client secret** and select an expiry period for the secret. Copy the generated secret (Value) and save it because it isn't shown again.
 15. Use this Client secret and the application ID to configure the connector.
 
 **Authenticate the Microsoft Entra app with crawl account**
