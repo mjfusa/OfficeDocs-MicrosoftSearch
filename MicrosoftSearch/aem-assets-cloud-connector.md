@@ -31,8 +31,8 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 - Use [Semantic search in Copilot](semantic-index-for-copilot.md) to enable users to find relevant content.
 
 ## Limitations
-- Does not index comments.
-- Does not crawl user identities and access permissions. All published assets indexed using the Adobe Experience Manager Assets Microsoft Graph connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
+- Doesn't index comments.
+- Doesn't crawl user identities and access permissions. All published assets indexed using the Adobe Experience Manager Assets Microsoft Graph connector are visible to all Microsoft 365 users in your tenant, from Microsoft Search or Copilot.   
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
@@ -55,7 +55,7 @@ Authentication Type - We support the technical account for Adobe Experience Clou
 ### 4. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
-At this point, you are ready to create the connection for Adobe Experience Manager Assets. You can click the **Create** button to publish your connection and index published web assets from your Adobe Experience Manager Assets. 
+At this point, you're ready to create the connection for Adobe Experience Manager Assets. You can click the **Create** button to publish your connection and index published web assets from your Adobe Experience Manager Assets. 
 
 For other settings—such as Access Permissions, Data inclusion rules, Schema, and Crawl frequency—we set defaults based on what works best with Adobe Experience Manager Assets data. The default values are listed in the following table.
 
@@ -87,7 +87,7 @@ You can choose to include or exclude certain content paths.
 
 - Content paths that should be fetched: Only support input exact paths. A valid content path must have at least three levels, starting with "/content/dam" as the first two segments. 
 
-- Content paths that should not be fetched: Only support input Java regular expression for paths. The priority of excluding content paths is higher than that of including content paths.
+- Content paths that shouldn't be fetched: Only support input Java regular expression for paths. The priority of excluding content paths is higher than that of including content paths.
 
 
 You can also set ingestion filters based on the value of **metadata properties**,including both standard metadata properties and custom metadata properties. Input the **json-path of the property**, select the **Operator** and input the **Target-value**. 
