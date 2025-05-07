@@ -23,7 +23,7 @@ The Unily Graph connector allows your organization to index content from Unily i
 This documentation is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Unily Graph connector.
 
 ## Capabilities
-- Index Unily content (the following document types are supported: App,Doc Brand Asset, Image Brand Asset, FAQ, Form, Quiz, Idea, Location, Mandatory Read Article, Mandatory Read Doc, Media Content, Story, Knowledge Article).
+- Index Unily content (the following document types are supported: App, Doc Brand Asset, Image Brand Asset, FAQ, Form, Quiz, Idea, Location, Mandatory Read Article, Mandatory Read Doc, Media Content, Story, Knowledge Article).
 - Enable users within the company to ask questions in natural language using Copilot and receive answers based on content from Unily. Examples:
    - What are the company holidays for 2025?
    - What events are planned for national heritage month?
@@ -36,7 +36,7 @@ This documentation is for Microsoft 365 administrators or anyone who configures,
 - The connector doesn't support ACLs (access control lists). All the data indexed using the Unily Knowledge connector is visible to all Microsoft 365 users in your tenant, accessible through Microsoft Copilot or Search.
 
 ## Prerequisites
-- You must be the search admin for your organization's Microsoft 365 tenant.
+- To create a new connection, you must be the search admin for your organization's Microsoft 365 tenant.
 - To create a new connection, use your organization’s Unily instance URL. This URL is the specific web address used to access and interact with Unily API services for content retrieval, which usually looks like https://[your-organization-name].unily.com
 - To complete the authentication, you need a Client ID and Client Secret. To get your Unily Client ID and Secret, contact Unily directly. A Unily instance may have multiple applications, each with different permissions. Ensure that you obtain the correct credentials for the application to be used for the Graph connector.
 
