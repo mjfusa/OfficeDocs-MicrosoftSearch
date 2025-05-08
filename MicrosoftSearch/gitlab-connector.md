@@ -36,6 +36,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - Banning users is not supported as a permission rule. As a workaround, administrators can remove users from groups instead.
 - Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
 - Due to stability concerns identified during Microsoft's internal testing, support for the Planner role has been conservatively deprecated. Access is now restricted to Reporter roles and above. Users may encounter issues when assigning team members to the Planner role. To mitigate potential problems, please assign Reporter roles or higher. We closely monitor this feature and continue to work on improvements.
+- For the GitLab Server connectors, due to security consideration, access to merge requests for public projects with visibility restricted to project members is conservatively set to the reporter role and above.
 
 ## Prerequisites
 
@@ -50,6 +51,35 @@ Before you set up the connector, make sure that:
 
    - **For Microsoft 365 Enterprise**: `https://gcs.office.com/v1.0/admin/oauth/callback`.  
    - **For Microsoft 365 Government**: `https://gcsgcc.office.com/v1.0/admin/oauth/callback`.
+  
+### GitLab Server Connector Specifics
+
+When setting up GitLab Server Connectors for the self managed GitLab instances, please note the following differences:
+
+1. The version of the self-managed GitLab has to be 17.7 or above.
+2. Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server with connectivity to the self managed Gitlab instance before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
+3. The user account used for authentication must have administrative privileges to correctly support ACL crawling.
+4. For optimal performance of the connector crawling in self-managed GitLab instances, it is recommended to disable or increase the following API rate limits on **User and IP rate limits**. For further guidance, refer to the official GitLab documentation  
+[GitLab document: User and IP rate limits](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.).
+   - User and IP Rate Limits
+      - Uncheck: `Enable authenticated API request rate limit`  
+      - Uncheck: `Enable authenticated web request rate limit`
+   - Files API Rate Limits
+      - Uncheck: `Enable authenticated API request rate limit`
+   - Deprecated API Rate Limits
+      - Uncheck: `Enable authenticated API request rate limit`
+   - Users API Rate Limits
+      - Set a high value (e.g., `100000`) for:
+      - `Max requests per 10 minutes per user`
+   - Groups API Rate Limits
+      - Set all values to `0` to disable limits
+   - Projects API Rate Limits
+      - Set all values to `0` to disable limits
+   - Members API Rate Limits
+      - Set to `0`
+
+
+
 
 ## Get started
 
@@ -85,60 +115,6 @@ You can configure **incremental** and **full** crawls. The following are the def
 
   - Incremental crawl runs **every 15 minutes** by default.
   - Full crawl runs **daily** to ensure up-to-date indexing.
-
-## GitLab Server Connector Specifics
-
-When setting up GitLab Server Connectors for the self managed GitLab instances, please note the following differences:
-
-### Prerequisite: GitLab Version
-The version of the self-managed GitLab has to be 17.7 or above.
-
-### Prerequisite: Microsoft Graph connector agent
-
-Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server with connectivity to the self managed Gitlab instance before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
-
-### Admin Authentication
-
-The user account used for authentication must have administrative privileges to correctly support ACL crawling.
-
-### Public Project Visibility
-
-Due to security consideration, access to Merge Requests for public projects with visibility restricted to project members is conservatively set to the reporter role and above.
-
-### Internal Project Visibility
-
-Due to security consideration, access to Merge Requests for internal projects restricted to project members is conservatively set to Reporter roles and above.
-
-### Disable API Rate Limit (Optional)
-
-For optimal performance of the connector crawling in self-managed GitLab instances, it is recommended to disable or increase the following API rate limits on **User and IP rate limits**:
-
-#### User and IP Rate Limits
-- Uncheck: `Enable authenticated API request rate limit`  
-- Uncheck: `Enable authenticated web request rate limit`
-
-#### Files API Rate Limits
-- Uncheck: `Enable authenticated API request rate limit`
-
-#### Deprecated API Rate Limits
-- Uncheck: `Enable authenticated API request rate limit`
-
-#### Users API Rate Limits
-- Set a high value (e.g., `100000`) for:  
-  - `Max requests per 10 minutes per user`
-
-#### Groups API Rate Limits
-- Set all values to `0` to disable limits
-
-#### Projects API Rate Limits
-- Set all values to `0` to disable limits
-
-#### Members API Rate Limits
-- Set to `0`
-
-For further guidance, refer to the official GitLab documentation:  
-[GitLab document: User and IP rate limits](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.)
-
 
 ## Next steps
 
