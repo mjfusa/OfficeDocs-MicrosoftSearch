@@ -35,7 +35,7 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - Only repositories, issues, merge requests, .md, .txt files, and wikis are indexed.
 - Banning users is not supported as a permission rule. As a workaround, administrators can remove users from groups instead.
 - Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
-- Due to stability concerns identified during Microsoft internal testing, support for the Planner role has been conservatively deprecated. Access is now restricted to Reporter roles and above. Users may encounter issues when assigning team members the Planner role. To mitigate potential problems, please assign Reporter roles or higher. We will closely monitor this feature and may revisit Planner role support in the future.
+- Due to stability concerns identified during Microsoft's internal testing, support for the Planner role has been conservatively deprecated. Access is now restricted to Reporter roles and above. Users may encounter issues when assigning team members to the Planner role. To mitigate potential problems, please assign Reporter roles or higher. We closely monitor this feature and continue to work on improvements.
 
 ## Prerequisites
 
