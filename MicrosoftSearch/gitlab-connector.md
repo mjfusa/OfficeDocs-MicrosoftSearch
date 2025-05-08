@@ -95,7 +95,7 @@ The version of the self-managed GitLab has to be 17.7 or above.
 
 ### Prerequisite: Microsoft Graph connector agent
 
-Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server where the self-managed GitLab is hosted before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
+Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server with connectivity to the self managed Gitlab instance before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
 
 ### Admin Authentication
 
