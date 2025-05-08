@@ -54,13 +54,12 @@ Before you set up the connector, make sure that:
   
 ### GitLab Server Connector Specifics
 
-When setting up GitLab Server Connectors for the self managed GitLab instances, please note the following differences:
+When setting up GitLab Server Connectors for the self managed GitLab instances, please note the following prerequisites:
 
-1. The version of the self-managed GitLab has to be 17.7 or above.
-2. Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server with connectivity to the self managed Gitlab instance before establishing a connection. Refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
+1. GitLab version: The version of the self-managed GitLab has to be 17.7 or above.
+2. Microsoft Graph connector agent with version above 3.1.8.0 is required to be installed on the server with connectivity to the self managed Gitlab instances before establishing a connection. Please refer to the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) for detailed instructions on configuring the agent.
 3. The user account used for authentication must have administrative privileges to correctly support ACL crawling.
-4. For optimal performance of the connector crawling in self-managed GitLab instances, it is recommended to disable or increase the following API rate limits on **User and IP rate limits**. For further guidance, refer to the official GitLab documentation  
-[GitLab document: User and IP rate limits](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.).
+4. For optimal performance of the connector crawling in self-managed GitLab instances, it is recommended to disable or increase the following API rate limits on **User and IP rate limits** page. For further guidance, refer to the official GitLab documentation: [GitLab document: User and IP rate limits](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.).
    - User and IP Rate Limits
       - Uncheck: `Enable authenticated API request rate limit`  
       - Uncheck: `Enable authenticated web request rate limit`
@@ -77,9 +76,6 @@ When setting up GitLab Server Connectors for the self managed GitLab instances, 
       - Set all values to `0` to disable limits
    - Members API Rate Limits
       - Set to `0`
-
-
-
 
 ## Get started
 
