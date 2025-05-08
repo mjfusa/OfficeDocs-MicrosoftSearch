@@ -18,7 +18,7 @@ ms.date: 04/23/2025
 
 # WordPress.com Microsoft 365 Copilot connector (preview)
 
-With the WordPress.com Microsoft 365 Copilot connector, your organization can index published posts and pages of your WordPress.com-built websites. After configuring the connector and index content from WordPress.com-built websites, end users can search for those published posts and pages in Microsoft Copilot and any Microsoft Search client. 
+With the WordPress.com Microsoft 365 Copilot connector, your organization can index published posts and pages of your WordPress.com-built websites. After admins configure the connector and index content from WordPress.com-built websites, end users can search for those published posts and pages in Microsoft Copilot and any Microsoft Search client. 
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a WordPress.com Copilot connector. 
 
@@ -55,11 +55,11 @@ Use the information in the following table to fill out the OAuth application cre
 
 Field | Description | Recommended Value
 --- | --- | ---
-Name | (Required)Unique value that identifies the application that you require OAuth access for. | Microsoft Search and Copilot
-Description | (Required)A short description of the OAuth client. | Use an appropriate description
-Website URL | (Required)The URL to an informational home page about your application. | Your WordPress.com-built website URL
-Redirect URL | (Required)A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback</br></br>For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
-Type|(Required)application app type|Web|
+Name | (Required) Unique value that identifies the application that you require OAuth access for. | Microsoft Search and Copilot
+Description | (Required) A short description of the OAuth client. | Use an appropriate description
+Website URL | (Required) The URL to an informational home page about your application. | Your WordPress.com-built website URL
+Redirect URL | (Required) A required callback URL that the authorization server redirects to. | For **Microsoft 365 Enterprise**: https://<span>gcs.office.</span>com/v1.0/admin/oauth/callback</br></br>For **Microsoft 365 Government**: https://<span>gcsgcc.office.<span>com/v1.0/admin/oauth/callback
+Type|(Required) Application app type|Web|
 
 Enter the client ID (unique identifier) and secret to connect to your instance. After you connect, use a WordPress.com-built website admin account credential to authenticate permission to crawl.
 
