@@ -68,7 +68,7 @@ For **self-managed GitLab instances**, ensure the following:
 2. **Microsoft Graph Connector Agent**:
    - Version must be **3.1.8.0 or later**.
    - Must be installed on a server that can connect to the GitLab instance.  
-   - Follow the [setup guide](https://learn.microsoft.com/microsoftsearch/graph-connector-agent) to configure the agent.
+   - Follow the [setup guide](./graph-connector-agent.md) to configure the agent.
 3. The authentication account must have **administrative privileges** to enable ACL crawling.
 4. **API Rate Limits**:  
    For best performance, disable or raise limits in the **User and IP rate limits** settings. Refer to the [GitLab documentation](https://docs.gitlab.co.jp/ee/user/admin_area/settings/user_and_ip_rate_limits.html#:~:text=On%20the%20left%20sidebar%2C%20select%20Settings%20%3E%20Network%2C,period%20per%20IP%20value.%20Defaults%20to%203600.%20Optional.).
