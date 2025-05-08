@@ -19,7 +19,7 @@ ms.date: 3/14/2025
 
 # Tableau Cloud Microsoft Graph connector (preview)
 
-With the Tableau Cloud Microsoft Graph connector, your organization can index Tableau sheets of your Tableau Cloud. After you configure the connector and index content from Tableau Cloud, end users can search for those  sheets in Microsoft Copilot and from any Microsoft Search client. h.
+With the Tableau Cloud Microsoft Graph connector, your organization can index Tableau sheets of your Tableau Cloud. After you configure the connector and index content from Tableau Cloud, end users can search for those sheets in Microsoft Copilot and from any Microsoft Search client.
 
 This article is for Microsoft 365 administrators or anyone who configures, runs, and monitors a Tableau Cloud Microsoft Graph connector. 
 
@@ -35,7 +35,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Configure Connected Apps with Direct Trust in Tableau**: To connect to Tableau Cloud and allow the Tableau Cloud Microsoft Graph connector to update sheets regularly, you need to configure and enable the Connected Apps with Direct Trust of your Tableau Site with the credentials to access sheets. Tableau connected apps enable a seamless and secure authentication experience by facilitating an explicit trust relationship between your Tableau Cloud site and external applications. Find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+- **Configure Connected Apps with Direct Trust in Tableau**: To connect to Tableau Cloud and enable the Tableau Cloud Microsoft Graph connector to sync sheets regularly, you need to configure and enable Connected Apps with Direct Trust on your Tableau site, using credentials that can access the sheets. Tableau Connected Apps provide a seamless and secure authentication experience by establishing an explicit trust relationship between your Tableau Cloud site and external applications. Find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
 
 ## Get started
 
@@ -46,7 +46,7 @@ A display name is used to identify each citation in Copilot, helping users easil
 A Tableau Cloud site URL typically looks like `https://<your-domain>.online.tableau.com/#/site/<site-name>`
 
 ### 3. Authentication Type
-Use the following steps to use Tableau Connected Apps with Direct Trust for authentication. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, please find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+Use the following steps to use Tableau Connected Apps with Direct Trust for authentication. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
 
 **Step 1: Create a Tableau Connected Apps with Direct Trust**
 Create a connected app from Tableau Cloud’s Settings page.
@@ -59,7 +59,7 @@ Create a connected app from Tableau Cloud’s Settings page.
 Field | Description | Recommended Value
 --- | --- | ---
 Connected app name| Unique value that identifies the application that you require Direct Trust for. | Microsoft Search and Copilot
-Access Level | select All project or Only one project to control which views or metrics can be embedded. If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA#projects).|All project or Only one project
+Access Level | To control which views or metrics can be embedded, select "All projects" or "Only one project". If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA#projects).|"All project" or "Only one project"
 Domain allowlist|the domains where views or metrics can be embedded|All domins
 
 When finished, select the Create button.
@@ -71,27 +71,27 @@ When finished, select the Create button.
 **Step 2: Generate a secret**
 1. On the detail page of the connected app you created in Step 1, select the **Generate New Secret** button.
  ![Generate a secret for the APP](media/tableau-generate-a-secret.png)
-2. Make note of the **Secret ID** ，**Secret Value** and **Client Id** to use in Step 3 below.
+2. Make note of the **Secret ID** ，**Secret Value** and **Client ID** to use in Step 3 below.
 
 **Step3: Enter the required fields of Tableau Graph Connector Authentication**.
 
-Enter the User, Connected App Client Id, Connected App Secret Id and Connected App Secret Key to connect to your Tableau Cloud Site. 
+Enter the User, Connected App Client ID, Connected App Secret ID and Connected App Secret Key to connect to your Tableau Cloud Site. 
 ![media/tableau-gc-auth](media/tableau-gc-auth.png)
 
 Refer to the following table to learn the descriptions of the required fields of Tableau Graph Connector Authentication
 Field | Description 
 --- | --- 
 User| The admin user email. Recommend to fill the email of an admin user who configured the Tableau Connected Apps with Direct Trust.
-Connected App Client Id| **Client ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
-Connected App Secret Id| **Secret ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Client ID| **Client ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
+Connected App Secret ID| **Secret ID** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
 Connected App Secret Key| **Secret Value** of the Tableau Connected Apps with Direct Trust, refer to the value noted in the Step 2 above.
 
 ### 4. Staged rollout to a limited audience
 Deploy this connection to a limited user base if you want to validate it in Copilot and other Search surfaces before expanding the rollout to a broader audience.
 
-At this point, you are ready to create the connection for Tableau Cloud. You can click the **Create** button to publish your connection and index sheets from your Tableau Cloud Site. 
+At this point, you're ready to create the connection for Tableau Cloud. You can click the **Create** button to publish your connection and index sheets from your Tableau Cloud Site. 
 
-For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with Tableau Cloud data. You can see the default values below: 
+For other settings, like Access Permissions, Data inclusion rules, Schema, Crawl frequency, etc., we set defaults based on what works best with Tableau Cloud data. The default values are as follows: 
 
 **Page** | **Settings** | **Default values**
 --- | ---- | ---
@@ -115,11 +115,11 @@ Custom setup is for those admins who want to edit the default values for setting
 The Tableau Cloud Microsoft Graph connector supports data visible to **Only people with access to this data source (recommended)** or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 >[!NOTE]
->Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This ensures that the content indexed by the Graph Connector is **not overshared** with users who do not have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
-> - For admin users, they are always ALLOWED.
-> - If the user is a “denied user”, part of a “denied group” or in a “denied group set” , the user is DENIED.
+>Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/en-us/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This mechanism ensures that the content indexed by the Graph Connector is **not overshared** with users who don't have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
+> - For admin users, they're always ALLOWED.
+> - If the user is a “denied user”, part of a “denied group” or in a “denied group set”, the user is DENIED.
 > - If the user is a project leader or a content owner, the user is ALLOWED.
-> - If the user is an “allowed user”, part of an “allowed group” or in an “allowed group set”, the user is ALLOWED.
+> - If the user is an "allowed user", part of an "allowed group" or in an "allowed group set", the user is ALLOWED.
 > - If none of the above conditions are satisfied, the user is DENIED.
 
 If you choose Only people with access to this data source, you need to further choose whether your Tableau Cloud Site has Microsoft Entra ID provisioned users or non-AAD users. 
@@ -138,13 +138,13 @@ To identify which option is suitable for your organization:
 
 **Content ingestion filters**   
 
-You can choose what data you want to index. All sheets within the selected top-level project of your Tableau Cloud Site will be indexed. Use the preview results button to verify the sample values of the selected properties and filters. 
+You can choose what data you want to index. All sheets within the selected top-level project of your Tableau Cloud Site are indexed. Use the preview results button to verify the sample values of the selected properties and filters. 
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
 **Manage properties**
 
-Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. Properties that are selected by default are listed below.
+Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. The default selected properties are listed as follows.
 
 | Properties       | Semantic Label           | Schema                         |
 |-----------------|-------------------------|--------------------------------|
