@@ -102,17 +102,17 @@ To add or remove available properties from your WordPress.com data source, assig
 
 |Default property|Label|Description|Schema| 
 | --- | ---- | --- | ---
-| Author | Authors | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve.| 
-| Categories  |  |Categories of Posts, not available for Pages  | Query, Retrieve, Refine.| 
-| Content |  | The content of Posts or Pages| Search, Retrieve. | 
-| Created | Created date time | Data and time that the item was created in the data source. | Query, Retrieve. | 
-| CreatedBy | Created by| Name of the person who created the item in the data source.| Search, Query, Retrieve. | 
-| Excerpt | |Summaries of Posts or Pages content  |Search, Retrieve. | 
-| Title |Title| The title of Posts or Pages |Search, Retrieve.|  
-| Type | |The type of the file, the potential value is Post or Page | Query, Retrieve, Refine.| 
-| Updated | Last modified date time | Date and time the item was last modified in the data source. |Query, Retrieve. | 
-| UpdatedBy | Last modified by | Name of the person who most recently edited the item in the data source |Search, Query, Retrieve. | 
-| Url | url | The target URL of the item in the data source.  |Retrieve. | 
+| Author | `Authors` | Name of all the people who participated/collaborated on the item in the data source.  | Search, Query, Retrieve.| 
+| Categories  |None  |Categories of Posts, not available for Pages  | Query, Retrieve, Refine.| 
+| Content | None | The content of Posts or Pages| Search, Retrieve. | 
+| Created | `Created date time` | Data and time that the item was created in the data source. | Query, Retrieve. | 
+| CreatedBy | `Created by`| Name of the person who created the item in the data source.| Search, Query, Retrieve. | 
+| Excerpt |None |Summaries of Posts or Pages content  |Search, Retrieve. | 
+| Title |`Title`| The title of Posts or Pages |Search, Retrieve.|  
+| Type |None |The type of the file, the potential value is Post or Page | Query, Retrieve, Refine.| 
+| Updated | `Last modified date time` | Date and time the item was last modified in the data source. |Query, Retrieve. | 
+| UpdatedBy | `Last modified by` | Name of the person who most recently edited the item in the data source |Search, Query, Retrieve. | 
+| Url | `url` | The target URL of the item in the data source.  |Retrieve. | 
 
 ### Sync 
 
