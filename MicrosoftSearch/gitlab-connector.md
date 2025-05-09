@@ -1,5 +1,5 @@
 ---
-title: "GitLab Microsoft Graph connectors"
+title: "GitLab Microsoft Graph connector"
 ms.author: dannyyao
 author: dannyyaou
 manager: jecui
@@ -12,13 +12,13 @@ search.appverid:
 - BFB160
 - MET150
 - MOE150
-description: "Set up the GitLab Microsoft Graph connectors for Microsoft Search and Microsoft 365 Copilot."
+description: "Set up the GitLab Microsoft Graph connector for Microsoft Search and Microsoft 365 Copilot."
 ms.date: 02/14/2025
 ---
 
-# GitLab Microsoft Graph connectors
+# GitLab Microsoft Graph connector
 
-The GitLab Microsoft Graph connectors (GitLab Issue, GitLab Merge Request, and GitLab Knowledge) allow your organization to index merge requests, issues, wikis, and documentation stored in GitLab. After you configure the connector and index GitLab content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
+The GitLab Microsoft Graph connector (GitLab Issue, GitLab Merge Request, and GitLab Knowledge) allows your organization to index merge requests, issues, wikis, and documentation stored in GitLab. After you configure the connector and index GitLab content, users can search and retrieve information via Microsoft Search and Microsoft 365 Copilot.
 
 This article is intended for Microsoft 365 administrators or anyone who configures, runs, or monitors GitLab Microsoft Graph connectors.
 
@@ -36,10 +36,9 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 - Banning users is not supported as a permission rule. As a workaround, administrators can remove users from groups instead.
 - Restricting group access by IP address is not supported. We recommend that administrators create a private group to manage access.
 - Due to stability concerns identified during Microsoft's internal testing, support for the Planner role has been conservatively deprecated. Access is now restricted to Reporter roles and above. Users may encounter issues when assigning team members to the Planner role. To mitigate potential problems, please assign Reporter roles or higher. We closely monitor this feature and continue to work on improvements.
-- For the GitLab Server connectors, due to security consideration, access to merge requests for public projects with visibility restricted to project members is conservatively set to the reporter role and above.
+- For the GitLab Server connectors, due to security considerations, access to merge requests for public projects with visibility restricted to project members is conservatively set to the reporter role and above.
 
 ## Prerequisites
-
 Before setting up the connector, ensure the following:
 
 1. Confirm your GitLab instance is accessible via API.
