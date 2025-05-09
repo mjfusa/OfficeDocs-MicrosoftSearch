@@ -146,20 +146,20 @@ Use the preview results button to verify the sample values of the selected prope
 
 Here, you can check available properties from your Tableau Cloud. Assign a schema to the property (define whether a property is searchable, queryable, retrievable, or refinable), change the semantic label, and add an alias to the property. The default selected properties are listed as follows.
 
-| Properties       | Semantic Label           | Schema                         |
-|-----------------|-------------------------|--------------------------------|
-|CreatedAt     | Created date time      | Query, Retrieve            |
-| IconUrl         | IconUrl                  | Retrieve                       |
-| LastModifiedBy  | Last modified by        | Query, Retrieve, Search        |
-| Name           | Title                    | Query, Retrieve, Search        |
-| ProjectName     |                          | Query, Search                  |
-| SheetType       |                          | Query, Refine, Retrieve        |
-| SheetUrl        | url                      | Retrieve                       |
-| Tags           |                          | Query, Refine, Retrieve        |
-| TopProjectName  |                          | Query, Search                  |
-| UpdatedAt       | Last modified date time | Query, Retrieve               |
-| WorkbookName    |                          | Query, Search                  |
-| WorkbookUrl     |                          |                                |
+| Properties     | Semantic Label            | Schema                  | Description                                                                                   |
+| -------------- | ------------------------- | ----------------------- | --------------------------------------------------------------------------------------------- |
+| CreatedAt      | `Created date time`       | Query, Retrieve         | The timestamp indicating when the sheet was originally created.                   |
+| IconUrl        | `IconUrl`                 | Retrieve                | URL of the icon associated with the different sheet types (e.g., worksheet, dashboard, story) , used for display purposes.             |
+| LastModifiedBy | `Last modified by`        | Query, Retrieve, Search | The user who last modified the sheet.
+| Name           | `Title`                   | Query, Retrieve, Search | The title or display name of the sheet.                                           |
+| ProjectName    | None                      | Query, Search           | The name of the parent project under which the sheet resides.                            |
+| SheetType      | None                      | Query, Refine, Retrieve | The type of sheet, e.g., worksheet, dashboard, story. |
+| SheetUrl       | `url`                     | Retrieve                | Direct URL link to open the sheet in Tableau.                                                 |
+| Tags           | None                      | Query, Refine, Retrieve | Tags assigned to the sheet.                       |
+| TopProjectName | None                      | Query, Search           | The name of the top-level project that contains the sheet.                 |
+| UpdatedAt      | `Last modified date time` | Query, Retrieve         | The timestamp of the most recent modification to the sheet.                       |
+| WorkbookName   | None                      | Query, Search           | The name of the workbook that contains the sheet.                                             |
+
 
 ### Sync 
 
