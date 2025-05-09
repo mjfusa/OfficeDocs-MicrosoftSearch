@@ -105,5 +105,5 @@ You can configure full and incremental crawls based on the scheduling options pr
 ## Next steps
 For troubleshooting information, see the [GitLab troubleshooting guide](troubleshoot-gitlab-connector.md).
 
-If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/en-us/graph/support).
+If you have issues or need support, see [Microsoft Graph support](https://developer.microsoft.com/graph/support).
 
