@@ -136,24 +136,23 @@ Here, you can check available properties from your Adobe Experience Manager Asse
 
 | **Source property** | **Semantic label**       | **Description**                                                                 | **Schema**                  |
 |----------------------|--------------------------|---------------------------------------------------------------------------------|-----------------------------|
-| AltText          |             | the "Alt Text" field in Adobe Experience Manager Assets metadata                     | Query, Retrieve, Search     |
-| AssetType         |             | The file type of the asset (for example, Image, Multimedia, Document etc.).                    |Retrieve  |
-| Content         | Content                 | The content of documents, not available for images             | Search                      |
-| CreatedBy           | Created by              | Date and time that the item was created in the data source                      | Query, Retrieve, Search     |
-| CreatedTime         | Created date time       | Date and time that the item was created in the data source                      | Query, Retrieve             |
-| Description         | Description             | A brief summary of the asset's content                                           | Query, Retrieve             |
-| Description         | Description             | A brief summary of the asset's content                                           | Query, Retrieve             |
-| FileExtension         |File extension      | the suffix at the end of a file name, for example, .txt, .jpg, .exe             | Query, Refine, Retrieve           |
-|FileName            |Title     | The file name of the asset           | Query, Retrieve, Search          |
-| LastModifiedBy      | Last modified by        | Name of the person who most recently edited the item in the data source         | Search, Query, Retrieve     |
-| Length    |     | Image Length        | Query, Retrieve   |
-| Link                | URL                     | The target URL of the item in the data source                                   | Retrieve             |
-| ModifiedTime        | Last modified date time | Date and time the item was last modified in the data source                     | Query, Refine, Retrieve         |
-| PublishedBy         |           | Name of the person who published the item in the data source                    | Query, Retrieve, Search           |
-| PublishedTime       |    | Date and time the item was published in the data source                         | Query, Retrieve             |
-|title            |               | The title of the items                                                      |Query, Retrieve, Search           |
-| Width   |     | Width         | Query, Retrieve   |
-| Tags                | Tags                    | Tags defined in Adobe Experience Manager Assets metadata. In Adobe Experience Manager, tags are organized hierarchically   | Query, Retrieve, Search     |
+| AltText          | None            | the "Alt Text" field in Adobe Experience Manager Assets metadata                     | Query, Retrieve, Search     |
+| AssetType         | None              | The file type of the asset (for example, Image, Multimedia, Document etc.).                    |Retrieve  |
+| Content         | `Content`                 | The content of documents, not available for images             | Search                      |
+| CreatedBy           | `Created by`              | Date and time that the item was created in the data source                      | Query, Retrieve, Search     |
+| CreatedTime         | `Created date time`       | Date and time that the item was created in the data source                      | Query, Retrieve             |
+| Description         | `Description`             | A brief summary of the asset's content                                           | Query, Retrieve             |
+| FileExtension         |`File extension`      | the suffix at the end of a file name, for example, .txt, .jpg, .exe             | Query, Refine, Retrieve           |
+|FileName            |`Title`     | The file name of the asset           | Query, Retrieve, Search          |
+| LastModifiedBy      | `Last modified by`        | Name of the person who most recently edited the item in the data source         | Search, Query, Retrieve     |
+| Length    |None       | Image Length        | Query, Retrieve   |
+| Link                | `URL`                     | The target URL of the item in the data source                                   | Retrieve             |
+| ModifiedTime        | `Last modified date time` | Date and time the item was last modified in the data source                     | Query, Refine, Retrieve         |
+| PublishedBy         | None            | Name of the person who published the item in the data source                    | Query, Retrieve, Search           |
+| PublishedTime       | None     | Date and time the item was published in the data source                         | Query, Retrieve             |
+|title            |  None               | The title of the items                                                      |Query, Retrieve, Search           |
+| Width   |None       | Width        | Query, Retrieve   |
+| Tags                | `Tags`                    | Tags defined in Adobe Experience Manager Assets metadata. In Adobe Experience Manager, tags are organized hierarchically   | Query, Retrieve, Search     |
 
 **Add more properties**
 The table lists only the standard properties of Adobe Experience Manager Assets by default, such as titles, tags, description, createdby, publishedby etc. If you would like to add more other properties besides these standard properties of Adobe Experience Manager Assets, you could click “**Add Property**” to add it. 
