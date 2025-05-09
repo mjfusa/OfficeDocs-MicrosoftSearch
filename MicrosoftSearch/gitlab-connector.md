@@ -42,9 +42,9 @@ This article is intended for Microsoft 365 administrators or anyone who configur
 
 Before setting up the connector, ensure the following:
 
-1. Your GitLab instance is accessible via API.
-2. You’ve generated a **Client ID** and **Client Secret** from GitLab for authentication.
-3. The authentication user account has access to:
+1. Confirm your GitLab instance is accessible via API.
+2. Generate a **Client ID** and **Client Secret** from GitLab for authentication.
+3. The authentication user account must have access to repositories, issues, merge requests, knowledge files, and wiki pages.  
    - Repositories  
    - Issues  
    - Merge requests  
