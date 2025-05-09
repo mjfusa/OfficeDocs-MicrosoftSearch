@@ -152,7 +152,7 @@ Here, you can check available properties from your Adobe Experience Manager Asse
 | PublishedTime       | None     | Date and time the item was published in the data source                         | Query, Retrieve             |
 |title            |  None               | The title of the items                                                      |Query, Retrieve, Search           |
 | Width   |None       | Width        | Query, Retrieve   |
-| Tags                | `Tags`                    | Tags defined in Adobe Experience Manager Assets metadata. In Adobe Experience Manager, tags are organized hierarchically   | Query, Retrieve, Search     |
+| Tags                | None                  | Tags defined in Adobe Experience Manager Assets metadata. In Adobe Experience Manager, tags are organized hierarchically   | Query, Retrieve, Search     |
 
 **Add more properties**
 The table lists only the standard properties of Adobe Experience Manager Assets by default, such as titles, tags, description, createdby, publishedby etc. If you would like to add more other properties besides these standard properties of Adobe Experience Manager Assets, you could click “**Add Property**” to add it. 
