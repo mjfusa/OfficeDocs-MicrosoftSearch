@@ -60,7 +60,7 @@ Field | Description | Recommended Value
 --- | --- | ---
 Connected app name| Unique value that identifies the application that you require Direct Trust for. | Microsoft Search and Copilot
 Access Level | To control which views or metrics can be embedded, select "All projects" or "Only one project". If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA#projects).|"All project" or "Only one project"
-Domain allowlist|the domains where views or metrics can be embedded|All domins
+Domain allowlist|the domains where views or metrics can be embedded|All domains
 
 When finished, select the Create button.
 ![tableau direct trust configuration.](media/tableau-direct-trust-configuration.png)
