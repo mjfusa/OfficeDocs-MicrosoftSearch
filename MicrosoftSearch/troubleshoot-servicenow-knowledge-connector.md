@@ -153,11 +153,11 @@ If you have issues or want to provide feedback, contact [Microsoft Graph | Suppo
    **System Web Services > REST > REST API Explorer**
 3. Select one of the tables mentioned in the error message.
 
-   ![Screenshot showing the 'REST API explorer' page](media/tsg-servicenowkb-table-access-1.png)(media/tsg-servicenowkb-table-access-1.png#lightbox)
+   :::image type="content" source="media/tsg-servicenowkb-table-access-1.png" alt-text="Screenshot showing the 'REST API explorer' page." lightbox="media/tsg-servicenowkb-table-access-1.png":::
 
 4. Set `sysparm_limit` to `10` (to limit results for testing).
 
-   ![Screenshot showing the 'sysparm_limit' field](media/tsg-servicenowkb-table-access-2.png)(media/tsg-servicenowkb-table-access-2.png#lightbox)
+   :::image type="content" source="media/tsg-servicenowkb-table-access-2.png" alt-text="Screenshot showing the 'sysparm_light' field." lightbox="media/tsg-servicenowkb-table-access-2.png":::
 
 5. Click on **Send**.
 6. Review the Response:
