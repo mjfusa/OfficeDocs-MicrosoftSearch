@@ -1,10 +1,30 @@
-# Use Advanced Flow for Microsoft Graph Connector for ServiceNow Knowledge
+---
+ms.date: 05/13/2025
+title: "Advanced Flow for Microsoft Graph Connector for ServiceNow Knowledge"
+ms.author: souravpoddar
+author: souravpoddar001
+manager: kavempar
+audience: Admin 
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+ms.localizationpriority: medium
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Setup the Advanced Flow for Microsoft Graph Connector for ServiceNow Knowledge to handle advanced user criteria."
+---
+
+# Advanced Flow for Microsoft Graph Connector for ServiceNow Knowledge
 
 If your ServiceNow instance uses **Advanced Scripts** in your Knowledge Base or Article-level user criteria, you'll need to use the **Advanced** flow. This ensures accurate permissions handling when ingesting content into Microsoft Graph.
 
 ## Step 1: Select Advanced Flow in Setup
 
 When setting up the Microsoft Graph Connector for ServiceNow Knowledge, select the **Advanced** option under the field 'Select based on your user criteria setup in ServiceNow'. This is crucial for handling advanced user criteria correctly.
+
+![Advanced Flow Selection Screenshot](/MicrosoftSearch/media/servicenow-knowledge-advanced-mode.png)
 
 ## Step 2: Configure Scripted REST API in ServiceNow
 
@@ -70,9 +90,11 @@ To allow the connector to fetch advanced user criteria, you must create a **Scri
 2. Click **Update** to save the configuration.
 
 ## Step 3: Enter the API Namespace in the Graph Connector Setup Experience
-1. In the Microsoft Graph Connector setup, enter the **API Namespace** you created in ServiceNow.
+In the Microsoft Graph Connector setup, enter the **API Namespace** you created in ServiceNow.
 
    >[!NOTE]
    > You can find the API namespace in the Resource Path field shown in Step 2.5. You only need the namespace portion - not the full path.
 
    > For example: If the Resource Path is ```/api/abcdef/microsoft_copilot/user_criteria```, then the API namespace is ```abcdef```.
+
+   ![API Namespace Screenshot](/MicrosoftSearch/media/servicenow-knowledge-advanced-api-namespace.png)

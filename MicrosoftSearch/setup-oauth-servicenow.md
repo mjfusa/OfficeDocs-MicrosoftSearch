@@ -1,3 +1,20 @@
+---
+ms.date: 05/13/2025
+title: "Authenticate ServiceNow Knowledge Connector using OAuth 2.0"
+ms.author: souravpoddar
+author: souravpoddar001
+manager: kavempar
+audience: Admin 
+ms.audience: Admin
+ms.topic: article
+ms.service: mssearch
+ms.localizationpriority: medium
+search.appverid:
+- BFB160
+- MET150
+- MOE150
+description: "Steps to authenticate the ServiceNow Knowledge Microsoft Graph connector using OAuth2.0."
+---
 # Authenticating using OAuth 2.0
 
 To securely authenticate your ServiceNow instance using OAuth 2.0, follow the steps below:
