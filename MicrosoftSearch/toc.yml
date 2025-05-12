@@ -283,6 +283,8 @@ items:
             href: servicenow-knowledge-connector.md
           - name: Grant Table Access to a Service Account in ServiceNow
             href: granting-table-access-servicenow.md
+          - name: Advanced flow
+            href: servicenow-knowledge-advanced-flow.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
