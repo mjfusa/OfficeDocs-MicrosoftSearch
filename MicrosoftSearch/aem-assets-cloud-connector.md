@@ -88,7 +88,7 @@ You can include or exclude certain content paths.
 
 You can also set ingestion filters based on the value of **metadata properties**, including both standard metadata properties and custom metadata properties. Input the **JSON-path of the property**, select the **Operator**, and input the **Target-value**. 
 
-![The screenshot of ingestion filters by metadata values](media/aem-assets-property-filters.png)
+![Screenshot that shows ingestion filters based on metadata values.](media/aem-assets-property-filters.png)
 
 To find and verify the property path, see [Query builder debugger console| Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api#testing-and-debugging).
 
@@ -108,11 +108,11 @@ property.value=Activate
 
 3. After the results are successfully returned, click **JSON query builder link**, to see the JSON content with all properties.
 
-![The screenshot of Adobe Experience Manager Assets Query Builder Debugger](media/aem-assets-query-builder-debugger.png)
+![Screenshot that shows the Adobe Experience Manager Assets Query Builder Debugger.](media/aem-assets-query-builder-debugger.png)
 
 4. Find the property and JSON path of the property. For example, the JSON path of the property `dc:format` shown in the following snapshot is `hits.jcr:content.metadata.dc:format`
 
-![The sample of JCR Path](media/aem-assets-jcrpath-sample.png)
+![Screenshot that shows a sample of a JCR path.](media/aem-assets-jcrpath-sample.png)
 
 |Operators and target values in query conditions|Description|
 |:---|:---|
@@ -123,7 +123,7 @@ property.value=Activate
 
 The following table shows examples of correct and incorrect user input: 
 
-![Ingestion Filters sample input](media/aem-assets-metadata-ingestion-filter-sample-input.png)
+![Diagram that shows some sample inputs for ingestion filters.](media/aem-assets-metadata-ingestion-filter-sample-input.png)
 
 Use the preview results button to verify the sample values of the selected properties and filters. 
 
@@ -150,7 +150,7 @@ To add or remove available properties from your Egnyte data source, assign a sch
 | Width   |None       | Width        | Query, Retrieve   |
 | Tags                | None                  | Tags defined in Adobe Experience Manager Assets metadata. In Adobe Experience Manager, tags are organized hierarchically   | Query, Retrieve, Search.     |
 
-![The screenshot of Adding a property](media/aem-assets-add-property.png)
+![Screenshot that shows how to add a property.](media/aem-assets-add-property.png)
 
 ### Sync 
 You can configure full and incremental crawls based on the scheduling options present here. By default, incremental crawl is set for every 15 minutes, and full crawl is set for every day. If needed, you can adjust these schedules to fit your data refresh needs.
