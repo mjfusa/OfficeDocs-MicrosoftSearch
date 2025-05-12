@@ -35,7 +35,7 @@ This article is for Microsoft 365 administrators or anyone who configures, runs,
 
 ## Prerequisites
 - You must be the **search admin** for your organization's Microsoft 365 tenant.
-- **Configure Connected Apps with Direct Trust in Tableau**: To connect to Tableau Cloud and enable the Tableau Cloud Microsoft Graph connector to sync sheets regularly, you need to configure and enable Connected Apps with Direct Trust on your Tableau site, using credentials that can access the sheets. Tableau Connected Apps provide a seamless and secure authentication experience by establishing an explicit trust relationship between your Tableau Cloud site and external applications. Find more details [here](https://help.tableau.com/current/online/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+- **Configure Connected Apps with Direct Trust in Tableau**: To connect to Tableau Cloud and enable the Tableau Cloud Microsoft Graph connector to sync sheets regularly, you need to configure and enable Connected Apps with Direct Trust on your Tableau site, using credentials that can access the sheets. Tableau Connected Apps provide a seamless and secure authentication experience by establishing an explicit trust relationship between your Tableau Cloud site and external applications. Find more details [here](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
 
 ## Get started
 
@@ -46,7 +46,7 @@ A display name is used to identify each citation in Copilot, helping users easil
 A Tableau Cloud site URL typically looks like `https://<your-domain>.online.tableau.com/#/site/<site-name>`
 
 ### 3. Authentication Type
-Use the following steps to use Tableau Connected Apps with Direct Trust for authentication. To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, find more details [here](https://help.tableau.com/current/online/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.).
+To enable and configure the Connected Apps with Direct Trust for Tableau Cloud, use the following steps to use Tableau Connected Apps with Direct Trust for authentication.
 
 **Step 1: Create a Tableau Connected Apps with Direct Trust**
 Create a connected app from Tableau Cloud’s Settings page.
@@ -59,7 +59,7 @@ Create a connected app from Tableau Cloud’s Settings page.
 Field | Description | Recommended Value
 --- | --- | ---
 Connected app name| Unique value that identifies the application that you require Direct Trust for. | Microsoft Search and Copilot
-Access Level | To control which views or metrics can be embedded, select "All projects" or "Only one project". If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA#projects).|"All project" or "Only one project"
+Access Level | To control which views or metrics can be embedded, select "All projects" or "Only one project". If you select the "Only one project" option, select the specific project to scope to. For more information about these two options, see [Access level (embedding workflows only)](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm?_gl=1*9bs6y1*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNTE5MzU5OS4zNC4xLjE3MzUyMDA1ODEuMC4wLjA.#projects).|"All project" or "Only one project"
 Domain allowlist|the domains where views or metrics can be embedded|All domains
 
 When finished, select the Create button.
@@ -115,7 +115,7 @@ Custom setup is for those admins who want to edit the default values for setting
 The Tableau Cloud Microsoft Graph connector supports data visible to **Only people with access to this data source (recommended)** or Everyone. If you choose Everyone, indexed data appears in the search results for all users. 
 
 >[!NOTE]
->Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/server/permission_effective.htm?_gl=1*lugib7*_ga*MTk1OTAyNzg0MS4xNzIxMTIwMzA4*_ga_8YLN0SNXVS*MTczNjQ5MjkxMy41OC4xLjE3MzY0OTQ2OTMuMC4wLjA.)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This mechanism ensures that the content indexed by the Graph Connector is **not overshared** with users who don't have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
+>Tableau's ACL ([Effective permissions - Tableau](https://help.tableau.com/current/online/en-us/permission_effective.htm#EvaluatePermRules)) system uses a layered evaluation mechanism to calculate users' effective permissions. When you select "**Only people with access to this data source**" while configuring the Tableau Cloud Graph Connector, the connector applies a logic similar to Tableau’s native ACL system. This mechanism ensures that the content indexed by the Graph Connector is **not overshared** with users who don't have appropriate permissions within Tableau Cloud Sites. This image shows the specific rules are applied to determine which permissions govern the content and which users are authorized to access it.![The workflow of Tableau Graph cCnnector ACL](media/tableau-connector-acl-workflow.png)
 > - For admin users, they're always ALLOWED.
 > - If the user is a “denied user”, part of a “denied group” or in a “denied group set”, the user is DENIED.
 > - If the user is a project leader or a content owner, the user is ALLOWED.
