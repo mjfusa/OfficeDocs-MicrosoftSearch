@@ -42,10 +42,10 @@ To securely authenticate your ServiceNow instance using OAuth 2.0, follow the st
    Once logged in, you’ll be asked to **grant access** to the application to read data from your ServiceNow instance.  
    Click **‘Allow’** to proceed.
 
-      ![Screenshot of the grant access screen](media/setup-oauth-allow-access.png)
+      ![Screenshot of the grant access screen.](media/setup-oauth-allow-access.png)
 
 5. **Verify Authentication**  
    After granting access, you’ll be redirected back to the setup screen.  
    - A **green checkmark** next to the authentication fields confirms successful authentication.  
 
-      ![Screenshot of the oauth success screen](media/setup-oauth-successful.png)
+      ![Screenshot of the oauth success screen.](media/setup-oauth-successful.png)

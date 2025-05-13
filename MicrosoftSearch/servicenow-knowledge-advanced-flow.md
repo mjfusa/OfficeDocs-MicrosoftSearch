@@ -24,7 +24,7 @@ If your ServiceNow instance uses **Advanced Scripts** in your Knowledge Base or 
 
 When setting up the Microsoft Graph Connector for ServiceNow Knowledge, select the **Advanced** option under the field 'Select based on your user criteria setup in ServiceNow'. This is crucial for handling advanced user criteria correctly.
 
-![Advanced Flow Selection Screenshot](media/servicenow-knowledge-advanced-mode.png)
+![Screenshot containing the Advanced flow selection in the Graph connector setup.](media/servicenow-knowledge-advanced-mode.png)
 
 ## Step 2: Configure Scripted REST API in ServiceNow
 
@@ -97,4 +97,4 @@ In the Microsoft Graph Connector setup, enter the **API Namespace** you created 
 
    > For example: If the Resource Path is ```/api/abcdef/microsoft_copilot/user_criteria```, then the API namespace is ```abcdef```.
 
-   ![API Namespace Screenshot](media/servicenow-knowledge-advanced-api-namespace.png)
+   ![Screenshot containing the API Namespace in the Graph connector setup.](media/servicenow-knowledge-advanced-api-namespace.png)

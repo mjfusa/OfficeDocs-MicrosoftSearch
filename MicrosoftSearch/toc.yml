@@ -285,6 +285,8 @@ items:
             href: granting-table-access-servicenow.md
           - name: Advanced flow
             href: servicenow-knowledge-advanced-flow.md
+          - name: Authenticating using OAuth 2.0
+            href: setup-oauth-servicenow.md
           - name: Troubleshooting
             href: troubleshoot-servicenow-knowledge-connector.md
         - name: ServiceNow Tickets
