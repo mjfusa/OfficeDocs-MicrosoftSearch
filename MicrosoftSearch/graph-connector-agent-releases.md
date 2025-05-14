@@ -9,16 +9,41 @@ ms.topic: article
 ms.service: mssearch 
 ms.localizationpriority: medium 
 search.appverid: 
-description: "Release history of Microsoft Graph connector agent, which is used to index the on-premises data sources using Microsoft built connectors" 
+description: "Release history of Microsoft Graph connector agent, which is used to index the on-premises data sources using Microsoft-built connectors" 
+ms.date: 01/13/2025
 --- 
 
 # Release history for Microsoft Graph connector agent
 
-Indexing on-premises data sources require you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
+Indexing on-premises data sources requires you to install *Microsoft Graph connector agent* software. It allows for secure data transfer between on-premises data and the connector APIs.
 
 For help on installation, refer to [this page](graph-connector-agent.md#installation).
 
 [Download latest Graph Connector Agent](https://aka.ms/gca)
+
+## Version 3.1.8.0 (*April 28, 2025*)
+
+* Bug fixes and reliability improvements.
+
+## Version 3.1.7.0 (*March 31, 2025*)
+
+* Bug fixes and reliability improvements.
+
+## Version 3.1.5.0 (*February 10, 2025*)
+
+* Bug fixes and reliability improvements.
+
+## Version 3.1.4.0 (*January 13, 2025*)
+
+* Bug fixes and reliability improvements.
+
+## Version 3.1.3.0 (*December 19, 2024*)
+
+* Bug fixes and reliability improvements.
+
+## Version 3.1.2.0 (*November 11, 2024*)
+
+* Bug fixes and reliability improvements.
 
 ## Version 3.1.1.0 (*October 10, 2024*)
 
@@ -35,11 +60,11 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 
 ## Version 3.0.0.0 (*August 08, 2024*)
 
-* This update is with a critical security patch that enhances the secure communication between endpoints. We recommend you to upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center.
+* This update includes a critical security patch that enhances the secure communication between endpoints. We recommend that you upgrade to this version immediately as Microsoft will deprecate the previous versions by September 30, 2024. For more details, follow the communication from Microsoft in the Message Center.
 
 ## Version 2.4.0.0 (*July 05, 2024*)
 
-* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick in after you hit Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade in the process, do a manual upgrade to the .NET version before upgrading the agent.
+* Support for .NET 8. The .NET 8 upgrade flow for the host machine will kick in after you hit the Upgrade button in the connection pane. Make sure to upgrade the machine's version to .NET 8 to avoid unexpected behavior. If there is a failure in the upgrade process, do a manual upgrade to the .NET version before upgrading the agent.
 * Feature to show elaborate index statistics for a connection. This feature gives more information about the current state of items in the index. [Learn more.](connector-view-details.md#view-connection-statistics)
 * Bug fixes and reliability improvements.
 
@@ -67,8 +92,8 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 
 ## Version 2.3.2.0 (*March 20, 2024*)
 
-* Enterprises Websites Graph Connector: Added error reporting for redirection related errors.
-* Fixed identity sync crawls errors.
+* Enterprise Websites Microsoft Graph connector: Added error reporting for redirection-related errors.
+* Fixed identity sync crawl errors.
 * Other bug fixes and reliability improvements.
 
 ## Version 2.3.1.0 (*January 29, 2024*)
@@ -98,7 +123,7 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 
 ## Version 2.2.5.0 (*August 30, 2023*)
 
-* Added functionality to keep trying the multiple instances if they are unreachable in the first crawl. Before the update if the connectivity with one of the instances was interrupted, Graph connector agent did not retry the path in the subsequent crawl and threw a warning for the instance path.
+* Added functionality to keep trying the multiple instances if they're unreachable in the first crawl. Before the update if the connectivity with one of the instances was interrupted, Graph connector agent did not retry the path in the subsequent crawl and threw a warning for the instance path.
 * Bug fixes and reliability improvements
 
 ## Version 2.2.4.0 (*August 28, 2023*)
@@ -164,7 +189,7 @@ For help on installation, refer to [this page](graph-connector-agent.md#installa
 
 ## Version 1.8.2.0 (*October 06, 2022*)
 
-* Upgrade Graph Connector Agent with just one click in the UI. For later builds, if there are any upgrades available for Graph Connector Agent, the one-click upgrade feature is available in the connection details pane. For builds older than this version, there is an option to download and install the GCA build.
+* Upgrade Graph Connector Agent with just one click in the UI. For later builds, if there are any upgrades available for Graph Connector Agent, the one-click upgrade feature is available in the connection details pane. For builds older than this version, there's an option to download and install the GCA build.
 ![Sample snapshot of how to upgrade GCA with one-click from the connection pane.](media/gca-releases/one-click-upgrade.png)
 
 * Bug fixes and reliability improvements
